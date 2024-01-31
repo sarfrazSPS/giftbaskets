@@ -36,3 +36,19 @@ $current_year  = date("Y", strtotime($today));
                 </div>
             </div>
         </section>
+
+        <section class="branding-section container-fluid">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 branding-left">
+                        <a href="#">A Note About Food Safety and Shipping</a>
+                    </div>
+                    <div class="col-md-4 branding-center">
+                        <a href="#">View Our 2023-24 Holiday Catalogue</a>
+                    </div>
+                    <div class="col-md-4 branding-right">
+                        <a href="#">View Our 2023-24 Holiday Catalogue</a>
+                    </div>
+                </div>
+            </div>
+        </section>
