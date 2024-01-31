@@ -90,7 +90,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">winebasket.com</a></li>
                 </ul>
                 <h5>Our New Jersey Gift Baskets Local Store</h5>
-                <ul>
+                <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">350 Allwood Road</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Clifton, NJ 07012</a></li>
                 </ul>
