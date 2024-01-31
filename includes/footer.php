@@ -88,8 +88,9 @@
                 <ul class="nav flex-column">
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">babybasket.com</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">winebasket.com</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Our New Jersey Gift Baskets Local
-                            Store</a></li>
+                </ul>
+                <h5>Our New Jersey Gift Baskets Local Store</h5>
+                <ul>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">350 Allwood Road</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Clifton, NJ 07012</a></li>
                 </ul>
