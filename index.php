@@ -1,11 +1,37 @@
 <?php include("includes/header.php"); ?>
+<style>
+.testimonial-head svg {
+    width: 20px;
+    height: 20px;
+    fill: #f1c40f;
+}
 
+.testimonial {
+    background-color: #7b5c4a;
+    padding: 40px 32px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-family: var(--subFontFamily);
+    font-size: 22px;
+    line-height: 29px;
+    font-style: italic;
+    height: 125px;
+}
+
+.testimonial svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+</style>
 <section id="productCats" class="product-cats">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
                 <div class="col-md-3 proc-left">
-                    <h3>Product Categories</h3>                   
+                    <h3>Product Categories</h3>
                     <div class="ui-accordion">
                         <div class="ui-accordion-item">
                             <a href="javascript:void(0);" class="ui-accordion-title">
@@ -26,25 +52,25 @@
                                         <a href="#" class="acc-cs-link">Corporate <span>(28)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
+                                        <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
+                                        <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
+                                        <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
+                                        <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
+                                        <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
+                                        <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
                                     </li>
                                     <li>
-                                    <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
+                                        <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,7 +80,7 @@
 
                 </div>
                 <div class="col-md-9 proc-right">
-                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid" >
+                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -175,6 +201,16 @@
             </div>
         </div>
     </div>
+</section>
+<section class="">
+    <div class="container-fluid testimonial-head">
+        <div class="container">
+            <div class="row text-center mb-5">
+                <div class="col">
+                    <h2>100% SATISFACTION GUARANTEED</h2>
+                </div>
+            </div>
+        </div>
 </section>
 <?php
 include("includes/footer.php");
