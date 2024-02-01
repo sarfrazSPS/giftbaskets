@@ -1,6 +1,3 @@
-<style>
-
-</style>
 <footer id="siteFooter" class="container-fluid site-footer bg-footer">
     <div class="container">
         <div class="d-flex pt-5 pb-4">
