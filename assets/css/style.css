@@ -45,6 +45,12 @@ h5 {
     line-height: 30px;
     font-weight: 400;
 }
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
 a{
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -52,6 +58,9 @@ a{
 }
 .w-20 {
     width: 20%;
+}
+.w-86 {
+    width: 86%;
 }
 .container{
     max-width: 1130px;
@@ -341,8 +350,225 @@ a{
 }
 
 
-/* === Testimonials Section === */
+/*Favourite Section*/
+.fav-section{
+    margin-top: 70px;
+}
+.fav-section h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--mainBlackColor);
+    line-height: 1;
+    margin: 0 auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+.favs-content{
+    margin-top: 30px;
+}
+.favs-col{
+    padding: 0 20px;
+}
+.favs-img-holder{
+    display: block;
+}
+.favs-img-holder img{
+    width: 100%;
+}
+.favs-head{
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--mainBlackColor);
+    line-height: 1;
+    margin-top: 27px;
+    margin-bottom: 15px;
+}
+.favs-regular{
+    font-size: 20px;
+    font-weight: 500;
+    color: var(--mainBlackColor);
+    line-height: 1;
+    text-decoration: line-through !important;
+}
+.favs-sale{
+    font-size: 20px;
+    font-weight: 500;
+    color: #ff5e00;
+    line-height: 1;
+    display: inline-block;
+    margin-left: 15px;
+}
+.favs-cat,
+.favs-copy{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    margin: 10px 0;
+}
+.favs-btn{
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 13px;
+    color: #ffffff;
+    line-height: 1;
+    text-decoration: none;
+    background-color: var(--mainBrownColor);
+    text-align: center;
+    width: 100%;
+    border: 0;
+    border-radius: 0;
+    padding: 12px 5px;
+    margin-top: 22px;
+    transition: all 0.3s ease-in-out;
+}
+.favs-btn:hover{
+    background-color: var(--mainBlackColor);
+}
 
+/*Customzed Gift Boxes List Section*/
+.gift-list-section{
+    margin-top: 70px;
+}
+.gift-list-section h2{
+    font-size: 30px;
+    font-weight: 700;
+    color: var(--mainBlackColor);
+    line-height: 1;
+    margin: 0 auto;
+    margin-bottom: 0;
+    text-align: center;
+}
+.gls-content{
+    margin-top: 38px;
+}
+.gls-col{
+
+}
+.gls-copy{
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.2);
+}
+.gls-col h5{
+    font-size: 18px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--mainBrownColor);
+    line-height: 1;
+    text-transform: capitalize;
+    padding: 15px;
+    margin-bottom: 0;
+}
+.gls-col ul,
+.gls-col p{
+    background-color: var(--mainYellowColor);
+    padding: 25px;
+    list-style: none;
+    height: 226px;
+}
+.gls-col ul li{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--mainBlackColor);
+    padding: 6px 0px;
+}
+.gls-col ul li::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    background-image: url(../images/icons/caret.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.gls-col p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.4;
+    color: var(--mainBlackColor);
+    padding-top: 35px;
+}
+
+/* SECTION Send Employee’s & Clients a branded gift from your business */
+.emp-img {
+    background-color: var(--mainYellowColor);
+    border: 1px solid var(--mainBrownColor);
+    padding-bottom: 45px;
+    padding-top: 25px;
+}
+
+.gift-box {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: var(--mainBrownColor);
+    position: relative;
+    top: -25px;
+}
+
+#employee-client .gift-box p {
+    font-size: 21.6px;
+    line-height: 40.5px;
+    color: #fff;
+}
+
+/* SECTION Send Employee’s & Clients a branded gift from your business END */
+
+/* SECTION PA Dutch Gourmet Foods & Baked goods */
+.m-widthauto {
+    margin: 0 auto;
+}
+
+#dutch-gourmet .m-widthauto p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+#dutch-gourmet .bg-img {
+    background-color: #7b5c4a;
+}
+
+.img-dutch-gourmet {
+    border: 2px solid #fff;
+}
+
+.text-img {
+    font-size: 24.12px;
+    line-height: 40.2px;
+    font-weight: 600;
+}
+
+
+/* SECTION PA Dutch Gourmet Foods & Baked goods end */
+
+/* === Testimonials Section === */
+.testimonial-head svg {
+    width: 20px;
+    height: 20px;
+    fill: #f1c40f;
+}
+
+.testimonial {
+    background-color: #7b5c4a;
+    padding: 40px 32px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.testimonial p {
+    font-family: var(--subFontFamily);
+    font-size: 22px;
+    line-height: 29px;
+    font-style: italic;
+    height: 125px;
+}
+
+.testimonial svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
 
 /* ===FOOTER Section=== */
 .bg-footer {
@@ -375,3 +601,69 @@ a{
     opacity: 0.5;
 }
 /* ===FOOTER CSS END=== */
+
+.slider-sheds-common .carousel-control-next {
+    right: -25px;
+}
+.slider-sheds-common .carousel-control-prev {
+    left: -25px;
+}
+.slider-sheds-common .carousel-control-prev, .slider-sheds-common .carousel-control-next {
+    width: auto;
+    opacity: 0.7;
+    display: inline-block;
+    top: 45%;
+    height: 30px;
+    transition: all 0.3s ease-in-out;
+}
+.slider-sheds-common .cc-next-icon svg, .slider-sheds-common .cc-prev-icon svg {
+    width: 30px;
+    height: 30px;
+    fill: #ffffff;
+}
+.slider-sheds-common .cc-next-icon, .slider-sheds-common .cc-prev-icon {
+    background-color: #d4cecb;
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    line-height: 1;
+    padding: 4px;
+}
+.slider-sheds-common .carousel-inner .carousel-item.active,
+.slider-sheds-common .carousel-inner .carousel-item-next,
+.slider-sheds-common .carousel-inner .carousel-item-prev {
+    display: flex;
+}
+
+.slider-sheds-common .carousel-inner .carousel-item-end,
+.slider-sheds-common .carousel-inner .carousel-item-start { 
+    transform: translateX(0);
+}
+/* 
+@media (min-width: 768px) {
+    .slider-sheds-common .carousel-inner .carousel-item-end.active,
+    .slider-sheds-common .carousel-inner .carousel-item-next {
+        transform: translateX(50%);
+    }
+    .slider-sheds-common .carousel-inner .carousel-item-start.active, 
+    .slider-sheds-common .carousel-inner .carousel-item-prev {
+        transform: translateX(-50%);
+    }
+}
+@media (max-width: 768px) {
+    .slider-sheds-common .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .slider-sheds-common .carousel-inner .carousel-item > div:nth-child(1) {
+        display: block;
+    }
+    .slider-sheds-common .carousel-inner .carousel-item-end.active,
+    .slider-sheds-common .carousel-inner .carousel-item-next {
+        transform: translateX(100%);
+    }
+    .slider-sheds-common .carousel-inner .carousel-item-start.active, 
+    .slider-sheds-common .carousel-inner .carousel-item-prev {
+        transform: translateX(-100%);
+    }
+} */

@@ -1,92 +1,5 @@
 <?php include("includes/header.php"); ?>
-<style>
-/* SECTION Send Employee’s & Clients a branded gift from your business */
-.emp-img {
-    background-color: var(--mainYellowColor);
-    border: 1px solid var(--mainBrownColor);
-    padding-bottom: 45px;
-    padding-top: 25px;
-}
 
-.gift-box {
-    width: 150px;
-    height: 50px;
-    margin: 0 auto;
-    background-color: var(--mainBrownColor);
-    position: relative;
-    top: -25px;
-}
-
-#employee-client .gift-box p {
-    font-size: 21.6px;
-    line-height: 40.5px;
-    color: #fff;
-}
-
-/* SECTION Send Employee’s & Clients a branded gift from your business END */
-/* SECTION PA Dutch Gourmet Foods & Baked goods */
-.w-86 {
-    width: 86%;
-}
-
-.m-widthauto {
-    margin: 0 auto;
-}
-
-#dutch-gourmet .m-widthauto p {
-    font-size: 16px;
-    line-height: 26px;
-    font-weight: 400;
-}
-
-#dutch-gourmet .bg-img {
-    background-color: #7b5c4a;
-}
-
-.img-dutch-gourmet {
-    border: 2px solid #fff;
-}
-
-.text-img {
-    font-size: 24.12px;
-    line-height: 40.2px;
-    font-weight: 600;
-}
-
-p {
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-
-}
-
-/* SECTION PA Dutch Gourmet Foods & Baked goods end */
-.testimonial-head svg {
-    width: 20px;
-    height: 20px;
-    fill: #f1c40f;
-}
-
-.testimonial {
-    background-color: #7b5c4a;
-    padding: 40px 32px;
-    border-radius: 10px;
-}
-
-.testimonial p {
-    font-family: var(--subFontFamily);
-    font-size: 22px;
-    line-height: 29px;
-    font-style: italic;
-    height: 125px;
-}
-
-.testimonial svg {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-}
-</style>
 <section id="productCats" class="product-cats">
     <div class="container-fluid">
         <div class="container">
@@ -148,9 +61,178 @@ p {
     </div>
 </section>
 
-<?php include("file1.php"); ?>
-<?php include("file2.php"); ?>
-<?php include("file3.php"); ?>
+<section id="OccasionSeciton" class="occs-section">
+    <div class="container-fluid occss-bg">
+        <div class="occssbg-overlay"></div>
+        <div class="container occss-container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Shop for any Occassion</h2>
+                    <div class="occss-content">
+                        <div class="row">
+                            <div class="col-md-2 occss-item">
+                                <img src="<?=$app_path;?>assets/images/graphics/thankyou-full.png" />
+                                <p>Thank you</p>
+                            </div>
+                            <div class="col-md-2 occss-item">
+                                <img src="<?=$app_path;?>assets/images/graphics/birthday-full.png" />
+                                <p>Birthday</p>
+                            </div>
+                            <div class="col-md-2 occss-item">
+                                <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
+                                <p>Sympathy</p>
+                            </div>
+                            <div class="col-md-2 occss-item">
+                                <img src="<?=$app_path;?>assets/images/graphics/thankyou-full.png" />
+                                <p>Get Well</p>
+                            </div>
+                            <div class="col-md-2 occss-item">
+                                <img src="<?=$app_path;?>assets/images/graphics/birthday-full.png" />
+                                <p>Business</p>
+                            </div>
+                            <div class="col-md-2 occss-item">
+                                <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
+                                <p>Congratulations</p>
+                            </div>
+                        </div>                        
+                    </div>
+                    <h4>Don’t see your occasion or event? Call us direct</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="CustomerFavourite" class="fav-section">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Customer's Favourites</h2>
+                    <div class="favs-content">
+                        <div class="row">
+                            <div class="col-md-3 favs-col">
+                                <div class="favs-img-holder">
+                                    <img src="<?=$app_path;?>assets/images/products/1.png" />
+                                </div>
+                                <h5 class="favs-head">Cozy Winter Gift Box</h5>
+                                <span class="favs-regular">
+                                    $79.99
+                                </span>
+                                <span class="favs-sale">
+                                    $45.99
+                                </span>
+                                <p class="favs-cat">Winter Sale!*</p>
+                                <p class="favs-copy">$6 Standard Shipping</p>
+                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                            </div>
+
+                            <div class="col-md-3 favs-col">
+                                <div class="favs-img-holder">
+                                    <img src="<?=$app_path;?>assets/images/products/2.png" />
+                                </div>
+                                <h5 class="favs-head">Cozy Winter Gift Box</h5>
+                                <span class="favs-regular">
+                                    $79.99
+                                </span>
+                                <span class="favs-sale">
+                                    $45.99
+                                </span>
+                                <p class="favs-cat">Winter Sale!*</p>
+                                <p class="favs-copy">$6 Standard Shipping</p>
+                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                            </div>
+
+                            <div class="col-md-3 favs-col">
+                                <div class="favs-img-holder">
+                                    <img src="<?=$app_path;?>assets/images/products/3.png" />
+                                </div>
+                                <h5 class="favs-head">Cozy Winter Gift Box</h5>
+                                <span class="favs-regular">
+                                    $79.99
+                                </span>
+                                <span class="favs-sale">
+                                    $45.99
+                                </span>
+                                <p class="favs-cat">Winter Sale!*</p>
+                                <p class="favs-copy">$6 Standard Shipping</p>
+                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                            </div>
+
+                            <div class="col-md-3 favs-col">
+                                <div class="favs-img-holder">
+                                    <img src="<?=$app_path;?>assets/images/products/4.png" />
+                                </div>
+                                <h5 class="favs-head">Cozy Winter Gift Box</h5>
+                                <span class="favs-regular">
+                                    $79.99
+                                </span>
+                                <span class="favs-sale">
+                                    $45.99
+                                </span>
+                                <p class="favs-cat">Winter Sale!*</p>
+                                <p class="favs-copy">$6 Standard Shipping</p>
+                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                            </div>
+                            
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section id="GiftBoxesList" class="gift-list-section">
+    <div class="container-fluid">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Corporate Customized Gift Boxes</h2>
+                    <div class="gls-content">
+                        <div class="row">
+                            <div class="col-md-4 gls-col">
+                                <div class="gls-copy">
+                                    <h5>Strengthen Relationships</h5>
+                                    <ul>
+                                        <li>Employee Retention</li>
+                                        <li>Employee Loyalty</li>
+                                        <li>Employee's  Feel Valued</li>
+                                        <li>Personalized Message Card</li>
+                                    </ul>
+                                </div>
+                            </div>  
+                            
+                            <div class="col-md-4 gls-col">
+                                <div class="gls-copy">
+                                    <h5>Any Occasion</h5>
+                                    <ul>
+                                        <li>Birthdays</li>
+                                        <li>Get Well</li>
+                                        <li>Congratulaitons</li>
+                                        <li>Greate Job</li>
+                                        <li>Sympathy</li>
+                                        <li>Holiday's & More</li>
+                                    </ul>
+                                </div>
+                            </div>  
+
+                            <div class="col-md-4 gls-col">
+                                <div class="gls-copy">
+                                    <h5>Brand your Business</h5>
+                                    <p>We are happy to offer a selection of both gift boxes and baskets. Many businesses choose to have their gift boxes branded to their business</p>
+                                </div>
+                            </div>  
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- SECTION Send Employee’s & Clients a branded gift from your business START-->
 <section id="employee-client" class="pt-5">
     <div class="container-fluid testimonial-head">
@@ -256,8 +338,8 @@ p {
 <section id="testimonials" class="pt-5 pb-5">
     <div class="container-fluid testimonial-head">
         <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col">
+            <div class="row text-center ">
+                <div class="col-md-12 mb-5">
                     <h2>PA Dutch Gift Baskets</h2>
                     <div class="d-flex justify-content-center">
                         <h5>5.0rating of 76 reviews</h5>
@@ -282,86 +364,144 @@ p {
                                 <path
                                     d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                             </svg>
+                            
                         </div>
-
                     </div>
-
+                    
                 </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="testimonial">
-                        <h3 class="text-white">Wonderful Gift Basket</h3>
-                        <P class="text-white">
-                            Thank You so much for the details in
-                            putting this delicious gift basket together. It was loved by my family ”
-                        </P>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <div class="d-flex flex-row align-items-center mt-3">
-                            <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
-                            <div class="d-flex flex-column ms-3">
-                                <h4 class="text-white mb-0">Rick</h4>
-                                <span class="text-white">2 months ago</span>
-                            </div>
 
+                <div id="slider-sh5" class="carousel slide slider-sheds-common" data-bs-interval="3000">
+                    <div class="carousel-inner" role="listbox">
+                        <div class="carousel-item active">
+                            <div class="col-md-6 px-2">
+                                <div class="testimonial">
+                                    <h3 class="text-white">Wonderful Gift Basket</h3>
+                                    <P class="text-white">
+                                        Thank You so much for the details in
+                                        putting this delicious gift basket together. It was loved by my family ”
+                                    </P>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <div class="d-flex flex-row align-items-center mt-3">
+                                        <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+                                        <div class="d-flex flex-column ms-3">
+                                            <h4 class="text-white mb-0">Rick</h4>
+                                            <span class="text-white">2 months ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-6  px-2">
+                                <div class="testimonial">
+                                    <h3 class="text-white">Wonderful Gift Basket</h3>
+                                    <P class="text-white">
+                                        Thank You so much for the details in
+                                        putting this delicious gift basket together. It was loved by my family ”
+                                    </P>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <div class="d-flex flex-row align-items-center mt-3">
+                                        <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+                                        <div class="d-flex flex-column ms-3">
+                                            <h4 class="text-white mb-0">Rick</h4>
+                                            <span class="text-white">2 months ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="col-md-6 px-2">
+                                <div class="testimonial">
+                                    <h3 class="text-white">Wonderful Gift Basket</h3>
+                                    <P class="text-white">
+                                        Thank You so much for the details in
+                                        putting this delicious gift basket together. It was loved by my family ”
+                                    </P>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
+                                        <path
+                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                                    </svg>
+                                    <div class="d-flex flex-row align-items-center mt-3">
+                                        <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
+                                        <div class="d-flex flex-column ms-3">
+                                            <h4 class="text-white mb-0">Rick</h4>
+                                            <span class="text-white">2 months ago</span>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col">
-                    <div class="testimonial">
-                        <h3 class="text-white">Wonderful Gift Basket</h3>
-                        <P class="text-white">
-                            Thank You so much for the details in
-                            putting this delicious gift basket together. It was loved by my family ”
-                        </P>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                            <path
-                                d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
-                        </svg>
-                        <div class="d-flex flex-row align-items-center mt-3">
-                            <img src="https://i.imgur.com/G1pXs7D.jpg" width="50" class="rounded-circle">
-                            <div class="d-flex flex-column ms-3">
-                                <h4 class="text-white mb-0">Rick</h4>
-                                <span class="text-white">2 months ago</span>
-                            </div>
-
-                        </div>
-                    </div>
+                    <a class="carousel-control-prev bg-transparent w-aut" href="#slider-sh5" role="button"
+                        data-bs-slide="prev">
+                        <span class="cc-prev-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg>
+                        </span>
+                    </a>
+                    <a class="carousel-control-next bg-transparent w-aut" href="#slider-sh5" role="button"
+                        data-bs-slide="next">
+                        <span class="cc-next-icon" aria-hidden="true">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" /></svg>
+                        </span>
+                    </a>
                 </div>
 
             </div>
@@ -382,3 +522,36 @@ p {
 <?php
 include("includes/footer.php");
 ?>
+
+<script type="text/javascript">
+
+$(document).ready(function() {
+    if($(".slider-sheds-common .carousel .carousel-item")){
+        showbpkSlider();
+    }
+});
+
+function showbpkSlider(){
+  if ($(window).width() < (576)) {
+    setbpkSlider(1);
+  }else {
+    setbpkSlider(2);
+  }
+}
+function setbpkSlider($minSlides){
+  let items = document.querySelectorAll(".slider-sheds-common .carousel-item");
+
+    items.forEach((el) => {
+        const minPerSlide = $minSlides
+        let next = el.nextElementSibling;
+        for (var i = 1; i < minPerSlide; i++) {
+            if (!next) {
+                next = items[0]
+            }
+            let cloneChild = next.cloneNode(true);
+            el.appendChild(cloneChild.children[0]);
+            next = next.nextElementSibling;
+        }
+    });
+}
+</script>
