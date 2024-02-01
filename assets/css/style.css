@@ -33,6 +33,7 @@ a{
     max-width: 1130px;
 }
 
+
 /*Top Bar Section*/
 .top-bar-section{
     height: 35px;
@@ -109,6 +110,49 @@ a{
     line-height: 1;
     color: var(--mainBrownColor);
 }
+.brc-offer{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--mainBlackColor);
+    line-height: 1;
+}
+.brc-top svg{
+    fill: var(--mainBrownColor);
+    width: 18px;
+    height: auto;
+    line-height: 1;
+    margin-top: -4px;
+    margin-right: 5px;
+}
+.brc-top span{
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1;
+    display: inline-block;
+}
+.brc-bottom{
+    margin-top: 15px;
+}
+.brc-bottom form{
+    display: block;
+}
+.brc-bottom form .brcf-field,
+.brc-bottom form .brcf-btn{
+    border-radius: 0;
+    height: 47px;
+}
+.brc-bottom form .brcf-field{    
+    display: inline-block;
+    width: 70%;
+    border: 1px solid #cecece;
+}
+.brc-bottom form .brcf-btn{
+    display: inline-block;
+    margin-left: 10px;
+    background-color: var(--mainBrownColor);
+    color: #ffffff;
+}
+
 /* ===FOOTER CSS START=== */
 .bg-footer {
     background-color: var(--mainFooterColor);

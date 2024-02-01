@@ -24,15 +24,13 @@ $current_year  = date("Y", strtotime($today));
     <link href="<?= $app_path ?>assets/css/style.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div id="content" class="site-content">
 
-        <section class="top-bar-section container-fluid">
+    <section class="top-bar-section container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 top-bar-left">
@@ -91,7 +89,18 @@ $current_year  = date("Y", strtotime($today));
                     </div>
 
                     <div class="col-md-4 d-flex align-items-center branding-left">
-                        <div class="branding-right-content"></div>
+                        <div class="branding-right-content">
+                            <div class="brc-top">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>
+                                <span>Unlock Exclusive Offers</span>
+                            </div>
+                            <div class="brc-bottom">
+                                <form class="clearfix">
+                                    <input type="email" class="form-control brcf-field" name="exampleInputEmail1" id="exampleInputEmail1" placeholder="Your email address" value="">
+                                    <button type="submit" class="btn btn-primary brcf-btn">Submit</button>
+                                </form>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
