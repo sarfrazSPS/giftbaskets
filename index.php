@@ -1,5 +1,66 @@
 <?php include("includes/header.php"); ?>
 <style>
+/* SECTION Send Employee’s & Clients a branded gift from your business */
+.emp-img {
+    background-color: var(--mainYellowColor);
+    border: 1px solid var(--mainBrownColor);
+    padding-bottom: 45px;
+    padding-top: 25px;
+}
+
+.gift-box {
+    width: 150px;
+    height: 50px;
+    margin: 0 auto;
+    background-color: var(--mainBrownColor);
+    position: relative;
+    top: -25px;
+}
+
+#employee-client .gift-box p {
+    font-size: 21.6px;
+    line-height: 40.5px;
+    color: #fff;
+}
+
+/* SECTION Send Employee’s & Clients a branded gift from your business END */
+/* SECTION PA Dutch Gourmet Foods & Baked goods */
+.w-86 {
+    width: 86%;
+}
+
+.m-widthauto {
+    margin: 0 auto;
+}
+
+#dutch-gourmet .m-widthauto p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 400;
+}
+
+#dutch-gourmet .bg-img {
+    background-color: #7b5c4a;
+}
+
+.img-dutch-gourmet {
+    border: 2px solid #fff;
+}
+
+.text-img {
+    font-size: 24.12px;
+    line-height: 40.2px;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+
+}
+
+/* SECTION PA Dutch Gourmet Foods & Baked goods end */
 .testimonial-head svg {
     width: 20px;
     height: 20px;
@@ -90,7 +151,108 @@
 <?php include("file1.php"); ?>
 <?php include("file2.php"); ?>
 <?php include("file3.php"); ?>
-
+<!-- SECTION Send Employee’s & Clients a branded gift from your business START-->
+<section id="employee-client" class="pt-5">
+    <div class="container-fluid testimonial-head">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2>Send Employee’s & Clients a branded gift from your business</h2>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <div class="emp-img px-2">
+                        <img src="<?= $app_path ?>assets/images/gifts/11.png" alt="" class="" />
+                    </div>
+                    <div class="gift-box d-flex align-items-center justify-content-center">
+                        <p class="mb-0">Gift Box</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="emp-img px-2">
+                        <img src="<?= $app_path ?>assets/images/gifts/22.png" alt="" class="" />
+                    </div>
+                    <div class="gift-box d-flex align-items-center justify-content-center">
+                        <p class="mb-0">Gift Box</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="emp-img px-2">
+                        <img src="<?= $app_path ?>assets/images/gifts/33.png" alt="" class="" />
+                    </div>
+                    <div class="gift-box d-flex align-items-center justify-content-center">
+                        <p class="mb-0">Gift Box</p>
+                    </div>
+                </div>
+                <div class="col text-center">
+                    <div class="emp-img px-2">
+                        <img src="<?= $app_path ?>assets/images/gifts/44.png" alt="" class="" />
+                    </div>
+                    <div class="gift-box d-flex align-items-center justify-content-center">
+                        <p class="mb-0">Gift Box</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECTION Send Employee’s & Clients a branded gift from your business END-->
+<!-- SECTION PA Dutch Gourmet Foods & Baked goods START -->
+<section id="dutch-gourmet" class="pt-5">
+    <div class="container-fluid testimonial-head">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col">
+                    <h2>PA Dutch Gourmet Foods & Baked goods</h2>
+                    <div class="w-86 m-widthauto mt-3">
+                        <p>Lancaster, PA is well known around the globe for the best gourmet foods,
+                            cheeses, chocolates,
+                            and
+                            baked goods found anywhere. Our gift baskets are filled with the most
+                            delicious treats that
+                            are
+                            loved by everyone. </p>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col">
+                            <img src="<?= $app_path ?>assets/images/background/111.png" alt="" />
+                        </div>
+                        <div class="col bg-img d-flex align-items-center">
+                            <div class="px-3">
+                                <img src="<?= $app_path ?>assets/images/background/222.png" alt=""
+                                    class="img-dutch-gourmet justify-content-center align-items-center" />
+                                <p class="text-white mt-3">We are happy to offer Amish gourmet
+                                    foods, cheeses, and baked
+                                    goods
+                                    from lancaster, PA.
+                                </p>
+                                <p class="text-white mt-3">We deliver to most of the United States
+                                    while offering customization for any
+                                    event or occasion,</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <img src="<?= $app_path ?>assets/images/background/333.png" alt="" />
+                        </div>
+                    </div>
+                    <div class="row mt-4">
+                        <div class="col">
+                            <h2 class="text-img">Gourmet Foods</h2>
+                        </div>
+                        <div class="col">
+                        </div>
+                        <div class="col">
+                            <h2 class="text-img">Baked Foods</h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- SECTION PA Dutch Gourmet Foods & Baked goods END -->
+<!-- SECTION TESTIMONIALS START -->
 <section id="testimonials" class="pt-5 pb-5">
     <div class="container-fluid testimonial-head">
         <div class="container">
@@ -216,6 +378,7 @@
             </div>
         </div>
 </section>
+<!-- SECTION TESTIMONIALS END -->
 <?php
 include("includes/footer.php");
 ?>
