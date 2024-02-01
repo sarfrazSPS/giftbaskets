@@ -219,31 +219,63 @@ a{
     background-color: var(--mainBlackColor);
 }
 
+/*Product Categories Section*/
+.product-cats{
+
+}
+.proc-left{
+    padding: 0;
+}
+.proc-left h3{
+    font-size: 16px;
+    font-weight: 600;
+    color: #ffffff;
+    background-color: var(--mainBrownColor);
+    line-height: 1;
+    margin: 0;
+    padding: 22px 25px;
+}
+.proc-left .ui-accordion-title{
+    cursor: text;
+    font-size: 16px;
+    color: var(--mainBlackColor);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.proc-left .ui-accordion-item{
+    padding-top: 28px;
+    padding-left: 38px;
+    padding-bottom: 5px;
+    padding-right: 5px;
+}
+.proc-left ul.category-selection{
+    list-style: none;
+    padding-left: 0;
+}
+.proc-left .acc-cs-link{
+    font-size: 14px;
+    color: var(--mainBlackColor);
+    font-weight: 400;
+    line-height: 1;
+    text-decoration: none;
+}
+.proc-left .acc-cs-link::before{
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    background-image: url(../images/caret.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.proc-left ul.category-selection li{
+    line-height: 1;
+    padding: 8px 0;
+}
+
 /* === Testimonials Section === */
-.testimonial-head svg {
-    width: 20px;
-    height: 20px;
-    fill: #f1c40f;
-}
 
-.testimonial {
-    background-color: #7b5c4a;
-    padding: 40px 32px;
-    border-radius: 10px;
-}
-
-.testimonial p {
-    font-family: var(--subFontFamily);
-    font-size: 22px;
-    line-height: 29px;
-    font-style: italic;
-}
-
-.testimonial svg {
-    width: 20px;
-    height: 20px;
-    fill: #ffffff;
-}
 
 /* ===FOOTER Section=== */
 .bg-footer {
