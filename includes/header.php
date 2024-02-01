@@ -72,7 +72,7 @@ $current_year  = date("Y", strtotime($today));
                             </div>
                             <div class="blc-contact clearfix">
                                 <div class="blcc-left">
-                                    <img src="<?=$app_path;?>assets/images/mobile.png" />
+                                    <img src="<?=$app_path;?>assets/images/graphics/mobile.png" />
                                 </div>
                                 <div class="blcc-rigt">
                                     <p class="blccr-1">717-368-3973</p>
@@ -85,7 +85,7 @@ $current_year  = date("Y", strtotime($today));
 
                     <div class="col-md-4 d-flex align-items-center branding-center">
                         <a href="#" class="d-inline-block">
-                            <img src="<?=$app_path;?>assets/images/logo.png" class="image-fluid" />
+                            <img src="<?=$app_path;?>assets/images/logo/logo.png" class="image-fluid" />
                         </a>
                     </div>
 

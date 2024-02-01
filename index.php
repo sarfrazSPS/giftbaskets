@@ -54,7 +54,7 @@
 
                 </div>
                 <div class="col-md-9 proc-right">
-                    <img src="<?=$app_path;?>assets/images/hero.png" class="img-fluid" >
+                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid" >
                 </div>
             </div>
         </div>
