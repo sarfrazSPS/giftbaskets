@@ -87,6 +87,10 @@
     </div>
 </section>
 
+<?php include("file1.php"); ?>
+<?php include("file2.php"); ?>
+<?php include("file3.php"); ?>
+
 <section id="testimonials" class="pt-5 pb-5">
     <div class="container-fluid testimonial-head">
         <div class="container">
