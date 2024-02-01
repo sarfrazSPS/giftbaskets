@@ -1,41 +1,9 @@
 <style>
-.w-20 {
-    width: 20%;
-}
 
-.bg-footer {
-    background-color: var(--mainFooterColor);
-}
-
-.bg-footer .w-20 h5 {
-    color: #ffffff;
-    font-weight: 600;
-    line-height: 30px;
-}
-
-.bg-footer .w-20 li>a {
-    color: #ffffff;
-    opacity: 0.5;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 34px;
-}
-
-.footer-border-top {
-    border-top: 2px solid #3e3b39;
-}
-
-.footer-border-top .footer-copy {
-    font-size: 13px;
-    font-weight: 400;
-    line-height: 34px;
-    color: #ffffff;
-    opacity: 0.5;
-}
 </style>
 <footer id="siteFooter" class="container-fluid site-footer bg-footer">
     <div class="container">
-        <div class="d-flex">
+        <div class="d-flex pt-5 pb-4">
             <div class="w-20">
                 <h5>About Us</h5>
                 <ul class="nav flex-column">
@@ -96,9 +64,9 @@
                 </ul>
             </div>
         </div>
-        <div class="row footer-border-top ">
-            <div class="col footer-col">
-                <p class="footer-copy">2024 PA Dutch Baskets. All rights reserved. Click here to view our refund &
+        <div class="row footer-border-top text-center">
+            <div class="col footer-col py-3">
+                <p class="footer-copy mb-0">2024 PA Dutch Baskets. All rights reserved. Click here to view our refund &
                     privacy policies. Click here to view our shipping policies.</p>
             </div>
         </div>
