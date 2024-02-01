@@ -22,6 +22,29 @@ h1,h2,h3,h4,h5,h6{
     font-weight: bold;
     color: var(--mainBlackColor);
 }
+h2 {
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 28px;
+    line-height: 30px;
+    font-weight: 400;
+}
+
+h4 {
+    font-size: 22px;
+    line-height: 30px;
+    font-weight: 600;
+}
+
+h5 {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+}
 a{
     transition: all 0.3s ease-in-out;
     text-decoration: none;
@@ -34,6 +57,27 @@ a{
     max-width: 1130px;
 }
 
+
+/*Navigation*/
+.site-navigation{
+    padding-bottom: 15px;
+}
+.site-navigation .nav-link{
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mainTextColor);
+    padding: 0 !important;
+}
+.site-navigation .nav-link:hover{
+    opacity: 0.85;
+}
+.site-navigation .navbar-nav{
+    width: 100%;
+}
+.site-navigation .nav-item{
+    padding-right: 70px;
+    text-align: left;
+}
 
 /*Top Bar Section*/
 .top-bar-section{
@@ -175,7 +219,33 @@ a{
     background-color: var(--mainBlackColor);
 }
 
-/* ===FOOTER CSS START=== */
+/* === Testimonials Section === */
+.testimonial-head svg {
+    width: 20px;
+    height: 20px;
+    fill: #f1c40f;
+}
+
+.testimonial {
+    background-color: #7b5c4a;
+    padding: 40px 32px;
+    border-radius: 10px;
+}
+
+.testimonial p {
+    font-family: var(--subFontFamily);
+    font-size: 22px;
+    line-height: 29px;
+    font-style: italic;
+}
+
+.testimonial svg {
+    width: 20px;
+    height: 20px;
+    fill: #ffffff;
+}
+
+/* ===FOOTER Section=== */
 .bg-footer {
     background-color: var(--mainFooterColor);
 }

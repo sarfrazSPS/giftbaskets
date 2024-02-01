@@ -30,7 +30,8 @@ $current_year  = date("Y", strtotime($today));
 <body>
     <div id="content" class="site-content">
 
-    <section class="top-bar-section container-fluid">
+    <header>
+        <section class="top-bar-section container-fluid">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 top-bar-left">
@@ -105,3 +106,7 @@ $current_year  = date("Y", strtotime($today));
                 </div>
             </div>
         </section>
+
+        <?php include("includes/navbar.php"); ?>
+    </header>
+
