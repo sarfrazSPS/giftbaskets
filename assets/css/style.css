@@ -78,6 +78,9 @@ a{
     text-align: center;
     padding: 5px 5px 5px 4px;
 }
+.blc-social a:hover{
+    background-color: var(--mainBlackColor);
+}
 .blc-social a svg{
     width: 100%;
     height: 100%;
@@ -144,14 +147,32 @@ a{
 }
 .brc-bottom form .brcf-field{    
     display: inline-block;
-    width: 70%;
+    width: 63%;
     border: 1px solid #cecece;
+    color: var(--mainBlackColor);
+    font-size: 14px;
+    font-weight: 600;
 }
 .brc-bottom form .brcf-btn{
     display: inline-block;
     margin-left: 10px;
     background-color: var(--mainBrownColor);
     color: #ffffff;
+    border: 0;
+    width: 107px;
+    transition: all 0.3s ease-in-out;
+}
+.brc-bottom form .brcf-btn::placeholder{
+    color: var(--mainBlackColor);
+    font-size: 14px;
+    font-weight: 600;
+}
+.brc-bottom form .brcf-btn:focus{
+    border: 1px solid #cecece;
+    outline: 1px solid #cecece;
+}
+.brc-bottom form .brcf-btn:hover{
+    background-color: var(--mainBlackColor);
 }
 
 /* ===FOOTER CSS START=== */
