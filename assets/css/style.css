@@ -5,6 +5,7 @@
     --mainYellowColor: #f6f2d9;
     --mainTextColor: #262626;
     --mainFontFamily: "Poppins", sans-serif;
+    --subFontFamily: "Playfair Display", serif;
 }
 *{
     padding: 0px;
