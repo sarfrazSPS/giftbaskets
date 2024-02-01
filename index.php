@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 proc-left">
+                <div class="col-md-3 proc-left bg-light">
                     <h3>Product Categories</h3>
                     <div class="ui-accordion">
                         <div class="ui-accordion-item">
@@ -94,7 +94,7 @@
                                 <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
                                 <p>Congratulations</p>
                             </div>
-                        </div>                        
+                        </div>
                     </div>
                     <h4>Don’t see your occasion or event? Call us direct</h4>
                 </div>
@@ -175,8 +175,8 @@
                                 <p class="favs-copy">$6 Standard Shipping</p>
                                 <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
                             </div>
-                            
-                        </div>                        
+
+                        </div>
                     </div>
                 </div>
             </div>
@@ -199,12 +199,12 @@
                                     <ul>
                                         <li>Employee Retention</li>
                                         <li>Employee Loyalty</li>
-                                        <li>Employee's  Feel Valued</li>
+                                        <li>Employee's Feel Valued</li>
                                         <li>Personalized Message Card</li>
                                     </ul>
                                 </div>
-                            </div>  
-                            
+                            </div>
+
                             <div class="col-md-4 gls-col">
                                 <div class="gls-copy">
                                     <h5>Any Occasion</h5>
@@ -217,15 +217,16 @@
                                         <li>Holiday's & More</li>
                                     </ul>
                                 </div>
-                            </div>  
+                            </div>
 
                             <div class="col-md-4 gls-col">
                                 <div class="gls-copy">
                                     <h5>Brand your Business</h5>
-                                    <p>We are happy to offer a selection of both gift boxes and baskets. Many businesses choose to have their gift boxes branded to their business</p>
+                                    <p>We are happy to offer a selection of both gift boxes and baskets. Many businesses
+                                        choose to have their gift boxes branded to their business</p>
                                 </div>
-                            </div>  
-                        </div>                        
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -364,10 +365,10 @@
                                 <path
                                     d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
                             </svg>
-                            
+
                         </div>
                     </div>
-                    
+
                 </div>
 
                 <div id="slider-sh5" class="carousel slide slider-sheds-common" data-bs-interval="3000">
@@ -493,13 +494,19 @@
                     <a class="carousel-control-prev bg-transparent w-aut" href="#slider-sh5" role="button"
                         data-bs-slide="prev">
                         <span class="cc-prev-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M41.4 233.4c-12.5 12.5-12.5 32.8 0 45.3l160 160c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L109.3 256 246.6 118.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0l-160 160z" />
+                            </svg>
                         </span>
                     </a>
                     <a class="carousel-control-next bg-transparent w-aut" href="#slider-sh5" role="button"
                         data-bs-slide="next">
                         <span class="cc-next-icon" aria-hidden="true">
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" /></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512">
+                                <path
+                                    d="M278.6 233.4c12.5 12.5 12.5 32.8 0 45.3l-160 160c-12.5 12.5-32.8 12.5-45.3 0s-12.5-32.8 0-45.3L210.7 256 73.4 118.6c-12.5-12.5-12.5-32.8 0-45.3s32.8-12.5 45.3 0l160 160z" />
+                            </svg>
                         </span>
                     </a>
                 </div>
@@ -524,22 +531,22 @@ include("includes/footer.php");
 ?>
 
 <script type="text/javascript">
-
 $(document).ready(function() {
-    if($(".slider-sheds-common .carousel .carousel-item")){
+    if ($(".slider-sheds-common .carousel .carousel-item")) {
         showbpkSlider();
     }
 });
 
-function showbpkSlider(){
-  if ($(window).width() < (576)) {
-    setbpkSlider(1);
-  }else {
-    setbpkSlider(2);
-  }
+function showbpkSlider() {
+    if ($(window).width() < (576)) {
+        setbpkSlider(1);
+    } else {
+        setbpkSlider(2);
+    }
 }
-function setbpkSlider($minSlides){
-  let items = document.querySelectorAll(".slider-sheds-common .carousel-item");
+
+function setbpkSlider($minSlides) {
+    let items = document.querySelectorAll(".slider-sheds-common .carousel-item");
 
     items.forEach((el) => {
         const minPerSlide = $minSlides
