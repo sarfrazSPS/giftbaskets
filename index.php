@@ -83,15 +83,15 @@
                                 <p>Sympathy</p>
                             </div>
                             <div class="col-md-2 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/thankyou-full.png" />
+                                <img src="<?=$app_path;?>assets/images/graphics/getwell-full.png" />
                                 <p>Get Well</p>
                             </div>
                             <div class="col-md-2 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/birthday-full.png" />
+                                <img src="<?=$app_path;?>assets/images/graphics/business-full.png" />
                                 <p>Business</p>
                             </div>
                             <div class="col-md-2 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
+                                <img src="<?=$app_path;?>assets/images/graphics/congratulations-full.png" />
                                 <p>Congratulations</p>
                             </div>
                         </div>
@@ -244,7 +244,7 @@
                 </div>
             </div>
             <div class="row mt-4">
-                <div class="col text-center">
+                <div class="col-md-3 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/11.png" alt="" class="" />
                     </div>
@@ -252,7 +252,7 @@
                         <p class="mb-0">Gift Box</p>
                     </div>
                 </div>
-                <div class="col text-center">
+                <div class="col-md-3 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/22.png" alt="" class="" />
                     </div>
@@ -260,7 +260,7 @@
                         <p class="mb-0">Gift Box</p>
                     </div>
                 </div>
-                <div class="col text-center">
+                <div class="col-md-3 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/33.png" alt="" class="" />
                     </div>
@@ -268,7 +268,7 @@
                         <p class="mb-0">Gift Box</p>
                     </div>
                 </div>
-                <div class="col text-center">
+                <div class="col-md-3 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/44.png" alt="" class="" />
                     </div>
@@ -297,38 +297,30 @@
                             are
                             loved by everyone. </p>
                     </div>
-                    <div class="row mt-5">
-                        <div class="col">
-                            <img src="<?= $app_path ?>assets/images/background/111.png" alt="" />
-                        </div>
-                        <div class="col bg-img d-flex align-items-center">
-                            <div class="px-3">
-                                <img src="<?= $app_path ?>assets/images/background/222.png" alt=""
-                                    class="img-dutch-gourmet justify-content-center align-items-center" />
-                                <p class="text-white mt-3">We are happy to offer Amish gourmet
-                                    foods, cheeses, and baked
-                                    goods
-                                    from lancaster, PA.
-                                </p>
-                                <p class="text-white mt-3">We deliver to most of the United States
-                                    while offering customization for any
-                                    event or occasion,</p>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <img src="<?= $app_path ?>assets/images/background/333.png" alt="" />
-                        </div>
+                </div>
+            </div>
+            <div class="row mt-5 mb-5">
+                <div class="col-lg-4 col-md-4 ps-1 pe-1 food-div1 position-relative">
+                    <img class="w-100 bgimg-bg" src="<?= $app_path ?>assets/images/background/111.png" alt="" />
+                    <h2 class="text-img mt-4 text-center w-100 position-absolute">Gourmet Foods</h2>
+                </div>
+                <div class="col-lg-4 col-md-4 ps-1 pe-1 food-div2 position-relative">
+                    <div class="px-3 bg-img bgimg-pad text-center ">
+                        <img src="<?= $app_path ?>assets/images/background/222.png" alt=""
+                            class="img-dutch-gourmet justify-content-center align-items-center" />
+                        <p class="text-white mt-3">We are happy to offer Amish gourmet
+                            foods, cheeses, and baked
+                            goods
+                            from lancaster, PA.
+                        </p>
+                        <p class="text-white mt-3">We deliver to most of the United States
+                            while offering customization for any
+                            event or occasion,</p>
                     </div>
-                    <div class="row mt-4">
-                        <div class="col">
-                            <h2 class="text-img">Gourmet Foods</h2>
-                        </div>
-                        <div class="col">
-                        </div>
-                        <div class="col">
-                            <h2 class="text-img">Baked Foods</h2>
-                        </div>
-                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 ps-1 pe-1 food-div3 position-relative">
+                    <img class="w-100 bgimg-bg" src="<?= $app_path ?>assets/images/background/333.png" alt="" />
+                    <h2 class="text-img mt-4 text-center w-100 position-absolute">Baked Foods</h2>
                 </div>
             </div>
         </div>
@@ -374,7 +366,7 @@
                 <div id="slider-sh5" class="carousel slide slider-sheds-common" data-bs-interval="3000">
                     <div class="carousel-inner" role="listbox">
                         <div class="carousel-item active">
-                            <div class="col-md-6 px-2">
+                            <div class="col-lg-6 col-md-6 px-2">
                                 <div class="testimonial">
                                     <h3 class="text-white">Wonderful Gift Basket</h3>
                                     <P class="text-white">
@@ -413,7 +405,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-6  px-2">
+                            <div class="col-lg-6 col-md-6 px-2">
                                 <div class="testimonial">
                                     <h3 class="text-white">Wonderful Gift Basket</h3>
                                     <P class="text-white">
@@ -452,7 +444,7 @@
                             </div>
                         </div>
                         <div class="carousel-item">
-                            <div class="col-md-6 px-2">
+                            <div class="col-lg-6 col-md-6 px-2">
                                 <div class="testimonial">
                                     <h3 class="text-white">Wonderful Gift Basket</h3>
                                     <P class="text-white">

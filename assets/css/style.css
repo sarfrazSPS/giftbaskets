@@ -149,6 +149,9 @@ a{
 .blcc-right{
     float: right;
 }
+.branding-center a{
+    margin: 0 auto;
+}
 .blccr-1{
     font-size: 24px;
     font-weight: 700;
@@ -278,6 +281,9 @@ a{
     background-size: contain;
     background-repeat: no-repeat;
 }
+.proc-left .acc-cs-link:hover{
+    opacity: 0.85;
+}
 .proc-left ul.category-selection li{
     line-height: 1;
     padding: 8px 0;
@@ -285,7 +291,7 @@ a{
 
 /*Occasion Seciton*/
 .occs-section{
-    margin-top: 90px;
+    margin-top: 70px;
 }
 .occss-container{
     position: relative;
@@ -528,6 +534,10 @@ a{
 #dutch-gourmet .bg-img {
     background-color: #7b5c4a;
 }
+#dutch-gourmet .bgimg-pad {
+    padding: 34px 0;
+}
+
 
 .img-dutch-gourmet {
     border: 2px solid #fff;
@@ -602,11 +612,17 @@ a{
 }
 /* ===FOOTER CSS END=== */
 
+/*Slider CSS*/
 .slider-sheds-common .carousel-control-next {
     right: -25px;
 }
 .slider-sheds-common .carousel-control-prev {
     left: -25px;
+}
+.slider-sheds-common .carousel-control-next:hover .cc-next-icon,
+.slider-sheds-common .carousel-control-prev:hover .cc-prev-icon{
+    background-color: var(--mainBrownColor);
+    box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.2);
 }
 .slider-sheds-common .carousel-control-prev, .slider-sheds-common .carousel-control-next {
     width: auto;
@@ -667,3 +683,75 @@ a{
         transform: translateX(-100%);
     }
 } */
+
+/*Responsiveness*/
+@media (max-width: 1200px) {
+    .slider-sheds-common .carousel-control-next{
+        right: 0;
+    }
+    .slider-sheds-common .carousel-control-prev{
+        left: 0;
+    }
+    .site-navigation .nav-item {
+        padding-right: 60px;
+    }
+    .occs-section {
+        margin-top: 50px;
+    }
+    .bgimg-bg{
+        height: 100%;
+    }
+}
+
+@media (max-width: 1076px) {
+    .brc-bottom {
+        margin-top: 5px;
+    }
+    .brc-bottom form .brcf-field{
+        width: 95%;
+        position: relative;
+    }
+    .brc-bottom form .brcf-btn{
+        margin-left: 0;
+        width: auto;
+        position: absolute;
+        right: 2.9%;
+        padding: 0 7px;
+        font-size: 100%;
+    }
+    .blc-contact {
+        margin-top: 8px;
+    }
+    .site-navigation .nav-item {
+        padding-right: 25px;
+    }
+    .emp-img img{
+        width: 90%;
+    }
+    .gift-box {
+        width: 130px;
+        height: 40px;
+    }
+    .bgimg-bg {
+        height: auto;
+    }
+    .food-div1{
+        display: flex;
+        flex-direction: column;
+        order: 2;
+        justify-content: center;
+    }
+    .food-div3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .food-div3 h2,
+    .food-div1 h2{
+        bottom: -10px;
+    }
+    .occss-item {
+        padding: 0 5px;
+    }
+
+}
