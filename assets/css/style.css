@@ -871,7 +871,14 @@ a{
         display: inline-block;
         position: absolute;
         right: 0px;
+        top: 3px;
         padding: 0;
+    }
+    .navbar-toggler-icon{
+        background-size: 115%;
+        height: 22px;
+        width: 20px;
+        background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.99%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
     }
     #navbarNav{
         margin-top: 40px;
@@ -883,6 +890,8 @@ a{
     }
     a.navbar-toggler{
         float: right;
+        background-color: var(--mainBrownColor);
+        border-radius: 3px;
     }
     .navbar-content{
         display: block;
@@ -905,6 +914,7 @@ a{
         height: 100vh;
         width: 50%;
         text-align: right;
+        top: 0px;
     }
     .mobile-menu-visible .navbar-cross,
     .navbar-cross{
@@ -1164,6 +1174,10 @@ a{
         background-position: center;
         background-size: cover;
         background-attachment: fixed;
+    }
+    .top-bar-left, .top-bar-right{
+        padding-left: 2px;
+        padding-right: 2px;
     }
 
 }
