@@ -34,10 +34,10 @@ $current_year  = date("Y", strtotime($today));
         <section class="top-bar-section container-fluid">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6 top-bar-left">
+                    <div class="col-sm-6 col-md-6 top-bar-left">
                         <a href="#">A Note About Food Safety and Shipping</a>
                     </div>
-                    <div class="col-md-6 top-bar-right">
+                    <div class="col-sm-6 col-md-6 top-bar-right">
                         <a href="#">View Our 2023-24 Holiday Catalogue</a>
                     </div>
                 </div>
@@ -74,10 +74,9 @@ $current_year  = date("Y", strtotime($today));
                                 <div class="blcc-left">
                                     <img src="<?=$app_path;?>assets/images/graphics/mobile.png" />
                                 </div>
-                                <div class="blcc-rigt">
+                                <div class="blcc-right clearfix">
                                     <p class="blccr-1">717-368-3973</p>
-                                    <p class="blccr-2"><a href="mailto:info@padutchbaskets.com">Email -
-                                            info@padutchbaskets.com</a></p>
+                                    <p class="blccr-2"><a href="mailto:info@padutchbaskets.com"><span>Email - </span>info@padutchbaskets.com</a></p>
                                 </div>
                             </div>
                         </div>
@@ -89,7 +88,7 @@ $current_year  = date("Y", strtotime($today));
                         </a>
                     </div>
 
-                    <div class="col-md-4 d-flex align-items-center branding-left">
+                    <div class="col-md-4 d-flex align-items-center branding-right">
                         <div class="branding-right-content">
                             <div class="brc-top">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg>

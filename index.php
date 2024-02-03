@@ -4,7 +4,7 @@
     <div class="container-fluid">
         <div class="container">
             <div class="row">
-                <div class="col-md-3 proc-left bg-light">
+                <div class="col-lg-3 col-md-3 col-sm-4 proc-left bg-light">
                     <h3>Product Categories</h3>
                     <div class="ui-accordion">
                         <div class="ui-accordion-item">
@@ -53,7 +53,7 @@
 
 
                 </div>
-                <div class="col-md-9 proc-right">
+                <div class="col-lg-9 col-md-9 col-sm-8 proc-right">
                     <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid">
                 </div>
             </div>
@@ -70,27 +70,27 @@
                     <h2>Shop for any Occassion</h2>
                     <div class="occss-content">
                         <div class="row">
-                            <div class="col-md-2 occss-item">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
                                 <img src="<?=$app_path;?>assets/images/graphics/thankyou-full.png" />
                                 <p>Thank you</p>
                             </div>
-                            <div class="col-md-2 occss-item">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
                                 <img src="<?=$app_path;?>assets/images/graphics/birthday-full.png" />
                                 <p>Birthday</p>
                             </div>
-                            <div class="col-md-2 occss-item">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
                                 <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
                                 <p>Sympathy</p>
                             </div>
-                            <div class="col-md-2 occss-item">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
                                 <img src="<?=$app_path;?>assets/images/graphics/getwell-full.png" />
                                 <p>Get Well</p>
                             </div>
-                            <div class="col-md-2 occss-item">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
                                 <img src="<?=$app_path;?>assets/images/graphics/business-full.png" />
                                 <p>Business</p>
                             </div>
-                            <div class="col-md-2 occss-item">
+                            <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
                                 <img src="<?=$app_path;?>assets/images/graphics/congratulations-full.png" />
                                 <p>Congratulations</p>
                             </div>
@@ -112,7 +112,7 @@
                     <h2>Customer's Favourites</h2>
                     <div class="favs-content">
                         <div class="row">
-                            <div class="col-md-3 favs-col">
+                            <div class="col-md-3 col-sm-6 col-6 favs-col">
                                 <div class="favs-img-holder">
                                     <img src="<?=$app_path;?>assets/images/products/1.png" />
                                 </div>
@@ -128,7 +128,7 @@
                                 <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
                             </div>
 
-                            <div class="col-md-3 favs-col">
+                            <div class="col-md-3 col-sm-6 col-6 favs-col">
                                 <div class="favs-img-holder">
                                     <img src="<?=$app_path;?>assets/images/products/2.png" />
                                 </div>
@@ -144,7 +144,7 @@
                                 <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
                             </div>
 
-                            <div class="col-md-3 favs-col">
+                            <div class="col-md-3 col-sm-6 col-6 favs-col">
                                 <div class="favs-img-holder">
                                     <img src="<?=$app_path;?>assets/images/products/3.png" />
                                 </div>
@@ -160,7 +160,7 @@
                                 <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
                             </div>
 
-                            <div class="col-md-3 favs-col">
+                            <div class="col-md-3 col-sm-6 col-6 favs-col">
                                 <div class="favs-img-holder">
                                     <img src="<?=$app_path;?>assets/images/products/4.png" />
                                 </div>
@@ -193,7 +193,7 @@
                     <h2>Corporate Customized Gift Boxes</h2>
                     <div class="gls-content">
                         <div class="row">
-                            <div class="col-md-4 gls-col">
+                            <div class="col-md-4 col-sm-6 gls-col">
                                 <div class="gls-copy">
                                     <h5>Strengthen Relationships</h5>
                                     <ul>
@@ -205,7 +205,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 gls-col">
+                            <div class="col-md-4 col-sm-6 gls-col">
                                 <div class="gls-copy">
                                     <h5>Any Occasion</h5>
                                     <ul>
@@ -219,7 +219,7 @@
                                 </div>
                             </div>
 
-                            <div class="col-md-4 gls-col">
+                            <div class="col-md-4 col-sm-12 gls-col">
                                 <div class="gls-copy">
                                     <h5>Brand your Business</h5>
                                     <p>We are happy to offer a selection of both gift boxes and baskets. Many businesses
@@ -235,7 +235,7 @@
 </section>
 
 <!-- SECTION Send Employee’s & Clients a branded gift from your business START-->
-<section id="employee-client" class="pt-5">
+<section id="employee-client" class="pt-5 empclient">
     <div class="container-fluid testimonial-head">
         <div class="container">
             <div class="row text-center">
@@ -243,8 +243,8 @@
                     <h2>Send Employee’s & Clients a branded gift from your business</h2>
                 </div>
             </div>
-            <div class="row mt-4">
-                <div class="col-md-3 text-center">
+            <div class="row mt-4 gifts-row">
+                <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/11.png" alt="" class="" />
                     </div>
@@ -252,7 +252,7 @@
                         <p class="mb-0">Gift Box</p>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/22.png" alt="" class="" />
                     </div>
@@ -260,7 +260,7 @@
                         <p class="mb-0">Gift Box</p>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/33.png" alt="" class="" />
                     </div>
@@ -268,7 +268,7 @@
                         <p class="mb-0">Gift Box</p>
                     </div>
                 </div>
-                <div class="col-md-3 text-center">
+                <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/44.png" alt="" class="" />
                     </div>
@@ -282,7 +282,7 @@
 </section>
 <!-- SECTION Send Employee’s & Clients a branded gift from your business END-->
 <!-- SECTION PA Dutch Gourmet Foods & Baked goods START -->
-<section id="dutch-gourmet" class="pt-5">
+<section id="dutch-gourmet" class="pt-5 foods-section">
     <div class="container-fluid testimonial-head">
         <div class="container">
             <div class="row text-center">
@@ -299,12 +299,12 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-5 mb-5">
-                <div class="col-lg-4 col-md-4 ps-1 pe-1 food-div1 position-relative">
+            <div class="row mt-5 mb-5 food-type-row">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 ps-1 pe-1 food-div1 position-relative">
                     <img class="w-100 bgimg-bg" src="<?= $app_path ?>assets/images/background/111.png" alt="" />
                     <h2 class="text-img mt-4 text-center w-100 position-absolute">Gourmet Foods</h2>
                 </div>
-                <div class="col-lg-4 col-md-4 ps-1 pe-1 food-div2 position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-12 col-12 ps-1 pe-1 food-div2 position-relative">
                     <div class="px-3 bg-img bgimg-pad text-center ">
                         <img src="<?= $app_path ?>assets/images/background/222.png" alt=""
                             class="img-dutch-gourmet justify-content-center align-items-center" />
@@ -318,7 +318,7 @@
                             event or occasion,</p>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 ps-1 pe-1 food-div3 position-relative">
+                <div class="col-lg-4 col-md-4 col-sm-6 col-6 ps-1 pe-1 food-div3 position-relative">
                     <img class="w-100 bgimg-bg" src="<?= $app_path ?>assets/images/background/333.png" alt="" />
                     <h2 class="text-img mt-4 text-center w-100 position-absolute">Baked Foods</h2>
                 </div>
@@ -328,13 +328,13 @@
 </section>
 <!-- SECTION PA Dutch Gourmet Foods & Baked goods END -->
 <!-- SECTION TESTIMONIALS START -->
-<section id="testimonials" class="pt-5 pb-5">
+<section id="testimonials" class="pt-5 pb-5 testimonials-section">
     <div class="container-fluid testimonial-head">
         <div class="container">
             <div class="row text-center ">
                 <div class="col-md-12 mb-5">
                     <h2>PA Dutch Gift Baskets</h2>
-                    <div class="d-flex justify-content-center">
+                    <div class="d-flex justify-content-center testimonial-top">
                         <h5>5.0rating of 76 reviews</h5>
                         <div class="ms-3">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -512,7 +512,7 @@
         <div class="container">
             <div class="row text-center mb-5">
                 <div class="col">
-                    <h2>100% SATISFACTION GUARANTEED</h2>
+                    <h2 class="guaranty-text">100% SATISFACTION GUARANTEED</h2>
                 </div>
             </div>
         </div>
@@ -524,13 +524,51 @@ include("includes/footer.php");
 
 <script type="text/javascript">
 $(document).ready(function() {
+
     if ($(".slider-sheds-common .carousel .carousel-item")) {
         showbpkSlider();
     }
+
+    moveElements();
+
+    // $(".navbar-toggler").click(function(){
+    //     $('body').toggleClass('mobile-menu-visible');
+    //     $('.navbar-toggler').toggleClass('navbar-toggler-icon-close');
+    //     $('#navbarIcon').toggleClass('navbar-toggler-icon');
+    //     $('.navbar-cross').toggleClass('d-none');
+    //     $('.navbar').toggleClass("navbar-content");
+    // });
+
+    $(".navbar-toggler").click(function(){
+        $('body').toggleClass('mobile-menu-visible');
+        //$('.navbar-toggler').toggleClass('navbar-toggler-icon-close');
+        $('#navbarIcon').toggleClass('navbar-toggler-icon');
+        $('.navbar-cross').toggleClass('d-none');
+        $('.navbar').toggleClass("navbar-content");
+    });
+
+
 });
 
+function moveElements() {
+  var screenWidth = $(window).width();
+  var breakpoint = 768;
+
+  if (screenWidth < breakpoint && screenWidth > 500) {
+    var detachedElements = $('.2nd-level-1').detach();
+    var wrappedElements = $('<div class="w-20"></div>').append(detachedElements);
+    $('.footer-outer').append(wrappedElements);
+
+    var detachedElements2 = $('.2nd-level-2').detach();
+    var wrappedElements2 = $('<div class="w-20"></div>').append(detachedElements2);
+    $('.footer-outer').append(wrappedElements2);
+  }
+
+}
+
 function showbpkSlider() {
-    if ($(window).width() < (576)) {
+    
+    if ($(window).width() < (768)) {
         setbpkSlider(1);
     } else {
         setbpkSlider(2);
