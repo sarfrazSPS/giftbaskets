@@ -872,7 +872,14 @@ a{
         position: absolute;
         right: 0px;
         padding: 0;
-        width: 50%;
+    }
+    #navbarNav{
+        margin-top: 40px;
+        transform: translate(300px, 0);
+        transition: transform 0.5s ease-in-out;
+    }
+    .navbarNavCustom{
+        transform: translate(0, 0) !important;
     }
     a.navbar-toggler{
         float: right;

@@ -545,6 +545,7 @@ $(document).ready(function() {
         $('#navbarIcon').toggleClass('navbar-toggler-icon');
         $('.navbar-cross').toggleClass('d-none');
         $('.navbar').toggleClass("navbar-content");
+        $('#navbarNav').toggleClass("navbarNavCustom");
     });
 
 
