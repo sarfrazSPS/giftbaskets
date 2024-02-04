@@ -17,7 +17,7 @@ $current_year  = date("Y", strtotime($today));
 <html lang="en">
 
 <head>
-    <title>BarnCoamish Builders</title>
+    <title>Lancaster Dutch Gift Baskets Online | PA Dutch Baskets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="<?= $app_path ?>assets/css/bootstrap/bootstrap.css" rel="stylesheet">

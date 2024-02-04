@@ -1,17 +1,22 @@
 <?php include("includes/header.php"); ?>
 <style>
 .btn-shopping {
-    background-color: #957b6d;
+    /* background-color: #957b6d; */
+    background-color: var(--mainBrownColor);
     color: #fff;
-    padding: 7px 15px 6px 15px;
+    padding: 9px 15px 11px 15px;
+    line-height: 1;
     text-align: center;
     width: 220px;
+    cursor: pointer;
+    display: inline-block;
 }
 
 .btn-svg {
     fill: #fff !important;
     align-self: center;
-    background: #957b6d;
+    /* background: #957b6d; */
+    background-color: var(--mainBrownColor);
     margin-left: 1px;
     width: 37px !important;
     height: 34px;
@@ -19,24 +24,28 @@
     padding: 5px;
 }
 
-.button {
+.buttonplusminus {
     padding: 5px;
     cursor: pointer;
-    background: #ab978ba1;
+    /* background: #ab978ba1; */
+    background-color: var(--mainBrownColor);
     color: white;
     text-align: center;
     display: inline-block;
     width: 25px;
     height: 30px;
+    opacity: 0.65;
 }
 
-.button:hover {
-    background: #ab978b;
+.buttonplusminus:hover {
+    /* background: #ab978b; */
+    opacity: 1;
 }
 
 .d-flex input {
-    width: 20px;
+    width: 35px;
     text-align: center;
+    border: 0;
 }
 
 .tbl-span {
@@ -52,7 +61,7 @@
 }
 
 .cartitemimage {
-    width: 156px;
+    width: 180px;
 }
 
 .card-right {
@@ -79,10 +88,22 @@
     padding: 5px 10px;
     width: 77%;
     border: 2px solid #fff;
+    -webkit-appearance: none;    
+    -moz-appearance: none;  
+    appearance: none;  
+}
+.cart-coupon-field:focus{
+    -webkit-box-shadow: 0 0 5px #999999;
+    -moz-box-shadow: 0 0 5px #999999;
+    box-shadow: 0 0 5px #999999;
+    background: #fafafa;
+    border-color: #999999;
+    outline: none;
 }
 .cart-coupon-btn{
     padding: 7px 10px;
-    background-color: #977b6e;
+    /* background-color: #977b6e; */
+    background-color: var(--mainBrownColor);
     border: 0;
     color: #fff;
 }
@@ -92,11 +113,15 @@
 .cart-btn-checkout{
     width: 100%;
     display: block;
-    background-color: #957b6d;
+    /* background-color: #957b6d; */
+    background-color: var(--mainBrownColor);
     color: #fff;
     padding: 10px 15px;
     text-align: center;
     position: relative;
+}
+.cart-btn-checkout:hover{
+    opacity: 0.9;
 }
 .btn-arrow{
     position: absolute;
@@ -124,6 +149,103 @@
     margin-top: -4px;
     margin-right: 4px;
 }
+.other-color{
+    background-color: var(--mainOtherColor) !important;
+}
+.shopgo{
+    display: inline-block;
+    position: relative;
+}
+.shopgo-nav{
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    display: none;
+}
+.shopgo-nav ul{
+    list-style: none;
+    padding: 0;
+    background-color: #ffffff;
+}
+.shopgo-nav ul li{
+    background-color: var(--mainBlackColor);
+    border-bottom: 1px solid #ffffff;
+    z-index: 2;
+    position: relative;
+}
+.shopgo-nav ul li a{
+    padding: 13px 15px;
+    display: block;
+    color: #ffffff;
+}
+.shopgo-nav ul li:hover{
+    background-color: var(--mainFooterColor);
+    opacity: 0.97;
+}
+.shopgo:hover .shopgo-nav{
+    display: block;
+}
+.margin-negative{
+    margin-left: -4px;
+}
+.cart-item-extras{
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+}
+.cie-item{
+    width: 33%;
+    display: flex;
+    align-items: center;
+    opacity: 0.75;
+    cursor: pointer;
+}
+.cie-item img{
+    width: 24px;
+    margin-right: 10px;
+}
+.cie-item-copy{
+    line-height: 1.1;
+    font-size: 14px;
+} 
+#popupContent,
+#popupContent1{
+    display: none;
+    position: absolute;
+}
+.cie-item-popup{
+    background-color: var(--mainBrownColor);
+    padding: 25px 10px;
+    display: inline-block;
+    border-radius: 3px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+    z-index: 10001;
+}
+.cie-item-popup-outer{
+    color: #fff;
+    max-width: 350px;
+    text-align: center;
+}
+.ciep-top{
+    font-size: 14px;
+    text-transform: uppercase;
+}
+.ciep-top img{
+    width: 20px;
+    margin-top: -3px;
+}
+.ciep-head{
+    font-size: 1.375em;
+    margin-top: 20px;
+    line-height: 1.3;
+}
+.f-80{
+    font-size: 80%;
+}
+.f-70{
+    font-size: 70%;
+}
 </style>
 <section id="cart-section" class="py-5">
     <div class="container-fluid">
@@ -134,25 +256,41 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="d-flex justify-content-end">
-                        <span class="btn-shopping text-uppercase">Continue Shopping</span>
-                        <span>
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg">
-                                <path
-                                    d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
-                            </svg>
-                        </span>
+                        <div class="shopgo">
+                            <span class="btn-shopping text-uppercase">Continue Shopping</span>
+                            <span class="margin-negative">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg">
+                                    <path
+                                        d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
+                                </svg>
+                            </span>
+                            <div class="shopgo-nav">
+                                <ul>
+                                    <li><a href="#">Home Page</a></li>
+                                    <li><a href="#">Most Recent Categories</a></li>
+                                    <li><a href="#">Most Recent Items</a></li=>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
-
-                    <a href="#" class="cart-btn-checkout">
+                    <div class="shopgo w-100">
+                        <a href="#" class="cart-btn-checkout other-color">
                             <span class="translatex text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
                             <span class="btn-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg rotate90">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg other-color rotate90">
                                     <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
                                 </svg>
                             </span>
                         </a>
+                        <div class="shopgo-nav">
+                            <ul>
+                                <li><a href="#">Send to one address</a></li>
+                                <li><a href="#">Send to multiple addresses</a></li>
+                            </ul>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -181,20 +319,39 @@
                                                 </a>
                                                 <span class="tbl-span">PRODUCT ID: 4361</span>
                                             </div>
-                                            <div class="ms-3">
-                                                <p class="mb-1">GOURMET MEAT & CHEESE SAMPLER - DELUXE</p>
-                                                <span class="tbl-span item-remove-btn">REMOVE ITEM</span>
+                                            <div class="ms-3 w-100 position-relative">
+                                                <div class="cart-item-name">
+                                                    <p class="mb-1">GOURMET MEAT & CHEESE SAMPLER - DELUXE</p>
+                                                    <span class="tbl-span item-remove-btn">REMOVE ITEM</span>
+                                                </div>
+                                                <div class="cart-item-extras">
+                                                    <p class="mb-1 text-uppercase">Available with this gift</p>
+                                                    <div class="d-flex">
+                                                        <div id="popupActivate" class="cie-item">
+                                                            <div>
+                                                                <img src="assets/images/icons/i-greeting-card.png" />
+                                                            </div>
+                                                            <div class="cie-item-copy">personalized greeting card</div>
+                                                        </div>
+                                                        <div id="popupActivate1" class="cie-item">
+                                                            <div>
+                                                                <img src="assets/images/icons/i-notification.png" />
+                                                            </div>
+                                                            <div class="cie-item-copy">instant email notification</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </td>
                                     <td>$59.99</td>
                                     <td width="10%">
                                         <div class="d-flex">
-                                            <span class="min button">
+                                            <span class="min buttonplusminus">
                                                 -
                                             </span>
                                             <input type="text" name="qty" id="qty" maxlength="12" />
-                                            <span class="plus button">
+                                            <span class="plus buttonplusminus">
                                                 +
                                             </span>
                                         </div>
@@ -228,24 +385,41 @@
                             </form>
                         </div>
                         <div class="py-3">
+                            <div class="shopgo w-100">
+                                <a href="#" class="cart-btn-checkout other-color">
+                                    <span class="translatex text-uppercase "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
+                                    <span class="btn-arrow">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg other-color rotate90">
+                                            <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                                <div class="shopgo-nav">
+                                    <ul>
+                                        <li><a href="#">Send to one address</a></li>
+                                        <li><a href="#">Send to multiple addresses</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="shopgo w-100">
                             <a href="#" class="cart-btn-checkout">
-                                <span class="translatex text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
+                                <span class="translatex text-uppercase">Continue Shopping</span>
                                 <span class="btn-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg rotate90">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg">
                                         <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
                                     </svg>
                                 </span>
                             </a>
+                            <div class="shopgo-nav">
+                                <ul>
+                                    <li><a href="#">Home Page</a></li>
+                                    <li><a href="#">Most Recent Categories</a></li>
+                                    <li><a href="#">Most Recent Items</a></li=>
+                                </ul>
+                            </div>
                         </div>
-                        
-                        <a href="#" class="cart-btn-checkout">
-                            <span class="translatex text-uppercase">Continue Shopping</span>
-                            <span class="btn-arrow">
-                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg">
-                                    <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
-                                </svg>
-                            </span>
-                        </a>
                     </div>
                 </div>
             </div>
@@ -279,6 +453,37 @@
         </div>
     </div>
 </div>
+
+
+<div id="popupContent" class="cie-item-popup">
+    <div class="cie-item-popup-outer">
+        <div class="ciep-top">
+            <img src="assets/images/icons/i-greeting-card-white.png" />
+            Make your gift extra special
+        </div>
+        <p class="ciep-head">
+            Personalize a greeting card with your message and add o photo or logo!
+        </p>
+        <img src="<?=$app_path;?>assets/images/card-example.webp" class="img-fluid mt-1" />
+        <p class="d-block text-sm mt-2 mb-0 f-80">(adding an image is optional)</p>
+        <p class="d-block text-uppercase mt-2 mb-0">Available at checkout #3.99</p>
+        <p class="d-block text-xs mt-2 mb-0 f-70">a complimentary message is also included with this gift</p>
+    </div>
+</div>
+
+<div id="popupContent1" class="cie-item-popup">
+    <div class="cie-item-popup-outer">    
+        <div class="ciep-top">
+            <img src="assets/images/icons/i-notification-white.png" />
+            Instant Email Notification
+        </div>
+        <p class="ciep-head">
+            Let them know their gift is on the way!
+        </p>
+        <img src="<?=$app_path;?>assets/images/notification_example.webp" class="img-fluid mt-1" />
+        <p class="d-block text-xs mt-2 mb-0 f-70">email notification included in this gift</p>
+    </div>
+</div>
 <?php
 include("includes/footer.php");
 ?>
@@ -298,11 +503,71 @@ jQuery(function() {
 
     j('.min').on('click', function() {
         //If n is bigger or equal to 1 subtract 1 from n
-        if (n >= 1) {
+        if (n >= 2) {
             j(addInput).val(--n);
         } else {
             //Otherwise do nothing
         }
     });
 });
+</script>
+<script>
+  $(document).ready(function() {
+    let hoveredContent = $('#popupContent');
+    let hoverArea = $('#popupActivate');
+
+    hoverArea.mouseenter(function(e) {
+      hoveredContent.css({
+        top: e.pageY + 'px',
+        left: e.pageX + 10 + 'px'  
+      });
+
+      hoveredContent.show();
+    });
+
+    hoverArea.mouseleave(function() {
+      hoveredContent.hide();
+    });
+
+    hoveredContent.mouseenter(function() {
+      hoveredContent.show();
+    });
+
+    $(document).mousemove(function(e) {
+      if (!hoverArea.is(e.target) && !hoveredContent.is(e.target) && hoverArea.has(e.target).length === 0 && hoveredContent.has(e.target).length === 0) {
+        hoveredContent.hide();
+      }
+    });
+
+  });
+</script>
+<script>
+  $(document).ready(function() {
+    let hoveredContent1 = $('#popupContent1');
+    let hoverArea1 = $('#popupActivate1');
+
+    hoverArea1.mouseenter(function(e) {
+        hoveredContent1.css({
+        top: e.pageY + 'px',
+        left: e.pageX + 10 + 'px'  
+      });
+
+      hoveredContent1.show();
+    });
+
+    hoverArea1.mouseleave(function() {
+        hoveredContent1.hide();
+    });
+
+    hoveredContent1.mouseenter(function() {
+        hoveredContent1.show();
+    });
+
+    $(document).mousemove(function(e) {
+      if (!hoverArea1.is(e.target) && !hoveredContent1.is(e.target) && hoverArea1.has(e.target).length === 0 && hoveredContent1.has(e.target).length === 0) {
+        hoveredContent1.hide();
+      }
+    });
+
+  });
 </script>
