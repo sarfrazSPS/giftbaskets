@@ -207,6 +207,7 @@ a{
     color: var(--mainBlackColor);
     font-size: 14px;
     font-weight: 600;
+    text-align: left;
 }
 .brc-bottom form .brcf-btn{
     display: inline-block;
