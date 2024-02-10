@@ -14,13 +14,13 @@
                             <div class="ui-accordion-content">
                                 <ul class="category-selection">
                                     <li>
-                                        <a href="#" class="acc-cs-link">Anniversary <span>(5)</span></a>
+                                        <a href="#" class="acc-cs-link">All Gift Baskets <span>(5)</span></a>
                                     </li>
                                     <li>
                                         <a href="#" class="acc-cs-link">Birthday <span>(9)</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="acc-cs-link">Congratulations <span>(16)</span></a>
+                                        <a href="#" class="acc-cs-link">Sympathy <span>(16)</span></a>
                                     </li>
                                     <li>
                                         <a href="#" class="acc-cs-link">Corporate <span>(28)</span></a>
@@ -29,22 +29,16 @@
                                         <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
+                                        <a href="#" class="acc-cs-link">Congratulations <span>(26)</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
+                                        <a href="#" class="acc-cs-link">Thank You <span>(1)</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
+                                        <a href="#" class="acc-cs-link">Anniversary <span>(13)</span></a>
                                     </li>
                                     <li>
-                                        <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
+                                        <a href="#" class="acc-cs-link">Employees <span>(8)</span></a>
                                     </li>
                                 </ul>
                             </div>
@@ -54,7 +48,7 @@
 
                 </div>
                 <div class="col-lg-9 col-md-9 col-sm-8 proc-right">
-                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid">
+                    <img src="<?=$app_path;?>assets/images/background/hero-new.png" class="img-fluid">
                 </div>
             </div>
         </div>
@@ -71,28 +65,40 @@
                     <div class="occss-content">
                         <div class="row">
                             <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/thankyou-full.png" />
-                                <p>Thank you</p>
+                                <a href="#">
+                                    <img src="<?=$app_path;?>assets/images/graphics/thankyou-full.png" />
+                                    <p>Thank you</p>
+                                </a>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/birthday-full.png" />
-                                <p>Birthday</p>
+                                <a href="#">
+                                    <img src="<?=$app_path;?>assets/images/graphics/birthday-full.png" />
+                                    <p>Birthday</p>
+                                </a>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
-                                <p>Sympathy</p>
+                                <a href="#">
+                                    <img src="<?=$app_path;?>assets/images/graphics/sympathy-full.png" />
+                                    <p>Sympathy</p>
+                                </a>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/getwell-full.png" />
-                                <p>Get Well</p>
+                                <a href="#">
+                                    <img src="<?=$app_path;?>assets/images/graphics/getwell-full.png" />
+                                    <p>Get Well</p>
+                                </a>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/business-full.png" />
-                                <p>Business</p>
+                                <a href="#">
+                                    <img src="<?=$app_path;?>assets/images/graphics/business-full.png" />
+                                    <p>Business</p>
+                                </a>
                             </div>
                             <div class="col-lg-2 col-md-4 col-sm-4 col-4 occss-item">
-                                <img src="<?=$app_path;?>assets/images/graphics/congratulations-full.png" />
-                                <p>Congratulations</p>
+                                <a href="#">
+                                    <img src="<?=$app_path;?>assets/images/graphics/congratulations-full.png" />
+                                    <p>Congratulations</p>
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -109,7 +115,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Customer's Favourites</h2>
+                    <h2>Customer's Favorites</h2>
                     <div class="favs-content">
                         <div class="row">
                             <div class="col-md-3 col-sm-6 col-6 favs-col">
@@ -125,7 +131,22 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                                <a href="#" class="btn btn-primary favs-btn btn-data">View Details</a>
+                                <!-- images must be on root path in the folder "images" -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-01"
+                                    data-product-name="product name is here"
+                                    data-product-price-regular="$100"
+                                    data-product-price-sale=""
+                                    data-product-stars="5"
+                                    data-product-reviews="76"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="custom-birthday-gifts-sm.jpg"
+                                    data-product-image-2="celebrations-gift-basket.jpg"
+                                    data-product-image-3="unique-birthday-gifts.jpg"
+                                    data-product-image-4="birthday-chocolate-gift.jpg"
+                                    ></div>
                             </div>
 
                             <div class="col-md-3 col-sm-6 col-6 favs-col">
@@ -141,7 +162,22 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
+                                <!-- images must be on root path in the folder "images" -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-02"
+                                    data-product-name="product name is here"
+                                    data-product-price-regular="$100"
+                                    data-product-price-sale=""
+                                    data-product-stars="5"
+                                    data-product-reviews="76"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="custom-birthday-gifts-sm.jpg"
+                                    data-product-image-2="celebrations-gift-basket.jpg"
+                                    data-product-image-3="unique-birthday-gifts.jpg"
+                                    data-product-image-4="birthday-chocolate-gift.jpg"
+                                    ></div>
                             </div>
 
                             <div class="col-md-3 col-sm-6 col-6 favs-col">
@@ -157,7 +193,22 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
+                                <!-- images must be on root path in the folder "images" -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-033"
+                                    data-product-name="product name is here"
+                                    data-product-price-regular="$100"
+                                    data-product-price-sale=""
+                                    data-product-stars="5"
+                                    data-product-reviews="76"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="custom-birthday-gifts-sm.jpg"
+                                    data-product-image-2="celebrations-gift-basket.jpg"
+                                    data-product-image-3="unique-birthday-gifts.jpg"
+                                    data-product-image-4="birthday-chocolate-gift.jpg"
+                                    ></div>
                             </div>
 
                             <div class="col-md-3 col-sm-6 col-6 favs-col">
@@ -173,7 +224,22 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">Add to cart</a>
+                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
+                                <!-- images must be on root path in the folder "images" -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-045"
+                                    data-product-name="product name is here"
+                                    data-product-price-regular="$100"
+                                    data-product-price-sale=""
+                                    data-product-stars="5"
+                                    data-product-reviews="76"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="custom-birthday-gifts-sm.jpg"
+                                    data-product-image-2="celebrations-gift-basket.jpg"
+                                    data-product-image-3="unique-birthday-gifts.jpg"
+                                    data-product-image-4="birthday-chocolate-gift.jpg"
+                                    ></div>
                             </div>
 
                         </div>
@@ -249,7 +315,7 @@
                         <img src="<?= $app_path ?>assets/images/gifts/11.png" alt="" class="" />
                     </div>
                     <div class="gift-box d-flex align-items-center justify-content-center">
-                        <p class="mb-0">Gift Box</p>
+                        <a href="#" class="mb-0">Get it Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5 col-5 text-center">
@@ -257,7 +323,7 @@
                         <img src="<?= $app_path ?>assets/images/gifts/22.png" alt="" class="" />
                     </div>
                     <div class="gift-box d-flex align-items-center justify-content-center">
-                        <p class="mb-0">Gift Box</p>
+                        <a href="#" class="mb-0">Get it Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5 col-5 text-center">
@@ -265,7 +331,7 @@
                         <img src="<?= $app_path ?>assets/images/gifts/33.png" alt="" class="" />
                     </div>
                     <div class="gift-box d-flex align-items-center justify-content-center">
-                        <p class="mb-0">Gift Box</p>
+                        <a href="#" class="mb-0">Get it Now</a>
                     </div>
                 </div>
                 <div class="col-md-3 col-sm-5 col-5 text-center">
@@ -273,7 +339,7 @@
                         <img src="<?= $app_path ?>assets/images/gifts/44.png" alt="" class="" />
                     </div>
                     <div class="gift-box d-flex align-items-center justify-content-center">
-                        <p class="mb-0">Gift Box</p>
+                        <a href="#" class="mb-0">Get it Now</a>
                     </div>
                 </div>
             </div>
@@ -592,4 +658,86 @@ function setbpkSlider($minSlides) {
         }
     });
 }
+</script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.favs-btn').click(function() {
+        var productMetaData = $(this).next('.product-metadata');
+        
+        var urlbase = $appPathJS+"product-details";
+        var urltoMove = "/padutch";
+        var slash = "/";
+
+        if (productMetaData.length > 0) {
+
+            var productID = productMetaData.data('product-id');
+            urltoMove += slash;
+            urltoMove += ($.trim(productID) === '') ? 'no-id' : productID;
+
+            var productName = productMetaData.data('product-name');
+            urltoMove += slash;
+            urltoMove += ($.trim(productName) === '') ? 'no-name' : productName;
+
+            var productPriceRegular = productMetaData.data('product-price-regular');
+            urltoMove += slash;
+            urltoMove += ($.trim(productPriceRegular) === '') ? 'no-regular' : productPriceRegular;
+
+            var productPriceSale = productMetaData.data('product-price-sale');
+            urltoMove += slash;
+            urltoMove += ($.trim(productPriceSale) === '') ? 'no-sale' : productPriceSale;
+
+            var productStars = productMetaData.data('product-stars');
+            urltoMove += slash;
+            urltoMove += ($.trim(productStars) === '') ? 'no-star' : productStars;
+            
+            var productReviews = productMetaData.data('product-reviews');
+            urltoMove += slash;
+            urltoMove += ($.trim(productReviews) === '') ? 'no-review' : productReviews;
+
+            var productFlavorPie = productMetaData.data('product-flavor-pie');
+            if(productFlavorPie=="yes"){
+                urltoMove += slash;
+                urltoMove += "pfpie-1";
+            }else{
+                urltoMove += slash;
+                urltoMove += "pfpie-0";
+            }
+
+            var productFlavorBread = productMetaData.data('product-flavor-bread');
+            if(productFlavorBread=="yes"){
+                urltoMove += slash;
+                urltoMove += "pfbread-1";
+            }else{
+                urltoMove += slash;
+                urltoMove += "pfbread-0";
+            }
+
+            var all_images = slash;
+            
+            var productImage1 = productMetaData.data('product-image-1');
+            all_images += ($.trim(productImage1) === '') ? 'no-first-img' : encodeURIComponent(productImage1);
+            all_images += ",";
+
+            var productImage2 = productMetaData.data('product-image-2');
+            all_images += ($.trim(productImage2) === '') ? 'no-second-img' : encodeURIComponent(productImage2);
+            all_images += ",";
+
+            var productImage3 = productMetaData.data('product-image-3');
+            all_images += ($.trim(productImage3) === '') ? 'no-third-img' : encodeURIComponent(productImage3);
+            all_images += ",";
+
+            var productImage4 = productMetaData.data('product-image-4');
+            all_images += ($.trim(productImage4) === '') ? 'no-fourth-img' : encodeURIComponent(productImage4);
+
+            urltoMove += all_images;
+            
+            urltoMove = urlbase + urltoMove;
+            console.log(urltoMove);
+            window.location.href = urltoMove;
+
+        } else {
+            console.log('No product details found.');
+        }
+    });
+  });
 </script>

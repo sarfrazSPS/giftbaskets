@@ -123,6 +123,9 @@ a{
 .branding-right-content{
     width: 100%;
 }
+.branding-right-content{
+    text-align: right;
+}
 .blc-social a{
     height: 25px;
     width: 25px;
@@ -149,7 +152,7 @@ a{
 }
 
 .branding-center a{
-    margin: 0;
+    margin: 0 auto;
 }
 .blccr-1{
     font-size: 24px;
@@ -175,6 +178,10 @@ a{
     color: var(--mainBlackColor);
     line-height: 1;
 }
+.brc-top{
+    text-align: center;
+    margin-left: -25px;
+}
 .brc-top svg{
     fill: var(--mainBrownColor);
     width: 18px;
@@ -194,6 +201,7 @@ a{
 }
 .brc-bottom form{
     display: block;
+    text-align: right;
 }
 .brc-bottom form .brcf-field,
 .brc-bottom form .brcf-btn{
@@ -202,7 +210,7 @@ a{
 }
 .brc-bottom form .brcf-field{    
     display: inline-block;
-    width: 63%;
+    width: 57%;
     border: 1px solid #cecece;
     color: var(--mainBlackColor);
     font-size: 14px;
@@ -215,7 +223,7 @@ a{
     background-color: var(--mainBrownColor);
     color: #ffffff;
     border: 0;
-    width: 107px;
+    width: 90px;
     transition: all 0.3s ease-in-out;
 }
 .brc-bottom form .brcf-btn::placeholder{
@@ -507,18 +515,23 @@ a{
 }
 
 .gift-box {
-    width: 150px;
-    height: 50px;
+    width: 100%;
+    height: 40px;
     margin: 0 auto;
     background-color: var(--mainBrownColor);
     position: relative;
-    top: -25px;
+    top: 0;
 }
 
-#employee-client .gift-box p {
-    font-size: 21.6px;
+#employee-client .gift-box a {
+    font-size: 18px;
     line-height: 40.5px;
     color: #fff;
+    display: block;
+    width: 100%;
+}
+#employee-client .gift-box a:hover{
+    background-color: var(--mainBlackColor);
 }
 
 /* SECTION Send Employee’s & Clients a branded gift from your business END */
@@ -614,6 +627,12 @@ a{
     opacity: 0.5;
 }
 /* ===FOOTER CSS END=== */
+
+/*Others*/
+.product-metadata{
+    width: 1px;
+    height: 1px;
+}
 
 /*Slider CSS*/
 .slider-sheds-common .carousel-control-next {
@@ -711,6 +730,9 @@ a{
     .brc-bottom {
         margin-top: 5px;
     }
+    .brc-bottom form{
+        position: relative;
+    }
     .brc-bottom form .brcf-field{
         width: 95%;
         position: relative;
@@ -719,9 +741,13 @@ a{
         margin-left: 0;
         width: auto;
         position: absolute;
-        right: 2.9%;
+        right: 0;
         padding: 0 7px;
         font-size: 100%;
+    }
+    .brc-top {
+        text-align: left;
+        margin-left: 17px;
     }
     .blc-contact {
         margin-top: 8px;
@@ -731,10 +757,6 @@ a{
     }
     .emp-img img{
         width: 90%;
-    }
-    .gift-box {
-        width: 130px;
-        height: 40px;
     }
     .bgimg-bg {
         height: auto;
@@ -810,11 +832,10 @@ a{
     .emp-img img {
         width: 80%;
     }
-    .empclient .gift-box p{
+    .empclient .gift-box a{
         font-size: 18px;
     }
     .gift-box {
-        width: 120px;
         height: 35px;
     }
     .footer-outer{
@@ -958,7 +979,7 @@ a{
         width: 95%;
     }
     .brc-bottom form .brcf-btn{
-        right: 10px;
+        right: 0;
     }
     .proc-left .ui-accordion-item{
         padding-left: 5px;
@@ -1008,7 +1029,9 @@ a{
         width: 70%;
         margin: 0 auto;
     }
-
+    .emp-img{
+        margin-bottom: 25px;
+    }
 
 }
 

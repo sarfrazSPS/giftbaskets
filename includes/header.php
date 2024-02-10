@@ -13,6 +13,10 @@ $today         = date('m/d/Y h:i:s A', time());
 $current_month = date("m y", strtotime($today));
 $current_year  = date("Y", strtotime($today));
 ?>
+<script>
+//this is for conditioning in custom scripts file
+var $appPathJS = <?php echo json_encode($app_path); ?>;
+</script>
 <!DOCTYPE html>
 <html lang="en">
 

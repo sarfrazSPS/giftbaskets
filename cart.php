@@ -1,4 +1,16 @@
 <?php include("includes/header.php"); ?>
+<script>
+    //Coupn as an example
+    var padcoupons = [
+    { name: 'PADCOUPON1', type: 'percentage', value: 10 },
+    { name: 'PADCOUPON2', type: 'value', value: 5 },
+    ];
+
+    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+    if (cartItems.length === 0) {
+        window.location.href = $appPathJS;
+    }
+</script>
 <style>
 .btn-shopping {
     /* background-color: #957b6d; */
@@ -209,8 +221,8 @@
     line-height: 1.1;
     font-size: 14px;
 } 
-#popupContent,
-#popupContent1{
+#popupContentGift,
+#popupContentEmail{
     display: none;
     position: absolute;
 }
@@ -252,7 +264,7 @@
         <div class="container">
             <div class="row mb-3">
                 <div class="col-lg-6 col-md-6 col-sm-12">
-                    <h4>SHOPPING CART (1 ITEM)</h4>
+                    <h4>SHOPPING CART (<span id="totalCartItems">-</span> ITEM)</h4>
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="d-flex justify-content-end">
@@ -306,58 +318,7 @@
                                     <th scope="col" width="10%">TOTAL</th>
                                 </tr>
                             </thead>
-                            <tbody>
-
-                                <tr>
-                                    <td>
-                                        <div class="d-flex">
-                                            <div class="cartitemimage">
-                                                <a href="#" id="">
-                                                    <img id="" class="img-fluid"
-                                                        src="<?=$app_path;?>assets/images/products/cart.webp"
-                                                        alt="Gourmet Meat" style="border-width:0px;">
-                                                </a>
-                                                <span class="tbl-span">PRODUCT ID: 4361</span>
-                                            </div>
-                                            <div class="ms-3 w-100 position-relative">
-                                                <div class="cart-item-name">
-                                                    <p class="mb-1">GOURMET MEAT & CHEESE SAMPLER - DELUXE</p>
-                                                    <span class="tbl-span item-remove-btn">REMOVE ITEM</span>
-                                                </div>
-                                                <div class="cart-item-extras">
-                                                    <p class="mb-1 text-uppercase">Available with this gift</p>
-                                                    <div class="d-flex">
-                                                        <div id="popupActivate" class="cie-item">
-                                                            <div>
-                                                                <img src="assets/images/icons/i-greeting-card.png" />
-                                                            </div>
-                                                            <div class="cie-item-copy">personalized greeting card</div>
-                                                        </div>
-                                                        <div id="popupActivate1" class="cie-item">
-                                                            <div>
-                                                                <img src="assets/images/icons/i-notification.png" />
-                                                            </div>
-                                                            <div class="cie-item-copy">instant email notification</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </td>
-                                    <td>$59.99</td>
-                                    <td width="10%">
-                                        <div class="d-flex">
-                                            <span class="min buttonplusminus">
-                                                -
-                                            </span>
-                                            <input type="text" name="qty" id="qty" maxlength="12" />
-                                            <span class="plus buttonplusminus">
-                                                +
-                                            </span>
-                                        </div>
-                                    </td>
-                                    <td>$59.99</td>
-                                </tr>
+                            <tbody id="dynamicContentContainer">                             
                             </tbody>
                         </table>
                     </div>
@@ -368,7 +329,7 @@
                         <h6 class="cart-border pb-3">ORDER SUMMARY</h6>
                         <div class="d-flex justify-content-between cart-border py-3">
                             <P class="mb-0">PRODUCT TOTAL:</P>
-                            <span><b>$179.97</b></span>
+                            <span id="grandSubTotal"><b>-</b></span>
                         </div>
                         <div class="d-flex justify-content-between py-3">
                             <p class="mb-0">Enter Coupons & Offer Codes</p>
@@ -380,8 +341,8 @@
                         </div>
                         <div class="cart-border pb-3">
                             <form class="cart-coupon-form">
-                                <input type="text" class="cart-coupon-field" name="coupon" placeholder="Enter Code">
-                                <input type="button" class="cart-coupon-btn" value="Apply" >
+                                <input type="text" class="cart-coupon-field" id="cart-coupon-field" name="coupon" placeholder="Enter Code">
+                                <input type="button" class="cart-coupon-btn" id="cart-coupon-btn" value="Apply" >
                             </form>
                         </div>
                         <div class="py-3">
@@ -455,7 +416,7 @@
 </div>
 
 
-<div id="popupContent" class="cie-item-popup">
+<div id="popupContentGift" class="cie-item-popup">
     <div class="cie-item-popup-outer">
         <div class="ciep-top">
             <img src="assets/images/icons/i-greeting-card-white.png" />
@@ -471,7 +432,7 @@
     </div>
 </div>
 
-<div id="popupContent1" class="cie-item-popup">
+<div id="popupContentEmail" class="cie-item-popup">
     <div class="cie-item-popup-outer">    
         <div class="ciep-top">
             <img src="assets/images/icons/i-notification-white.png" />
@@ -487,34 +448,195 @@
 <?php
 include("includes/footer.php");
 ?>
-<script>
-jQuery(function() {
-    var j = jQuery; //Just a variable for using jQuery without conflicts
-    var addInput = '#qty'; //This is the id of the input you are changing
-    var n = 1; //n is equal to 1
 
-    //Set default value to n (n = 1)
-    j(addInput).val(n);
+<script type="text/javascript">
+    $(document).ready(function() {
+        var totalCartItems = 0;
+        cartItems.forEach(function(item) {
+            totalCartItems++;
+            $('#dynamicContentContainer').append(
+            '<tr id="'+item.id+'" class="cart_tr">' +
+            '<td>' +
+            '<div class="d-flex">' +
+            '<div class="cartitemimage">' +
+            '<a href="#" id="">' +
+            '<img id="" class="img-fluid" src="'+$appPathJS+'images/'+item.image+'" alt="'+item.name+'" style="border-width:0px;">' +
+            '</a>'+
+            '<span class="tbl-span">PRODUCT ID: '+item.id+'</span>'+
+            '</div>'+
+            '<div class="ms-3 w-100 position-relative">'+
+            '<div class="cart-item-name">'+
+            '<p class="mb-1" style="text-transform:uppercase;">'+item.name+'</p>'+
+            '<span class="tbl-span item-remove-btn" id="'+item.id+'">REMOVE ITEM</span>'+
+            '</div>'+
+            '<div class="cart-item-extras">'+
+            '<p class="mb-1 text-uppercase">Available with this gift</p>'+
+            '<div class="d-flex">'+
+            '<div id="popupActivateGift'+totalCartItems+'" class="cie-item">'+
+            '<div>'+
+            '<img src="assets/images/icons/i-greeting-card.png" />'+
+            '</div>'+
+            '<div class="cie-item-copy">personalized greeting card</div>'+
+            '</div>'+
+            '<div id="popupActivateEmail'+totalCartItems+'" class="cie-item">'+
+            '<div>'+
+            '<img src="assets/images/icons/i-notification.png" />'+
+            '</div>'+
+            '<div class="cie-item-copy">instant email notification</div>'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '</div>'+
+            '</td>'+
+            '<td class="cal_item_price">'+item.price+'</td>'+
+            '<td width="10%">'+
+            '<div class="d-flex">'+
+            '<span class="min buttonplusminus">'+
+            '-'+
+            '</span>'+
+            '<input class="cal_item_qty" type="number" name="qty" id="qty" maxlength="12" value="'+item.quantity+'" />'+
+            '<span class="plus buttonplusminus">'+
+            '+'+
+            '</span>'+
+            '</div>'+
+            '</td>'+
+            '<td class="cal_item_sub_total">-</td>'+
+            '</tr>'
+            );
+        });
+        $("#totalCartItems").text(totalCartItems);
+    }); 
+</script>
 
-    //On click add 1 to n
-    j('.plus').on('click', function() {
-        j(addInput).val(++n);
-    })
+<script type="text/javascript">
+function calculat_item_sub_total(){
+    $('#dynamicContentContainer tr').each(function(index, row) {
+        var item_price = $(row).find('.cal_item_price').text();
+        item_price = parseInt(item_price.replace(/\$/g, ''));
 
-    j('.min').on('click', function() {
-        //If n is bigger or equal to 1 subtract 1 from n
-        if (n >= 2) {
-            j(addInput).val(--n);
-        } else {
-            //Otherwise do nothing
+        var item_qty = $(row).find('.cal_item_qty').val();
+        item_qty = parseInt(item_qty);
+
+        var itemTotal = item_qty*item_price;
+
+        $(row).find(".cal_item_sub_total").text("$"+itemTotal);
+    });
+}
+
+function calculat_items_total(){
+    var grandTotal = 0;
+    $('#dynamicContentContainer tr').each(function(index, row) {
+        var item_sub_price = $(row).find('.cal_item_sub_total').text();
+        item_sub_price = parseInt(item_sub_price.replace(/\$/g, ''));
+        grandTotal += item_sub_price;
+    });
+    $("#grandSubTotal").html("<b>$"+grandTotal+"</b>");
+}
+
+function updateQuantityInLocalStorage(newQuantity,specificIdToRemove) {
+    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+
+    var specificId = specificIdToRemove;
+    var foundItem = cartItems.find(item => item.id === specificId);
+
+    if (foundItem) {
+    foundItem.quantity = newQuantity;
+    }
+
+    localStorage.setItem('cartstorage', JSON.stringify(cartItems));
+}
+
+$(document).ready(function() {
+
+    calculat_item_sub_total();
+    calculat_items_total();
+});
+</script>
+
+<script type="text/javascript">
+    $("#cart-coupon-btn").click(function(){
+        var cartTotal = $("#grandSubTotal").text();
+        cartTotal = parseInt(cartTotal.replace(/\$/g, ''));
+        var couponCode = $('#cart-coupon-field').val().toUpperCase();
+        
+        // Check if the entered coupon code exists in the array
+        var matchedCoupon = padcoupons.find(function(coupon) {
+            return coupon.name === couponCode;
+        });
+
+        if (matchedCoupon) {
+            if (matchedCoupon.type === 'percentage') {
+                var discountAmount = (matchedCoupon.value / 100) * cartTotal;
+                cartTotal -= discountAmount;
+            } else if (matchedCoupon.type === 'value') {
+                cartTotal -= matchedCoupon.value;
+            }
+
+            $("#grandSubTotal").html("<b>$"+cartTotal+"</b>");
+            alert('Coupon applied successfully!');
+
+        }else {
+            alert('Invalid coupon code. Please try again.');
         }
+
+    });
+
+</script>
+<script type="text/javascript">
+jQuery(function() {
+    var j = jQuery; 
+
+    j('.plus, .min').on('click', function() {
+        var addInput = j(this).siblings('.cal_item_qty'); 
+
+        if (j(this).hasClass('plus')) {
+            addInput.val(function(i, value) {
+                return parseInt(value, 10) + 1;
+            });
+
+        } else if (j(this).hasClass('min')) {
+            addInput.val(function(i, value) {
+                return parseInt(value, 10) >= 2 ? parseInt(value, 10) - 1 : value;
+            });
+        }
+
+        calculat_item_sub_total();
+        calculat_items_total();
+
+        var updatedQuantity = parseInt(addInput.val(), 10);
+        var specificIdToRemove = j(this).closest(".cart_tr").attr("id");
+
+        updateQuantityInLocalStorage(updatedQuantity,specificIdToRemove);        
+        
+        console.log(updatedQuantity);
+
     });
 });
 </script>
-<script>
+
+<script type="text/javascript">
+$('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
+    var specificIdToRemove = $(this).attr('id');
+
+    // Remove the item with the specific ID from the cartItems array
+    cartItems = cartItems.filter(function(item) {
+        return item.id !== specificIdToRemove;
+    });
+
+    // Update the localStorage with the modified cartItems array
+    localStorage.setItem('cartstorage', JSON.stringify(cartItems));
+    window.location.href = location.href;
+
+});
+
+
+</script>
+
+<script type="text/javascript">
   $(document).ready(function() {
-    let hoveredContent = $('#popupContent');
-    let hoverArea = $('#popupActivate');
+    let hoveredContent = $('#popupContentGift');
+    let hoverArea = $('#popupActivateGift1');
 
     hoverArea.mouseenter(function(e) {
       hoveredContent.css({
@@ -543,8 +665,8 @@ jQuery(function() {
 </script>
 <script>
   $(document).ready(function() {
-    let hoveredContent1 = $('#popupContent1');
-    let hoverArea1 = $('#popupActivate1');
+    let hoveredContent1 = $('#popupContentEmail');
+    let hoverArea1 = $('#popupActivateEmail1');
 
     hoverArea1.mouseenter(function(e) {
         hoveredContent1.css({
