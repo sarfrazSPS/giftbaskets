@@ -1,7 +1,5 @@
 <IfModule mod_rewrite.c>
     RewriteEngine On
-    RewriteCond %{REQUEST_FILENAME} !-f
-    RewriteCond %{REQUEST_FILENAME} !-d
 
     RewriteRule ^product-details/padutch/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/([^/]+)/?$ product-details.php?padutch=true&pid=$1&pname=$2&pregular=$3&psale=$4&pstars=$5&previews=$6&pfpie=$7&pfbread=$8&pimgs=$9 [L,QSA]
     

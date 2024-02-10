@@ -664,55 +664,55 @@ $(document).ready(function() {
     $('.favs-btn').click(function() {
         var productMetaData = $(this).next('.product-metadata');
         
-        var urlbase = $appPathJS+"product-details";
-        var urltoMove = "/padutch";
-        var slash = "/";
+        var urlbase = $appPathJS+"product-details.php";
+        var urltoMove = "?padutch=true";
+        var slash = "&";
 
         if (productMetaData.length > 0) {
 
             var productID = productMetaData.data('product-id');
-            urltoMove += slash;
+            urltoMove += slash+"pid=";
             urltoMove += ($.trim(productID) === '') ? 'no-id' : productID;
 
             var productName = productMetaData.data('product-name');
-            urltoMove += slash;
+            urltoMove += slash+"pname=";
             urltoMove += ($.trim(productName) === '') ? 'no-name' : productName;
 
             var productPriceRegular = productMetaData.data('product-price-regular');
-            urltoMove += slash;
+            urltoMove += slash+"pregular=";
             urltoMove += ($.trim(productPriceRegular) === '') ? 'no-regular' : productPriceRegular;
 
             var productPriceSale = productMetaData.data('product-price-sale');
-            urltoMove += slash;
+            urltoMove += slash+"psale=";
             urltoMove += ($.trim(productPriceSale) === '') ? 'no-sale' : productPriceSale;
 
             var productStars = productMetaData.data('product-stars');
-            urltoMove += slash;
+            urltoMove += slash+"pstars=";
             urltoMove += ($.trim(productStars) === '') ? 'no-star' : productStars;
             
             var productReviews = productMetaData.data('product-reviews');
-            urltoMove += slash;
+            urltoMove += slash+"previews=";
             urltoMove += ($.trim(productReviews) === '') ? 'no-review' : productReviews;
 
             var productFlavorPie = productMetaData.data('product-flavor-pie');
             if(productFlavorPie=="yes"){
-                urltoMove += slash;
+                urltoMove += slash+"pfpie=";
                 urltoMove += "pfpie-1";
             }else{
-                urltoMove += slash;
+                urltoMove += slash+"pfpie=";
                 urltoMove += "pfpie-0";
             }
 
             var productFlavorBread = productMetaData.data('product-flavor-bread');
             if(productFlavorBread=="yes"){
-                urltoMove += slash;
+                urltoMove += slash+"pfbread=";
                 urltoMove += "pfbread-1";
             }else{
-                urltoMove += slash;
+                urltoMove += slash+"pfbread=";
                 urltoMove += "pfbread-0";
             }
 
-            var all_images = slash;
+            var all_images = slash+"pimgs=";
             
             var productImage1 = productMetaData.data('product-image-1');
             all_images += ($.trim(productImage1) === '') ? 'no-first-img' : encodeURIComponent(productImage1);
