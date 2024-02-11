@@ -131,7 +131,7 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn btn-data">View Details</a>
+                                <a href="javascript:void(0);" class="btn btn-primary favs-btn btn-data">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-01"
@@ -162,7 +162,7 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
+                                <a href="javascript:void(0);" class="btn btn-primary favs-btn">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-02"
@@ -193,7 +193,7 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
+                                <a href="javascript:void(0);" class="btn btn-primary favs-btn">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-033"
@@ -224,7 +224,7 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
+                                <a href="javascript:void(0);" class="btn btn-primary favs-btn">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-045"

@@ -96,7 +96,8 @@
 .cart-coupon-form{
     width: 100%;
 }
-.cart-coupon-field{
+.cart-coupon-field,
+.cart-input-field{
     padding: 5px 10px;
     width: 77%;
     border: 2px solid #fff;
@@ -104,7 +105,8 @@
     -moz-appearance: none;  
     appearance: none;  
 }
-.cart-coupon-field:focus{
+.cart-coupon-field:focus,
+.cart-input-field:focus{
     -webkit-box-shadow: 0 0 5px #999999;
     -moz-box-shadow: 0 0 5px #999999;
     box-shadow: 0 0 5px #999999;
@@ -112,17 +114,20 @@
     border-color: #999999;
     outline: none;
 }
-.cart-coupon-btn{
+.cart-coupon-btn,
+.cart-input-btn{
     padding: 7px 10px;
     /* background-color: #977b6e; */
     background-color: var(--mainBrownColor);
     border: 0;
     color: #fff;
 }
-.cart-coupon-btn:hover{
+.cart-coupon-btn:hover,
+.cart-input-btn:hover{
     opacity: 0.9;
 }
-.cart-btn-checkout{
+.cart-btn-checkout,
+.cart-btn-payment{
     width: 100%;
     display: block;
     /* background-color: #957b6d; */
@@ -132,7 +137,8 @@
     text-align: center;
     position: relative;
 }
-.cart-btn-checkout:hover{
+.cart-btn-checkout:hover,
+.cart-btn-payment:hover{
     opacity: 0.9;
 }
 .btn-arrow{
@@ -155,11 +161,15 @@
 .translatex{
     margin-left: -15px;
 }
-.cart-btn-checkout .translatex svg{
+.cart-btn-checkout .translatex svg,
+.cart-btn-payment .translatex svg{
     width: 13px !important;
     fill: #fff !important;
     margin-top: -4px;
     margin-right: 4px;
+}
+.cart-btn-checkout{
+    scroll-behavior: smooth;
 }
 .other-color{
     background-color: var(--mainOtherColor) !important;
@@ -258,6 +268,35 @@
 .f-70{
     font-size: 70%;
 }
+.cart-payment{
+    display: none;
+}
+.cart-payment .row{
+    margin: 0 auto;
+}
+.cart-payment .card{
+    border-radius: 0;
+}
+.cart-payment .card-block{
+    padding-bottom: 15px;
+    border-bottom: var(--bs-card-border-width) solid var(--bs-card-border-color);
+}
+.cart-input-field{
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.175);
+    border-radius: 0;
+    font-size: 0.87rem;
+    font-weight: 400;
+    height: 35px;
+}
+.cart-payment label{
+    margin-bottom: 2px;
+    margin-top: 10px;
+    font-weight: 500;
+}
+.cart-btn-payment{
+    background-color: var(--mainBrownColor) !important; 
+}
 </style>
 <section id="cart-section" class="py-5">
     <div class="container-fluid">
@@ -288,7 +327,7 @@
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="shopgo w-100">
-                        <a href="#" class="cart-btn-checkout other-color">
+                        <a href="javascript:void(0);" class="cart-btn-checkout other-color">
                             <span class="translatex text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
                             <span class="btn-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg other-color rotate90">
@@ -296,12 +335,12 @@
                                 </svg>
                             </span>
                         </a>
-                        <div class="shopgo-nav">
+                        <!-- <div class="shopgo-nav">
                             <ul>
                                 <li><a href="#">Send to one address</a></li>
                                 <li><a href="#">Send to multiple addresses</a></li>
                             </ul>
-                        </div>
+                        </div> -->
                     </div>
 
                 </div>
@@ -347,7 +386,7 @@
                         </div>
                         <div class="py-3">
                             <div class="shopgo w-100">
-                                <a href="#" class="cart-btn-checkout other-color">
+                                <a href="javascript:void(0);" class="cart-btn-checkout other-color">
                                     <span class="translatex text-uppercase "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
                                     <span class="btn-arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg other-color rotate90">
@@ -355,31 +394,80 @@
                                         </svg>
                                     </span>
                                 </a>
-                                <div class="shopgo-nav">
-                                    <ul>
-                                        <li><a href="#">Send to one address</a></li>
-                                        <li><a href="#">Send to multiple addresses</a></li>
-                                    </ul>
-                                </div>
                             </div>
                         </div>
                         
-                        <div class="shopgo w-100">
-                            <a href="#" class="cart-btn-checkout">
-                                <span class="translatex text-uppercase">Continue Shopping</span>
-                                <span class="btn-arrow">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg">
-                                        <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
-                                    </svg>
-                                </span>
-                            </a>
-                            <div class="shopgo-nav">
-                                <ul>
-                                    <li><a href="#">Home Page</a></li>
-                                    <li><a href="#">Most Recent Categories</a></li>
-                                    <li><a href="#">Most Recent Items</a></li=>
-                                </ul>
+                        <div id="cart-payment" class="shopgo w-100 cart-payment">
+                        
+                            <div class="card ">
+                                <div class="card-header p-0">
+                                    <div class="row w-100">
+                                        <h6 class="pt-2 pb-1">Payment Details</h6>
+                                    </div>
+                                </div>
+                                <div class="card-block">
+                                    <form role="form">
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>CARD OWNER</label>
+                                                    <input type="text" class="form-control cart-input-field" placeholder="Enter Code" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>CARD NUMBER</label>
+                                                    <div class="input-group">
+                                                        <input type="tel" class="form-control cart-input-field" placeholder="Valid Card Number" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-7 col-md-7">
+                                                <div class="form-group">
+                                                    <label>EXP DATE</span></label>
+                                                    <input type="tel" class="form-control cart-input-field" placeholder="MM / YY" />
+                                                </div>
+                                            </div>
+                                            <div class="col-sm-5 col-md-5 float-xs-right">
+                                                <div class="form-group">
+                                                    <label>CV CODE</label>
+                                                    <input type="tel" class="form-control cart-input-field" placeholder="CVC" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-sm-12">
+                                                <div class="form-group">
+                                                    <label>SHIPPING ADDRESS</label>
+                                                    <div class="input-group">
+                                                        <input type="text" class="form-control cart-input-field" placeholder="Enter Shipping Address" />
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </form>
+                                </div>
+                                <div class="card-footer p-0 m-3">
+                                    <div class="row p-0">
+                                        <div class="col-12 p-0">
+                                            <a href="#" class="cart-btn-payment">
+                                                <span class="translatex text-uppercase ">Process payment</span>
+                                                <span class="btn-arrow">
+                                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg rotate90">
+                                                        <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
+                                                    </svg>
+                                                </span>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
+                              
                         </div>
                     </div>
                 </div>
@@ -631,6 +719,19 @@ $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
 });
 
 
+</script>
+
+<script type="text/javascript">
+  $('.cart-btn-checkout').on('click', function(e) {
+    e.preventDefault();
+
+    $("#cart-payment").toggle('slow', function() {});
+
+    const element = document.getElementById("cart-payment");
+
+    element.scrollIntoView();
+
+  });
 </script>
 
 <script type="text/javascript">
