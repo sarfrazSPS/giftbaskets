@@ -87,7 +87,7 @@ var $appPathJS = <?php echo json_encode($app_path); ?>;
                     </div>
 
                     <div class="col-md-4 d-flex align-items-center branding-center">
-                        <a href="#" class="d-inline-block">
+                        <a href="<?=$app_path;?>" class="d-inline-block">
                             <img src="<?=$app_path;?>assets/images/logo/logo.png" class="image-fluid" />
                         </a>
                     </div>

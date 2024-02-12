@@ -203,12 +203,12 @@ a{
     display: block;
     text-align: right;
 }
-.brc-bottom form .brcf-field,
-.brc-bottom form .brcf-btn{
+form .brcf-field,
+form .brcf-btn{
     border-radius: 0;
     height: 47px;
 }
-.brc-bottom form .brcf-field{    
+form .brcf-field{    
     display: inline-block;
     width: 57%;
     border: 1px solid #cecece;
@@ -217,7 +217,7 @@ a{
     font-weight: 600;
     text-align: left;
 }
-.brc-bottom form .brcf-btn{
+form .brcf-btn{
     display: inline-block;
     margin-left: 10px;
     background-color: var(--mainBrownColor);
@@ -226,16 +226,16 @@ a{
     width: 90px;
     transition: all 0.3s ease-in-out;
 }
-.brc-bottom form .brcf-btn::placeholder{
+form .brcf-btn::placeholder{
     color: var(--mainBlackColor);
     font-size: 14px;
     font-weight: 600;
 }
-.brc-bottom form .brcf-btn:focus{
+form .brcf-btn:focus{
     border: 1px solid #cecece;
     outline: 1px solid #cecece;
 }
-.brc-bottom form .brcf-btn:hover{
+form .brcf-btn:hover{
     background-color: var(--mainBlackColor);
 }
 
@@ -515,7 +515,7 @@ a{
 }
 
 .gb-btn-outer{
-    margin-top: -20px !important;
+    margin-top: -25px !important;
 }
 .gb-btn-inner{
     border-radius: 3px;
@@ -535,8 +535,8 @@ a{
     margin-top: -25px;
 }
 #employee-client .gift-box a {
-    font-size: 28px;
-    line-height: 1.9;
+    font-size: 26px;
+    line-height: 1.95;
     color: #fff;
     display: block;
     width: 100%;
@@ -714,6 +714,170 @@ a{
     }
 } */
 
+/*About us page*/
+.aboutus-page{
+    margin: 50px 0;
+}
+.aboutus-row{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.aboutus-row h1{
+    color: var(--mainBlackColor);
+    text-transform: uppercase;
+}
+.about-right{
+    padding-left: 50px;
+}
+.about-right p{
+    font-size: 16px;
+}
+.about-img-holder{
+    position: relative;
+    border-radius: 20px;
+}
+.about-img-holder img{
+    border-radius: 20px;
+    box-shadow: 2px 3px 5px 0px rgba(0, 0, 0, 0.5);
+}
+.aimgh-top{
+    position: absolute;
+    border-radius: 20px;
+}
+.aimgh-bottom{
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    bottom: -20px;
+    right: -20px;
+    border-right: 10px solid rgba(193, 180, 97, 0.35);
+    border-bottom: 10px solid rgba(193, 180, 97, 0.35);
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 20px;
+}
+.aimgh-top{
+    position: absolute;
+    width: 35%;
+    height: 45%;
+    top: -20px;
+    left: -20px;
+    border-top: 10px solid rgba(123, 92, 74, 0.35);
+    border-left: 10px solid rgba(123, 92, 74, 0.35);
+    border-top-right-radius: 10px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 10px;
+}
+
+/*contact us page*/
+.contactus{
+    margin: 50px 0;
+}
+.contactus h1{
+    color: var(--mainBlackColor);
+    text-transform: uppercase;
+}
+.contactus p{
+    font-size: 18px;
+    line-height: 1.4;
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 35px;
+    text-align: center;
+}
+.contactus h3{
+    font-size: 26px;
+    padding: 0;
+    margin: 0;
+    line-height: 1;
+    font-weight: 700;
+    font-style: normal;
+    margin-bottom: 25px;
+}
+.contactus ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+.contactus ul li{
+    margin-bottom: 20px;
+    color: #646464;
+    display: block;
+    font-size: 16px;
+    line-height: 28px;
+    font-weight: 400;
+    font-style: normal;
+}
+.contactus ul li svg{
+    color: var(--mainBrownColor);
+    display: inline-block;
+    padding-right: 12px;
+    fill: var(--mainBrownColor);
+    margin-bottom: 3px;
+}
+.contactus ul li a{
+    color: #646464;
+    text-decoration: none;
+    display: inline-block;
+    -webkit-transition: all 0.3s ease 0s;
+    transition: all 0.3s ease 0s;
+}
+.contactus form .form-group{
+    position: relative;
+}
+.contactus form svg{
+    left: 13px !important;
+    position: absolute;
+    top: 1px;
+    left: 0;
+    background-color: transparent;
+    padding: 15px;
+    border-radius: 2px;
+    fill: var(--mainBrownColor);
+    width: 45px;
+    height: 45px;
+}
+form .form-btn{
+    display: inline-block;
+    margin-left: 10px;
+    background-color: var(--mainBrownColor);
+    color: #ffffff;
+    border: 0;
+    width: 150px;
+    border-radius: 0;
+    height: 47px;
+    transition: all 0.3s ease-in-out;
+}
+form .form-btn:hover {
+    background-color: var(--mainBlackColor);
+}
+.contactus .brcf-field{
+    width: 100% !important;
+    padding-bottom: 0;
+    padding-left: 40px;
+    position: relative;
+}
+.contactus form textarea{
+    padding: 12px 24px 12px 45px !important;
+    font-size: 14px !important;
+    border-radius: 0 !important;
+}
+.contactus form button{
+    margin: 0;
+}
+.contactus form input{
+    margin-bottom: 0;
+    border-radius: 2px;
+    padding-top: 0;
+}
+.contactus form .form-group{
+    margin-bottom: 20px;
+}
+
+
+
 /*Responsiveness*/
 
 @media (max-width: 1200px) {
@@ -741,11 +905,11 @@ a{
     .brc-bottom form{
         position: relative;
     }
-    .brc-bottom form .brcf-field{
+    form .brcf-field{
         width: 95%;
         position: relative;
     }
-    .brc-bottom form .brcf-btn{
+    form .brcf-btn{
         margin-left: 0;
         width: auto;
         position: absolute;
@@ -852,6 +1016,16 @@ a{
     }
     .footer-border-top .footer-copy{
         line-height: 20px;
+    }
+    .aimgh-bottom,
+    .aimgh-top{
+        display: none;
+    }
+    .about-right {
+        padding-left: 20px;
+    }
+    .contactus p{
+        width: 90%;
     }
 }
 
@@ -980,10 +1154,10 @@ a{
         width: 100%;
         text-align: right;
     }
-    .brc-bottom form .brcf-field{
+    form .brcf-field{
         width: 95%;
     }
-    .brc-bottom form .brcf-btn{
+    form .brcf-btn{
         right: 0;
     }
     .proc-left .ui-accordion-item{
@@ -1041,11 +1215,28 @@ a{
         margin-top: 0 !important;
         width: 85%;
     }
-
+    .about-img-holder {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    .about-right {
+        padding-left: 10px;
+        text-align: center;
+    }
+    .contactus h1,
+    .contactus p{
+        width: 100%;
+        text-align: left !important;
+    }
 }
 
 @media (max-width: 576px){
-    
+    .about-img-holder {
+        width: 90%;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
     .proc-right img{
         height: auto;
     }
@@ -1095,14 +1286,14 @@ a{
         margin-top: 20px;
         margin-bottom: 20px;
     }
-    .brc-bottom form .brcf-field{
+    form .brcf-field{
         width: 100%;
     }
     .brc-top{
         text-align: left;
         padding-left: 2px;
     }
-    .brc-bottom form .brcf-btn {
+    form .brcf-btn {
         right: 0px;
         width: 100px;
     }

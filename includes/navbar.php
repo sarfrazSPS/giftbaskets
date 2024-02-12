@@ -26,7 +26,7 @@
                     <a class="nav-link" href="#">Gift Baskets</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
+                    <a class="nav-link" href="<?=$app_path;?>about.php">About</a>
                 </li>
             </ul>
         </div>

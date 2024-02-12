@@ -309,6 +309,25 @@ body.inner.product-focus section.feature.left aside.right-aside{
     padding-top: 0;
     margin-bottom: 100px;
 }
+
+.circle{
+    width: 80px !important;
+    height: 80px !important;
+}
+.form-label-margin {
+    margin-top: 0px !important;
+}
+.customization-head{
+    margin: 15px 0 10px 0 !important;
+    text-align: left !important;
+}
+div.services{
+    margin-top: 20px !important;
+}
+.form-qty-btn {
+    margin-top: 20px !important;
+}
+
 @media (max-width: 986px) {
     body.inner.product-focus section.feature.left aside.left-aside,
     body.inner.product-focus section.feature.left aside.right-aside{
@@ -353,7 +372,7 @@ body.inner.product-focus section.feature.left aside.right-aside{
     <body class="inner product-focus">
         <header>
             <section class="header-image">
-                <a href="<?=$old_site_url;?>" style="z-index:2;display:inline-block;s"><img src="<?=$old_site_url;?>images/logo-new.png" alt="Our Corporate employee gifts offer a special custom gift basket with PA Dutch favorites like baked goods, pies, fudge, gourmet cheeses and chocolates"></a>
+                <a href="<?=$old_site_js;?>" style="z-index:2;display:inline-block;s"><img src="<?=$old_site_url;?>images/logo-new.png" alt="Our Corporate employee gifts offer a special custom gift basket with PA Dutch favorites like baked goods, pies, fudge, gourmet cheeses and chocolates"></a>
             </section>
         </header>
         <div class="content-wrapper">
@@ -500,7 +519,7 @@ body.inner.product-focus section.feature.left aside.right-aside{
                                 </table>
 
                                 <div>
-                                    <h5>Choose Your Customization Below </h5>
+                                    <h5 class="customization-head">Choose Your Customization Below </h5>
                                     <div class="services">
                                                                         
                                         <div class="custom-options-services">

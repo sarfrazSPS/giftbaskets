@@ -32,7 +32,7 @@
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Return Policy</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Private Policy</a></li>
                     <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Accessibility</a></li>
-                    <li class="nav-item mb-2"><a href="#" class="nav-link p-0">Contact Us</a></li>
+                    <li class="nav-item mb-2"><a href="<?=$app_path;?>contact.php" class="nav-link p-0">Contact Us</a></li>
                 </ul>
             </div>
             <div class="w-20 2nd-level-1-parent">
