@@ -314,35 +314,43 @@
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/11.png" alt="" class="" />
                     </div>
-                    <div class="gift-box d-flex align-items-center justify-content-center">
+                    <!-- <div class="gift-box d-flex align-items-center justify-content-center">
                         <a href="#" class="mb-0">Get it Now</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/22.png" alt="" class="" />
                     </div>
-                    <div class="gift-box d-flex align-items-center justify-content-center">
+                    <!-- <div class="gift-box d-flex align-items-center justify-content-center">
                         <a href="#" class="mb-0">Get it Now</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/33.png" alt="" class="" />
                     </div>
-                    <div class="gift-box d-flex align-items-center justify-content-center">
+                    <!-- <div class="gift-box d-flex align-items-center justify-content-center">
                         <a href="#" class="mb-0">Get it Now</a>
-                    </div>
+                    </div> -->
                 </div>
                 <div class="col-md-3 col-sm-5 col-5 text-center">
                     <div class="emp-img px-2">
                         <img src="<?= $app_path ?>assets/images/gifts/44.png" alt="" class="" />
                     </div>
-                    <div class="gift-box d-flex align-items-center justify-content-center">
+                    <!-- <div class="gift-box d-flex align-items-center justify-content-center">
+                        <a href="#" class="mb-0">Get it Now</a>
+                    </div> -->
+                </div>
+
+                <div class="col-md-10 text-center m-auto gb-btn-outer">
+                    <div class="gift-box d-flex align-items-center justify-content-center gb-btn-inner">
                         <a href="#" class="mb-0">Get it Now</a>
                     </div>
                 </div>
+
             </div>
+
         </div>
     </div>
 </section>

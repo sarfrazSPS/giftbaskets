@@ -14,12 +14,13 @@ $pid = validateInput($pid, "pid");
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
-
+$pname = "Cozy Winter Gift Box";
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
+$psale = "45.99";
 
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");

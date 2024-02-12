@@ -1,15 +1,33 @@
 <?php include("includes/header.php"); ?>
+<?php
+$status = "";
+$clear_cart = 0;
+$response_type ='danger';
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+	// User card information data received via form submit
+	$cc_number = $_POST['cc_number'];
+	$cc_exp_month = $_POST['cc_exp_month']; 
+	$cc_exp_year = $_POST['cc_exp_year']; 
+	$cc_exp_year_month = $cc_exp_year.'-'.$cc_exp_month; 
+	$cvc_code = $_POST['cvc_code']; 
+	$amount = $_POST['amount']; 
+	if(empty($cc_number) || empty($cc_exp_month) || empty($cc_exp_year) || empty($cvc_code) ){
+		$status = "<li>Error: Please enter all required fields!</li>";
+	}else{
+		require_once 'authorize-net-payment.php';
+	}	
+}
+
+if($response_type=="success"){
+    $clear_cart=1;
+}
+?>
 <script>
     //Coupn as an example
     var padcoupons = [
     { name: 'PADCOUPON1', type: 'percentage', value: 10 },
     { name: 'PADCOUPON2', type: 'value', value: 5 },
     ];
-
-    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    if (cartItems.length === 0) {
-        window.location.href = $appPathJS;
-    }
 </script>
 <style>
 .btn-shopping {
@@ -298,6 +316,10 @@
     background-color: var(--mainBrownColor) !important; 
 }
 </style>
+
+<section id="empty-cart-section" class="py-5 text-center d-none">
+    <h2 class="mt-5 mb-5">Cart is Empty</h2>
+</section>
 <section id="cart-section" class="py-5">
     <div class="container-fluid">
         <div class="container">
@@ -396,6 +418,14 @@
                                 </a>
                             </div>
                         </div>
+                        <?php if(!empty($status)) { ?>
+                                <div class="alert alert-<?php echo $response_type;?>">
+                                    <ul>
+                                        <?php echo $status; ?>
+                                    </ul>
+                                </div>
+                                <style>.cart-payment{display: block;}</style>
+                        <?php } ?>
                         
                         <div id="cart-payment" class="shopgo w-100 cart-payment">
                         
@@ -405,64 +435,79 @@
                                         <h6 class="pt-2 pb-1">Payment Details</h6>
                                     </div>
                                 </div>
+
                                 <div class="card-block">
-                                    <form role="form">
+                                    <form role="form" method='post' action=''>
+                                    <input type='hidden' name='amount' id="checkout_amonut" value='10.00'> 
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <label>CARD OWNER</label>
-                                                    <input type="text" class="form-control cart-input-field" placeholder="Enter Code" />
+                                                    <label>Card Number</label>
+                                                    <input type="text" class="form-control cart-input-field" name="cc_number" placeholder="Card Number*" />
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="row">
-                                            <div class="col-sm-12">
-                                                <div class="form-group">
-                                                    <label>CARD NUMBER</label>
-                                                    <div class="input-group">
-                                                        <input type="tel" class="form-control cart-input-field" placeholder="Valid Card Number" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
+
                                         <div class="row">
                                             <div class="col-sm-7 col-md-7">
                                                 <div class="form-group">
-                                                    <label>EXP DATE</span></label>
-                                                    <input type="tel" class="form-control cart-input-field" placeholder="MM / YY" />
+                                                    <label>EXP Month</span></label>
+                                                    <!-- <input type="tel" class="form-control cart-input-field" placeholder="MM / YY" /> -->
+                                                    <select name="cc_exp_month" class="form-control cart-input-field">
+                                                        <option value="">Exp Month*</option>
+                                                            <?php
+                                                            for ($m=1; $m<=12; $m++) {
+                                                            if($m<10){
+                                                                $new_m='0'.$m;
+                                                            }else{
+                                                                $new_m=$m;
+                                                            }
+                                                            $month = date('F', mktime(0,0,0,$m, 1, date('Y')));
+                                                            echo "<option value='$new_m'>$new_m - $month</option>";
+                                                            }
+                                                            ?>
+                                                    </select>
                                                 </div>
                                             </div>
                                             <div class="col-sm-5 col-md-5 float-xs-right">
                                                 <div class="form-group">
-                                                    <label>CV CODE</label>
-                                                    <input type="tel" class="form-control cart-input-field" placeholder="CVC" />
+                                                    <label>EXP Year</label>
+                                                    <select name="cc_exp_year" class="form-select">
+                                                        <option value="">Exp Year*</option>
+                                                            <?php for($fy=2022; $fy<=2030; $fy++) { ?>
+                                                                <option value="<?php echo $fy; ?>"><?php echo $fy; ?></option>
+                                                            <?php } ?>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
-                                                    <label>SHIPPING ADDRESS</label>
+                                                    <label>Card CVC</label>
                                                     <div class="input-group">
-                                                        <input type="text" class="form-control cart-input-field" placeholder="Enter Shipping Address" />
+                                                        <!-- <input type="text" class="form-control cart-input-field" placeholder="Enter Shipping Address" /> -->
+                                                        <input name="cvc_code" type="text" class="form-control cart-input-field" maxlength="3" placeholder="Card CVC*">
                                                     </div>
                                                 </div>
                                             </div>
                                         </div>
                                         
-                                    </form>
+                                    
                                 </div>
                                 <div class="card-footer p-0 m-3">
                                     <div class="row p-0">
                                         <div class="col-12 p-0">
-                                            <a href="#" class="cart-btn-payment">
-                                                <span class="translatex text-uppercase ">Process payment</span>
+                                        <button type='submit' class="cart-btn-payment" >Pay Now</button>
+                                        </form>
+                                            <!-- <a href="#" class="cart-btn-payment">
+                                                <span class="translatex text-uppercase ">Pay </span>
                                                 <span class="btn-arrow">
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg rotate90">
                                                         <path d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z"></path>
                                                     </svg>
                                                 </span>
-                                            </a>
+                                            </a> -->
                                         </div>
                                     </div>
                                 </div>
@@ -536,64 +581,81 @@
 <?php
 include("includes/footer.php");
 ?>
+<?php
+if($clear_cart==1){
+    ?>
+    <script type="text/javascript">
+        $(document).ready(function() {
+            localStorage.clear();
+        });
+    </script>
+    <?php
+}
+?>
 
 <script type="text/javascript">
     $(document).ready(function() {
-        var totalCartItems = 0;
-        cartItems.forEach(function(item) {
-            totalCartItems++;
-            $('#dynamicContentContainer').append(
-            '<tr id="'+item.id+'" class="cart_tr">' +
-            '<td>' +
-            '<div class="d-flex">' +
-            '<div class="cartitemimage">' +
-            '<a href="#" id="">' +
-            '<img id="" class="img-fluid" src="'+$appPathJS+'images/'+item.image+'" alt="'+item.name+'" style="border-width:0px;">' +
-            '</a>'+
-            '<span class="tbl-span">PRODUCT ID: '+item.id+'</span>'+
-            '</div>'+
-            '<div class="ms-3 w-100 position-relative">'+
-            '<div class="cart-item-name">'+
-            '<p class="mb-1" style="text-transform:uppercase;">'+item.name+'</p>'+
-            '<span class="tbl-span item-remove-btn" id="'+item.id+'">REMOVE ITEM</span>'+
-            '</div>'+
-            '<div class="cart-item-extras">'+
-            '<p class="mb-1 text-uppercase">Available with this gift</p>'+
-            '<div class="d-flex">'+
-            '<div id="popupActivateGift'+totalCartItems+'" class="cie-item">'+
-            '<div>'+
-            '<img src="assets/images/icons/i-greeting-card.png" />'+
-            '</div>'+
-            '<div class="cie-item-copy">personalized greeting card</div>'+
-            '</div>'+
-            '<div id="popupActivateEmail'+totalCartItems+'" class="cie-item">'+
-            '<div>'+
-            '<img src="assets/images/icons/i-notification.png" />'+
-            '</div>'+
-            '<div class="cie-item-copy">instant email notification</div>'+
-            '</div>'+
-            '</div>'+
-            '</div>'+
-            '</div>'+
-            '</div>'+
-            '</td>'+
-            '<td class="cal_item_price">'+item.price+'</td>'+
-            '<td width="10%">'+
-            '<div class="d-flex">'+
-            '<span class="min buttonplusminus">'+
-            '-'+
-            '</span>'+
-            '<input class="cal_item_qty" type="number" name="qty" id="qty" maxlength="12" value="'+item.quantity+'" />'+
-            '<span class="plus buttonplusminus">'+
-            '+'+
-            '</span>'+
-            '</div>'+
-            '</td>'+
-            '<td class="cal_item_sub_total">-</td>'+
-            '</tr>'
-            );
-        });
-        $("#totalCartItems").text(totalCartItems);
+        var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        if (cartItems.length === 0) {
+            $("#empty-cart-section").removeClass("d-none");
+            $("#cart-section").addClass("d-none");
+        }else{
+            var totalCartItems = 0;
+            cartItems.forEach(function(item) {
+                totalCartItems++;
+                $('#dynamicContentContainer').append(
+                '<tr id="'+item.id+'" class="cart_tr">' +
+                '<td>' +
+                '<div class="d-flex">' +
+                '<div class="cartitemimage">' +
+                '<a href="#" id="">' +
+                '<img id="" class="img-fluid" src="'+$appPathJS+'images/'+item.image+'" alt="'+item.name+'" style="border-width:0px;">' +
+                '</a>'+
+                '<span class="tbl-span">PRODUCT ID: '+item.id+'</span>'+
+                '</div>'+
+                '<div class="ms-3 w-100 position-relative">'+
+                '<div class="cart-item-name">'+
+                '<p class="mb-1" style="text-transform:uppercase;">'+item.name+'</p>'+
+                '<span class="tbl-span item-remove-btn" id="'+item.id+'">REMOVE ITEM</span>'+
+                '</div>'+
+                '<div class="cart-item-extras">'+
+                '<p class="mb-1 text-uppercase">Available with this gift</p>'+
+                '<div class="d-flex">'+
+                '<div id="popupActivateGift'+totalCartItems+'" class="cie-item">'+
+                '<div>'+
+                '<img src="assets/images/icons/i-greeting-card.png" />'+
+                '</div>'+
+                '<div class="cie-item-copy">personalized greeting card</div>'+
+                '</div>'+
+                '<div id="popupActivateEmail'+totalCartItems+'" class="cie-item">'+
+                '<div>'+
+                '<img src="assets/images/icons/i-notification.png" />'+
+                '</div>'+
+                '<div class="cie-item-copy">instant email notification</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</div>'+
+                '</td>'+
+                '<td class="cal_item_price">'+item.price+'</td>'+
+                '<td width="10%">'+
+                '<div class="d-flex">'+
+                '<span class="min buttonplusminus">'+
+                '-'+
+                '</span>'+
+                '<input class="cal_item_qty" type="number" name="qty" id="qty" maxlength="12" value="'+item.quantity+'" />'+
+                '<span class="plus buttonplusminus">'+
+                '+'+
+                '</span>'+
+                '</div>'+
+                '</td>'+
+                '<td class="cal_item_sub_total">-</td>'+
+                '</tr>'
+                );
+            });
+            $("#totalCartItems").text(totalCartItems);
+        }
     }); 
 </script>
 
@@ -620,6 +682,8 @@ function calculat_items_total(){
         grandTotal += item_sub_price;
     });
     $("#grandSubTotal").html("<b>$"+grandTotal+"</b>");
+    $("#checkout_amonut").val(grandTotal);
+    
 }
 
 function updateQuantityInLocalStorage(newQuantity,specificIdToRemove) {
@@ -662,6 +726,8 @@ $(document).ready(function() {
             }
 
             $("#grandSubTotal").html("<b>$"+cartTotal+"</b>");
+            $("#checkout_amonut").val(cartTotal);
+            
             alert('Coupon applied successfully!');
 
         }else {
@@ -707,6 +773,7 @@ jQuery(function() {
 $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
     var specificIdToRemove = $(this).attr('id');
 
+    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
     // Remove the item with the specific ID from the cartItems array
     cartItems = cartItems.filter(function(item) {
         return item.id !== specificIdToRemove;
@@ -764,7 +831,7 @@ $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
 
   });
 </script>
-<script>
+<script type="text/javascript">
   $(document).ready(function() {
     let hoveredContent1 = $('#popupContentEmail');
     let hoverArea1 = $('#popupActivateEmail1');
