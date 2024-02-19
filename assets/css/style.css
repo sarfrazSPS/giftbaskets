@@ -96,7 +96,7 @@ a{
 }
 .top-bar-left,
 .top-bar-right{
-    padding-top: 5px;
+    padding-top: 10px;
 }
 .top-bar-right{
     text-align: right;
@@ -240,9 +240,6 @@ form .brcf-btn:hover{
 }
 
 /*Product Categories Section*/
-.product-cats{
-
-}
 .proc-right img{
     width: 100%;
 }
@@ -457,9 +454,6 @@ form .brcf-btn:hover{
 }
 .gls-content{
     margin-top: 38px;
-}
-.gls-col{
-
 }
 .gls-copy{
     box-shadow: 0px 4px 14px 1px rgba(0, 0, 0, 0.2);
@@ -875,6 +869,208 @@ form .form-btn:hover {
 .contactus form .form-group{
     margin-bottom: 20px;
 }
+
+/*Product Details Page*/
+.small-images-outer{
+    padding: 0;
+}
+.small-images {
+    display: flex;
+    flex-direction: column;
+}
+.main-images img{
+    width: clamp(220px, 100%, 600px);
+}
+.small-images img {
+    margin-bottom: 35px !important;
+}
+.prod-id {
+    padding: 0;
+    font-weight: 500;
+    font-size: 16px;
+    margin-bottom: 3px;
+    opacity: 0.75;
+}
+.prod-title {
+    color: #5d0400 !important;
+    font-size: 24px !important;
+    padding-bottom: 0 !important;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+.price span {
+    display: inline-block !important;
+    padding-bottom: 0 !important;
+    font-size: 24px;
+}
+.prod-price {
+    font-size: 20px !important;
+    font-weight: bold !important;
+}
+.prod-stars {
+    padding-left: 15px;
+    padding-right: 10px;
+    vertical-align: text-top;
+}
+.prod-stars svg{
+    margin-top: -2px;
+    margin-right: 3px;
+}
+.prod-seperator{
+    margin-right: 10px;
+}
+.prod-rev-nos {
+    opacity: 0.85;
+    font-size: 18px !important;
+    font-weight: 500 !important;
+    color: var(--mainBlackColor) !important;
+}
+.prod-copy {
+    padding: 0 !important;
+    font-size: 24px;
+    font-weight: 400;
+    color: var(--mainBlackColor);;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+.form-label {
+    font-size: 16px;
+    color: #727272;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+.prod-form select,
+.prod-form input{
+    width: 100%;
+    height: 35px;
+}
+.prod-form td{
+    padding-right: 10px;
+}
+.custom-options-services {
+    background-color: #e6e6e6;
+    padding: 10px 22px 4px;
+    width: 100%;
+}
+.mb-new {
+    margin-bottom: 1.5rem;
+    margin-top: 1rem;
+}
+.mb-new label {
+    position: relative;
+}
+.custom-options-services input[type="checkbox"] {
+    float: right;
+    margin-right: 10px;
+    width: 12px;
+    height: 12px;
+    border: 2px solid #000000;
+    background-color: #ccc;
+}
+.circle {
+    width: 80px !important;
+    height: 80px !important;
+}
+.col-sm-new-2 {
+    width: 20%;
+    display: block;
+}
+.customization-head{
+    line-height: 1;
+    margin-top: 20px;
+    font-weight: bold;
+    opacity: 0.8;
+}
+.form-qty-left {
+    width: 20%;
+    display: inline-block;
+}
+.form-qty-btn{
+    margin-top: 40px;
+}
+.prod-form-qty {
+    font-size: 18px !important;
+    display: inline-block !important;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+.form-qty-input {
+    width: 70px !important;
+    height: 30px !important;
+    box-shadow: inset -3px 2px 4px rgba(150, 150, 150, 0.5);
+    border: 1px solid #d1d0d0;
+    text-align: center;
+}
+.form-qty-right {
+    display: inline-block;
+    width: 79%;
+}
+.form-qty-right button {
+    margin: 0;
+    height: 35px;
+    line-height: 1;
+    padding: 0;
+    width: 100%;
+    font-size: 90%;
+    text-transform: uppercase;
+    background-color: var(--mainBrownColor) !important;
+    color: #fff !important;
+    border: 0 !important;
+}
+.cgb-head {
+    font-weight: bold;
+    margin-top: 0;
+    font-size: 30px;
+    opacity: 0.8;
+    color: var(--mainBlackColor);;
+    margin-bottom: 20px;
+    text-align: center;
+}
+.cgb-copy {
+    width: 75%;
+    margin: 0 auto;
+}
+.cgb-copy-left, .cgb-copy-right {
+    display: inline-block;
+    vertical-align: top;
+}
+.cgb-copy-left {
+    width: 65%;
+}
+.cgb-copy-right {
+    width: 34%;
+}
+.cgb-copy-right p, 
+.cgb-copy-left p {
+    padding: 0;
+    margin-bottom: 8px;
+    line-height: 1;
+    font-weight: 600;
+    font-size: 18px;
+    opacity: 0.95;
+}
+.cgb-subcopy,
+.cgb-subhead{
+    width: 80%;
+}
+.cgb-subhead {
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--mainBlackColor);
+    margin-top: 35px;
+    opacity: 0.8;
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 55px;
+}
+.cgb-subcopy {
+    margin: 0 auto;
+    font-size: 17px;
+    padding-top: 8px;
+    margin-bottom: 100px;
+    text-align: left;
+}
+
 
 
 

@@ -153,7 +153,7 @@
                                 <div class="favs-img-holder">
                                     <img src="<?=$app_path;?>assets/images/products/2.png" />
                                 </div>
-                                <h5 class="favs-head">Cozy Winter Gift Box</h5>
+                                <h5 class="favs-head">Cozy Winter Gift Box2</h5>
                                 <span class="favs-regular">
                                     $79.99
                                 </span>
@@ -168,7 +168,7 @@
                                     data-product-id="product-02"
                                     data-product-name="product name is here"
                                     data-product-price-regular="$100"
-                                    data-product-price-sale=""
+                                    data-product-price-sale="$70"
                                     data-product-stars="5"
                                     data-product-reviews="76"
                                     data-product-flavor-pie="yes"
