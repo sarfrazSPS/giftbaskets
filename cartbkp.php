@@ -1,45 +1,3 @@
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?= $app_path ?>assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="<?= $app_path ?>assets/css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <meta property="og:type" content="product" />
-
-    <meta property="og:title" content="Chocolate Gift Baskets" />
-
-    <meta property="og:description" content="Our chocolate gift baskets offer Lancaster PA Dutch baked goods, cheeses, chocolates, whoopie pies, blueberry breads, apple pies and more" />
-
-    <meta property="og:url" content="https://padutchbaskets.com/chocolate-gift-baskets.php"/>
-
-    <meta property="og:site_name" content="PA Dutch Baskets" />
-
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" />
-
-    <meta property="product:price:amount" content="74.50" />
-
-    <meta property="product:price:currency" content="USD" />
-
-    <meta property="og:availability" content="instock" />
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Chocolate Gift Baskets | Lancaster PA </title>
-
-    <meta name="description" content="Unleash the joy with amazing chocolate gift baskets in Lancaster, PA, available online at PA Dutch Baskets. Perfect for any occasion, these baskets are a true delight!" />
-
-    <meta name="keywords" content="chocolate gift baskets, chocolate gift baskets from lancaster pa, unique gift basket ideas, food gift ideas, custom gift baskets, lancaster pa"/>
-
-    <link rel="canonical" href="https://padutchbaskets.com/chocolate-gift-baskets.php">
-</head>
-
-
 <?php include("includes/header.php"); ?>
 <?php
 $status = "";
@@ -415,9 +373,8 @@ if($response_type=="success"){
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="60%">PRODUCT</th>
+                                    <th scope="col" width="70%">PRODUCT</th>
                                     <th scope="col" width="10%">PRICE</th>
-                                    <th scope="col" width="10%">SHIPPING</th>
                                     <th scope="col" width="10%">QUANTITY</th>
                                     <th scope="col" width="10%">TOTAL</th>
                                 </tr>
@@ -682,19 +639,18 @@ if($clear_cart==1){
                 '</div>'+
                 '</td>'+
                 '<td class="cal_item_price">'+item.price+'</td>'+
-                '<td class="cal_shipping_price">'+item.shipping+'</td>'+
                 '<td width="10%">'+
                 '<div class="d-flex">'+
                 '<span class="min buttonplusminus">'+
                 '-'+
                 '</span>'+
-                '<input class="cal_item_qty" type="number" name="qty" id="qty" min="1" value="'+item.quantity+'" />'+
+                '<input class="cal_item_qty" type="number" name="qty" id="qty" maxlength="12" value="'+item.quantity+'" />'+
                 '<span class="plus buttonplusminus">'+
                 '+'+
                 '</span>'+
                 '</div>'+
                 '</td>'+
-                '<td class="">$<span class="cal_item_sub_total">0</span></td>'+
+                '<td class="cal_item_sub_total">-</td>'+
                 '</tr>'
                 );
             });
@@ -707,16 +663,14 @@ if($clear_cart==1){
 function calculat_item_sub_total(){
     $('#dynamicContentContainer tr').each(function(index, row) {
         var item_price = $(row).find('.cal_item_price').text();
+        item_price = parseInt(item_price.replace(/\$/g, ''));
 
         var item_qty = $(row).find('.cal_item_qty').val();
         item_qty = parseInt(item_qty);
 
-        var item_shipping_price = $(row).find('.cal_shipping_price').text();
-
         var itemTotal = item_qty*item_price;
-        itemTotal = parseFloat(itemTotal) + parseFloat(item_shipping_price);
-        itemTotal = itemTotal.toFixed(2);
-        $(row).find(".cal_item_sub_total").text(itemTotal);
+
+        $(row).find(".cal_item_sub_total").text("$"+itemTotal);
     });
 }
 
@@ -724,10 +678,9 @@ function calculat_items_total(){
     var grandTotal = 0;
     $('#dynamicContentContainer tr').each(function(index, row) {
         var item_sub_price = $(row).find('.cal_item_sub_total').text();
-        item_sub_price = parseFloat(item_sub_price);
+        item_sub_price = parseInt(item_sub_price.replace(/\$/g, ''));
         grandTotal += item_sub_price;
     });
-    grandTotal = grandTotal.toFixed(2);
     $("#grandSubTotal").html("<b>$"+grandTotal+"</b>");
     $("#checkout_amonut").val(grandTotal);
     
@@ -814,19 +767,6 @@ jQuery(function() {
 
     });
 });
-
-</script>
-
-<script>
-    $('#dynamicContentContainer').on('click', '.cal_item_qty', function() {
-        calculat_item_sub_total();
-        calculat_items_total();
-    });
-
-    $('#dynamicContentContainer').on('change', '.cal_item_qty', function() {
-        calculat_item_sub_total();
-        calculat_items_total();
-    });
 </script>
 
 <script type="text/javascript">

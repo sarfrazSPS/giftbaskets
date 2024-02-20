@@ -138,7 +138,6 @@
                                     data-product-name="product name is here"
                                     data-product-price-regular="$100"
                                     data-product-price-sale=""
-                                    data-product-shipping-price="9.50"
                                     data-product-stars="5"
                                     data-product-reviews="76"
                                     data-product-flavor-pie="yes"
@@ -154,7 +153,7 @@
                                 <div class="favs-img-holder">
                                     <img src="<?=$app_path;?>assets/images/products/2.png" />
                                 </div>
-                                <h5 class="favs-head">Cozy Winter Gift Box</h5>
+                                <h5 class="favs-head">Cozy Winter Gift Box2</h5>
                                 <span class="favs-regular">
                                     $79.99
                                 </span>
@@ -169,8 +168,7 @@
                                     data-product-id="product-02"
                                     data-product-name="product name is here"
                                     data-product-price-regular="$100"
-                                    data-product-price-sale=""
-                                    data-product-shipping-price="9.50"
+                                    data-product-price-sale="$70"
                                     data-product-stars="5"
                                     data-product-reviews="76"
                                     data-product-flavor-pie="yes"
@@ -202,7 +200,6 @@
                                     data-product-name="product name is here"
                                     data-product-price-regular="$100"
                                     data-product-price-sale=""
-                                    data-product-shipping-price="9.50"
                                     data-product-stars="5"
                                     data-product-reviews="76"
                                     data-product-flavor-pie="yes"
@@ -234,7 +231,6 @@
                                     data-product-name="product name is here"
                                     data-product-price-regular="$100"
                                     data-product-price-sale=""
-                                    data-product-shipping-price="9.50"
                                     data-product-stars="5"
                                     data-product-reviews="76"
                                     data-product-flavor-pie="yes"
@@ -698,16 +694,14 @@ $(document).ready(function() {
             urltoMove += slash+"psale=";
             urltoMove += ($.trim(productPriceSale) === '') ? 'no-sale' : productPriceSale;
 
-            var productShippingPrice = productMetaData.data('product-shipping-price');
-            urltoMove += slash+"pshipping=";
-            urltoMove += ($.trim(productShippingPrice) === '') ? 'no-shipping' : productShippingPrice;
-
             var productStars = productMetaData.data('product-stars');
-            var productReviews = productMetaData.data('product-reviews');
-            productStars = ($.trim(productStars) === '') ? 'no-star' : productStars;
-            productReviews = ($.trim(productReviews) === '') ? 'no-review' : productReviews;
-            urltoMove += slash+"pstarsreview="+productStars+"--"+productReviews;
+            urltoMove += slash+"pstars=";
+            urltoMove += ($.trim(productStars) === '') ? 'no-star' : productStars;
             
+            var productReviews = productMetaData.data('product-reviews');
+            urltoMove += slash+"previews=";
+            urltoMove += ($.trim(productReviews) === '') ? 'no-review' : productReviews;
+
             var productFlavorPie = productMetaData.data('product-flavor-pie');
             if(productFlavorPie=="yes"){
                 urltoMove += slash+"pfpie=";

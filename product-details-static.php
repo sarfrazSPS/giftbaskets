@@ -9,66 +9,6 @@ if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1'
 <script>
 var $appPathJS = <?php echo json_encode($old_site_js); ?>;
 </script>
-<?php
-$pid = isset($_GET['pid']) ? $_GET['pid'] : '';
-$pid = validateInput($pid, "pid");
-
-$pname = isset($_GET['pname']) ? $_GET['pname'] : '';
-$pname = validateInput($pname, "pname");
-$pname = "Cozy Winter Gift Boxt";
-$pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
-$pregular = validateInput($pregular, "pregular");
-
-$psale = isset($_GET['psale']) ? $_GET['psale'] : '';
-$psale = validateInput($psale, "psale");
-$psale = "74.50";
-
-$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
-$pshipping = validateInput($pshipping, "pshipping");
-
-$pstarsreview = isset($_GET['pstarsreview']) ? $_GET['pstarsreview'] : '';
-$pstarsreview = validateInput($pstarsreview, "pstarsreview");
-$sepSR = explode("--",$pstarsreview);
-
-$pstars = $sepSR[0];
-if(!is_numeric($pstars)){
-    $pstars="no-star";
-}
-if($pstars<1){
-    $pstars=0;
-}
-
-$previews = $sepSR[1];
-if(!is_numeric($previews)){
-    $previews="no-review";
-}
-if($previews<1){
-    $previews=0;
-}
-
-$pfpie = isset($_GET['pfpie']) ? $_GET['pfpie'] : '';
-$pfpie = validateInput($pfpie, "pfpie");
-
-$pfbread = isset($_GET['pfbread']) ? $_GET['pfbread'] : '';
-$pfbread = validateInput($pfbread, "pfbread");
-
-$pimgs = isset($_GET['pimgs']) ? $_GET['pimgs'] : '';
-$pimgs = validateInput($pimgs, "pimgs");
-
-$pimgsArray = explode(',', $pimgs);
-
-$pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
-$pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
-$pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
-$pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
-
-function validateInput($parameterValue, $parameterName){
-    $decodedParameter = urldecode($parameterValue);
-    $filteredParameter = filter_input(INPUT_GET, $parameterName, FILTER_SANITIZE_STRING);
-    $finalParameter = trim(strip_tags($filteredParameter));
-    return $finalParameter;
-}
-?>
 
 <section id="" class="mt-5 mb-5">
     <div class="container-fluid">
@@ -124,24 +64,14 @@ function validateInput($parameterValue, $parameterName){
                     <p class="prod-id">Product ID: product-011</p>
                     <h3 class="prod-title">Chocolate Lovers Gift Basket</h3>
                     <span class="price">
-                        <span class="prod-price" id='price_per_item' ><?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?></span>
-                        <?php
-                        if($pstars!=="no-star"){?>
-                            <span class="prod-stars">
-                                <?php for($i=1;$i<=$pstars;$i++){
-                                    if($i>5){
-                                        break;
-                                    }
-                                    ?><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><?php
-                                }?>
-                            </span>
-                        <?php }?>
-                        <?php  //if($previews!=="no-review"){?>
+                        <span class="prod-price" id='price_per_item' >$74.50</span>
+                        <span class="prod-stars">
+                            <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
+                        </span>
                             <span class="prod-seperator"> | </span>
-                            <span class="prod-rev-nos"><?=$previews;?> Reviews</span>
-                        <?php // }?>
+                            <span class="prod-rev-nos">11 Reviews</span>
                     </span>
-                    <span class="prod-rev-nos d-block"><?php if($pshipping!=="no-shipping"){echo "Shipping Price: ".$pshipping;}?></span>
+                    <span class="prod-rev-nos d-block">Shipping Price: $9.50</span>
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
@@ -341,10 +271,10 @@ function validateInput($parameterValue, $parameterName){
 </section>
  <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
-    data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
-    data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
-    data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
-    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
+    data-product-id="product-011"
+    data-product-name="PA Dutch Basket""
+    data-product-price-regular="79.50"
+    data-product-shipping-price="9.50"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""

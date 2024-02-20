@@ -15,22 +15,16 @@ $pid = validateInput($pid, "pid");
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
-$pname = "Cozy Winter Gift Boxt";
+$pname = "Cozy Winter Gift Box";
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
-$psale = "74.50";
+$psale = "45.99";
 
-$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
-$pshipping = validateInput($pshipping, "pshipping");
-
-$pstarsreview = isset($_GET['pstarsreview']) ? $_GET['pstarsreview'] : '';
-$pstarsreview = validateInput($pstarsreview, "pstarsreview");
-$sepSR = explode("--",$pstarsreview);
-
-$pstars = $sepSR[0];
+$pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
+$pstars = validateInput($pstars, "pstars");
 if(!is_numeric($pstars)){
     $pstars="no-star";
 }
@@ -38,7 +32,8 @@ if($pstars<1){
     $pstars=0;
 }
 
-$previews = $sepSR[1];
+$previews = isset($_GET['previews']) ? $_GET['previews'] : '';
+$previews = validateInput($previews, "previews");
 if(!is_numeric($previews)){
     $previews="no-review";
 }
@@ -121,8 +116,8 @@ function validateInput($parameterValue, $parameterName){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-011</p>
-                    <h3 class="prod-title">Chocolate Lovers Gift Basket</h3>
+                    <p class="prod-id">Product ID: product-046</p>
+                    <h3 class="prod-title">Cozy Winter Gift Boxes</h3>
                     <span class="price">
                         <span class="prod-price" id='price_per_item' ><?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?></span>
                         <?php
@@ -141,7 +136,6 @@ function validateInput($parameterValue, $parameterName){
                             <span class="prod-rev-nos"><?=$previews;?> Reviews</span>
                         <?php // }?>
                     </span>
-                    <span class="prod-rev-nos d-block"><?php if($pshipping!=="no-shipping"){echo "Shipping Price: ".$pshipping;}?></span>
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
@@ -149,16 +143,25 @@ function validateInput($parameterValue, $parameterName){
                         <tr>
                             <td>
                                 
-                                    <input type="hidden" name="on0" value="Choose Your Fudge">
-                                    <div class="form-label">Choose Your Fudge</div>
-                                    <select name="os0" id="chooseFudge">
-                                        <option value="Chocolate">Chocolate </option>
-                                        <option value="Choc/Peanut Butter">Choc/Peanut Butter </option>
-                                      
-                              </select>
+                                    <input type="hidden" name="on0" value="Choose Your Pie">
+                                    <div class="form-label">Choose Your Pie</div>
+                                    <select name="os0" id="choosePie">
+                                        <option value="Apple">Apple </option>
+                                        <option value="Shoo Fly">Shoo Fly </option>
+                                        <option value="Cherry Pie">Cherry Pie </option>
+                                    </select>
                                 
                             </td>
-                           
+                            <td>
+                                
+                                    <input type="hidden" name="on0" value="Choose Your Bread">
+                                    <div class="form-label">Choose Your Bread</div>
+                                    <select name="os0" id="chooseBread">
+                                        <option value="Blueberry">Blueberry </option>
+                                        <option value="Banana">Banana </option>
+                                    </select>
+                                
+                            </td>
                         </tr>
 
                         <tr>
@@ -178,128 +181,128 @@ function validateInput($parameterValue, $parameterName){
                         </table>
 
                         <div>
-                                    <h5 class="customization-head">Choose Your Customization Below </h5>
-                                    <div class="services">
-                                                                        
-                                        <div class="custom-options-services">
-    
-                                        <div class="row justify-content-center">
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="birthday">
-    
-                                                        <input type="checkbox" class="" id="tag" value="bithday">
-    
-                                                        <img src="assets/images/tags/birthday4.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="tag">
-    
-                                                        <input type="checkbox" id="Sympathy" class="" value="Sympathy">
-    
-                                                        
-                                                        
-                                                        <img src="assets/images/tags/sympathy3.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="custom-front">
-    
-                                                        <input type="checkbox" id="custom-front" class="" value="Get Well">
-    
-                                                        <img src="assets/images/tags/get-well5.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="Tag">
-    
-                                                        <input type="checkbox" id="Tag" class="" value="Thank You">
-    
-                                                        <img src="assets/images/tags/thank-you2.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-                                                
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="tag">
-    
-                                                        <input type="checkbox" id="tag" class="" value="Congratulations">
-    
-                                                        <img src="assets/images/tags/congrats3.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-                                    
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="balloon">
-    
-                                                        <input type="checkbox" id="Tag" class="" value="Anniversary">
-    
-                                                        
-                                                        
-                                                        <img src="assets/images/tags/happy-anniversary.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="tag">
-    
-                                                        <input type="checkbox" id="tag" class="" value="Hanukkah">
-    
-                                                        <img src="assets/images/tags/thinking-of-you.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-    
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="tag">
-    
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
-    
-                                                        <img src="assets/images/tags/no-custom.png" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-    
-    
-                                                <div class="col-sm-4 col-sm-new-4 text-center">
-                                                    
-                                                        <b>
-                                                            Can't find what you want? <br>
-                                                            Give us a call! 717-368-3973
-    
-                                                        </b>
-                                                        
-                                                </div>
+                            <h5 class="customization-head">Choose Your Customization Below </h5>
+                            <div class="services">
+                                                                
+                                <div class="custom-options-services">
+
+                                <div class="row justify-content-center">
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="balloon">
+
+                                                <input type="checkbox" class="" id="balloon" value="Happy Holidays">
+
+                                                <img src="https://padutchbaskets.com/Corporate/happy-holidays.png" class="circle ">
+
+                                            </label>
+
                                         </div>
-                                        </div>       
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="tag">
+
+                                                <input type="checkbox" id="Merry Christmas" class="" value="Merry Christmas">
+
+                                                
+                                                
+                                                <img src="https://padutchbaskets.com/Corporate/christmas-tag.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="custom-front">
+
+                                                <input type="checkbox" id="custom-front" class="" value="Happy Birthday">
+
+                                                <img src="https://padutchbaskets.com/Corporate/happy-birthday.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="balloon">
+
+                                                <input type="checkbox" id="balloon" class="" value="Congratulations">
+
+                                                <img src="https://padutchbaskets.com/Corporate/congrats2.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+                                        
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="tag">
+
+                                                <input type="checkbox" id="tag" class="" value="Thank You">
+
+                                                <img src="https://padutchbaskets.com/Corporate/thank-you.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+                            
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="balloon">
+
+                                                <input type="checkbox" id="balloon" class="" value="Sympathy">
+
+                                                
+                                                
+                                                <img src="https://padutchbaskets.com/Corporate/sympathy2.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="tag">
+
+                                                <input type="checkbox" id="tag" class="" value="Hanukkah">
+
+                                                <img src="https://padutchbaskets.com/Corporate/hanukkah.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+
+
+                                        <div class="col-sm-new-2 mb-new">
+
+                                            <label for="tag">
+
+                                                <input type="checkbox" id="tag" class="" value="Get Well">
+
+                                                <img src="https://padutchbaskets.com/Corporate/get-well.png" class="circle ">
+
+                                            </label>
+
+                                        </div>
+
+
+                                        <div class="col-sm-4 col-sm-new-4 text-center">
+                                            
+                                                <b>
+                                                    Can't find what you want? <br>
+                                                    Give us a call! 717-368-3973
+
+                                                </b>
+                                                
+                                        </div>
+                                </div>
+                                </div>        
                             <!--NEW::Code End Here-->
                             </div>
                         </div>
@@ -344,7 +347,6 @@ function validateInput($parameterValue, $parameterName){
     data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
     data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
     data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
-    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
@@ -416,24 +418,22 @@ $(document).ready(function() {
         var productId = $('.product-metadata').data('product-id');
         var productName = $('.product-metadata').data('product-name');
         var productPrice = $('.product-metadata').data('product-price-regular');
-        var productShippingPrice = $('.product-metadata').data('product-shipping-price');
         var productCustomization = checkedValuesString;
         var productQty = $('.product-metadata').data('product-qty');
         var productImage = $('.product-metadata').data('product-cart_img');
         
-        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
+        addToCart(productId, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
 
         var urlCart = $appPathJS+"cart.php";
         window.location.href = urlCart;
-        console.log(localStorage);
 
     });
     
-function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
+function addToCart(productID, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
 
     var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
     var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
+    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
 
     $.each(cart, function(index, product) {
         if (product.id === productToAddOrUpdate.id) {
