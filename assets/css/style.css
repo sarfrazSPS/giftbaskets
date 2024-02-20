@@ -902,6 +902,7 @@ form .form-btn:hover {
     display: inline-block !important;
     padding-bottom: 0 !important;
     font-size: 24px;
+    vertical-align: middle;
 }
 .prod-price {
     font-size: 20px !important;
@@ -1027,7 +1028,6 @@ form .form-btn:hover {
     text-align: center;
 }
 .cgb-copy {
-    width: 75%;
     margin: 0 auto;
 }
 .cgb-copy-left, .cgb-copy-right {
@@ -1045,12 +1045,13 @@ form .form-btn:hover {
     padding: 0;
     margin-bottom: 8px;
     line-height: 1;
-    font-weight: 600;
-    font-size: 18px;
-    opacity: 0.95;
+    /* font-weight: 600; */
+    font-size: 17px;
+    /* opacity: 0.95; */
 }
 .cgb-subcopy,
-.cgb-subhead{
+.cgb-subhead,
+.cgb-copy{
     width: 80%;
 }
 .cgb-subhead {

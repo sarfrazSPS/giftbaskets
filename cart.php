@@ -114,7 +114,7 @@ if($response_type=="success"){
     opacity: 1;
 }
 
-.d-flex input {
+#cart-section .d-flex input {
     width: 35px;
     text-align: center;
     border: 0;
@@ -639,6 +639,7 @@ if($clear_cart==1){
 <script type="text/javascript">
     $(document).ready(function() {
         var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        // console.log(localStorage);
         if (cartItems.length === 0) {
             $("#empty-cart-section").removeClass("d-none");
             $("#cart-section").addClass("d-none");
@@ -819,6 +820,11 @@ jQuery(function() {
 
 <script>
     $('#dynamicContentContainer').on('click', '.cal_item_qty', function() {
+        var addInput = $(this);
+        var updatedQuantity = parseInt(addInput.val(), 10);
+        var specificIdToRemove = $(this).closest(".cart_tr").attr("id");
+        updateQuantityInLocalStorage(updatedQuantity,specificIdToRemove);        
+
         calculat_item_sub_total();
         calculat_items_total();
     });
@@ -863,60 +869,78 @@ $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
 
 <script type="text/javascript">
   $(document).ready(function() {
-    let hoveredContent = $('#popupContentGift');
-    let hoverArea = $('#popupActivateGift1');
+    let hoveredContentGift = $('#popupContentGift');
+    var hoverAreaGift = {};
 
-    hoverArea.mouseenter(function(e) {
-      hoveredContent.css({
-        top: e.pageY + 'px',
-        left: e.pageX + 10 + 'px'  
-      });
+    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+    var totalCItems = 0;
+    cartItems.forEach(function(item) {
+        totalCItems++;
 
-      hoveredContent.show();
+        hoverAreaGift[totalCItems] = $('#popupActivateGift'+totalCItems);
+
+        hoverAreaGift[totalCItems].mouseenter(function(e) {
+            hoveredContentGift.css({
+                top: e.pageY + 'px',
+                left: e.pageX + 10 + 'px'  
+            });
+
+            hoveredContentGift.show();
+        });
+
+        hoverAreaGift[totalCItems].mouseleave(function() {
+            hoveredContentGift.hide();
+        });
+
+        hoveredContentGift.mouseenter(function() {
+            hoveredContentGift.show();
+        });
+
+        // $(document).mousemove(function(e) {
+        //     if (!hoverAreaGift[totalCItems].is(e.target) && !hoverAreaGift[totalCItems].is(e.target) && hoverArea1.has(e.target).length === 0 && hoveredContentGift.has(e.target).length === 0) {
+        //         hoveredContentGift.hide();
+        //     }
+        // });
     });
 
-    hoverArea.mouseleave(function() {
-      hoveredContent.hide();
-    });
-
-    hoveredContent.mouseenter(function() {
-      hoveredContent.show();
-    });
-
-    $(document).mousemove(function(e) {
-      if (!hoverArea.is(e.target) && !hoveredContent.is(e.target) && hoverArea.has(e.target).length === 0 && hoveredContent.has(e.target).length === 0) {
-        hoveredContent.hide();
-      }
-    });
+    
 
   });
 </script>
 <script type="text/javascript">
   $(document).ready(function() {
-    let hoveredContent1 = $('#popupContentEmail');
-    let hoverArea1 = $('#popupActivateEmail1');
+    let hoveredContentEmail = $('#popupContentEmail');
+    var hoverAreaEmail = {};
 
-    hoverArea1.mouseenter(function(e) {
-        hoveredContent1.css({
-        top: e.pageY + 'px',
-        left: e.pageX + 10 + 'px'  
-      });
+    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+    var totalCItems1 = 0;
+    cartItems.forEach(function(item) {
+        totalCItems1++;
 
-      hoveredContent1.show();
-    });
+        hoverAreaEmail[totalCItems1] = $('#popupActivateEmail'+totalCItems1);
 
-    hoverArea1.mouseleave(function() {
-        hoveredContent1.hide();
-    });
+        hoverAreaEmail[totalCItems1].mouseenter(function(e) {
+            hoveredContentEmail.css({
+            top: e.pageY + 'px',
+            left: e.pageX + 10 + 'px'  
+        });
 
-    hoveredContent1.mouseenter(function() {
-        hoveredContent1.show();
-    });
+        hoveredContentEmail.show();
+        });
 
-    $(document).mousemove(function(e) {
-      if (!hoverArea1.is(e.target) && !hoveredContent1.is(e.target) && hoverArea1.has(e.target).length === 0 && hoveredContent1.has(e.target).length === 0) {
-        hoveredContent1.hide();
-      }
+        hoverAreaEmail[totalCItems1].mouseleave(function() {
+            hoveredContentEmail.hide();
+        });
+
+        hoveredContentEmail.mouseenter(function() {
+            hoveredContentEmail.show();
+        });
+
+        // $(document).mousemove(function(e) {
+        //   if (!hoverAreaEmail[totalCItems1].is(e.target) && !hoveredContentEmail.is(e.target) && hoverAreaEmail[totalCItems1].has(e.target).length === 0 && hoveredContentEmail.has(e.target).length === 0) {
+        //     hoveredContentEmail.hide();
+        //   }
+        // });
     });
 
   });
