@@ -926,6 +926,11 @@ form .form-btn:hover {
     font-weight: 500 !important;
     color: var(--mainBlackColor) !important;
 }
+.prod-rev-nos:not(.price .prod-rev-nos) {
+    opacity: 0;
+    line-height: 1px;
+    color: #ffffff;
+  }
 .prod-copy {
     padding: 0 !important;
     font-size: 24px;
@@ -987,7 +992,7 @@ form .form-btn:hover {
     display: inline-block;
 }
 .form-qty-btn{
-    margin-top: 10px;
+    margin-top: 30px;
 }
 .prod-form-qty {
     font-size: 18px !important;
@@ -1068,9 +1073,17 @@ form .form-btn:hover {
     margin: 0 auto;
     font-size: 17px;
     padding-top: 8px;
-    margin-bottom: 100px;
+    /* margin-bottom: 100px; */
     text-align: left;
 }
+.shipping_form .form-control{
+    border: 0;
+}
+.shipping_form option {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 
 
 

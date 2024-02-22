@@ -72,7 +72,7 @@
 </div>
 <!--/#content-->
 
-<script src="<?= $app_path ?>assets/js/jquery-3.7.1.slim.js"></script>
+<script src="<?= $app_path ?>assets/js/jquery-3.7.1.min.js"></script>
 <script src="<?= $app_path ?>assets/js/bootstrap/bootstrap.bundle.js"></script>
 </body>
 

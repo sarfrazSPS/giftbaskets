@@ -410,14 +410,13 @@ if($response_type=="success"){
                 </div>
             </div>
             <div class="row">
-                <div class="col-sm-12 col-md-9">
+                <div class="col-sm-12 col-md-9" id="left">
                     <div class="table-responsive">
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="60%">PRODUCT</th>
+                                    <th scope="col" width="70%">PRODUCT</th>
                                     <th scope="col" width="10%">PRICE</th>
-                                    <th scope="col" width="10%">SHIPPING</th>
                                     <th scope="col" width="10%">QUANTITY</th>
                                     <th scope="col" width="10%">TOTAL</th>
                                 </tr>
@@ -428,12 +427,20 @@ if($response_type=="success"){
                     </div>
                 </div>
 
-                <div class="col-sm-12 col-md-3">
+                <div class="col-sm-12 col-md-3" id="right">
                     <div class="card-right p-3">
                         <h6 class="cart-border pb-3">ORDER SUMMARY</h6>
                         <div class="d-flex justify-content-between cart-border py-3">
-                            <P class="mb-0">PRODUCT TOTAL:</P>
+                            <p class="mb-0">PRODUCT SUB TOTAL:</p>
                             <span id="grandSubTotal"><b>-</b></span>
+                        </div>
+                        <div class="d-flex justify-content-between cart-border py-3">
+                            <p class="mb-0">SHIPPING:</p>
+                            <span id="shippingCost"><b>-</b></span>
+                        </div>
+                        <div class="d-flex justify-content-between cart-border py-3">
+                            <p class="mb-0"><b>Grand Total:</b></p>
+                            <span id="grandTotal_1"><b>-</b></span>
                         </div>
                         <div class="d-flex justify-content-between py-3">
                             <p class="mb-0">Enter Coupons & Offer Codes</p>
@@ -448,6 +455,22 @@ if($response_type=="success"){
                                 <input type="text" class="cart-coupon-field" id="cart-coupon-field" name="coupon" placeholder="Enter Code">
                                 <input type="button" class="cart-coupon-btn" id="cart-coupon-btn" value="Apply" >
                             </form>
+                        </div>
+                        <div class="cart-border py-3">
+                            <p class="mb-2"><b>SHIPPING ADDRESS:</b></p>
+                            <div class="shipping-div">
+                                <form class="shipping_form">
+                                    <select name="calc_shipping_country" id="calc_shipping_country" class="form-select cart-input-field mb-2"><option value="default">Select a country / region…</option><option value="AF">Afghanistan</option><option value="AX">Åland Islands</option><option value="AL">Albania</option><option value="DZ">Algeria</option><option value="AS">American Samoa</option><option value="AD">Andorra</option><option value="AO">Angola</option><option value="AI">Anguilla</option><option value="AQ">Antarctica</option><option value="AG">Antigua and Barbuda</option><option value="AR">Argentina</option><option value="AM">Armenia</option><option value="AW">Aruba</option><option value="AU">Australia</option><option value="AT">Austria</option><option value="AZ">Azerbaijan</option><option value="BS">Bahamas</option><option value="BH">Bahrain</option><option value="BD">Bangladesh</option><option value="BB">Barbados</option><option value="BY">Belarus</option><option value="PW">Belau</option><option value="BE">Belgium</option><option value="BZ">Belize</option><option value="BJ">Benin</option><option value="BM">Bermuda</option><option value="BT">Bhutan</option><option value="BO">Bolivia</option><option value="BQ">Bonaire, Saint Eustatius and Saba</option><option value="BA">Bosnia and Herzegovina</option><option value="BW">Botswana</option><option value="BV">Bouvet Island</option><option value="BR">Brazil</option><option value="IO">British Indian Ocean Territory</option><option value="BN">Brunei</option><option value="BG">Bulgaria</option><option value="BF">Burkina Faso</option><option value="BI">Burundi</option><option value="KH">Cambodia</option><option value="CM">Cameroon</option><option value="CA">Canada</option><option value="CV">Cape Verde</option><option value="KY">Cayman Islands</option><option value="CF">Central African Republic</option><option value="TD">Chad</option><option value="CL">Chile</option><option value="CN">China</option><option value="CX">Christmas Island</option><option value="CC">Cocos (Keeling) Islands</option><option value="CO">Colombia</option><option value="KM">Comoros</option><option value="CG">Congo (Brazzaville)</option><option value="CD">Congo (Kinshasa)</option><option value="CK">Cook Islands</option><option value="CR">Costa Rica</option><option value="HR">Croatia</option><option value="CU">Cuba</option><option value="CW">Curaçao</option><option value="CY">Cyprus</option><option value="CZ">Czech Republic</option><option value="DK">Denmark</option><option value="DJ">Djibouti</option><option value="DM">Dominica</option><option value="DO">Dominican Republic</option><option value="EC">Ecuador</option><option value="EG">Egypt</option><option value="SV">El Salvador</option><option value="GQ">Equatorial Guinea</option><option value="ER">Eritrea</option><option value="EE">Estonia</option><option value="SZ">Eswatini</option><option value="ET">Ethiopia</option><option value="FK">Falkland Islands</option><option value="FO">Faroe Islands</option><option value="FJ">Fiji</option><option value="FI">Finland</option><option value="FR">France</option><option value="GF">French Guiana</option><option value="PF">French Polynesia</option><option value="TF">French Southern Territories</option><option value="GA">Gabon</option><option value="GM">Gambia</option><option value="GE">Georgia</option><option value="DE">Germany</option><option value="GH">Ghana</option><option value="GI">Gibraltar</option><option value="GR">Greece</option><option value="GL">Greenland</option><option value="GD">Grenada</option><option value="GP">Guadeloupe</option><option value="GU">Guam</option><option value="GT">Guatemala</option><option value="GG">Guernsey</option><option value="GN">Guinea</option><option value="GW">Guinea-Bissau</option><option value="GY">Guyana</option><option value="HT">Haiti</option><option value="HM">Heard Island and McDonald Islands</option><option value="HN">Honduras</option><option value="HK">Hong Kong</option><option value="HU">Hungary</option><option value="IS">Iceland</option><option value="IN">India</option><option value="ID">Indonesia</option><option value="IR">Iran</option><option value="IQ">Iraq</option><option value="IE">Ireland</option><option value="IM">Isle of Man</option><option value="IL">Israel</option><option value="IT">Italy</option><option value="CI">Ivory Coast</option><option value="JM">Jamaica</option><option value="JP">Japan</option><option value="JE">Jersey</option><option value="JO">Jordan</option><option value="KZ">Kazakhstan</option><option value="KE">Kenya</option><option value="KI">Kiribati</option><option value="KW">Kuwait</option><option value="KG">Kyrgyzstan</option><option value="LA">Laos</option><option value="LV">Latvia</option><option value="LB">Lebanon</option><option value="LS">Lesotho</option><option value="LR">Liberia</option><option value="LY">Libya</option><option value="LI">Liechtenstein</option><option value="LT">Lithuania</option><option value="LU">Luxembourg</option><option value="MO">Macao</option><option value="MG">Madagascar</option><option value="MW">Malawi</option><option value="MY">Malaysia</option><option value="MV">Maldives</option><option value="ML">Mali</option><option value="MT">Malta</option><option value="MH">Marshall Islands</option><option value="MQ">Martinique</option><option value="MR">Mauritania</option><option value="MU">Mauritius</option><option value="YT">Mayotte</option><option value="MX">Mexico</option><option value="FM">Micronesia</option><option value="MD">Moldova</option><option value="MC">Monaco</option><option value="MN">Mongolia</option><option value="ME">Montenegro</option><option value="MS">Montserrat</option><option value="MA">Morocco</option><option value="MZ">Mozambique</option><option value="MM">Myanmar</option><option value="NA">Namibia</option><option value="NR">Nauru</option><option value="NP">Nepal</option><option value="NL">Netherlands</option><option value="NC">New Caledonia</option><option value="NZ">New Zealand</option><option value="NI">Nicaragua</option><option value="NE">Niger</option><option value="NG">Nigeria</option><option value="NU">Niue</option><option value="NF">Norfolk Island</option><option value="KP">North Korea</option><option value="MK">North Macedonia</option><option value="MP">Northern Mariana Islands</option><option value="NO">Norway</option><option value="OM">Oman</option><option value="PK">Pakistan</option><option value="PS">Palestinian Territory</option><option value="PA">Panama</option><option value="PG">Papua New Guinea</option><option value="PY">Paraguay</option><option value="PE">Peru</option><option value="PH">Philippines</option><option value="PN">Pitcairn</option><option value="PL">Poland</option><option value="PT">Portugal</option><option value="PR">Puerto Rico</option><option value="QA">Qatar</option><option value="RE">Reunion</option><option value="RO">Romania</option><option value="RU">Russia</option><option value="RW">Rwanda</option><option value="ST">São Tomé and Príncipe</option><option value="BL">Saint Barthélemy</option><option value="SH">Saint Helena</option><option value="KN">Saint Kitts and Nevis</option><option value="LC">Saint Lucia</option><option value="SX">Saint Martin (Dutch part)</option><option value="MF">Saint Martin (French part)</option><option value="PM">Saint Pierre and Miquelon</option><option value="VC">Saint Vincent and the Grenadines</option><option value="WS">Samoa</option><option value="SM">San Marino</option><option value="SA">Saudi Arabia</option><option value="SN">Senegal</option><option value="RS">Serbia</option><option value="SC">Seychelles</option><option value="SL">Sierra Leone</option><option value="SG">Singapore</option><option value="SK">Slovakia</option><option value="SI">Slovenia</option><option value="SB">Solomon Islands</option><option value="SO">Somalia</option><option value="ZA">South Africa</option><option value="GS">South Georgia/Sandwich Islands</option><option value="KR">South Korea</option><option value="SS">South Sudan</option><option value="ES">Spain</option><option value="LK">Sri Lanka</option><option value="SD">Sudan</option><option value="SR">Suriname</option><option value="SJ">Svalbard and Jan Mayen</option><option value="SE">Sweden</option><option value="CH">Switzerland</option><option value="SY">Syria</option><option value="TW">Taiwan</option><option value="TJ">Tajikistan</option><option value="TZ">Tanzania</option><option value="TH">Thailand</option><option value="TL">Timor-Leste</option><option value="TG">Togo</option><option value="TK">Tokelau</option><option value="TO">Tonga</option><option value="TT">Trinidad and Tobago</option><option value="TN">Tunisia</option><option value="TR">Turkey</option><option value="TM">Turkmenistan</option><option value="TC">Turks and Caicos Islands</option><option value="TV">Tuvalu</option><option value="UG">Uganda</option><option value="UA">Ukraine</option><option value="AE">United Arab Emirates</option><option value="GB">United Kingdom (UK)</option><option value="US" selected="selected">United States (US)</option><option value="UM">United States (US) Minor Outlying Islands</option><option value="UY">Uruguay</option><option value="UZ">Uzbekistan</option><option value="VU">Vanuatu</option><option value="VA">Vatican</option><option value="VE">Venezuela</option><option value="VN">Vietnam</option><option value="VG">Virgin Islands (British)</option><option value="VI">Virgin Islands (US)</option><option value="WF">Wallis and Futuna</option><option value="EH">Western Sahara</option><option value="YE">Yemen</option><option value="ZM">Zambia</option><option value="ZW">Zimbabwe</option></select>
+                                    <input type="text" class="cart-input-field mb-2 form-control" id="cart-state-field" name="cart_state" placeholder="Enter State" />
+                                    <input type="text" class="cart-input-field mb-2 form-control" id="cart-city-field" name="cart_city" placeholder="Enter City" />
+                                    <input type="text" class="cart-input-field mb-2 form-control" id="cart-postal-field" name="cart_postal" placeholder="Enter Postal" />
+                                    <input type="button" name="cart_shiiping_btn" id="cart_shiiping_btn"  class="cart-coupon-btn w-100" value="Update Shipping" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="d-flex justify-content-between cart-border py-3">
+                            <p class="mb-0"><b>Grand Total:</b></p>
+                            <span id="grandTotal_2"><b>-</b></span>
                         </div>
                         <div class="py-3">
                             <div class="shopgo w-100">
@@ -481,7 +504,10 @@ if($response_type=="success"){
 
                                 <div class="card-block">
                                     <form role="form" method='post' action=''>
-                                    <input type='hidden' name='amount' id="checkout_amonut" value='10.00'> 
+                                    <input type='hidden' name='couponapplied' id="couponapplied" value='0'> 
+                                    <input type='hidden' name='cartShippingTotal' id="cartShippingTotal" value="">
+                                    <input type='hidden' name='cartSubTotal' id="cartSubTotal" value="">
+                                    <input type='hidden' name='amount' id="checkout_amonut" value='10.00'>
                                         <div class="row">
                                             <div class="col-sm-12">
                                                 <div class="form-group">
@@ -512,10 +538,10 @@ if($response_type=="success"){
                                                     </select>
                                                 </div>
                                             </div>
-                                            <div class="col-sm-5 col-md-5 float-xs-right">
+                                            <div class="col-sm-5 col-md-5 float-xs-right ps-0">
                                                 <div class="form-group">
                                                     <label>EXP Year</label>
-                                                    <select name="cc_exp_year" class="form-select">
+                                                    <select name="cc_exp_year" class="form-select cart-input-field">
                                                         <option value="">Exp Year*</option>
                                                             <?php for($fy=2022; $fy<=2030; $fy++) { ?>
                                                                 <option value="<?php echo $fy; ?>"><?php echo $fy; ?></option>
@@ -541,9 +567,9 @@ if($response_type=="success"){
                                 <div class="card-footer p-0 m-3">
                                     <div class="row p-0">
                                         <div class="col-12 p-0">
-                                        <button type='submit' class="cart-btn-payment" >Pay Now</button>
+                                        <button type='submit' class="cart-btn-payment border-0" >Pay Now</button>
                                         </form>
-                                            <!-- <a href="#" class="cart-btn-payment">
+                                            <!-- <a href="#" class="cart-btn-payment border-0">
                                                 <span class="translatex text-uppercase ">Pay </span>
                                                 <span class="btn-arrow">
                                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg rotate90">
@@ -683,7 +709,6 @@ if($clear_cart==1){
                 '</div>'+
                 '</td>'+
                 '<td class="cal_item_price">'+item.price+'</td>'+
-                '<td class="cal_shipping_price">'+item.shipping+'</td>'+
                 '<td width="10%">'+
                 '<div class="d-flex">'+
                 '<span class="min buttonplusminus">'+
@@ -705,33 +730,54 @@ if($clear_cart==1){
 </script>
 
 <script type="text/javascript">
-function calculat_item_sub_total(){
+function calculat_each_item_total(){
     $('#dynamicContentContainer tr').each(function(index, row) {
         var item_price = $(row).find('.cal_item_price').text();
 
         var item_qty = $(row).find('.cal_item_qty').val();
         item_qty = parseInt(item_qty);
 
-        var item_shipping_price = $(row).find('.cal_shipping_price').text();
-
         var itemTotal = item_qty*item_price;
-        itemTotal = parseFloat(itemTotal) + parseFloat(item_shipping_price);
+        itemTotal = parseFloat(itemTotal);
         itemTotal = itemTotal.toFixed(2);
         $(row).find(".cal_item_sub_total").text(itemTotal);
     });
 }
 
-function calculat_items_total(){
-    var grandTotal = 0;
+function calculat_items_sub_total(){
+    var subTotal = 0;
     $('#dynamicContentContainer tr').each(function(index, row) {
         var item_sub_price = $(row).find('.cal_item_sub_total').text();
         item_sub_price = parseFloat(item_sub_price);
-        grandTotal += item_sub_price;
+        subTotal += item_sub_price;
     });
+    subTotal = subTotal.toFixed(2);
+    $("#grandSubTotal").html("<b>$"+subTotal+"</b>");
+    $("#cartSubTotal").val(subTotal);
+}
+
+function calculat_shipping_costs(){
+    var cartItemsShipping = JSON.parse(localStorage.getItem('cartstorage')) || [];
+    var totalCartItems = 0;
+    var shippingTotal = 0;
+    cartItemsShipping.forEach(function(item) {
+        totalCartItems++;
+        shippingTotal += parseFloat(item.shipping);
+    });
+    shippingTotal = shippingTotal.toFixed(2);
+    $("#shippingCost").html("<b>$"+shippingTotal+"</b>");
+    $("#cartShippingTotal").val(shippingTotal);
+}
+
+function calculat_grand_totals(){
+    var cartSubTotal = $("#cartSubTotal").val();
+    var cartShippingTotal = $("#cartShippingTotal").val();
+    var grandTotal = parseFloat(cartSubTotal) + parseFloat(cartShippingTotal);
     grandTotal = grandTotal.toFixed(2);
-    $("#grandSubTotal").html("<b>$"+grandTotal+"</b>");
+
+    $("#grandTotal_1").html("<b>$"+grandTotal+"</b>");
+    $("#grandTotal_2").html("<b>$"+grandTotal+"</b>");
     $("#checkout_amonut").val(grandTotal);
-    
 }
 
 function updateQuantityInLocalStorage(newQuantity,specificIdToRemove) {
@@ -749,15 +795,33 @@ function updateQuantityInLocalStorage(newQuantity,specificIdToRemove) {
 
 $(document).ready(function() {
 
-    calculat_item_sub_total();
-    calculat_items_total();
+    calculat_each_item_total();
+    calculat_items_sub_total();
+    calculat_shipping_costs();
+    calculat_grand_totals();
 });
 </script>
 
 <script type="text/javascript">
+    $("#cart_shiiping_btn").click(function(){
+        $("#shippingCost").html("loading...");
+        $("#grandTotal_1").html("loading...");
+        $("#grandTotal_2").html("loading...");
+        setTimeout(function() {
+            calculat_shipping_costs();
+            calculat_grand_totals();
+        }, 1500);
+    });
+
     $("#cart-coupon-btn").click(function(){
+        var couponAlreadyApplied = $("#couponapplied").val();
+        if(couponAlreadyApplied==1){
+            alert('Coupon already applied!');
+            return;
+        }
         var cartTotal = $("#grandSubTotal").text();
-        cartTotal = parseInt(cartTotal.replace(/\$/g, ''));
+        cartTotal = parseFloat(cartTotal.replace(/\$/g, ''));
+        cartTotal = cartTotal.toFixed(2);
         var couponCode = $('#cart-coupon-field').val().toUpperCase();
         
         // Check if the entered coupon code exists in the array
@@ -774,9 +838,12 @@ $(document).ready(function() {
             }
 
             $("#grandSubTotal").html("<b>$"+cartTotal+"</b>");
-            $("#checkout_amonut").val(cartTotal);
+            $("#cartSubTotal").val(cartTotal);
+            // $("#checkout_amonut").val(cartTotal);
+            calculat_grand_totals();
             
             alert('Coupon applied successfully!');
+            $("#couponapplied").val(1);
 
         }else {
             alert('Invalid coupon code. Please try again.');
@@ -803,8 +870,10 @@ jQuery(function() {
             });
         }
 
-        calculat_item_sub_total();
-        calculat_items_total();
+        calculat_each_item_total();
+        calculat_items_sub_total();
+        calculat_shipping_costs();
+        calculat_grand_totals();
 
         var updatedQuantity = parseInt(addInput.val(), 10);
         var specificIdToRemove = j(this).closest(".cart_tr").attr("id");
@@ -825,13 +894,17 @@ jQuery(function() {
         var specificIdToRemove = $(this).closest(".cart_tr").attr("id");
         updateQuantityInLocalStorage(updatedQuantity,specificIdToRemove);        
 
-        calculat_item_sub_total();
-        calculat_items_total();
+        calculat_each_item_total();
+        calculat_items_sub_total();
+        calculat_shipping_costs();
+        calculat_grand_totals();
     });
 
     $('#dynamicContentContainer').on('change', '.cal_item_qty', function() {
-        calculat_item_sub_total();
-        calculat_items_total();
+        calculat_each_item_total();
+        calculat_items_sub_total();
+        calculat_shipping_costs();
+        calculat_grand_totals();
     });
 </script>
 
