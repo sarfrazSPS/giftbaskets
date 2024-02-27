@@ -1417,12 +1417,13 @@ form .form-btn:hover {
 }
 .cart-icon-header svg{
     width: 30px;
+    fill: var(--mainBrownColor);
 }
 .cart-item-header{
     width: 20px;
     height: 20px;
     display: block;
-    background-color: var(--mainBrownColor);
+    background-color: var(--mainTextColor);
     text-align: center;
     line-height: 20px;
     border-radius: 100%;

@@ -13,7 +13,7 @@
     <meta property="og:type" content="product" />
 
     <meta property="og:title" content="Thank You Gifts " />
-s
+
     <meta property="og:description" content="Our Thank You Gifts Baskets are the perfect gift to show appreciation with lancaster, PA Baked goods, gourmet foods, and chocolates"
     <meta property="og:url" content="https://padutchbaskets.com/get-well-soon-gifts.php"/>
 
@@ -56,6 +56,7 @@ var $appPathJS = <?php echo json_encode($old_site_js); ?>;
 <?php
 $pid = isset($_GET['pid']) ? $_GET['pid'] : '';
 $pid = validateInput($pid, "pid");
+$pid = "product-050";
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
@@ -66,6 +67,10 @@ $pregular = validateInput($pregular, "pregular");
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
 $psale = "89.50";
+
+$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
+$pshipping = validateInput($pshipping, "pshipping");
+$pshipping = "10";
 
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
@@ -97,6 +102,7 @@ $pimgs = validateInput($pimgs, "pimgs");
 $pimgsArray = explode(',', $pimgs);
 
 $pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
+$pimg1 = "thank-you-gifts-to-send.jpg";
 $pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
 $pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
 $pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
@@ -401,6 +407,7 @@ function validateInput($parameterValue, $parameterName){
     data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
     data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
     data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
+    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
@@ -472,22 +479,24 @@ $(document).ready(function() {
         var productId = $('.product-metadata').data('product-id');
         var productName = $('.product-metadata').data('product-name');
         var productPrice = $('.product-metadata').data('product-price-regular');
+        var productShippingPrice = $('.product-metadata').data('product-shipping-price');
         var productCustomization = checkedValuesString;
         var productQty = $('.product-metadata').data('product-qty');
         var productImage = $('.product-metadata').data('product-cart_img');
         
-        addToCart(productId, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
+        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
 
         var urlCart = $appPathJS+"cart.php";
         window.location.href = urlCart;
+        console.log(localStorage);
 
     });
     
-function addToCart(productID, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
+function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
 
     var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
     var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
+    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
 
     $.each(cart, function(index, product) {
         if (product.id === productToAddOrUpdate.id) {

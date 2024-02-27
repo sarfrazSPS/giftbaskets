@@ -98,7 +98,7 @@
             <div class="row mt-3">
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/thank-you-gifts.jpg" class="card-img-top" alt="Our thank you gifts offer strawberry jams, apple or shoo fly pie, fudge, streusel and much more that we ship direct">
+                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/thank-you-gifts.jpg" class="card-img-top" alt="Our thank you gifts offer strawberry jams, apple or shoo fly pie, fudge, streusel and much more that we ship direct" loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Thank You Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -134,13 +134,29 @@
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/thank-you-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>thank-you-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                    data-product-id="product-050"
+                                    data-product-name="Thank You Gifts"
+                                    data-product-price-regular="$89.50"
+                                    data-product-price-sale=""
+                                    data-product-shipping-price="10"
+                                    data-product-stars="5"
+                                    data-product-reviews="16"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="thank-you-gifts-to-send.jpg"
+                                    data-product-image-2="pic2.jpg"
+                                    data-product-image-3=""
+                                    data-product-image-4=""
+                                    ></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/best-thank-you-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/best-thank-you-gifts.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">"Bakers Choice" Best Thank You Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -176,13 +192,29 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/best-thank-you-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>best-thank-you-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                    data-product-id="product-052"
+                                    data-product-name="'Bakers Choice' Best Thank You Gifts"
+                                    data-product-price-regular="$87.50"
+                                    data-product-price-sale=""
+                                    data-product-shipping-price="0"
+                                    data-product-stars="5"
+                                    data-product-reviews="19"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="best-thank-you-gifts.jpg"
+                                    data-product-image-2="pic2-1.jpg"
+                                    data-product-image-3=""
+                                    data-product-image-4=""
+                                    ></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/unique-thank-you-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/unique-thank-you-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Unique Thank You Gift Baskets</h5>
                             <div class="d-flex align-items-center">
@@ -218,13 +250,29 @@
                             </div>
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/unique-thank-you-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>unique-thank-you-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-053"
+                                data-product-name="'Savory Flavors' Unique Thank You Gift Baskets"
+                                data-product-price-regular="$119.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="22"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="unique-thank-you-gift-baskets.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/traditions/thank-you-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/traditions/thank-you-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Thank You Gift Ideas</h5>
                             <div class="d-flex align-items-center">
@@ -260,7 +308,23 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/thank-you-gift-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>thank-you-gift-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-054"
+                                data-product-name="'Traditions' Thank You Gift Ideas"
+                                data-product-price-regular="$79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="15"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="thank-you-gifts-delivered.jpg"
+                                data-product-image-2="pic2-1.jpg"
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -268,7 +332,7 @@
             <div class="row mt-4">
                 <div class="col">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-special/sympathy-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-special/sympathy-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Bakers Special</h5>
                             <div class="d-flex align-items-center">
@@ -299,18 +363,34 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2"11 Reviews</a>
+                                <a class="mt-2 ps-2">11 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1000"
+                                data-product-name="Bakers Special"
+                                data-product-price-regular="$54.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="11"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="sympathy-gift-baskets.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -347,12 +427,28 @@
                             <span class="product-price mt-1">$77.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1001"
+                                data-product-name="Birthday Gift Basket"
+                                data-product-price-regular="$77.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="17"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/best-birthday-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/best-birthday-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Savory Birthday Gift</h5>
                             <div class="d-flex align-items-center">
@@ -389,12 +485,28 @@
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1002"
+                                data-product-name="Savory Birthday Gift"
+                                data-product-price-regular="$119.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="26"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="best-birthday-gift-baskets.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
                 <div class="col">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/birthday-delivery-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/birthday-delivery-gifts.jpg" class="card-img-top" alt="..." loading="lazy">
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Delivery Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -431,6 +543,22 @@
                             <span class="product-price mt-1">$82.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1003"
+                                data-product-name="Birthday Delivery Gifts"
+                                data-product-price-regular="$82.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="26"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-delivery-gifts.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>

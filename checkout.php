@@ -206,7 +206,7 @@ include("includes/footer.php");
 <script type="text/javascript">
     $(document).ready(function() {
         var checkoutProducts = JSON.parse(localStorage.getItem('cartstorage')) || [];
-        // console.log(localStorage);
+        console.log(localStorage);
         if (checkoutProducts.length === 0) {
             window.location.href = $appPathJS+"cart.php";
             $('#checkoutProducts').html("No product");

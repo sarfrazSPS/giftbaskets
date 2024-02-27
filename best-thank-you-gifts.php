@@ -67,6 +67,9 @@ $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
 $psale = "87.50";
 
+$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
+$pshipping = validateInput($pshipping, "pshipping");
+
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
 if(!is_numeric($pstars)){

@@ -236,7 +236,7 @@ if($clear_cart==1){
 <script type="text/javascript">
     $(document).ready(function() {
         var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-        // console.log(localStorage);
+        console.log(localStorage);
         if (cartItems.length === 0) {
             $("#empty-cart-section").removeClass("d-none");
             $("#cart-section").addClass("d-none");

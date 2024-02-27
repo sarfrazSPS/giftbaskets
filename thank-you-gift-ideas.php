@@ -56,16 +56,21 @@ var $appPathJS = <?php echo json_encode($old_site_js); ?>;
 <?php
 $pid = isset($_GET['pid']) ? $_GET['pid'] : '';
 $pid = validateInput($pid, "pid");
+$pid = "product-054";
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
 $pname = "Thank You Gift Ideas- Traditions";
+
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
 $psale = "79.50";
+
+$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
+$pshipping = validateInput($pshipping, "pshipping");
 
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
