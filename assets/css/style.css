@@ -1409,6 +1409,33 @@ form .form-btn:hover {
     display: inline-block;
     animation: loadingDots 1s infinite steps(1);
 }
+.cart-icon-header{
+    position: relative;
+}
+.cart-icon-header a{
+    display: inline-block;
+}
+.cart-icon-header svg{
+    width: 30px;
+}
+.cart-item-header{
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: var(--mainBrownColor);
+    text-align: center;
+    line-height: 20px;
+    border-radius: 100%;
+    font-size: 10px;
+    position: absolute;
+    top: -3px;
+    right: -10px;
+    letter-spacing: 0;
+    color: #ffffff;
+}
+.cart-for-sm{
+    display: none;
+}
 
 
 /*Responsiveness*/
@@ -1762,6 +1789,15 @@ form .form-btn:hover {
         width: 100%;
         text-align: left !important;
     }
+    .cart-icon-header{
+        display: none;
+    }
+    .cart-for-sm{
+        display: block;
+        float: right;
+        right: 50px;
+        top: 7px;
+    }
 }
 
 @media (max-width: 576px){
@@ -1832,6 +1868,10 @@ form .form-btn:hover {
     }
     .foods-section .m-widthauto{
         width: 100%;
+    }
+    .cart-for-sm {
+        right: 0px;
+        top: 51px;
     }
     
 }
