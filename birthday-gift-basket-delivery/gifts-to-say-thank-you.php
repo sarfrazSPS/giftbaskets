@@ -87,13 +87,9 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2>Birthday Gift Basket Delivery From Lancaster, PA</h2>
+                    <h2>Unique Sympathy Gift Baskets From Lancaster, PA</h2>
                     <div class="w-100 m-widthauto mt-3">
-                        <p>Our Birthday Gift Basket Delivery offers many of the most popular foods, snacks and baked
-                            goods from Lancaster, PA that can be delivered anywhere in the country. Some of our many and
-                            very popular treats are whoopie pies, delicious baked pies, Blueberry Bread (choose your
-                            flavor), fudge, Lancaster Selections homemade jam and so much more. Rest assured that those
-                            receiving our custom birthday gifts will absolutely love them, enjoy!
+                        <p>Our Unique Sympathy Gift Baskets from Lancaster, PA are one of our most popular because it just makes a comforting gift to those who are grieving. First off your unique gift basket is customized, as well you can select certain products for your basket. We are thankful to say that our most dedicated customers are those who received our gift baskets.
 
                         </p>
                     </div>
@@ -102,9 +98,9 @@
             <div class="row mt-3">
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/custom-gift-baskets-free.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/thank-you-gifts-delivered.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Custom Birthday Gifts</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Thank You Gifts</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -133,10 +129,10 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">9 Reviews</a>
+                                <a class="mt-2 ps-2">16 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$89.50</span>
+                            <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
@@ -144,9 +140,9 @@
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/celebrations/birthday-gif-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/traditions/thank-you-gift-baskets.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Birthday Basket</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Thank You Gift Basket</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -175,10 +171,10 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">11 Reviews</a>
+                                <a class="mt-2 ps-2">14 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$74.50</span>
+                            <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
@@ -186,9 +182,9 @@
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/traditions/unique-birthday-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/unique-thank-you-gift-baskets.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Unique Birthday Gifts</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Unique Thank You Gift Baskets</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -220,7 +216,7 @@
                                 <a class="mt-2 ps-2">22 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$79.50</span>
+                            <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
@@ -228,9 +224,9 @@
                 </div>
                 <div class="col-sm-6 col-md-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/dutch-traditions/birthday-gifts-online.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/thank-you-gifts.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Birthday Gifts Online</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Thank You Gifts to Send</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -262,7 +258,7 @@
                                 <a class="mt-2 ps-2">15 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$92.50</span>
+                            <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
@@ -272,9 +268,9 @@
             <div class="row mt-4">
                 <div class="col">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/chocolate-lovers-gift-basket/birthday-chocolate-gift.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-special/sympathy-gift-baskets.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Birthday Chocoalte Gift</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Bakers Special</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -303,10 +299,10 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">6 Reviews</a>
+                                <a class="mt-2 ps-2"11 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$79.50</span>
+                            <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>

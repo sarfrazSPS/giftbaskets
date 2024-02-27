@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+h<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -12,17 +12,16 @@
 
     <meta property="og:type" content="product" />
 
-    <meta property="og:title" content="Unique Gift Baskets" />
+    <meta property="og:title" content="Best Thank You Gifts " />
 
-    <meta property="og:description" content="Our unique gift baskets from Lancaster PA gives the perfect gift basket with baked goods and chocolates from Lancaster, PA" />
-
-    <meta property="og:url" content="https://padutchbaskets.com/unique-gift-baskets.php"/>
+    <meta property="og:description" content="The best thank you gifts are the ones loved by those receviving them. Our Amish baked goods and gourmet foods are known around the world to be loved and appreciated"
+    <meta property="og:url" content="https://padutchbaskets.com/thank-you-gift-ideas.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/good-ole-treats/unique-gift-baskets.jpg" />
+        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/bakers-choice/best-thank-you-gifts.jpg" />
 
-    <meta property="product:price:amount" content="79.50" />
+    <meta property="product:price:amount" content="87.50" />
 
     <meta property="product:price:currency" content="USD" />
 
@@ -32,13 +31,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Unique Gift Baskets | Lancaster PA </title>
+    <title>Best Thank You Gifts | Lancaster PA</title>
 
-    <meta name="description" content="Unleash the joy with our unique gift baskets from Lancaster, PA, available as Birthday unique gift baskets and other occasions" />
+    <meta name="description" content="The best thank you gifts are the ones loved by those receviving them. Our Amish baked goods and gourmet foods are known around the world to be loved and appreciated" />
 
-    <meta name="keywords" content="unique gift baskets, sympathy unique gift baskets, birthday unique gift baskets, get well unique gift baskets,  lancaster pa"/>
+    <meta name="keywords" content="best thank you gifts, thank you gift ideas, thank you gifts, thank you gift ideas , unique thank you gift baskets lancaster pa"/>
 
-    <link rel="canonical" href="https://padutchbaskets.com/unique-gift-baskets.php">
+    <link rel="canonical" href="https://padutchbaskets.com/best-thank-you-gifts.php">
 </head>
 
 
@@ -60,13 +59,13 @@ $pid = validateInput($pid, "pid");
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
-$pname = "Basket of Treats Unique Food Gifts";
+$pname = "Best Thank You Gifts- Bakers Choice";
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
-$psale = "79.50";
+$psale = "87.50";
 
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
@@ -121,15 +120,15 @@ function validateInput($parameterValue, $parameterName){
                             <!--4 side images -->
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/good-ole-treats/unique-gift-baskets.jpg"
-                                alt="Our uniuqe gift baskets include Lancaster, PA treats, cheeses, and gourmet foods"
+                                src="assets/images/products/bakers-choice/best-thank-you-gifts.jpg"
+                                alt="The best thank you gifts offered by PA Dutch Baskets offer Amish gourmet foods, baked goods, chocolates and more that we deliver anywhere in the country"
                                 onmouseover="myFunction(this)"
                                 />
                                             
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/good-ole-treats/pic2.jpg"
-                                alt="Unique Gift Baskets that are filled with gourmet foods from Lancaster PA"
+                                src="assets/images/products/bakers-choice/pic2.jpg"
+                                alt="PA Dutch Baskets have what our customers call the best thank you gifts with Amish baked goods from Lancaster, PA that we are able to deliver anywhere in the country"
                                 onmouseover="myFunction(this)"
                                 />
                             
@@ -141,7 +140,7 @@ function validateInput($parameterValue, $parameterName){
                             <div class="main-images">
                             <!--Main images -->
                                 
-                                    <img  src="assets/images/products/good-ole-treats/unique-gift-baskets.jpg"   alt="unique food gifts in Lancaster pa"      id="image_box" class="img-responsive"  />
+                                    <img  src="assets/images/products/bakers-choice/best-thank-you-gifts.jpg"   alt="The best thank you gifts are those that the recipient enjoys. Our PA Dutch baked goods are loved by everyone"      id="image_box" class="img-responsive"  />
                                 
                             <!--Main images -->
                             </div>
@@ -149,23 +148,40 @@ function validateInput($parameterValue, $parameterName){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-012</p>
-                    <h3 class="prod-title">Unique Gift Baskets</h3>
-                    <span class="price">
-                        <span class="prod-price" id='price_per_item' >$79.50</span>
+                    <p class="prod-id">Product ID: product-052</p>
+                    <h3 class="prod-title">"Bakers Choice" Best Thank You Gifts</h3>
+                      <span class="price">
+                        <span class="prod-price" id='price_per_item' >$87.50</span>
                             <span class="prod-stars">
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
                             <span class="prod-seperator"> | </span>
-                            <span class="prod-rev-nos">76 Reviews</span>
+                            <span class="prod-rev-nos">19 Reviews</span>
                     </span>
-                    <span class="prod-rev-nos d-block">Shipping Price: $9.50</span>
+                    
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
 
                         <tr>
-                             <td>
+                            
+							
+							
+							
+							<td>
+                                
+                                    <input type="hidden" name="on0" value="Choose Your Pie">
+                                    <div class="form-label">Choose Your Pie</div>
+                                    <select name="os0" id="choosePie">
+                                        <option value="Apple">Apple Pie </option>
+                                        <option value="Shoo Fly">Shoo Fly Pie </option>
+                                      
+                              </select>
+                                
+                            </td>	 
+							
+							
+							<td>
                                 
                                     <input type="hidden" name="on0" value="Choose Your Bread">
                                     <div class="form-label">Choose Your Bread</div>
@@ -177,19 +193,17 @@ function validateInput($parameterValue, $parameterName){
                                 
                             </td>
 							
-							
-							
 							<td>
                                 
-                                    <input type="hidden" name="on0" value="Choose Your Jam">
-                                    <div class="form-label">Choose Your Jam</div>
-                                    <select name="os0" id="chooseJam">
-                                        <option value="Stawberry">Strawberry </option>
-                                        <option value="Dutch Apple">Dutch Apple </option>
+                                    <input type="hidden" name="on0" value="Choose Your Fudge">
+                                    <div class="form-label">Choose Your Fudge</div>
+                                    <select name="os0" id="chooseFudge">
+                                        <option value="Chocoalte">Chocolate </option>
+                                        <option value="Choc/PeanutButter">Chocolate Peanut Butter </option>
                                       
                               </select>
                                 
-                            </td>
+                            </td>	 
                            
                         </tr>
 
@@ -221,9 +235,23 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="birthday">
     
-                                                        <input type="checkbox" class="" id="tag" value="bithday">
+                                                        <input type="checkbox" class="" id="tag" value="thank1">
     
-                                                        <img src="assets/images/tags/birthday4.png" alt="birthday unique gift baskets from lancaster pa"  class="circle ">
+                                                        <img src="assets/images/tags/thank1.png" alt="Our best thank you gifts are filled with Amish baked goods from Lancaster, PA known as the best you can find. We are happy to offer delivery "  class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag3">
+    
+                                                        <input type="checkbox" id="tag" class="" value="thank2">
+    
+                                                        
+                                                        
+                                                        <img src="assets/images/tags/thank2.png" alt="Our Delicious Amish baked goods are the perfect thank you gift and loved by everyone who receives them" class="circle ">
     
                                                     </label>
     
@@ -233,35 +261,22 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="Sympathy" class="" value="Sympathy">
+                                                        <input type="checkbox" id="custom-front" class="" value="thank3">
     
-                                                        
-                                                        
-                                                        <img src="assets/images/tags/sympathy3.png" alt="sympathy unique gift baskets from lancaster pa" class="circle ">
+                                                        <img src="assets/images/tags/thank3.png" alt="Our customers call our gifts the best thank you gifts because of how the recipients react and love them " class="circle ">
     
                                                     </label>
     
                                                 </div>
     
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="custom-front">
-    
-                                                        <input type="checkbox" id="custom-front" class="" value="Get Well">
-    
-                                                        <img src="assets/images/tags/get-well5.png" alt="get well unique gift baskets with gourmet cheese and much more from Lancaster PA" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
     
                                                 <div class="col-sm-new-2 mb-new">
     
                                                     <label for="Tag">
     
-                                                        <input type="checkbox" id="Tag" class="" value="Thank You">
+                                                        <input type="checkbox" id="Tag" class="" value="thank4">
     
-                                                        <img src="assets/images/tags/thank-you2.png" alt="Thank you unique gift baskets can be delivered" class="circle ">
+                                                        <img src="assets/images/tags/thank4.png" alt="Our unique thank you gifts include whoopie ies, apple or shoo fly pie, homemade jams, fudge, brittle and more that we deliver" class="circle">
     
                                                     </label>
     
@@ -272,40 +287,40 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Congratulations">
+                                                        <input type="checkbox" id="tag" class="" value="thank5">
     
-                                                        <img src="assets/images/tags/congrats3.png" alt="congratulations unique gift baskets with chocolates, cheeses, breads and more" class="circle ">
-    
-                                                    </label>
-    
-                                                </div>
-                                    
-    
-                                                <div class="col-sm-new-2 mb-new">
-    
-                                                    <label for="balloon">
-    
-                                                        <input type="checkbox" id="Tag" class="" value="Anniversary">
-    
-                                                        
-                                                        
-                                                        <img src="assets/images/tags/happy-anniversary.png" alt="anniversary unique gift baskets from Lancaster PA with goumet foods and baked goods" class="circle ">
+                                                        <img src="assets/images/tags/thank5.png" alt="If you are looking for the perfect thank you gift our PA Dutch baskets are loved and can be customized and personalized" class="circle ">
     
                                                     </label>
     
                                                 </div>
+											
+											  <div class="col-sm-new-2 mb-new">
     
-                                                <div class="col-sm-new-2 mb-new">
+                                                    <label for="tag">
+    
+                                                        <input type="checkbox" id="tag" class="" value="thank6">
+    
+                                                        <img src="assets/images/tags/thank6.png" alt="The best thank you gifts are loved by those receiving them. Our positive reviews come directly from the recipients who love the Amish baked goods " class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+											
+											
+                                     <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
                                                         <input type="checkbox" id="tag" class="" value="Thinking of You">
     
-                                                        <img src="assets/images/tags/thinking-of-you.png" class="circle ">
+                                                        <img src="assets/images/tags/thinking-of-you.png" alt="Our thank you gifts have whoopie pies, jams, fudge, peanut butter balls, blueberry bread and so much more loved by everone" class="circle ">
     
                                                     </label>
     
                                                 </div>
+    
+                                               
     
     
                                                 <div class="col-sm-new-2 mb-new">
@@ -314,7 +329,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="tag" class="" value="Get Well">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well unique gift baskets filled with delicious foods and baked goods from Lancaster PA" class="circle ">
+                                                        <img src="assets/images/tags/no-custom.png" alt="Our thank you gifts filled with baked goods and gourmet foods can be shipped anywhere in the country" class="circle ">
     
                                                     </label>
     
@@ -348,31 +363,41 @@ function validateInput($parameterValue, $parameterName){
                     </form>
                 </div>
                 <div class="col-sm-12 mt-5">
-                    <h2 class="cgb-head">Content for your Gift Box</h2>
+                    <h2 class="cgb-head">Content for your Gift Basket</h2>
                     <div class="cgb-copy">
                         <div class="cgb-copy-left">
 							
+						<p>* 2 Gourmet Cheeses</p>
+							<p>* Gourmet Mustard</p>
+							<p>* Apple or Shoo Fly Pie (Your Choice)</p>
+							<p>* Fudge (Your Choice of Flavor)</p>
+							<p>* Whoopie Pie</p>
 							
-                            
-                            <p>* Blueberry Bread (Choice of Flavor)</p>
-                            <p>* 2 Whoopie Pies</p>
-							<p>* Fudge (Choice of Flavor)</p>
-                            <p>* Lancaster Strawberry Jam (Choice of Flavor) </p>
-							<p>* Chocolate Pretzel Rods</p>
+							
+						
                         </div>
                         <div class="cgb-copy-right">
-                            <p>* Peanut Butter Brittle</p>
-                            <p>* Cinnamon Stick (Filled)</p>
-                            <p>* Emma's Popcorn</p>
-							 <p>* Lancaster Party Mix</p>
+							<p>* Blueberry Bread (Your Choice of Flavor)</p>
+							<p>* Strawberry Danish</p>
+							<p>* Blueberry Donut Holes</p>
+								
+							<p>* Emma's Popcorn</p>
+						
+							<p>* Chocoalate Pretzel Rods</p>
+					
+							
+							
+						
+							
+							
+                    
                             
                         </div>
                     </div>
 
-                    <h2 class="cgb-subhead">Unique Gift Baskets</h2>
-                    <p class="cgb-subcopy">There are very few unique gift baskets that the person you're sending to will love as much as the amazing foods and baked goods from Lancaster, PA. Our Unique Gift Baskets such as the basket of treats is an affordable yet delicious gift that includes 2 flavors of the famous whoppie pies, choice of fudge, and the very famous Emma's popcorn just to mention a few. We are beyond thankful for the feedback we receive on all of our gift baskets. One thing that stays constant is how happy those receiving are with the variety and taste. We hope you enjoy.</p>
-                    <p class="cgb-subcopy"> Test paragraph-1 goes here </p>
-                   
+                    <h2 class="cgb-subhead">Best Thank You Gifts</h2>
+                    <p class="cgb-subcopy">Our best Thank You Gifts for Friends or family needs to be special, something they will love and appreciate. Our biggest goal is to hear that those receiving our best thank you gifts loved them. We are so thankful that we hear that everyday. We are just thankful to have these amazing people and Lancaster baked goods, cheeses, chocolates, and so much more right here in our back yard. We offer a variety of baskets to ensure you can choose your favorites to send to your friend or loved one so they can share, we hope you enjoy!</p>
+
                 </div>
             </div>
         </div>
@@ -380,19 +405,17 @@ function validateInput($parameterValue, $parameterName){
 </section>
  <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
-    data-product-id="product-012"
-    data-product-name="Unique Gift Baskets"
-    data-product-price-regular="79.50"
-    data-product-shipping-price="9.50"
+    data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
+    data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
+    data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="unique-gift-baskets.jpg"
-    ></div>
-<!-- image to be display on cart page must be in root images folder   -->
+    data-product-cart_img="<?=$pimg1;?>"
+    ></div>  
 
 
 <?php
@@ -422,6 +445,9 @@ include("includes/footer.php");
     console.log("closed");
     }
     }
+</script>
+<script type="text/javascript" charset="utf-8">
+finished();
 </script>
 <script type="text/javascript">
 $(document).ready(function() {
@@ -453,24 +479,22 @@ $(document).ready(function() {
         var productId = $('.product-metadata').data('product-id');
         var productName = $('.product-metadata').data('product-name');
         var productPrice = $('.product-metadata').data('product-price-regular');
-        var productShippingPrice = $('.product-metadata').data('product-shipping-price');
         var productCustomization = checkedValuesString;
         var productQty = $('.product-metadata').data('product-qty');
         var productImage = $('.product-metadata').data('product-cart_img');
         
-        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
+        addToCart(productId, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
 
         var urlCart = $appPathJS+"cart.php";
         window.location.href = urlCart;
-        console.log(localStorage);
 
     });
     
-function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
+function addToCart(productID, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
 
     var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
     var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
+    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
 
     $.each(cart, function(index, product) {
         if (product.id === productToAddOrUpdate.id) {
