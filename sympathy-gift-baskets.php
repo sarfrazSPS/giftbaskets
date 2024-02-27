@@ -134,7 +134,7 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/thoughtful-sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>thoughtful-sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
                     </div>
                 </div>
@@ -176,7 +176,7 @@
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/sorry-for-your-loss.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>sorry-for-your-loss.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                             </div>
                             <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/personalized-sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>personalized-sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/condolence-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>condolence-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -304,7 +304,7 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/deepest-sympathy.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>deepest-sympathy.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -346,7 +346,7 @@
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/sympathy-gift-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>sympathy-gift-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -430,7 +430,7 @@
                             </div>
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/unique-sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>unique-sympathy-gifts.php" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
                     </div>
                 </div>

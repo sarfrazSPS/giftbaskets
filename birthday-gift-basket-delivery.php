@@ -177,6 +177,22 @@
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                    data-product-id="product-1004"
+                                    data-product-name="Custom Birthday Gifts"
+                                    data-product-price-regular="$89.50"
+                                    data-product-price-sale=""
+                                    data-product-shipping-price="10"
+                                    data-product-stars="5"
+                                    data-product-reviews="16"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="custom-birthday-gifts.jpg"
+                                    data-product-image-2="pic2.jpg"
+                                    data-product-image-3=""
+                                    data-product-image-4=""
+                                    ></div>
                         </div>
                     </div>
                 </div>
@@ -219,6 +235,22 @@
                             <span class="product-price mt-1">$74.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                    data-product-id="product-1005"
+                                    data-product-name="Birthday Chocolate Gift"
+                                    data-product-price-regular="$74.50"
+                                    data-product-price-sale=""
+                                    data-product-shipping-price="0"
+                                    data-product-stars="5"
+                                    data-product-reviews="11"
+                                    data-product-flavor-pie="yes"
+                                    data-product-flavor-bread="yes"
+                                    data-product-image-1="birthday-chocolate-gift.jpg"
+                                    data-product-image-2="pic2.png"
+                                    data-product-image-3=""
+                                    data-product-image-4=""
+                                    ></div>
                         </div>
                     </div>
                 </div>
@@ -261,6 +293,22 @@
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1006"
+                                data-product-name="Birthday Gifts Online - Deluxe Traditions"
+                                data-product-price-regular="$87.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="27"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-gifts-online.jpg"
+                                data-product-image-2="pic2.jpg"
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -303,6 +351,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1007"
+                                data-product-name="Traditions Unique Birthday Gifts"
+                                data-product-price-regular="$79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="15"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="unique-birthday-gifts.jpg"
+                                data-product-image-2="pic2.jpg"
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -347,6 +411,22 @@
                             <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1008"
+                                data-product-name="Birthday Gift Basket"
+                                data-product-price-regular="$59.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="6"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -389,6 +469,22 @@
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1009"
+                                data-product-name="Savory Flavors Birthday Basket"
+                                data-product-price-regular="$119.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="27"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="best-birthday-gift-baskets.jpg"
+                                data-product-image-2="pic2.jpg"
+                                data-product-image-3=""
+                                data-product-image-4=""
+                            ></div>
                         </div>
                     </div>
                 </div>
@@ -431,6 +527,22 @@
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1010"
+                                data-product-name="Birthday Gift Box"
+                                data-product-price-regular="$54.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="14"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-gift-box.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -473,6 +585,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1011"
+                                data-product-name="Birthday Delivery Gifts"
+                                data-product-price-regular="$79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="18"
+                                data-product-stars="5"
+                                data-product-reviews="23"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-delivery-gifts.jpg"
+                                data-product-image-2="pic2.jpg"
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -516,6 +644,22 @@
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1012"
+                                data-product-name="Bakers Choice Birthday Gift"
+                                data-product-price-regular="$87.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="6"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-delivery-gifts.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -523,7 +667,7 @@
                     <div class="card bg-card">
                         <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket 2</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -558,6 +702,22 @@
                             <span class="product-price mt-1">$77.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1013"
+                                data-product-name="Birthday Gift Basket 2"
+                                data-product-price-regular="$77.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="17"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -600,6 +760,22 @@
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1014"
+                                data-product-name="Birthday Gift Box 2"
+                                data-product-price-regular="$54.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="26"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-gift-box.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -642,6 +818,22 @@
                             <span class="product-price mt-1">$69.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1015"
+                                data-product-name="Birthday Delivery Gifts 2"
+                                data-product-price-regular="$69.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="23"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-food-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>

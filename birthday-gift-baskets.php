@@ -176,7 +176,7 @@
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/birthday-gift-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>birthday-gift-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -218,7 +218,7 @@
                             </div>
                             <span class="product-price mt-1">$74.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/chocolate-gift-boxes.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>chocolate-gift-boxes.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -260,7 +260,7 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/best-birthday-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>best-birthday-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -302,7 +302,7 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/unique-birthday-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>unique-birthday-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -310,9 +310,9 @@
             <div class="row mt-4">
                 <div class="col">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="Our birthday gift box filled with whoopie pies, chocolates and other gourmet foods from the Amish in Lancaster PA known for being amazing and delicious">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-special/birthday-food-basket.jpg" class="card-img-top" alt="Birthday gifts for men and women that are loved by eveyone and include PA Dutch baskets with gourmet foods and baked goods">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Birthday Gift Box</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Birthday Gifts for Men</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -344,9 +344,9 @@
                                 <a class="mt-2 ps-2">6 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$59.50</span>
+                            <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/birthday-gift-box.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>birthday-gifts-for-men.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -388,7 +388,7 @@
                             </div>
                             <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/birthday-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>birthday-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -430,7 +430,7 @@
                             </div>
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/birthday-gift.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>birthday-gift.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -472,54 +472,12 @@
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="birthday-gift-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>birthday-gift-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
 				  <div class="row mt-4">
-                <div class="col">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-special/birthday-food-basket.jpg" class="card-img-top" alt="Birthday gifts for men and women that are loved by eveyone and include PA Dutch baskets with gourmet foods and baked goods">
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Birthday Gifts for Men</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">6 Reviews</a>
-
-                            </div>
-                            <span class="product-price mt-1">$72.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/birthday-gifts-for-men.php" class="btn btn-primary favs-btn mt-0">View Details</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col">
+                <div class="col col-md-3">
                     <div class="card bg-card">
                         <img src="<?=$app_path;?>assets/images/products/celebrations/birthday-gift-box.jpg" class="card-img-top" alt="PA Dutch offers a birthday basket that offers whoopie pies, fudge, Emma's popcorn and so much more that we can deliver">
                         <div class="card-body">
@@ -557,7 +515,7 @@
                             </div>
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/birthday-basket.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>birthday-basket.php" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
                     </div>
                 </div>

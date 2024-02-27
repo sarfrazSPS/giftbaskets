@@ -567,7 +567,7 @@
     </div>
 </section>
 
-<!-- SECTION TESTIMONIALS END -->
+
 <?php
 include("includes/footer.php");
 ?>

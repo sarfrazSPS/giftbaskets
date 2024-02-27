@@ -178,7 +178,7 @@
                             </div>
                             <span class="product-price mt-1">$74.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/chocolate-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>chocolate-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -220,7 +220,7 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/unique-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>unique-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -262,7 +262,7 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/gourmet-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>gourmet-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -305,6 +305,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1016"
+                                data-product-name="Food Gift Baskets - Traditions"
+                                data-product-price-regular="$79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="15"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="food-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -348,7 +364,7 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/gift-baskets-near-me.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>gift-baskets-near-me.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -390,7 +406,7 @@
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/custom-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>custom-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
                     </div>
                 </div>
@@ -432,7 +448,7 @@
                             </div>
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/gift-basket-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>gift-basket-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -474,7 +490,7 @@
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/food-basket.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>food-basket.php" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
                     </div>
                 </div>
@@ -519,7 +535,7 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/gift-basket-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>gift-basket-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -561,7 +577,7 @@
                             </div>
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/best-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>best-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -603,7 +619,7 @@
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/gift-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>gift-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -645,7 +661,7 @@
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="/gourmet-snack-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>gourmet-snack-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>

@@ -57,10 +57,12 @@ var $appPathJS = <?php echo json_encode($old_site_js); ?>;
 <?php
 $pid = isset($_GET['pid']) ? $_GET['pid'] : '';
 $pid = validateInput($pid, "pid");
+$pid = "product-014";
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
-$pname = "Basket of Treats Unique Food Gifts";
+$pname = "Food Gift Baskets - Traditions";
+
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
@@ -70,6 +72,7 @@ $psale = "79.50";
 
 $pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
 $pshipping = validateInput($pshipping, "pshipping");
+$pshipping = "0";
 
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
@@ -101,6 +104,7 @@ $pimgs = validateInput($pimgs, "pimgs");
 $pimgsArray = explode(',', $pimgs);
 
 $pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
+$pimg1 = "food-basket.jpg";
 $pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
 $pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
 $pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
@@ -392,6 +396,7 @@ function validateInput($parameterValue, $parameterName){
     data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
     data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
     data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
+    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
@@ -432,74 +437,4 @@ include("includes/footer.php");
 </script>
 <script type="text/javascript" charset="utf-8">
 finished();
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#addToCartBtn").click(function(e){
-        e.preventDefault();
-        
-        //set value in data attributes
-        var productCardMessage = $('#cardMessage').val();
-        $('.product-metadata').attr('data-product-card-msg', productCardMessage);
-        var productPromoCode = $('#promoCode').val();
-        $('.product-metadata').attr('data-product-promo', productPromoCode);
-        var productFlavorPie = $('#choosePie').val();
-        $('.product-metadata').attr('data-product-flavor-pie', productFlavorPie);
-        var productFlavorBread = $('#chooseBread').val();
-        $('.product-metadata').attr('data-product-flavor-bread', productFlavorBread);
-        var productQty = $('#productQty').val();
-        $('.product-metadata').attr('data-product-qty', productQty);
-
-        var checkedValuesString = '';
-        $('.custom-options-services input[type="checkbox"]:checked').each(function(index) {
-            if (index !== 0) {
-                checkedValuesString += ',';
-            }
-            checkedValuesString += $(this).val();
-        });
-        $('.product-metadata').attr('data-product-customization', checkedValuesString);
-
-        // get values from data attributes and save them
-        var productId = $('.product-metadata').data('product-id');
-        var productName = $('.product-metadata').data('product-name');
-        var productPrice = $('.product-metadata').data('product-price-regular');
-        var productCustomization = checkedValuesString;
-        var productQty = $('.product-metadata').data('product-qty');
-        var productImage = $('.product-metadata').data('product-cart_img');
-        
-        addToCart(productId, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
-
-        var urlCart = $appPathJS+"cart.php";
-        window.location.href = urlCart;
-
-    });
-    
-function addToCart(productID, productName, productPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
-
-    var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
-
-    $.each(cart, function(index, product) {
-        if (product.id === productToAddOrUpdate.id) {
-            existingProductIndex = index;
-            return false;
-        }
-    });
-
-    // Update quantity or add a new product to the cart
-    if (existingProductIndex !== -1) {
-        // Product already exists in the cart, update quantity
-        cart[existingProductIndex].quantity += productToAddOrUpdate.quantity;
-    } else {
-        // Product not found, add it to the cart
-        cart.push(productToAddOrUpdate);
-    }
-
-    // Save the updated cart to local storage
-    localStorage.setItem('cartstorage', JSON.stringify(cart));
-
-}    
-
-});  
 </script>
