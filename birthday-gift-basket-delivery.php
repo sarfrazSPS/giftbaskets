@@ -181,7 +181,7 @@
                             <div class="product-metadata" 
                                     data-product-id="product-1004"
                                     data-product-name="Custom Birthday Gifts"
-                                    data-product-price-regular="$89.50"
+                                    data-product-price-regular="89.50"
                                     data-product-price-sale=""
                                     data-product-shipping-price="10"
                                     data-product-stars="5"
@@ -239,7 +239,7 @@
                             <div class="product-metadata" 
                                     data-product-id="product-1005"
                                     data-product-name="Birthday Chocolate Gift"
-                                    data-product-price-regular="$74.50"
+                                    data-product-price-regular="74.50"
                                     data-product-price-sale=""
                                     data-product-shipping-price="0"
                                     data-product-stars="5"
@@ -297,7 +297,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1006"
                                 data-product-name="Birthday Gifts Online - Deluxe Traditions"
-                                data-product-price-regular="$87.50"
+                                data-product-price-regular="87.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="10"
                                 data-product-stars="5"
@@ -355,7 +355,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1007"
                                 data-product-name="Traditions Unique Birthday Gifts"
-                                data-product-price-regular="$79.50"
+                                data-product-price-regular="79.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="10"
                                 data-product-stars="5"
@@ -413,9 +413,9 @@
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
-                                data-product-id="product-1008"
+                                data-product-id="product-1001"
                                 data-product-name="Birthday Gift Basket"
-                                data-product-price-regular="$59.50"
+                                data-product-price-regular="59.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -473,7 +473,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1009"
                                 data-product-name="Savory Flavors Birthday Basket"
-                                data-product-price-regular="$119.50"
+                                data-product-price-regular="119.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -531,7 +531,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1010"
                                 data-product-name="Birthday Gift Box"
-                                data-product-price-regular="$54.50"
+                                data-product-price-regular="54.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -587,9 +587,9 @@
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
-                                data-product-id="product-1011"
+                                data-product-id="product-1003"
                                 data-product-name="Birthday Delivery Gifts"
-                                data-product-price-regular="$79.50"
+                                data-product-price-regular="79.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="18"
                                 data-product-stars="5"
@@ -648,7 +648,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1012"
                                 data-product-name="Bakers Choice Birthday Gift"
-                                data-product-price-regular="$87.50"
+                                data-product-price-regular="87.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -667,7 +667,7 @@
                     <div class="card bg-card">
                         <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="...">
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket 2</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket New</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -705,8 +705,8 @@
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
                                 data-product-id="product-1013"
-                                data-product-name="Birthday Gift Basket 2"
-                                data-product-price-regular="$77.50"
+                                data-product-name="Birthday Gift Basket New"
+                                data-product-price-regular="77.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -763,8 +763,8 @@
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
                                 data-product-id="product-1014"
-                                data-product-name="Birthday Gift Box 2"
-                                data-product-price-regular="$54.50"
+                                data-product-name="Birthday Gift Box New"
+                                data-product-price-regular="54.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -821,8 +821,8 @@
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
                                 data-product-id="product-1015"
-                                data-product-name="Birthday Delivery Gifts 2"
-                                data-product-price-regular="$69.50"
+                                data-product-name="Birthday Delivery Gifts New"
+                                data-product-price-regular="69.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"

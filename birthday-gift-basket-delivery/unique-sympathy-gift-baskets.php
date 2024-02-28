@@ -135,6 +135,22 @@
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1017"
+                                data-product-name="Sympathy Gifts Delivered"
+                                data-product-price-regular="89.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="16"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="sympathy-gifts-delivered.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -177,6 +193,22 @@
                             <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1018"
+                                data-product-name="Personalized Sympathy Gifts"
+                                data-product-price-regular="59.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="14"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="personalized-sympathy-gifts.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -219,6 +251,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1019"
+                                data-product-name="Sympathy Gift Basket"
+                                data-product-price-regular="79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="22"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="sympathy-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -261,6 +309,22 @@
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1020"
+                                data-product-name="Bakers Best Sympathy Gifts"
+                                data-product-price-regular="87.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="15"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="best-sympathy-gift-baskets.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -305,6 +369,22 @@
                             <span class="product-price mt-1">$69.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1000"
+                                data-product-name="Bakers Special"
+                                data-product-price-regular="69.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="11"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="sympathy-gift-baskets-free.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -347,6 +427,22 @@
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1022"
+                                data-product-name="Deluxe Sympathy Gifts"
+                                data-product-price-regular="87.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="17"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="sympathy-gifts-ideas.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -389,6 +485,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1023"
+                                data-product-name="Unique Sympathy Gifts"
+                                data-product-price-regular="79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="26"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="unique-sympathy-gifts.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -431,6 +543,22 @@
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1024"
+                                data-product-name="Sympathy Gift Basket 2"
+                                data-product-price-regular="119.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="23"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="sympathy-food-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>

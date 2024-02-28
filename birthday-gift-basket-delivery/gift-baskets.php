@@ -179,6 +179,22 @@
                             <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1045"
+                                data-product-name="Unique Food Gifts"
+                                data-product-price-regular="59.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="16"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="unique-food-gifts.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -221,6 +237,22 @@
                             <span class="product-price mt-1">$74.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1046"
+                                data-product-name="Chocolate Lovers Gift Basket"
+                                data-product-price-regular="74.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="14"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="chocolate-lovers-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -263,6 +295,22 @@
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1047"
+                                data-product-name="Gourmet Basket"
+                                data-product-price-regular="87.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="22"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="gourmet-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -305,6 +353,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1048"
+                                data-product-name="Food Basket - Traditions"
+                                data-product-price-regular="79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="15"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="food-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -349,6 +413,22 @@
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1049"
+                                data-product-name="Custom Gift Baskets"
+                                data-product-price-regular="89.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="11"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="custom-gift-baskets.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -391,6 +471,22 @@
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1050"
+                                data-product-name="Celebrations Gift Basket"
+                                data-product-price-regular="54.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="17"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="celebrations-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -433,6 +529,22 @@
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1051"
+                                data-product-name="Savory Gift Basket Online"
+                                data-product-price-regular="119.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="26"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="gift-basket-online.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -475,6 +587,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1052"
+                                data-product-name="Unique Gift Baskets"
+                                data-product-price-regular="79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="23"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="birthday-delivery-gifts.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -520,6 +648,22 @@
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1053"
+                                data-product-name="Deluxe Gift Basket"
+                                data-product-price-regular="87.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="11"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="deluxe-gift-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -562,6 +706,22 @@
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1054"
+                                data-product-name="Dutch Customized Gift Basket"
+                                data-product-price-regular="72.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="9"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="customized-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -604,6 +764,22 @@
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1055"
+                                data-product-name="Traditions Food Gift Ideas"
+                                data-product-price-regular="89.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="10"
+                                data-product-stars="5"
+                                data-product-reviews="26"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="food-gift-ideas.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>
@@ -646,6 +822,22 @@
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <!-- images must be on root path in the folder "images" -->
+                            <div class="product-metadata" 
+                                data-product-id="product-1056"
+                                data-product-name="Bakers Special Food Basket"
+                                data-product-price-regular="79.50"
+                                data-product-price-sale=""
+                                data-product-shipping-price="0"
+                                data-product-stars="5"
+                                data-product-reviews="23"
+                                data-product-flavor-pie="yes"
+                                data-product-flavor-bread="yes"
+                                data-product-image-1="food-basket.jpg"
+                                data-product-image-2=""
+                                data-product-image-3=""
+                                data-product-image-4=""
+                                ></div>
                         </div>
                     </div>
                 </div>

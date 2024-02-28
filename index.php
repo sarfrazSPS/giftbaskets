@@ -8,7 +8,7 @@
                     <h3>Product Categories</h3>
                     <div class="ui-accordion">
                         <div class="ui-accordion-item">
-                            <a href="javascript:void(0);" class="ui-accordion-title">
+                            <a href="#" class="ui-accordion-title">
                                 <span>Occasion</span>
                             </a>
                             <div class="ui-accordion-content">
@@ -131,12 +131,12 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="javascript:void(0);" class="btn btn-primary favs-btn btn-data">View Details</a>
+                                <a href="#" class="btn btn-primary favs-btn btn-data">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-01"
                                     data-product-name="product name is here"
-                                    data-product-price-regular="$100"
+                                    data-product-price-regular="100"
                                     data-product-price-sale=""
                                     data-product-shipping-price="9.50"
                                     data-product-stars="5"
@@ -163,12 +163,12 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="javascript:void(0);" class="btn btn-primary favs-btn">View Details</a>
+                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-02"
                                     data-product-name="product name is here"
-                                    data-product-price-regular="$100"
+                                    data-product-price-regular="100"
                                     data-product-price-sale=""
                                     data-product-shipping-price="9.50"
                                     data-product-stars="5"
@@ -195,12 +195,12 @@
                                 </span>
                                 <p class="favs-cat">Winter Sale!*</p>
                                 <p class="favs-copy">$6 Standard Shipping</p>
-                                <a href="javascript:void(0);" class="btn btn-primary favs-btn">View Details</a>
+                                <a href="#" class="btn btn-primary favs-btn">View Details</a>
                                 <!-- images must be on root path in the folder "images" -->
                                 <div class="product-metadata" 
                                     data-product-id="product-033"
                                     data-product-name="product name is here"
-                                    data-product-price-regular="$100"
+                                    data-product-price-regular="100"
                                     data-product-price-sale=""
                                     data-product-shipping-price="9.50"
                                     data-product-stars="5"
@@ -232,7 +232,7 @@
                                 <div class="product-metadata" 
                                     data-product-id="product-045"
                                     data-product-name="product name is here"
-                                    data-product-price-regular="$100"
+                                    data-product-price-regular="100"
                                     data-product-price-sale=""
                                     data-product-shipping-price="9.50"
                                     data-product-stars="5"

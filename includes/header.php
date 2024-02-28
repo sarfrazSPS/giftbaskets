@@ -110,6 +110,7 @@ var $appPathJS = <?php echo json_encode($app_path); ?>;
             </div>
         </section>
 
-        <?php include("includes/navbar.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>
+        
     </header>
 

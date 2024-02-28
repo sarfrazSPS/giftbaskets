@@ -15,13 +15,12 @@ $pid = validateInput($pid, "pid");
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
-$pname = "Cozy Winter Gift Boxt";
+
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
-$psale = "74.50";
 
 $pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
 $pshipping = validateInput($pshipping, "pshipping");
@@ -79,50 +78,62 @@ function validateInput($parameterValue, $parameterName){
                         <div class="col-sm-2 small-images-outer">
                             <div class="small-images">
                             <!--4 side images -->
-                                <img
-                                class="img-responsive"
-                                src="https://padutchbaskets.com/images/custom-birthday-gifts-sm.jpg"
-                                alt="thumbnail-2"
-                                onmouseover="myFunction(this)"
-                                />
+                                <?php if($pimg1!=="no-first-img"){?>
+                                    <img
+                                    class="img-responsive"
+                                    src="<?=$old_site_js;?>images/<?=$pimg1;?>"
+                                    alt="thumbnail-2"
+                                    onmouseover="myFunction(this)"
+                                    loading="lazy"
+                                    />
+                                <?php }?>
                                             
-                                <img
-                                class="img-responsive"
-                                src="https://padutchbaskets.com/images/celebrations-gift-basket.jpg"
-                                alt="thumbnail-1"
-                                onmouseover="myFunction(this)"
-                                />
+                                <?php if($pimg2!=="no-second-img"){?>
+                                    <img
+                                    class="img-responsive"
+                                    src="<?=$old_site_js;?>images/<?=$pimg2;?>"
+                                    alt="thumbnail-1"
+                                    onmouseover="myFunction(this)"
+                                    loading="lazy"
+                                    />
+                                <?php }?>
+
+                                <?php if($pimg3!=="no-third-img"){?>
+                                    <img
+                                    class="img-responsive"
+                                    src="<?=$old_site_js;?>images/<?=$pimg3;?>"
+                                    alt="thumbnail-4"
+                                    onmouseover="myFunction(this)"
+                                    loading="lazy"
+                                    />
+                                <?php }?>
                             
-                                <img
-                                class="img-responsive"
-                                src="https://padutchbaskets.com/images/unique-birthday-gifts.jpg"
-                                alt="thumbnail-4"
-                                onmouseover="myFunction(this)"
-                                />
-                            
-                                <img
-                                class="img-responsive"
-                                src="https://padutchbaskets.com/images/birthday-chocolate-gift.jpg"
-                                alt="thumbnail-3"
-                                onmouseover="myFunction(this)"
-                                />
+                                <?php if($pimg4!=="no-fourth-img"){?>
+                                    <img
+                                    class="img-responsive"
+                                    src="<?=$old_site_js;?>images/<?=$pimg4;?>"
+                                    alt="thumbnail-3"
+                                    onmouseover="myFunction(this)"
+                                    loading="lazy"
+                                    />
+                                <?php }?>
                                 
                             </div>
                         </div>
                         <div class="col-sm-10">
                             <div class="main-images">
-                            <!--Main images -->
-                                
-                                    <img  src="https://padutchbaskets.com/images/custom-birthday-gifts-sm.jpg"   alt="product-image"      id="image_box" class="img-responsive"  />
-                                
+                             <!--Main images -->
+                             <?php if($pimg1!=="no-first-img"){?>
+                                    <img  src="<?=$old_site_js;?>images/<?=$pimg1;?>"   alt="product-image"      id="image_box" class="img-responsive" loading="lazy" />
+                                <?php }?>
                             <!--Main images -->
                             </div>
                         </div>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-011</p>
-                    <h3 class="prod-title">Chocolate Lovers Gift Basket</h3>
+                    <p class="prod-id">Product ID: <?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?></p>
+                    <h3 class="prod-title"><?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?></h3>
                     <span class="price">
                         <span class="prod-price" id='price_per_item' ><?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?></span>
                         <?php
@@ -145,35 +156,43 @@ function validateInput($parameterValue, $parameterName){
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
+                            <tr>
+                                <td>
+                                    <?php if($pfpie=="pfpie-1"){?>
+                                        <input type="hidden" name="on0" value="Choose Your Pie">
+                                        <div class="form-label">Choose Your Pie</div>
+                                        <select name="os0" id="choosePie">
+                                            <option value="Apple">Apple </option>
+                                            <option value="Shoo Fly">Shoo Fly </option>
+                                            <option value="Cherry Pie">Cherry Pie </option>
+                                        </select>
+                                    <?php }?>
+                                </td>
+                                <td>
+                                    <?php if($pfbread=="pfbread-1"){?>
+                                        <input type="hidden" name="on0" value="Choose Your Bread">
+                                        <div class="form-label">Choose Your Bread</div>
+                                        <select name="os0" id="chooseBread">
+                                            <option value="Blueberry">Blueberry </option>
+                                            <option value="Banana">Banana </option>
+                                        </select>
+                                    <?php }?>
+                                </td>
+                            </tr>
 
-                        <tr>
-                            <td>
-                                
-                                    <input type="hidden" name="on0" value="Choose Your Fudge">
-                                    <div class="form-label">Choose Your Fudge</div>
-                                    <select name="os0" id="chooseFudge">
-                                        <option value="Chocolate">Chocolate </option>
-                                        <option value="Choc/Peanut Butter">Choc/Peanut Butter </option>
-                                      
-                              </select>
-                                
-                            </td>
-                           
-                        </tr>
-
-                        <tr>
-                            <td>
-                                <input type="hidden" name="on2" value="Card Message">
-                                <div class="form-label form-label-margin">Card Message</div>
-                                <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span> 
-                            </td>
-                            <td>
-                                <!--input type="hidden" name="on2" id="promo_code" value="15"--> 
-                                <div class="form-label form-label-margin">Promo Code</div>
-                                <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
-                                <input type="text" class="form-input-text" id="promoCode" onkeyup="fn_promo_code(this.value)" name="os2" maxlength="200">
-                            </td>
-                        </tr>
+                            <tr>
+                                <td>
+                                    <input type="hidden" name="on2" value="Card Message">
+                                    <div class="form-label form-label-margin">Card Message</div>
+                                    <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span> 
+                                </td>
+                                <td>
+                                    <!--input type="hidden" name="on2" id="promo_code" value="15"--> 
+                                    <div class="form-label form-label-margin">Promo Code</div>
+                                    <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
+                                    <input type="text" class="form-input-text" id="promoCode" onkeyup="fn_promo_code(this.value)" name="os2" maxlength="200">
+                                </td>
+                            </tr>
 
                         </table>
 
@@ -385,76 +404,4 @@ include("includes/footer.php");
 </script>
 <script type="text/javascript" charset="utf-8">
 finished();
-</script>
-<script type="text/javascript">
-$(document).ready(function() {
-    $("#addToCartBtn").click(function(e){
-        e.preventDefault();
-        
-        //set value in data attributes
-        var productCardMessage = $('#cardMessage').val();
-        $('.product-metadata').attr('data-product-card-msg', productCardMessage);
-        var productPromoCode = $('#promoCode').val();
-        $('.product-metadata').attr('data-product-promo', productPromoCode);
-        var productFlavorPie = $('#choosePie').val();
-        $('.product-metadata').attr('data-product-flavor-pie', productFlavorPie);
-        var productFlavorBread = $('#chooseBread').val();
-        $('.product-metadata').attr('data-product-flavor-bread', productFlavorBread);
-        var productQty = $('#productQty').val();
-        $('.product-metadata').attr('data-product-qty', productQty);
-
-        var checkedValuesString = '';
-        $('.custom-options-services input[type="checkbox"]:checked').each(function(index) {
-            if (index !== 0) {
-                checkedValuesString += ',';
-            }
-            checkedValuesString += $(this).val();
-        });
-        $('.product-metadata').attr('data-product-customization', checkedValuesString);
-
-        // get values from data attributes and save them
-        var productId = $('.product-metadata').data('product-id');
-        var productName = $('.product-metadata').data('product-name');
-        var productPrice = $('.product-metadata').data('product-price-regular');
-        var productShippingPrice = $('.product-metadata').data('product-shipping-price');
-        var productCustomization = checkedValuesString;
-        var productQty = $('.product-metadata').data('product-qty');
-        var productImage = $('.product-metadata').data('product-cart_img');
-        
-        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
-
-        var urlCart = $appPathJS+"cart.php";
-        window.location.href = urlCart;
-        console.log(localStorage);
-
-    });
-    
-function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
-
-    var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
-
-    $.each(cart, function(index, product) {
-        if (product.id === productToAddOrUpdate.id) {
-            existingProductIndex = index;
-            return false;
-        }
-    });
-
-    // Update quantity or add a new product to the cart
-    if (existingProductIndex !== -1) {
-        // Product already exists in the cart, update quantity
-        cart[existingProductIndex].quantity += productToAddOrUpdate.quantity;
-    } else {
-        // Product not found, add it to the cart
-        cart.push(productToAddOrUpdate);
-    }
-
-    // Save the updated cart to local storage
-    localStorage.setItem('cartstorage', JSON.stringify(cart));
-
-}    
-
-});  
 </script>

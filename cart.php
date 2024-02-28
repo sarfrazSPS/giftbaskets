@@ -304,13 +304,14 @@ if($clear_cart==1){
 function calculat_each_item_total(){
     $('#dynamicContentContainer tr').each(function(index, row) {
         var item_price = $(row).find('.cal_item_price').text();
-
+console.log(index+"="+item_price);
         var item_qty = $(row).find('.cal_item_qty').val();
         item_qty = parseInt(item_qty);
-
+console.log(index+"="+item_qty);
         var itemTotal = item_qty*item_price;
         itemTotal = parseFloat(itemTotal);
         itemTotal = itemTotal.toFixed(2);
+console.log(index+"="+itemTotal);        
         $(row).find(".cal_item_sub_total").text(itemTotal);
     });
 }

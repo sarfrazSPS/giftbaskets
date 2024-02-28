@@ -41,7 +41,7 @@
 </head>
 
 
-<?php include("../includes/header.php"); ?>
+<?php include("includes/header.php"); ?>
 <style>
 .bg-card {
     background-color: #cfa99317;
@@ -182,7 +182,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1017"
                                 data-product-name="Sympathy Gifts Delivered"
-                                data-product-price-regular="$89.50"
+                                data-product-price-regular="89.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -240,7 +240,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-"
                                 data-product-name="Personalized Sympathy Gifts"
-                                data-product-price-regular="$1018"
+                                data-product-price-regular="1018"
                                 data-product-price-sale=""
                                 data-product-shipping-price="59.50"
                                 data-product-stars="5"
@@ -298,7 +298,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1024"
                                 data-product-name="Sympathy Gift Basket 2"
-                                data-product-price-regular="$79.50"
+                                data-product-price-regular="79.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -357,7 +357,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1020"
                                 data-product-name="Bakers Best Sympathy Gifts"
-                                data-product-price-regular="$87.50"
+                                data-product-price-regular="87.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -417,7 +417,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1021"
                                 data-product-name="Sympathy Bakers Special"
-                                data-product-price-regular="$69.50"
+                                data-product-price-regular="69.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -475,7 +475,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1022"
                                 data-product-name="Deluxe Sympathy Gifts"
-                                data-product-price-regular="$87.50"
+                                data-product-price-regular="87.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -533,7 +533,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1023"
                                 data-product-name="Unique Sympathy Gifts"
-                                data-product-price-regular="$79.50"
+                                data-product-price-regular="79.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -591,7 +591,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1019"
                                 data-product-name="Sympathy Gift Basket"
-                                data-product-price-regular="$119.50"
+                                data-product-price-regular="119.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -613,5 +613,5 @@
 
 <!-- SECTION TESTIMONIALS END -->
 <?php
-include("../includes/footer.php");
+include("includes/footer.php");
 ?>

@@ -42,7 +42,7 @@
 </head>
 
 
-<?php include("../includes/header.php"); ?>
+<?php include("includes/header.php"); ?>
 <style>
 .bg-card {
     background-color: #cfa99317;
@@ -309,7 +309,7 @@
                             <div class="product-metadata" 
                                 data-product-id="product-1016"
                                 data-product-name="Food Gift Baskets - Traditions"
-                                data-product-price-regular="$79.50"
+                                data-product-price-regular="79.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"
                                 data-product-stars="5"
@@ -676,5 +676,5 @@
 
 <!-- SECTION TESTIMONIALS END -->
 <?php
-include("../includes/footer.php");
+include("includes/footer.php");
 ?>
