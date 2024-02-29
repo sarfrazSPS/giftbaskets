@@ -1,3 +1,4 @@
+<?php include($root_path . "includes/variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,90 +41,17 @@
     <link rel="canonical" href="https://padutchbaskets.com/gourmet-snack-basket.php">
 </head>
 
-<?php include("../includes/header.php"); ?>
-<style>
-.bg-card {
-    background-color: #cfa99317;
-}
+<body>
+    <div id="content" class="site-content">
 
-.card-body {
-    padding: 10px 8px;
-}
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>   
+    </header>
 
-.product-price {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-}
+<?php include($root_path . "includes/prod-cats.php"); ?>
 
-#birthday-gift svg {
-    width: 17px;
-    fill: #7b5c4a9e;
-}
-
-#birthday-gift .d-flex a {
-    font-size: 10px;
-    color: #ab978b;
-}
-</style>
-<section id="productCats" class="product-cats">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 proc-left bg-light">
-                    <h3>Product Categories</h3>
-                    <div class="ui-accordion">
-                        <div class="ui-accordion-item">
-                            <a href="javascript:void(0);" class="ui-accordion-title">
-                                <span>Occasion</span>
-                            </a>
-                            <div class="ui-accordion-content">
-                                <ul class="category-selection">
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Anniversary <span>(5)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Birthday <span>(9)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Congratulations <span>(16)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Corporate <span>(28)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 proc-right">
-                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section id="birthday-gift" class="pt-5 pb-5">
     <div class="container-fluid">
         <div class="container">
@@ -137,10 +65,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-sm-6 col-md-3">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/custom-gift-baskets-free.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/custom-gift-baskets-free.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Custom Birthday Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -196,9 +124,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/chocolate-lovers/birthday-chocolate-gift.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/chocolate-lovers/birthday-chocolate-gift.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Chocolate Gift</h5>
                             <div class="d-flex align-items-center">
@@ -254,9 +182,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/birthday-gifts-online.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/birthday-gifts-online.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">"Deluxe Traditions" Birthday Gifts Online</h5>
                             <div class="d-flex align-items-center">
@@ -312,9 +240,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/traditions/unique-birthday-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/traditions/unique-birthday-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Traditions Unique Birthday Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -370,11 +298,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -430,9 +356,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/best-birthday-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/best-birthday-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Savory Flavors Birthday Basket</h5>
                             <div class="d-flex align-items-center">
@@ -488,9 +414,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/celebrations/birthday-gift-box.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/celebrations/birthday-gift-box.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Gift Box</h5>
                             <div class="d-flex align-items-center">
@@ -546,9 +472,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/birthday-delivery-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/birthday-delivery-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Delivery Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -587,7 +513,7 @@
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
-                                data-product-id="product-1015"
+                                data-product-id="product-1003"
                                 data-product-name="Birthday Delivery Gifts"
                                 data-product-price-regular="79.50"
                                 data-product-price-sale=""
@@ -604,10 +530,9 @@
                         </div>
                     </div>
                 </div>
-				  <div class="row mt-4">
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/birthday-delivery-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/birthday-delivery-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Bakers Choice Birthday Gift</h5>
                             <div class="d-flex align-items-center">
@@ -663,9 +588,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/birthday-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -704,7 +629,7 @@
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
-                                data-product-id="product-1013"
+                                data-product-id="product-1001"
                                 data-product-name="Birthday Gift Basket"
                                 data-product-price-regular="77.50"
                                 data-product-price-sale=""
@@ -721,9 +646,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/celebrations/birthday-gift-box.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/celebrations/birthday-gift-box.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Gift Box</h5>
                             <div class="d-flex align-items-center">
@@ -762,7 +687,7 @@
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
-                                data-product-id="product-1014"
+                                data-product-id="product-1010"
                                 data-product-name="Birthday Gift Box"
                                 data-product-price-regular="54.50"
                                 data-product-price-sale=""
@@ -779,9 +704,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-special/birthday-food-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-special/birthday-food-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Birthday Delivery Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -837,7 +762,6 @@
                         </div>
                     </div>
                 </div>
-				
             </div>
         </div>
     </div>

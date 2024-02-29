@@ -22,6 +22,10 @@ $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
 $psale = "45.99";
 
+$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
+$pshipping = validateInput($pshipping, "pshipping");
+$pshipping = "0";
+
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
 if(!is_numeric($pstars)){
@@ -234,6 +238,7 @@ product_name: 'Christmas Gift Baskets'
                                     <span class="prod-rev-nos"><?=$previews;?> Reviews</span>
                                 <?php }?>
                             </span>
+                            <span class="prod-rev-nos d-block">Shipping Price: $0</span>
                             <p class="prod-copy">Make Your Selections</p>
                                                                 
                             <form class="prod-form" target="paypal" action="" method="post">
@@ -445,19 +450,20 @@ product_name: 'Christmas Gift Baskets'
 
         </div>
 
-    <!-- do not remove this div, it will be using to pass data -->
-    <div class="product-metadata" 
-        data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
-        data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
-        data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
-        data-product-flavor-pie="yes"
-        data-product-flavor-bread="yes"
-        data-product-promo=""
-        data-product-card-msg=""
-        data-product-customization=""
-        data-product-qty=""
-        data-product-cart_img="<?=$pimg1;?>"
-        ></div>        
+ <!-- do not remove this div, it will be using to pass data -->
+ <div class="product-metadata" 
+    data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
+    data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
+    data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
+    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
+    data-product-flavor-pie="yes"
+    data-product-flavor-bread="yes"
+    data-product-promo=""
+    data-product-card-msg=""
+    data-product-customization=""
+    data-product-qty=""
+    data-product-cart_img="<?=$pimg1;?>"
+    ></div>        
 
     <script type="text/javascript" charset="utf-8">
     finished();

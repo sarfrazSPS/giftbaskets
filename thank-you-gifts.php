@@ -70,7 +70,7 @@ $psale = "89.50";
 
 $pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
 $pshipping = validateInput($pshipping, "pshipping");
-$pshipping = "10";
+$pshipping = "0";
 
 $pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
 $pstars = validateInput($pstars, "pstars");
@@ -164,7 +164,7 @@ function validateInput($parameterValue, $parameterName){
                             <span class="prod-seperator"> | </span>
                             <span class="prod-rev-nos">28 Reviews</span>
                     </span>
-                    
+                    <span class="prod-rev-nos d-block">Shipping Price: $0</span>
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">

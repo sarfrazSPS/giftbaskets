@@ -432,11 +432,34 @@ form .brcf-btn:hover{
     border: 0;
     border-radius: 0;
     padding: 12px 5px;
-    margin-top: 22px;
+    margin-top: 22px !important;
     transition: all 0.3s ease-in-out;
 }
 .favs-btn:hover{
     background-color: var(--mainBlackColor);
+}
+#birthday-gift .bg-card {
+    background-color: #cfa99317;
+}
+
+#birthday-gift .card-body {
+    padding: 10px 8px;
+}
+
+#birthday-gift .product-price {
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+#birthday-gift svg {
+    width: 17px;
+    fill: #7b5c4a9e;
+}
+
+#birthday-gift .d-flex a {
+    font-size: 10px;
+    color: #ab978b;
 }
 
 /*Customzed Gift Boxes List Section*/

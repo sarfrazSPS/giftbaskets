@@ -12,16 +12,17 @@
 
     <meta property="og:type" content="product" />
 
-    <meta property="og:title" content="Birthday Gift Delivery" />
+    <meta property="og:title" content="Gifts for Employees" />
 
-    <meta property="og:description" content="Our birthday gift delivery filled with amazing PA Dutch foods from Lancaster, PA known to be the best baked goods, gourmet cheeses, chocolates and more"
-    <meta property="og:url" content="https://padutchbaskets.com/birthday-gift-baskets.php"/>
+    <meta property="og:description" content="In today's work place it is essential to show our employees they are valued. Our PA Dutch gourmet foods and baked goods are loved and can be customized to any occasion"
+		  
+    <meta property="og:url" content="https://padutchbaskets.com/gifts-for-employees.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/dutch-baked-goods/birthday-gift-delivery.jpg" />
+        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/dutch-traditions/corporate-anniversary.jpg" />
 
-    <meta property="product:price:amount" content="72.50" />
+    <meta property="product:price:amount" content="89.50" />
 
     <meta property="product:price:currency" content="USD" />
 
@@ -31,13 +32,13 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Birthday Delivery Gifts  | Lancaster PA</title>
+    <title>"Gifts for Employees | Lancaster PA</title>
 
-    <meta name="description" content="Our birthday gift delivery filled with amazing PA Dutch foods from Lancaster, PA known to be the best baked goods, gourmet cheeses, chocolates and more" />
+    <meta name="description" content="In today's work place it is essential to show our employees they are valued. Our PA Dutch gourmet foods and baked goods are loved and can be customized to any occasion" />
 
-    <meta name="keywords" content="birthday gift delivery, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
+    <meta name="keywords" content="gifts for employees, corporate employee gifts, best corporate gifts, employee gift baskets, lancaster pa"/>
 
-    <link rel="canonical" href="https://padutchbaskets.com/birthday-delivery-gifts.php">
+    <link rel="canonical" href="https://padutchbaskets.com/gifts-for-employees.php">
 </head>
 
 
@@ -56,18 +57,18 @@ var $appPathJS = <?php echo json_encode($old_site_js); ?>;
 <?php
 $pid = isset($_GET['pid']) ? $_GET['pid'] : '';
 $pid = validateInput($pid, "pid");
-$pid = "product-026";
+$pid = "product-059";
 
 $pname = isset($_GET['pname']) ? $_GET['pname'] : '';
 $pname = validateInput($pname, "pname");
-$pname = "Birthday Gift Delivery - Dutch Baked Goods";
+$pname = "Gifts for Employees - Dutch Traditions ";
 
 $pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
 $pregular = validateInput($pregular, "pregular");
 
 $psale = isset($_GET['psale']) ? $_GET['psale'] : '';
 $psale = validateInput($psale, "psale");
-$psale = "72.50";
+$psale = "89.50";
 
 $pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
 $pshipping = validateInput($pshipping, "pshipping");
@@ -103,7 +104,7 @@ $pimgs = validateInput($pimgs, "pimgs");
 $pimgsArray = explode(',', $pimgs);
 
 $pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
-$pimg1 = "birthday-gift-delivery.jpg";
+$pimg1 = "corporate-anniversary.jpg";
 $pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
 $pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
 $pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
@@ -127,15 +128,15 @@ function validateInput($parameterValue, $parameterName){
                             <!--4 side images -->
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/dutch-baked-goods/birthday-gift-delivery.jpg"
-                                alt="When looking for a birthday gift delivery consider our Lancaster PA Dutch baked goods, gourmet cheeses, chocolates and more"
+                                src="assets/images/products/dutch-traditions/corporate-anniversary.jpg"
+                                alt="Our corporate employee gifts customized for any occasion, birthday, get well, great job. Show you care with our PA Dutch baked goods, gourmet foods and chocolates"
                                 onmouseover="myFunction(this)"
                                 />
                                             
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/dutch-baked-goods/pic2.jpg"
-                                alt="Our birthday gift delivery consist of Amish Gourmet cheeses, foods, baked goods and chocolates known as the best found anywhere"
+                                src="assets/images/products/dutch-traditions/pic2.jpg"
+                                alt="Corporate gift baskets show employees they are valued with our customized gift baskets for birthday, welcome to our team or any occasion"
                                 onmouseover="myFunction(this)"
                                 />
                             
@@ -147,7 +148,9 @@ function validateInput($parameterValue, $parameterName){
                             <div class="main-images">
                             <!--Main images -->
                                 
-                                    <img  src="assets/images/products/dutch-baked-goods/birthday-gift-delivery.jpg"   alt="The perfect birthday gift delivery with baskets and boxes filled with whoopie pies, baked goods, chocoalates and other gourmet foods"      id="image_box" class="img-responsive"  />
+                                   <img
+                                class="img-responsive"
+                                src="assets/images/products/dutch-traditions/corporate-anniversary.jpg"  alt="Corporate employee gifts have become so important to show employees they are valued. We can customize to any occasion with our PA Dutch baked goods"      id="image_box" class="img-responsive"  />
                                 
                             <!--Main images -->
                             </div>
@@ -155,15 +158,15 @@ function validateInput($parameterValue, $parameterName){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-026</p>
-                    <h3 class="prod-title">Birthday Gift Delivery</h3>
+                    <p class="prod-id">Product ID: product-059</p>
+                    <h3 class="prod-title">"Dutch Traditions" Gifts for Employees</h3>
                       <span class="price">
-                        <span class="prod-price" id='price_per_item' >$72.50</span>
+                        <span class="prod-price" id='price_per_item' >$89.50</span>
                             <span class="prod-stars">
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
                             <span class="prod-seperator"> | </span>
-                            <span class="prod-rev-nos">17 Reviews</span>
+                            <span class="prod-rev-nos">23 Reviews</span>
                     </span>
                     <span class="prod-rev-nos d-block">Shipping Price: $0</span>
                     <p class="prod-copy">Make Your Selections</p>
@@ -171,7 +174,50 @@ function validateInput($parameterValue, $parameterName){
                         <table id="main_tbl">
 
                         <tr>
+							
+							<td>
+                                
+                                    <input type="hidden" name="on0" value="Choose Your Pie">
+                                    <div class="form-label">Choose Your Pie</div>
+                                    <select name="os0" id="choosePie">
+                                        <option value="Apple">Apple </option>
+                                        <option value="ShooFly">Shoo Fly </option>
+                                      
+                              </select>
+                                
+                            </td>
+							
                             
+							
+							<td>
+                                
+                                    <input type="hidden" name="on0" value="Choose Your Bread">
+                                    <div class="form-label">Choose Your Bread</div>
+                                    <select name="os0" id="chooseBread">
+                                        <option value="Blueberry">Blueberry </option>
+                                        <option value="Banana">Banana </option>
+                                      
+                              </select>
+                                
+                            </td>
+							 
+							
+							
+							
+							<td>
+                                
+                                    <input type="hidden" name="on0" value="Choose Your Fudge">
+                                    <div class="form-label">Choose Your Fudge</div>
+                                    <select name="os0" id="chooseFudge">
+                                        <option value="Chocolate">Chocolate </option>
+                                        <option value="Choc/Peanut Butter">Choc/Peanut Butter </option>
+                                      
+                              </select>
+                                
+                            </td>
+							
+							
+                           
                         </tr>
 
                         <tr>
@@ -198,27 +244,29 @@ function validateInput($parameterValue, $parameterName){
     
                                         <div class="row justify-content-center">
     
-                                                <div class="col-sm-new-2 mb-new">
+                                                 <div class="col-sm-new-2 mb-new">
     
-                                                    <label for="birthday">
+                                                    <label for="tag3">
     
-                                                        <input type="checkbox" class="" id="tag" value="bithday2">
+                                                        <input type="checkbox" id="tag" class="" value="Corporate1">
     
-                                                        <img src="assets/images/tags/birthday2.png" alt="Our birthday gift baskets are delicious and filled with whoopie pies, apple and shoo fly pie, beef sticks and more"  class="circle ">
+                                                        
+                                                        
+                                                      <img src="assets/images/tags/corporate1.png" alt="Gifts for employees are becoming the norm for birthdays, get well and more. Our PA Dutch baked goods are loved and offer a way to show your employees they are valued" class="circle">
     
                                                     </label>
     
                                                 </div>
-    
+											
                                                 <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag3">
     
-                                                        <input type="checkbox" id="tag" class="" value="Birthday3">
+                                                        <input type="checkbox" id="tag" class="" value="Corporate2">
     
                                                         
                                                         
-                                                        <img src="assets/images/tags/birthday3.png" alt="A delicious birthday box that is filled with delicious treats and baked goods" class="circle ">
+                                                      <img src="assets/images/tags/corporate2.png" alt="Our employee gift baskets are very popular in showing employees they are valued with our PA Dutch gourmet foods that can be customized to any occasion" class="circle ">
     
                                                     </label>
     
@@ -228,21 +276,22 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="custom-front">
     
-                                                        <input type="checkbox" id="custom-front" class="" value="Birthday4">
+                                                        <input type="checkbox" id="custom-front" class="" value="corporate3">
     
-                                                        <img src="assets/images/tags/birthday4.png" alt="Birthday gift baskets that we deliver with amazing PA Dutch pies, whooppie pies, chocolates and more" class="circle ">
+                                                       <img src="assets/images/tags/corporate3.png" alt="Corporate gifts are now the norm to show your employees they are valued. Birthdays, thank you or any occasion, our PA Dutch gourmet foods  can be customized" class="circle ">
     
                                                     </label>
     
                                                 </div>
     
+    
                                                 <div class="col-sm-new-2 mb-new">
     
                                                     <label for="Tag">
     
-                                                        <input type="checkbox" id="Tag" class="" value="Birthday5">
+                                                        <input type="checkbox" id="Tag" class="" value="Corporate4">
     
-                                                        <img src="assets/images/tags/birthday5.png" alt="Our uniuqe birthday gift delivery is enjoyed by everyone who receives them and can be shipped anywhere in the country" class="circle ">
+                                                        <img src="assets/images/tags/corporate4.png" alt="Our gifts for employees are loved by the employees receiving them, filled with PA Dutch gourmet foods and baked goods" class="circle ">
     
                                                     </label>
     
@@ -253,9 +302,9 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Corporate5">
     
-                                                        <img src="assets/images/tags/birthday6.png" alt="Our birthday baskets are loved by everyone who receives them and a great variety of PA Dutch baked goods, chocolates and more " class="circle ">
+                                                      <img src="assets/images/tags/corporate5.png" alt="Our gift baskets for employees are loved and can be customized to any occasion. Filled with gourmet foods and baked goods from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -265,9 +314,9 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday">
+                                                        <input type="checkbox" id="tag" class="" value="Corporate6">
     
-                                                        <img src="assets/images/tags/happy-birthday.png" alt="Our birthday gift baskets offer treats that we can deliver for that special person" class="circle ">
+                                                       <img src="assets/images/tags/corporate6.png" alt="The best gifts for employees are those that are enjoyed. Our PA Dutch baked goods and gourmet foods that can be customized to any occasion " class="circle ">
     
                                                     </label>
     
@@ -278,9 +327,9 @@ function validateInput($parameterValue, $parameterName){
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday">
+                                                        <input type="checkbox" id="tag" class="" value="Corporate7">
     
-                                                        <img src="assets/images/tags/birthday.png" alt="We always want those receiving our birthday gift delivery to love it, our PA Dutch baked goods are loved around the world " class="circle ">
+                                                       <img src="assets/images/tags/corporate7.png" alt="Delicious gourmet foods and baked goods make up our employee gift baskets that can be customize to any occasion while adding loyalty" class="circle ">
     
                                                     </label>
     
@@ -295,7 +344,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="tag" class="" value="Get Well">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="The best Birthday gift delivery anywhere in the country filled with Amish baked goods and gourmet foods from Lancaster, PA" class="circle ">
+                                                       <img src="assets/images/tags/no-custom.png"  alt="Saying thank you, happy birthday, get well or any other occasion to employees shows you care. Our PA Dutch gourmet foods are love by all" class="circle ">
     
                                                     </label>
     
@@ -333,29 +382,41 @@ function validateInput($parameterValue, $parameterName){
                     <div class="cgb-copy">
                         <div class="cgb-copy-left">
 							
-							
-                            <p>* Apple Pie </p>
 						
-							<p>* Shoo Fly Pie</p>
-                            <p>* 2 Whoopie Pies</p>
-							<p>* Gourmet Mustard</p>
+                            <p>* Apple or Shoo Fly Pie (Your Choice of Flavor)</p>
+							<p>* Blueberry Bread (Your Choice of Flavor)</p>
+							<p>* Fudge (Your Choice of Flavor)</p>
+							<p>* Strawberry Fry Pie</p>
+						<p>* Peanut Butter Balls</p>
 							
+							
+						
                         </div>
                         <div class="cgb-copy-right">
 							
-							 <p>* Stoltzfus Beef Sticks</p>
+							<p>Stoltzfus Beef Sticks</p>
+                            <p>* 2 Whoopie Pies</p>
+							
+							<p>* Emma's Famous Popcorn</p>
+							<p>* Martins Pretzels</p>
+							
+							<p>* Customization</p>
+							
+							
+                            
+							
 						
-                            <p>* Martins Pretzels</p>
 							
 							
-							<p>* Lancaster Party Mix</p>
-                       
+                    
                             
                         </div>
                     </div>
 
-                    <h2 class="cgb-subhead">Birthday Gift Delivery</h2>
-                    <p class="cgb-subcopy">The best birthday gift delivery are the ones that offer something unique that is sure to bring enjoyment to those receiving. The praise we get over and over again is just how much the recipient enjoyed their birthday gift delivery. Each gift basket is designed with the enjoyment of those receiving them. Our Dutch Baked Goods customized basket is filled with two different pies, whoopie pies, Stoltzfus beef sticks which is known in the area for their excellence, and a cinnamon bun to mention a few. Regardless of the gift you choose, we hope you enjoy.
+                    <h2 class="cgb-subhead">Gifts for Employees</h2>
+                    <p class="cgb-subcopy">PA Dutch Baskets offer gifts for employees that are filled with the most delicious gourmet food, baked goods, chocolates and so much more from the Amish in Lancaster, PA. We are happy to customize your gifts for employees for any occasion including but not limited to thank you, birthday, promotions, anniversaries, and so much more. We offer many options with our gift basket that have the best Lancaster PA treats that are loved by everyone who receives them. We offer everything from apple pie, shoo fly pie, fudge, chocolates, gourmet cheeses and so much more. If you don't see the customization you need, give us a call.</p>
+
+
 
 
                 </div>
@@ -378,7 +439,6 @@ function validateInput($parameterValue, $parameterName){
     data-product-cart_img="<?=$pimg1;?>"
     ></div>  
 
-
 <?php
 include("includes/footer.php");
 ?>
@@ -392,7 +452,7 @@ include("includes/footer.php");
     function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
 </script>
 <script> var product_details ="Corporate Christmas Gift Basket - Lancaster Favorites <br/>"; </script>
-<script src="assets/js/paypal.js"></script>
+<script src="file:///C|/Users/DELLUS~1/AppData/Local/Temp/Adobe/Dreamweaver 2021/assets/js/paypal.js"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=AQ4eIiXQNa2IzhEjEjLZ-HDbwt1GCalO88GsMnnCgfRnOmpoOD8wyhkGclLrgEriqgzie2zoVHl22ce1"></script> 
 <script type="text/javascript">
     function toggleMenu() {

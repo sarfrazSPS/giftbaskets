@@ -181,6 +181,7 @@ function validateInput($parameterValue, $parameterName){
                             <span class="prod-rev-nos"><?=$previews;?> Reviews</span>
                         <?php // }?>
                     </span>
+                    <span class="prod-rev-nos d-block">Shipping Price: $0</span>
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">

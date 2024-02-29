@@ -1,87 +1,7 @@
 <?php include("../includes/header.php"); ?>
-<style>
-.bg-card {
-    background-color: #cfa99317;
-}
 
-.card-body {
-    padding: 10px 8px;
-}
+<?php include($root_path . "includes/prod-cats.php"); ?>
 
-.product-price {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-}
-
-#birthday-gift svg {
-    width: 17px;
-    fill: #7b5c4a9e;
-}
-
-#birthday-gift .d-flex a {
-    font-size: 10px;
-    color: #ab978b;
-}
-</style>
-<section id="productCats" class="product-cats">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 proc-left bg-light">
-                    <h3>Product Categories</h3>
-                    <div class="ui-accordion">
-                        <div class="ui-accordion-item">
-                            <a href="javascript:void(0);" class="ui-accordion-title">
-                                <span>Occasion</span>
-                            </a>
-                            <div class="ui-accordion-content">
-                                <ul class="category-selection">
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Anniversary <span>(5)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Birthday <span>(9)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Congratulations <span>(16)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Corporate <span>(28)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 proc-right">
-                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section id="birthday-gift" class="pt-5 pb-5">
     <div class="container-fluid">
         <div class="container">
@@ -95,10 +15,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-sm-6 col-md-3">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/dutch-traditions/sympathy-gifts-delivered.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/dutch-traditions/sympathy-gifts-delivered.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Sympathy Gifts Delivered</h5>
                             <div class="d-flex align-items-center">
@@ -154,9 +74,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/personalized-sympathy-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/personalized-sympathy-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Personalized Sympathy Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -212,9 +132,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/sympathy-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/sympathy-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Sympathy Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -270,9 +190,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/best-sympathy-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/best-sympathy-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Bakers Best Sympathy Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -328,11 +248,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-special/sympathy-gift-baskets-free.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-special/sympathy-gift-baskets-free.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Bakers Special</h5>
                             <div class="d-flex align-items-center">
@@ -388,9 +306,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Deluxe Sympathy Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -446,9 +364,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/traditions/unique-sympathy-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/traditions/unique-sympathy-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Unique Sympathy Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -504,9 +422,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/sympathy-food-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/sympathy-food-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Sympathy Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -545,8 +463,8 @@
                             <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
                             <!-- images must be on root path in the folder "images" -->
                             <div class="product-metadata" 
-                                data-product-id="product-1024"
-                                data-product-name="Sympathy Gift Basket 2"
+                                data-product-id="product-1019"
+                                data-product-name="Sympathy Gift Basket"
                                 data-product-price-regular="119.50"
                                 data-product-price-sale=""
                                 data-product-shipping-price="0"

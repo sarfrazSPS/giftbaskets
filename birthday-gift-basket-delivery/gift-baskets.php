@@ -1,3 +1,4 @@
+<?php include($root_path . "includes/variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -42,90 +43,17 @@
 </head>
 
 
-<?php include("../includes/header.php"); ?>
-<style>
-.bg-card {
-    background-color: #cfa99317;
-}
+<body>
+    <div id="content" class="site-content">
 
-.card-body {
-    padding: 10px 8px;
-}
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>   
+    </header>
 
-.product-price {
-    font-size: 18px;
-    font-weight: 500;
-    margin-top: 10px;
-}
+<?php include($root_path . "includes/prod-cats.php"); ?>
 
-#birthday-gift svg {
-    width: 17px;
-    fill: #7b5c4a9e;
-}
-
-#birthday-gift .d-flex a {
-    font-size: 10px;
-    color: #ab978b;
-}
-</style>
-<section id="productCats" class="product-cats">
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 proc-left bg-light">
-                    <h3>Product Categories</h3>
-                    <div class="ui-accordion">
-                        <div class="ui-accordion-item">
-                            <a href="javascript:void(0);" class="ui-accordion-title">
-                                <span>Occasion</span>
-                            </a>
-                            <div class="ui-accordion-content">
-                                <ul class="category-selection">
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Anniversary <span>(5)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Birthday <span>(9)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Congratulations <span>(16)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Corporate <span>(28)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9 proc-right">
-                    <img src="<?=$app_path;?>assets/images/background/hero.png" class="img-fluid">
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
 <section id="birthday-gift" class="pt-5 pb-5">
     <div class="container-fluid">
         <div class="container">
@@ -139,10 +67,10 @@
                     </div>
                 </div>
             </div>
-            <div class="row mt-3">
-                <div class="col-sm-6 col-md-3">
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/unique-food-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/unique-food-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Unique Food Gifts</h5>
                             <div class="d-flex align-items-center">
@@ -198,9 +126,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Chocolate Lovers Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -256,9 +184,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Gourmet Basket</h5>
                             <div class="d-flex align-items-center">
@@ -314,9 +242,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-3">
+                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/traditions/food-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/traditions/food-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">"Traditions" Food Basket</h5>
                             <div class="d-flex align-items-center">
@@ -372,11 +300,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="row mt-4">
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/custom-gift-baskets.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/lancaster-favorites/custom-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Custom Gift Baskets</h5>
                             <div class="d-flex align-items-center">
@@ -432,9 +358,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/celebrations/celebrations-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/celebrations/celebrations-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Celebrations Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -490,9 +416,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/gift-basket-online.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/gift-basket-online.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Savory Gift Basket Online</h5>
                             <div class="d-flex align-items-center">
@@ -548,9 +474,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/birthday-delivery-gifts.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/birthday-delivery-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Unique Gift Baskets</h5>
                             <div class="d-flex align-items-center">
@@ -606,12 +532,9 @@
                         </div>
                     </div>
                 </div>
-				
-				
-				 <div class="row mt-4">
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/deluxe-gift-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/deluxe-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Deluxe Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -667,9 +590,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/dutch-baked-goods/customized-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/dutch-baked-goods/customized-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Dutch Customized Gift Basket</h5>
                             <div class="d-flex align-items-center">
@@ -725,9 +648,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/dutch-traditions/food-gift-ideas.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/dutch-traditions/food-gift-ideas.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Traditions Food Gift Ideas</h5>
                             <div class="d-flex align-items-center">
@@ -783,9 +706,9 @@
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-special/food-basket.jpg" class="card-img-top" alt="...">
+                        <img src="<?=$app_path;?>assets/images/products/bakers-special/food-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">Bakers Special Food Basket</h5>
                             <div class="d-flex align-items-center">
@@ -841,10 +764,6 @@
                         </div>
                     </div>
                 </div>
-				
-				
-				
-				
             </div>
         </div>
     </div>
