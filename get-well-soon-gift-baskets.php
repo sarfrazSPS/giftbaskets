@@ -1,14 +1,11 @@
+<?php include("includes/variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?= $app_path ?>assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="<?= $app_path ?>assets/css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <?php include($root_path . "includes/header-links.php"); ?>
 
     <meta property="og:type" content="product" />
 
@@ -27,10 +24,6 @@
 
     <meta property="og:availability" content="instock" />
 
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Get Well Soon Gift Baskets | Lancaster PA</title>
 
     <meta name="description" content="When looking for get well soon gift baskets, we offer a varitey of baskets filled with delicious PA Dutch baked goods and other gourmet foods that are loved" />
@@ -40,19 +33,15 @@
     <link rel="canonical" href="https://padutchbaskets.com/get-well-soon-gift-baskets.php">
 </head>
 
+<body>
+    <div id="content" class="site-content">
 
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>   
+    </header>
 
-<?php include("includes/header.php"); ?>
-<?php
-$old_site_url = "https://padutchbaskets.com/";
-$old_site_js = $old_site_url."padutchbaskets/";
-if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
-    $old_site_js = "http://localhost//my_sites/padutchbaskets/";
-}
-?>
-<script>
-var $appPathJS = <?php echo json_encode($old_site_js); ?>;
-</script>
 <?php
 $pid = isset($_GET['pid']) ? $_GET['pid'] : '';
 $pid = validateInput($pid, "pid");

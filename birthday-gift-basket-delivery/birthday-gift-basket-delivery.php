@@ -1,21 +1,17 @@
-<?php include($root_path . "includes/variables.php"); ?>
+<?php include("../includes/variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?= $app_path ?>assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="<?= $app_path ?>assets/css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <?php include($root_path . "includes/header-links.php"); ?>
 
     <meta property="og:type" content="product" />
 
     <meta property="og:title" content="" />
 
-    <meta property="og:description" content="Our gourmet snack basket offers the most delicious PA Dutch baked goods, gourmet foods, cheeses and other dutch treats with delivery"
+    <meta property="og:description" content="Our gourmet snack basket offers the most delicious PA Dutch baked goods, gourmet foods, cheeses and other dutch treats with delivery">
     <meta property="og:url" content="https://padutchbaskets.com/gourmet-snack-basket.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
@@ -27,10 +23,6 @@
     <meta property="product:price:currency" content="USD" />
 
     <meta property="og:availability" content="instock" />
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Gourmet Snack Basket | Lancaster PA</title>
 

@@ -1,46 +1,5 @@
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="<?= $app_path ?>assets/css/bootstrap/bootstrap.css" rel="stylesheet">
-    <link href="<?= $app_path ?>assets/css/style.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,500&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-
-    <meta property="og:type" content="product" />
-
-    <meta property="og:title" content="Chocolate Gift Baskets" />
-
-    <meta property="og:description" content="Our chocolate gift baskets offer Lancaster PA Dutch baked goods, cheeses, chocolates, whoopie pies, blueberry breads, apple pies and more" />
-
-    <meta property="og:url" content="https://padutchbaskets.com/chocolate-gift-baskets.php"/>
-
-    <meta property="og:site_name" content="PA Dutch Baskets" />
-
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" />
-
-    <meta property="product:price:amount" content="74.50" />
-
-    <meta property="product:price:currency" content="USD" />
-
-    <meta property="og:availability" content="instock" />
-
-    <meta charset="utf-8">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Cart | Lancaster PA </title>
-
-    <meta name="description" content="Unleash the joy with amazing chocolate gift baskets in Lancaster, PA, available online at PA Dutch Baskets. Perfect for any occasion, these baskets are a true delight!" />
-
-    <meta name="keywords" content="chocolate gift baskets, chocolate gift baskets from lancaster pa, unique gift basket ideas, food gift ideas, custom gift baskets, lancaster pa"/>
-
-    <link rel="canonical" href="https://padutchbaskets.com/chocolate-gift-baskets.php">
-</head>
-
-
 <?php include("includes/header.php"); ?>
+
 <?php
 $status = "";
 $clear_cart = 0;
