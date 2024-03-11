@@ -183,8 +183,47 @@ $(document).ready(function() {
 <script type="text/javascript">
 $(document).ready(function() {
     $("#addToCartBtn").click(function(e){
-        e.preventDefault();
         
+        e.preventDefault();
+
+            //  alert(checkbox_option);
+            const hiddenFields = document.querySelectorAll('input[type="hidden"]');
+            const textFields = document.querySelectorAll('input[type="text"]');
+            const selectFields = document.querySelectorAll('select');
+            const label = [];
+            const values = [];
+            
+            hiddenFields.forEach(field => {
+            const value = field.value;
+            label.push(value);
+            });
+           
+            selectFields.forEach(field => {
+            const value = field.value;
+            values.push(value);
+            });
+
+            textFields.forEach(field => {
+            const value = field.value;
+            values.push(value);
+            });         
+            
+            var description ="";
+            var product_details ="";
+            
+
+            for (let i = 0; i < label.length; i++) 
+            {
+                if(i == label.length -1)
+                {
+                    description += label[i]+':'+values[i];
+                }
+                else
+                {
+                    product_details += label[i]+':'+values[i];
+                }
+            }
+            
         //set value in data attributes
         var productCardMessage = $('#cardMessage').val();
         $('.product-metadata').attr('data-product-card-msg', productCardMessage);
@@ -215,7 +254,7 @@ $(document).ready(function() {
         var productQty = $('.product-metadata').data('product-qty');
         var productImage = $('.product-metadata').data('product-cart_img');
         
-        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage);
+        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage, description+product_details);
 
         var urlCart = $appPathJS+"cart.php";
         window.location.href = urlCart;
@@ -223,11 +262,11 @@ $(document).ready(function() {
 
     });
     
-function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage) {
-
+function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage, productFullDetails) {
+    
     var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
     var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage};
+    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage, productDetails:productFullDetails};
 
     $.each(cart, function(index, product) {
         if (product.id === productToAddOrUpdate.id) {
