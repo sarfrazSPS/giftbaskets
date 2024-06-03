@@ -8,6 +8,7 @@ use net\authorize\api\controller as AnetController;
 // Create a unique reference ID of transaction
 $ref_id = 'ref_id_' . time();
 
+
 // Create a MerchantAuthenticationType object with the authentication details
 // which are availale in the config.php file
 $merchant_authentication = new AnetAPI\MerchantAuthenticationType();
@@ -26,36 +27,37 @@ $payment_type->setCreditCard($credit_card);
 
 // Create an order information object (Optional)
 $order_info = new AnetAPI\OrderType();
-$order_info->setInvoiceNumber("20230001"); // Optional
-$order_info->setDescription("Laptop Bag");
+// $order_info->setInvoiceNumber("20230001"); // Optional
+$order_info->setDescription($description);
 
 // Create a customer's identifying information object (Optional)
 $customer_data = new AnetAPI\CustomerDataType(); 
 $customer_data->setType("individual"); 
-$customer_data->setId("9998659"); // Optional
-$customer_data->setEmail("javed@allphptricks.com"); 
+// $customer_data->setId("9998659"); // Optional
+$customer_data->setEmail($checkout_ship_email); 
 
  // Create customer's Bill To address object and set data (Optional)
 $customer_billing = new AnetAPI\CustomerAddressType();
-$customer_billing->setFirstName("Javed Ur");
-$customer_billing->setLastName("Rehman");
-$customer_billing->setCompany("AllPHPTricks.com");
-$customer_billing->setAddress("12 Sunset Street");
-$customer_billing->setCity("Karachi");
-$customer_billing->setState("Sindh");
-$customer_billing->setZip("75080");
-$customer_billing->setCountry("Pakistan");
-$customer_billing->setPhoneNumber("123456789");
+$customer_billing->setFirstName($checkout_bill_fname);
+$customer_billing->setLastName($checkout_bill_lname);
+$customer_billing->setCompany($checkout_ship_company);
+$customer_billing->setAddress($checkout_bill_street."".$checkout_bill_address);
+$customer_billing->setCity($checkout_bill_city);
+$customer_billing->setState($checkout_bill_state);
+$customer_billing->setZip($checkout_bill_postal);
+$customer_billing->setCountry("US");
+$customer_billing->setPhoneNumber($checkout_bill_phone);
 
  // Create customer's Ship To address object and set data (Optional)
 $customer_shipping = new AnetAPI\CustomerAddressType();
-$customer_shipping->setFirstName("Javed Ur");
-$customer_shipping->setLastName("Rehman");
-$customer_shipping->setAddress("12 Sunset Street");
-$customer_shipping->setCity("Karachi");
-$customer_shipping->setState("Sindh");
-$customer_shipping->setZip("75080");
-$customer_shipping->setCountry("Pakistan");
+$customer_shipping->setFirstName($checkout_ship_fname);
+$customer_shipping->setLastName($checkout_ship_lname);
+$customer_shipping->setAddress($checkout_ship_street."".$checkout_ship_address);
+$customer_shipping->setCity($checkout_ship_city);
+$customer_shipping->setState($checkout_ship_state);
+$customer_shipping->setZip($checkout_ship_postal);
+$customer_shipping->setCountry("US");
+
 
 // Create a TransactionRequestType object and set all created objects in it
 $transaction_request_type = new AnetAPI\TransactionRequestType();
@@ -66,6 +68,27 @@ $transaction_request_type->setOrder($order_info);
 $transaction_request_type->setCustomer($customer_data);
 $transaction_request_type->setBillTo($customer_billing);
 $transaction_request_type->setShipTo($customer_shipping);
+
+//////////////////////////////////product-details///////////////////////////////////////
+$arr = json_decode($jsonData);
+// print_r($arr);
+$lineItems = [];
+foreach ($arr as $item) {
+
+    $lineItem1 = new AnetAPI\LineItemType();
+    $lineItem1->setItemId($item->id);
+    $lineItem1->setName($item->name);
+    $lineItem1->setDescription($item->productDetails);
+    $lineItem1->setQuantity("1");
+    $lineItem1->setUnitPrice($item->price);
+    array_push($lineItems, $lineItem1);
+
+    
+}
+$transaction_request_type->setLineItems($lineItems);
+///////////////////////////////////////////////////////////////////////////////////////
+
+
 
 // Create a complete transaction request
 $transaction_request = new AnetAPI\CreateTransactionRequest();
@@ -95,19 +118,124 @@ if ($response != null) {
             $response_code = $tresponse->getResponseCode();
             $response_desc = $responseDesc[$response_code];
             $payment_response = $tresponse->getMessages()[0]->getDescription();
+            $cc_last_4_digits = substr($cc_number, -4);
+            /////////////////////////////////////////////custom Email//////////////////////////////////////////////////////////////////////
+                // Retrieve transaction details and prepare data
+                // Assuming $transactionData contains the necessary details from Authorize.Net
+                // Email template
+                date_default_timezone_set('America/New_York');
+                $currentDate = date('m/d/Y');
+                $currentTime = date('h:i:s A');
+                $emailTemplate = "
+                    <style> 
+                    td, th {
+                        border: 1px solid black; /* Define border style */
+                        padding: 8px; /* Add some padding for better readability */
+                      }
+                    </style>
+                    <div style='max-width: 1200px; margin: 0 auto; padding: 20px;'>
+                        <h1 style='text-align: center;'>Your Transaction Details</h1>
+                        <div style='margin-top: 20px;'>
+                            <p> Order Information </p>
+                            <p> Description: Goods or Services</p>
+                            <hr/>
+                            
+                            <p> <strong> BILLING INFORMATION </strong> <br/>
+                             $checkout_bill_fname $checkout_bill_lname <br/>
+                             $checkout_bill_street, $checkout_bill_address <br/>
+                             $checkout_bill_city, $checkout_bill_postal, $checkout_bill_state <br/>
+                            Country: US  <br/>
+                            Phone: $checkout_bill_phone  <br/>
+                            Email: $checkout_bill_email </p>
 
-            // $db = new DB;
-            // $db->query("INSERT INTO `authorize_payment` (`cc_brand`, `cc_number`, `amount`, `transaction_id`, `auth_code`, `response_code`, `response_desc`, `payment_response`) VALUES (:cc_brand, :cc_number, :amount, :transaction_id, :auth_code, :response_code, :response_desc, :payment_response)");
-            // $db->bind(":cc_brand", $cc_brand);
-            // $db->bind(":cc_number", $cc_number);
-            // $db->bind(":amount", $amount);
-            // $db->bind(":transaction_id", $transaction_id);
-            // $db->bind(":auth_code", $auth_code);
-            // $db->bind(":response_code", $response_code);
-            // $db->bind(":response_desc", $response_desc);
-            // $db->bind(":payment_response", $payment_response);
-            // $db->execute();
-            // $db->close();
+                            <p> <strong> SHIPPING INFORMATION </strong> <br/>
+                            $checkout_ship_fname $checkout_ship_lname <br/>
+                            $checkout_ship_street, $checkout_ship_address <br/>
+                            $checkout_ship_city, $checkout_ship_postal, $checkout_ship_state <br/>
+                            Country: US  <br/>
+                            Phone: $checkout_ship_phone  <br/>
+                            Email: $checkout_ship_email </p>
+
+
+                            <hr/>
+                            <p><strong>Products:</strong></p>
+                            <table width= '1200'> <th>Product ID </th> <th>Product Name </th> <th> Description</th> <th> Qty </th> <th>Unit Price </th> <th> Item Total </th><th>Options </th> <th>Message </th>";
+
+                            // Loop through products and add them to the email template
+                            foreach ($arr as $product) {
+                                // print_r($product);
+                                $id = $product->id;
+                                $productName = $product->name;
+                                $productPrice = $product ->price;
+                                $product_details = $product->productDetails;
+                                $options = $product->cutom; 
+                                $message = $product->message;
+                                $qty = $product->quantity;
+                                $unit_total = $qty*$productPrice;
+                                $emailTemplate .= "<tr> <td> ".$id ." </td> <td>".$productName."</td> <td>".$product_details."</td> <td>".$qty."</td> <td>".$productPrice."</td> <td> ".$unit_total." </td>  <td>".$options."</td> <td>".$message."</td> </tr> ";
+                            }
+
+                            $emailTemplate .= "
+                            </table>
+                            <hr/>
+                            <p><strong>Subtotal:</strong> $subtotal</p>
+                            <p><strong>Shipping:</strong> $shipping</p>
+                            <p><strong>Total:</strong> $total</p>
+
+                            <h5> Payment Information  </h5>
+                            <p>Date/Time: $currentDate $currentTime<br/> 
+                            Transaction ID: $transaction_id<br/> 
+                            Payment Method: Visa xxxx".$cc_last_4_digits."<br/> 
+                            Auth Code:	000000<br/> 
+
+                            <h5>Merchant Contact Information </h5>
+                            <p>Pennsylvania Dutch Baskets <br/> 
+                            Akron, PA 17501<br/> 
+                            US <br/> 
+                            info@padutchbaskets.com <br/> 
+                            </p>
+
+                        </div>
+                        <div style='margin-top: 20px; text-align: center; color: #666;'>
+                            <p>This is an automated email. Please do not reply.</p>
+                        </div>
+                    </div>";
+                // echo $emailTemplate;
+                // exit();
+                // $to = 'info@padutchbaskets.com'; // Replace with recipient's email
+                // $subject = 'Your Transaction Details';
+                // $headers = "From: aman.bangashqau@gmail.com\r\n";
+                // $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
+
+                // mail($to, $subject, $emailTemplate, $headers);
+
+
+                
+                $nameField='Order Email';
+                
+            
+                $emailField='info@padutchbaskets.com';
+                //$from=$firstNameField;
+                $sub="Your Transaction Details";
+
+                $headers['From'] = 'info@padutchbaskets.com';
+                $headers['MIME-Version'] = 'MIME-Version: 1.0';
+                $headers['Content-type'] = 'text/html; charset=iso-8859-1';
+
+        
+               $name=$firstNameField."< ".$emailField." >";
+               $to="info@padutchbaskets.com";// Your email address will goes here  
+               
+                if (mail($to,$sub,$emailTemplate,$headers))
+                {
+                  print "<meta http-equiv=\"refresh\" content=\"0;URL=index.html\">";
+                }
+                else{
+                  //print "<meta http-equiv=\"refresh\" content=\"0;URL=error.html\">";
+                }
+
+                
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////
             $status = '<li>Your payment has been received successfully!</li>'; 
             $status .=  "<li>Transaction ID : ".$transaction_id."</li>"; 
             $status .=  "<li>Auth Code : ".$auth_code."</li>"; 

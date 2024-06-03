@@ -42,68 +42,7 @@
         <?php include($root_path . "includes/navbar.php"); ?>   
     </header>
 
-<?php
-$pid = isset($_GET['pid']) ? $_GET['pid'] : '';
-$pid = validateInput($pid, "pid");
-$pid = "product-045";
 
-$pname = isset($_GET['pname']) ? $_GET['pname'] : '';
-$pname = validateInput($pname, "pname");
-$pname = "Get Well Gifts for Men - Basket of Treats";
-
-$pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
-$pregular = validateInput($pregular, "pregular");
-
-$psale = isset($_GET['psale']) ? $_GET['psale'] : '';
-$psale = validateInput($psale, "psale");
-$psale = "59.50";
-
-$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
-$pshipping = validateInput($pshipping, "pshipping");
-$pshipping = "0";
-
-$pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
-$pstars = validateInput($pstars, "pstars");
-if(!is_numeric($pstars)){
-    $pstars="no-star";
-}
-if($pstars<1){
-    $pstars=0;
-}
-
-$previews = isset($_GET['previews']) ? $_GET['previews'] : '';
-$previews = validateInput($previews, "previews");
-if(!is_numeric($previews)){
-    $previews="no-review";
-}
-if($previews<1){
-    $previews=0;
-}
-
-$pfpie = isset($_GET['pfpie']) ? $_GET['pfpie'] : '';
-$pfpie = validateInput($pfpie, "pfpie");
-
-$pfbread = isset($_GET['pfbread']) ? $_GET['pfbread'] : '';
-$pfbread = validateInput($pfbread, "pfbread");
-
-$pimgs = isset($_GET['pimgs']) ? $_GET['pimgs'] : '';
-$pimgs = validateInput($pimgs, "pimgs");
-
-$pimgsArray = explode(',', $pimgs);
-
-$pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
-$pimg1 = "get-well-delivery.jpg";
-$pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
-$pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
-$pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
-
-function validateInput($parameterValue, $parameterName){
-    $decodedParameter = urldecode($parameterValue);
-    $filteredParameter = filter_input(INPUT_GET, $parameterName, FILTER_SANITIZE_STRING);
-    $finalParameter = trim(strip_tags($filteredParameter));
-    return $finalParameter;
-}
-?>
 
 <section id="" class="mt-5 mb-5">
     <div class="container-fluid">
@@ -144,8 +83,8 @@ function validateInput($parameterValue, $parameterName){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-045</p>
-                    <h3 class="prod-title">Get Well Gifts for Men</h3>
+                    <p class="prod-id">Product ID: 045</p>
+                    <h3 class="prod-title">Basket of Treats</h3>
                       <span class="price">
                         <span class="prod-price" id='price_per_item' >$59.50</span>
                             <span class="prod-stars">
@@ -154,7 +93,7 @@ function validateInput($parameterValue, $parameterName){
                             <span class="prod-seperator"> | </span>
                             <span class="prod-rev-nos">17 Reviews</span>
                     </span>
-                    <span class="prod-rev-nos d-block">Shipping Price: $0</span>
+                   
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
@@ -203,12 +142,7 @@ function validateInput($parameterValue, $parameterName){
                                 <div class="form-label form-label-margin">Card Message</div>
                                 <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span> 
                             </td>
-                            <td>
-                                <!--input type="hidden" name="on2" id="promo_code" value="15"--> 
-                                <div class="form-label form-label-margin">Promo Code</div>
-                                <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
-                                <input type="text" class="form-input-text" id="promoCode" onkeyup="fn_promo_code(this.value)" name="os2" maxlength="200">
-                            </td>
+                           
                         </tr>
 
                         </table>
@@ -362,6 +296,7 @@ function validateInput($parameterValue, $parameterName){
 							<p>* Fudge (Your Choice of Flavor)</p>
 							<p>* Chocolate w/Vanilla Icing Whoopie Pie</p>
 							<p>* Chocolate Chip Whoopie Pie</p>
+							<p>* Cinnamon Stick (Filled w/Cream Cheese)</p>
 						
 						
 					
@@ -372,6 +307,7 @@ function validateInput($parameterValue, $parameterName){
 							<p>* Blueberry Donut Holes</p>
 							<p>* Emma's Famous Popcorn</p>
 							<p>* Chocolate Pretzel Rods</p>
+							<p>* Customization</p>
 							
 						
 							
@@ -381,7 +317,7 @@ function validateInput($parameterValue, $parameterName){
                         </div>
                     </div>
 
-                    <h2 class="cgb-subhead">Get Well Gifts for Men</h2>
+                    <h2 class="cgb-subhead">Get Well Gifts for Men & Women</h2>
                     <p class="cgb-subcopy">The fact is our gift baskets for men are loved equally by women. We bring this up becasue we know men can be difficult to shop for. Our PA Dutch baskets offer gourmet cheeses, baked goods, chocolates, pies and so much more. </p><p class="cgb-subcopy">One thing we know, within our reviews and customers we speak to, men as much as women love these delicious food and baked goods many of which order for themselves at a later time. We are thankful to be in Lancaster, PA and to have these delicious foods available to ship.
 
                 </div>
@@ -391,35 +327,30 @@ function validateInput($parameterValue, $parameterName){
 </section>
  <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
-    data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
-    data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
-    data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
-    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
+    data-product-id="product-045"
+    data-product-name="Get Well Gifts for Men"
+    data-product-price-regular="59.50"
+    data-product-shipping-price="18.25"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="<?=$pimg1;?>"
-    ></div>  
+    data-product-cart_img="get-well-delivery.jpg" >
+</div>
+<!-- image to be display on cart page must be in root images folder   -->
 
 
 <?php
 include("includes/footer.php");
 ?>
 <script>
-    $(document).ready(function() {
-        var per_amount = $('#price_per_item').html();
-        var shipping_charges = $('#shipping_charges').html(); 
-        per_amount = parseFloat(shipping_charges) + parseFloat(per_amount);
-        $("#total_amount").html(per_amount);
-    });
     function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
 </script>
-<script> var product_details ="Corporate Christmas Gift Basket - Lancaster Favorites <br/>"; </script>
+<script> var product_details ="Get Well Gifts for Men - Basket of Treats<br/>"; </script>
 <script src="assets/js/paypal.js"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=AQ4eIiXQNa2IzhEjEjLZ-HDbwt1GCalO88GsMnnCgfRnOmpoOD8wyhkGclLrgEriqgzie2zoVHl22ce1"></script> 
+ 
 <script type="text/javascript">
     function toggleMenu() {
     var x = document.getElementById("menu");
@@ -432,7 +363,4 @@ include("includes/footer.php");
     console.log("closed");
     }
     }
-</script>
-<script type="text/javascript" charset="utf-8">
-finished();
 </script>

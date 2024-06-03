@@ -25,7 +25,17 @@ if($response_type=="success"){
 ?>
 
 <section id="empty-cart-section" class="py-5 text-center d-none">
-    <h2 class="mt-5 mb-5">Cart is Empty</h2>
+    <?php
+    if(isset($_GET['res']) && $_GET['res'] == 'thankyou' )
+    {
+        echo '<h2 class="mt-5 mb-5">Thank you for your order. You will receive an Email shortly confirming your order</h2>'; 
+    }
+    else
+    {
+        echo '<h2 class="mt-5 mb-5">Cart is Empty</h2>';
+    }
+     ?>
+    
 </section>
 <section id="cart-section" class="py-5">
     <div class="container-fluid">
@@ -56,7 +66,7 @@ if($response_type=="success"){
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="shopgo w-100">
-                        <a href="<?=$app_path;?>/checkout.php" class="cart-btn-checkout other-color">
+                        <a href="<?=$app_path;?>checkout.php" class="cart-btn-checkout other-color">
                             <span class="translatex text-uppercase"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
                             <span class="btn-arrow">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg other-color rotate90">
@@ -99,11 +109,18 @@ if($response_type=="success"){
                             <div class="d-flex justify-content-between pt-3 pb-1">
                                 <p class="mb-0">PRODUCT TOTAL:</p>
                                 <span id="grandSubTotal"><b>-</b></span>
-                            </div>                       
+                            </div> 
+                            <div class="position-relative">
+                                <input type="text" id="checkout-coupon-field" class="checkout-input-field" name="coupon" placeholder="Enter Code">
+                                <input type="button" id="checkout-coupon-btn" onclick="fn_promo_code()" class="cart-coupon-btn chk-cpn-btn" value="Apply" >
+                                <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
+                                <input type='hidden' name='couponapplied' id="couponapplied" value='0'> 
+                                <input type="hidden" name='product_name' id="product_name" />
+                            </div>                      
                         </div>
                         <div class="py-3">
                             <div class="shopgo w-100">
-                                <a href="<?=$app_path;?>/checkout.php" class="cart-btn-checkout other-color">
+                                <a href="<?=$app_path;?>checkout.php" class="cart-btn-checkout other-color">
                                     <span class="translatex text-uppercase "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
                                     <span class="btn-arrow">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg other-color rotate90">
@@ -177,6 +194,7 @@ if($response_type=="success"){
         <p class="d-block text-xs mt-2 mb-0 f-70">email notification included in this gift</p>
     </div>
 </div>
+
 <?php
 include("includes/footer.php");
 ?>
@@ -192,7 +210,49 @@ if($clear_cart==1){
 }
 ?>
 
+<script>
+    function fn_promo_code()
+    {
+        var promocode = $('#checkout-coupon-field').val();
+        // Replace 'YOUR_API_URL' with the actual URL of your PHP API
+        const apiURL = '../admin/promo_code_api.php?promocode='+promocode;
+        // Make a GET request to the API
+        fetch(apiURL)
+        .then(response => response.json())
+        .then(data => {
+        if (data.valid) {
+            
+            $("#error_msg").css("display","none");
+            var total_amount = $('#grandSubTotal').html(); 
+
+            var total_amount =  parseFloat(total_amount.replace(/[^0-9.]/g, ''));
+            // alert(totalAmount);
+            var discountPercent = parseFloat(data.discount);
+            // alert(discountPercent);
+            // Check if the discount percentage is valid (greater than or equal to 0 and less than or equal to 100)
+            if (isNaN(discountPercent) || discountPercent < 0 || discountPercent > 100) {
+                alert("Invalid discount percentage");
+            } else {
+                var discountAmount = (discountPercent / 100) * total_amount;
+                localStorage.setItem('discountAmount', discountAmount);
+                var totalAmount = parseFloat(total_amount) - parseFloat(discountAmount);
+                $("#grandSubTotal").html('$'+totalAmount.toFixed(2));
+            }
+        } else {
+            console.log('Promo code is not valid or expired.');
+            $("#error_msg").css("display","block");
+            // console.log('Message:', data.message);
+        }
+        })
+        .catch(error => {
+        console.error('Error:', error);
+        });
+
+    }
+ </script>
+
 <script type="text/javascript">
+
     $(document).ready(function() {
         var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
         console.log(localStorage);
@@ -216,23 +276,12 @@ if($clear_cart==1){
                 '<div class="ms-3 w-100 position-relative">'+
                 '<div class="cart-item-name">'+
                 '<p class="mb-1" style="text-transform:uppercase;">'+item.name+'</p>'+
-                '<span class="tbl-span item-remove-btn" id="'+item.id+'">REMOVE ITEM</span>'+
+                '<span class="tbl-span item-remove-btn" style="color:black" id="'+item.id+'">REMOVE ITEM</span>'+
                 '</div>'+
                 '<div class="cart-item-extras">'+
-                '<p class="mb-1 text-uppercase">Available with this gift</p>'+
                 '<div class="d-flex">'+
                 '<div id="popupActivateGift'+totalCartItems+'" class="cie-item">'+
-                '<div>'+
-                '<img src="assets/images/icons/i-greeting-card.png" />'+
-                '</div>'+
-                '<div class="cie-item-copy">personalized greeting card</div>'+
-                '</div>'+
                 '<div id="popupActivateEmail'+totalCartItems+'" class="cie-item">'+
-                '<div>'+
-                '<img src="assets/images/icons/i-notification.png" />'+
-                '</div>'+
-                '<div class="cie-item-copy">instant email notification</div>'+
-                '</div>'+
                 '</div>'+
                 '</div>'+
                 '</div>'+
@@ -453,6 +502,8 @@ $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
 </script>
 <script>
   $(document).ready(function() {
+
+    localStorage.setItem('discountAmount', 0);
     var leftElement = $("#cart-left");
     var rightElement = $("#cart-right");
 
@@ -477,4 +528,6 @@ $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
 
     updateLeftElementPosition();
   });
+
+
 </script>

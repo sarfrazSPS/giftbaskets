@@ -107,6 +107,15 @@
                                     <option value="Dutch Apple">Dutch Apple </option>
                                </select>
                             </td>
+							
+							<td>
+                                <input type="hidden" name="on0" value="Choose Your Fudge">
+                                <div class="form-label">Choose Your Fudge</div>
+                                <select name="os0" id="chooseFudge">
+                                    <option value="Chocolate Peanut Butter">Chocolate/Peanut Butter </option>
+                                    <option value="Chocolate">Chocolate </option>
+                               </select>
+                            </td>
                         </tr>
 
                         <tr>
@@ -274,6 +283,7 @@
                             <p>* Cinnamon Stick (Filled)</p>
                             <p>* Emma's Popcorn</p>
 							 <p>* Lancaster Party Mix</p>
+							<p>* Customization</p>
                         </div>
                     </div>
 

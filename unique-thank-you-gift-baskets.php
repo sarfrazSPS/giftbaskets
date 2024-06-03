@@ -11,7 +11,7 @@
     <meta property="og:title" content="Uniuqe Thank You Gift Baskets " />
 
     <meta property="og:description" content="Our Savory Flavors unique thank you gift baskets filled with Amish baked goods, gourmet foods, fudge, and much more are loved by everyone who receives them "
-    <meta property="og:url" content="https://padutchbaskets.com/.php"/>
+    <meta property="og:url" content="https://padutchbaskets.com/unique-thank-you-gift-baskets.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
@@ -42,68 +42,7 @@
     </header>
 
 
-<?php
-$pid = isset($_GET['pid']) ? $_GET['pid'] : '';
-$pid = validateInput($pid, "pid");
-$pid = "product-053";
 
-$pname = isset($_GET['pname']) ? $_GET['pname'] : '';
-$pname = validateInput($pname, "pname");
-$pname = "Unique Thank You Gift Baskets - Savory Flavors";
-
-$pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
-$pregular = validateInput($pregular, "pregular");
-
-$psale = isset($_GET['psale']) ? $_GET['psale'] : '';
-$psale = validateInput($psale, "psale");
-$psale = "119.50";
-
-$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
-$pshipping = validateInput($pshipping, "pshipping");
-$pshipping = "0";
-
-$pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
-$pstars = validateInput($pstars, "pstars");
-if(!is_numeric($pstars)){
-    $pstars="no-star";
-}
-if($pstars<1){
-    $pstars=0;
-}
-
-$previews = isset($_GET['previews']) ? $_GET['previews'] : '';
-$previews = validateInput($previews, "previews");
-if(!is_numeric($previews)){
-    $previews="no-review";
-}
-if($previews<1){
-    $previews=0;
-}
-
-$pfpie = isset($_GET['pfpie']) ? $_GET['pfpie'] : '';
-$pfpie = validateInput($pfpie, "pfpie");
-
-$pfbread = isset($_GET['pfbread']) ? $_GET['pfbread'] : '';
-$pfbread = validateInput($pfbread, "pfbread");
-
-$pimgs = isset($_GET['pimgs']) ? $_GET['pimgs'] : '';
-$pimgs = validateInput($pimgs, "pimgs");
-
-$pimgsArray = explode(',', $pimgs);
-
-$pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
-$pimg1 = "unique-thank-you-gift-baskets.jpg";
-$pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
-$pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
-$pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
-
-function validateInput($parameterValue, $parameterName){
-    $decodedParameter = urldecode($parameterValue);
-    $filteredParameter = filter_input(INPUT_GET, $parameterName, FILTER_SANITIZE_STRING);
-    $finalParameter = trim(strip_tags($filteredParameter));
-    return $finalParameter;
-}
-?>
 
 <section id="" class="mt-5 mb-5">
     <div class="container-fluid">
@@ -144,7 +83,7 @@ function validateInput($parameterValue, $parameterName){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-053</p>
+                    <p class="prod-id">Product ID: 054</p>
                     <h3 class="prod-title">"Savory Flavors" Unique Thank You Gift Baskets</h3>
                       <span class="price">
                         <span class="prod-price" id='price_per_item' >$119.50</span>
@@ -152,9 +91,9 @@ function validateInput($parameterValue, $parameterName){
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
                             <span class="prod-seperator"> | </span>
-                            <span class="prod-rev-nos">31 Reviews</span>
+                            <span class="prod-rev-nos">37 Reviews</span>
                     </span>
-                    <span class="prod-rev-nos d-block">Shipping Price: $0</span>
+                  
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
@@ -210,12 +149,7 @@ function validateInput($parameterValue, $parameterName){
                                 <div class="form-label form-label-margin">Card Message</div>
                                 <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span> 
                             </td>
-                            <td>
-                                <!--input type="hidden" name="on2" id="promo_code" value="15"--> 
-                                <div class="form-label form-label-margin">Promo Code</div>
-                                <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
-                                <input type="text" class="form-input-text" id="promoCode" onkeyup="fn_promo_code(this.value)" name="os2" maxlength="200">
-                            </td>
+                            
                         </tr>
 
                         </table>
@@ -234,7 +168,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" class="" id="tag" value="thank1">
     
-                                                        <img src="assets/images/tags/getwell1.png" alt="We are happy to offer Amish baked goods within our unique thank you gift baskets that everyone loves and appreciates"  class="circle ">
+                                                        <img src="assets/images/tags/thank1.png" alt="We are happy to offer Amish baked goods within our unique thank you gift baskets that everyone loves and appreciates"  class="circle ">
     
                                                     </label>
     
@@ -248,7 +182,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         
                                                         
-                                                        <img src="assets/images/tags/getwell2.png" alt="When looking for unique thank you gift baskets we offer delicious Amish baked goods with other gourmet foods, cheeses, chocolates and more that are loved" class="circle ">
+                                                        <img src="assets/images/tags/thank2.png" alt="When looking for unique thank you gift baskets we offer delicious Amish baked goods with other gourmet foods, cheeses, chocolates and more that are loved" class="circle ">
     
                                                     </label>
     
@@ -260,7 +194,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="custom-front" class="" value="thank3">
     
-                                                        <img src="assets/images/tags/getwell3.png" alt="The best thank you gift baskets are those that are enjoyed by the recipient. Our PA Dutch baked goods with all the favorites are just that gift" class="circle ">
+                                                        <img src="assets/images/tags/thank3.png" alt="The best thank you gift baskets are those that are enjoyed by the recipient. Our PA Dutch baked goods with all the favorites are just that gift" class="circle ">
     
                                                     </label>
     
@@ -273,7 +207,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="Tag" class="" value="thank4">
     
-                                                        <img src="assets/images/tags/getwell4.png" alt="Unique thank you gift baskets are only as good as how they are received by the recipients. Our gift baskets filled with PA Dutch foods are loved by all" class="circle">
+                                                        <img src="assets/images/tags/thank4.png" alt="Unique thank you gift baskets are only as good as how they are received by the recipients. Our gift baskets filled with PA Dutch foods are loved by all" class="circle">
     
                                                     </label>
     
@@ -286,7 +220,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="tag" class="" value="thank5">
     
-                                                        <img src="assets/images/tags/getwell5.png" alt="The best gift baskets are those loved by those receiving them, our baskets have whoopie pies, jams, baked pies and more that are loved by everyone" class="circle ">
+                                                        <img src="assets/images/tags/thank5.png" alt="The best gift baskets are those loved by those receiving them, our baskets have whoopie pies, jams, baked pies and more that are loved by everyone" class="circle ">
     
                                                     </label>
     
@@ -298,7 +232,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="tag" class="" value="thank6">
     
-                                                        <img src="assets/images/tags/getwell6.png" alt="We offer the most unique thank you gift baskets with Amish filled whoopie pies, apple or shoo fly pies, jams, fudge and more that everyone loves" class="circle ">
+                                                        <img src="assets/images/tags/thank6.png" alt="We offer the most unique thank you gift baskets with Amish filled whoopie pies, apple or shoo fly pies, jams, fudge and more that everyone loves" class="circle ">
     
                                                     </label>
     
@@ -387,7 +321,7 @@ function validateInput($parameterValue, $parameterName){
                     </div>
 
                     <h2 class="cgb-subhead">Unique Thank You Gift Baskets</h2>
-                    <p class="cgb-subcopy">When looking for a unique thank you gift baskets the most important fact is that the person receiving the basket enjoys it. We offer unique thank you gift baskets that are customized and filled with the most delicious Lancaster PA Dutch baked goods, cheeses, chocolates, fudge and much more. We have spent years continuing to search and find these delicious foods and baked goods right here in our own backyard in Lancaster PA.</p>
+                    <p class="cgb-subcopy">When looking for a unique thank you gift baskets the most important fact is that the person receiving the basket enjoys it. We offer unique thank you gift baskets that are customized and filled with the most delicious Lancaster PA Dutch baked goods, cheeses, chocolates, fudge and much more.</p> <p class="cgb-subcopy"> We have spent years continuing to search and find these delicious foods and baked goods right here in our own backyard in Lancaster PA. If you don't see what you want, give us a call.</p>
 
                 </div>
             </div>
@@ -396,35 +330,30 @@ function validateInput($parameterValue, $parameterName){
 </section>
  <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
-    data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
-    data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
-    data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
-    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
+    data-product-id="product-054"
+    data-product-name="Unique Thank You Gift Baskets"
+    data-product-price-regular="119.50"
+    data-product-shipping-price="0"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="<?=$pimg1;?>"
-    ></div>  
+    data-product-cart_img="unique-thank-you-gift-baskets.jpg" >
+</div>
+<!-- image to be display on cart page must be in root images folder   -->
 
 
 <?php
 include("includes/footer.php");
 ?>
 <script>
-    $(document).ready(function() {
-        var per_amount = $('#price_per_item').html();
-        var shipping_charges = $('#shipping_charges').html(); 
-        per_amount = parseFloat(shipping_charges) + parseFloat(per_amount);
-        $("#total_amount").html(per_amount);
-    });
     function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
 </script>
-<script> var product_details ="Corporate Christmas Gift Basket - Lancaster Favorites <br/>"; </script>
+<script> var product_details ="Unique Thank You Gift Baskets - Savory Flavors <br/>"; </script>
 <script src="assets/js/paypal.js"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=AQ4eIiXQNa2IzhEjEjLZ-HDbwt1GCalO88GsMnnCgfRnOmpoOD8wyhkGclLrgEriqgzie2zoVHl22ce1"></script> 
+
 <script type="text/javascript">
     function toggleMenu() {
     var x = document.getElementById("menu");
@@ -437,7 +366,4 @@ include("includes/footer.php");
     console.log("closed");
     }
     }
-</script>
-<script type="text/javascript" charset="utf-8">
-finished();
 </script>

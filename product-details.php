@@ -1,7 +1,7 @@
 <?php include("includes/header.php"); ?>
 <?php
 $old_site_url = "https://padutchbaskets.com/";
-$old_site_js = $old_site_url."padutchbaskets/";
+$old_site_js = $old_site_url;
 if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
     $old_site_js = "http://localhost//my_sites/padutchbaskets/";
 }

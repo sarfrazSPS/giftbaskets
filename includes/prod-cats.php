@@ -11,39 +11,48 @@
                             </a>
                             <div class="ui-accordion-content">
                                 <ul class="category-selection">
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Anniversary <span>(5)</span></a>
+                                    
+									<li>
+                                        <a href="birthday-gift-baskets.php" class="acc-cs-link">Birthday <span>(8)</span></a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Birthday <span>(9)</span></a>
+									
+									<li>
+                                        <a href="sympathy-gift-baskets.php" class="acc-cs-link">Sympathy <span>(8)</span></a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Congratulations <span>(16)</span></a>
+									 <li>
+                                        <a href="get-well-gift-baskets.php" class="acc-cs-link">Get Well <span>(6)</span></a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Corporate <span>(28)</span></a>
+									<li>
+                                        <a href="corporate-gifts.php" class="acc-cs-link">Corporate <span>(7)</span></a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Get Well <span>(9)</span></a>
+									
+									
+									<li>
+										
+										
+                                        <a href="anniversary-gift-ideas.php" class="acc-cs-link">Anniversary <span>(5)</span></a>
                                     </li>
+                                    
                                     <li>
-                                        <a href="#" class="acc-cs-link">Housewarming <span>(26)</span></a>
+                                        <a href="congratulations-gift-baskets.php" class="acc-cs-link">Congratulations <span>(3)</span></a>
                                     </li>
+                                    
+                                   
+                                   
+                                    
+                                    
                                     <li>
-                                        <a href="#" class="acc-cs-link">New Baby <span>(1)</span></a>
+                                        <a href="thank-you-gift-baskets.php" class="acc-cs-link">Thank You Gifts <span>(5)</span></a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Retirement <span>(13)</span></a>
+									
+									 <li>
+                                        <a href="about.php" class="acc-cs-link">About Us </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Sympathy <span>(8)</span></a>
+									
+									<li>
+                                        <a href="contact.php" class="acc-cs-link">Contact Us </a>
                                     </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Thank You Gifts <span>(15)</span></a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="acc-cs-link">Valentine's Day <span>(3)</span></a>
-                                    </li>
+                                   
                                 </ul>
                             </div>
                         </div>

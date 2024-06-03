@@ -27,7 +27,7 @@
             </div>
             <div class="col-md-6 col-sm-12 contactus_right">
                 <h3>Send Us A Message</h3>
-                <form id="bpkcntform" class="bpk-form needs-validation" method="POST" novalidate>
+                <form id="bpkcntform" class="bpk-form needs-validation" action="sendemail_contactus.php" method="POST" novalidate>
                     <div class="form-group row">
                         <div class="col-md-12">
                             <input type="text" name="contact_name" id="contact_name" placeholder="Name*" class="form-control brcf-field" value="" required="">

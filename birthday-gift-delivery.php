@@ -12,7 +12,7 @@
     <meta property="og:title" content="Birthday Gift Delivery" />
 
     <meta property="og:description" content="Our birthday gift delivery filled with amazing PA Dutch foods from Lancaster, PA known to be the best baked goods, gourmet cheeses, chocolates and more"
-    <meta property="og:url" content="https://padutchbaskets.com/birthday-gift-baskets.php"/>
+    <meta property="og:url" content="https://padutchbaskets.com/birthday-gift-delivery.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
@@ -24,13 +24,13 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Birthday Delivery Gifts  | Lancaster PA</title>
+    <title>Birthday Gift Delivery  | Lancaster PA</title>
 
     <meta name="description" content="Our birthday gift delivery filled with amazing PA Dutch foods from Lancaster, PA known to be the best baked goods, gourmet cheeses, chocolates and more" />
 
     <meta name="keywords" content="birthday gift delivery, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
-    <link rel="canonical" href="https://padutchbaskets.com/birthday-delivery-gifts.php">
+    <link rel="canonical" href="https://padutchbaskets.com/birthday-gift-delivery.php">
 </head>
 
 <body>
@@ -43,68 +43,7 @@
     </header>
 
     
-<?php
-$pid = isset($_GET['pid']) ? $_GET['pid'] : '';
-$pid = validateInput($pid, "pid");
-$pid = "product-026";
 
-$pname = isset($_GET['pname']) ? $_GET['pname'] : '';
-$pname = validateInput($pname, "pname");
-$pname = "Birthday Gift Delivery - Dutch Baked Goods";
-
-$pregular = isset($_GET['pregular']) ? $_GET['pregular'] : '';
-$pregular = validateInput($pregular, "pregular");
-
-$psale = isset($_GET['psale']) ? $_GET['psale'] : '';
-$psale = validateInput($psale, "psale");
-$psale = "72.50";
-
-$pshipping = isset($_GET['pshipping']) ? $_GET['pshipping'] : '';
-$pshipping = validateInput($pshipping, "pshipping");
-$pshipping = "0";
-
-$pstars = isset($_GET['pstars']) ? $_GET['pstars'] : '';
-$pstars = validateInput($pstars, "pstars");
-if(!is_numeric($pstars)){
-    $pstars="no-star";
-}
-if($pstars<1){
-    $pstars=0;
-}
-
-$previews = isset($_GET['previews']) ? $_GET['previews'] : '';
-$previews = validateInput($previews, "previews");
-if(!is_numeric($previews)){
-    $previews="no-review";
-}
-if($previews<1){
-    $previews=0;
-}
-
-$pfpie = isset($_GET['pfpie']) ? $_GET['pfpie'] : '';
-$pfpie = validateInput($pfpie, "pfpie");
-
-$pfbread = isset($_GET['pfbread']) ? $_GET['pfbread'] : '';
-$pfbread = validateInput($pfbread, "pfbread");
-
-$pimgs = isset($_GET['pimgs']) ? $_GET['pimgs'] : '';
-$pimgs = validateInput($pimgs, "pimgs");
-
-$pimgsArray = explode(',', $pimgs);
-
-$pimg1 = isset($pimgsArray[0]) ? $pimgsArray[0] : "no-first-img";
-$pimg1 = "birthday-gift-delivery.jpg";
-$pimg2 = isset($pimgsArray[1]) ? $pimgsArray[1] : "no-second-img";
-$pimg3 = isset($pimgsArray[2]) ? $pimgsArray[2] : "no-third-img";
-$pimg4 = isset($pimgsArray[3]) ? $pimgsArray[3] : "no-fourth-img";
-
-function validateInput($parameterValue, $parameterName){
-    $decodedParameter = urldecode($parameterValue);
-    $filteredParameter = filter_input(INPUT_GET, $parameterName, FILTER_SANITIZE_STRING);
-    $finalParameter = trim(strip_tags($filteredParameter));
-    return $finalParameter;
-}
-?>
 
 <section id="" class="mt-5 mb-5">
     <div class="container-fluid">
@@ -145,7 +84,7 @@ function validateInput($parameterValue, $parameterName){
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: product-026</p>
+                    <p class="prod-id">Product ID: 017</p>
                     <h3 class="prod-title">Birthday Gift Delivery</h3>
                       <span class="price">
                         <span class="prod-price" id='price_per_item' >$72.50</span>
@@ -155,7 +94,7 @@ function validateInput($parameterValue, $parameterName){
                             <span class="prod-seperator"> | </span>
                             <span class="prod-rev-nos">17 Reviews</span>
                     </span>
-                    <span class="prod-rev-nos d-block">Shipping Price: $0</span>
+                   
                     <p class="prod-copy">Make Your Selections</p>
                     <form class="prod-form" target="paypal" action="" method="post">
                         <table id="main_tbl">
@@ -170,12 +109,7 @@ function validateInput($parameterValue, $parameterName){
                                 <div class="form-label form-label-margin">Card Message</div>
                                 <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span> 
                             </td>
-                            <td>
-                                <!--input type="hidden" name="on2" id="promo_code" value="15"--> 
-                                <div class="form-label form-label-margin">Promo Code</div>
-                                <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
-                                <input type="text" class="form-input-text" id="promoCode" onkeyup="fn_promo_code(this.value)" name="os2" maxlength="200">
-                            </td>
+                           
                         </tr>
 
                         </table>
@@ -257,7 +191,7 @@ function validateInput($parameterValue, $parameterName){
     
                                                         <input type="checkbox" id="tag" class="" value="Happy Birthday">
     
-                                                        <img src="assets/images/tags/happy-birthday.png" alt="Our birthday gift baskets offer treats that we can deliver for that special person" class="circle ">
+                                                        <img src="assets/images/tags/happy-birthday.png" alt="Our birthday gift delivery offer treats that we can deliver for that special person" class="circle ">
     
                                                     </label>
     
@@ -329,6 +263,7 @@ function validateInput($parameterValue, $parameterName){
 							<p>* Shoo Fly Pie</p>
                             <p>* 2 Whoopie Pies</p>
 							<p>* Gourmet Mustard</p>
+							<p>* Strawberry Danish</p>
 							
                         </div>
                         <div class="cgb-copy-right">
@@ -339,13 +274,14 @@ function validateInput($parameterValue, $parameterName){
 							
 							
 							<p>* Lancaster Party Mix</p>
+							<p>* Customization</p>
                        
                             
                         </div>
                     </div>
 
                     <h2 class="cgb-subhead">Birthday Gift Delivery</h2>
-                    <p class="cgb-subcopy">The best birthday gift delivery are the ones that offer something unique that is sure to bring enjoyment to those receiving. The praise we get over and over again is just how much the recipient enjoyed their birthday gift delivery. Each gift basket is designed with the enjoyment of those receiving them. Our Dutch Baked Goods customized basket is filled with two different pies, whoopie pies, Stoltzfus beef sticks which is known in the area for their excellence, and a cinnamon bun to mention a few. Regardless of the gift you choose, we hope you enjoy.
+                    <p class="cgb-subcopy">The best birthday gift delivery are the ones that offer something unique that is sure to bring enjoyment to those receiving. The praise we get over and over again is just how much the recipient enjoyed their birthday gift delivery.</p><p class="cgb-subcopy"> Each gift basket is designed with the enjoyment of those receiving them. Our Dutch Baked Goods customized basket is filled with two different pies, whoopie pies, Stoltzfus beef sticks which is known in the area for their excellence, and a cinnamon bun to mention a few. Regardless of the gift you choose, we hope you enjoy.</p>
 
 
                 </div>
@@ -355,35 +291,30 @@ function validateInput($parameterValue, $parameterName){
 </section>
  <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
-    data-product-id="<?php if($pid!=="no-id"){echo $pid;}else{echo "PAD-BASKET";};?>"
-    data-product-name="<?php if($pname!=="no-name"){echo $pname;}else{echo "PA Dutch Basket";}?>"
-    data-product-price-regular="<?php if($psale!=="no-sale"){echo $psale;}else{echo $pregular;}?>"
-    data-product-shipping-price="<?php if($pshipping!=="no-shipping"){echo $pshipping;}?>"
+    data-product-id="product-026"
+    data-product-name="Birthday Gift Delivery"
+    data-product-price-regular="72.50"
+    data-product-shipping-price="19.75"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="<?=$pimg1;?>"
-    ></div>  
+    data-product-cart_img="birthday-gift-delivery.jpg" >
+</div>
+<!-- image to be display on cart page must be in root images folder   -->
 
 
 <?php
 include("includes/footer.php");
 ?>
 <script>
-    $(document).ready(function() {
-        var per_amount = $('#price_per_item').html();
-        var shipping_charges = $('#shipping_charges').html(); 
-        per_amount = parseFloat(shipping_charges) + parseFloat(per_amount);
-        $("#total_amount").html(per_amount);
-    });
     function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
 </script>
-<script> var product_details ="Corporate Christmas Gift Basket - Lancaster Favorites <br/>"; </script>
+<script> var product_details ="Birthday Gift Delivery - Dutch Baked Goods<br/>"; </script>
 <script src="assets/js/paypal.js"></script>
-<script src="https://www.paypal.com/sdk/js?client-id=AQ4eIiXQNa2IzhEjEjLZ-HDbwt1GCalO88GsMnnCgfRnOmpoOD8wyhkGclLrgEriqgzie2zoVHl22ce1"></script> 
+
 <script type="text/javascript">
     function toggleMenu() {
     var x = document.getElementById("menu");
@@ -396,7 +327,4 @@ include("includes/footer.php");
     console.log("closed");
     }
     }
-</script>
-<script type="text/javascript" charset="utf-8">
-finished();
 </script>

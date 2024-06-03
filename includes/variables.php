@@ -1,5 +1,5 @@
 <?php
-$web_dir = "padutchbaskets/";
+$web_dir = "";
 if ($_SERVER['HTTP_HOST'] == 'localhost' || $_SERVER['HTTP_HOST'] == '127.0.0.1') {
     $web_dir = "/my_sites/padutchbaskets/";
 }

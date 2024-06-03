@@ -9,29 +9,29 @@
 
     <meta property="og:type" content="product" />
 
-    <meta property="og:title" content="Custom Gift Baskets" />
+    <meta property="og:title" content="Gift Baskets" />
 
-    <meta property="og:description" content="Our custom gift baskets from Lancaster, PA are filled with baked goods, gourmet food, chocoaltes and much more and can be delivered" />
+    <meta property="og:description" content="Our gift baskets from Lancaster, PA are filled with baked goods, gourmet food, chocoaltes and much more and can be delivered" />
 
-    <meta property="og:url" content="https://padutchbaskets.com/custom-gift-baskets.php"/>
+    <meta property="og:url" content="https://padutchbaskets.com/gift-baskets.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
         <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/lancaster-favorites/food-basket.jpg" />
 
-    <meta property="product:price:amount" content="79.50" />
+    <meta property="product:price:amount" content="89.50" />
 
     <meta property="product:price:currency" content="USD" />
 
     <meta property="og:availability" content="instock" />
 
-    <title>Food Gift Baskets | Lancaster PA </title>
+    <title>Gift Baskets | Lancaster PA </title>
 
-    <meta name="description" content="Our custom gift baskets from Lancaster, PA are filled with baked goods, gourmet food, chocoaltes and much more and can be delivered" />
+    <meta name="description" content="Our gift baskets from Lancaster, PA are filled with baked goods, gourmet food, chocoaltes and much more and can be delivered" />
 
-    <meta name="keywords" content="Food gift baskets, sympathy food gift baskets, birthday food gift baskets, get well food gift baskets,  lancaster pa"/>
+    <meta name="keywords" content="gift baskets, sympathy food gift baskets, birthday gift baskets, get well gift baskets,  lancaster pa"/>
 
-    <link rel="canonical" href="https://padutchbaskets.com/food-gift-baskets.php">
+    <link rel="canonical" href="https://padutchbaskets.com/gift-baskets.php">
 </head>
 
 
@@ -51,10 +51,9 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <h2>Unique Sympathy Gift Baskets From Lancaster, PA</h2>
+                    <h2>Chocolate Gift Baskets - Lancaster, PA</h2>
                     <div class="w-100 m-widthauto mt-3">
-                        <p>Our Unique Sympathy Gift Baskets from Lancaster, PA are one of our most popular because it just makes a comforting gift to those who are grieving. First off your unique gift basket is customized, as well you can select certain products for your basket. We are thankful to say that our most dedicated customers are those who received our gift baskets.
-
+                        <p>Our Gift Baskets from Lancaster, PA have become so popular because they offer Delicious gourmet foods and baked goods from the Dutch in Lancaster PA. This includes their famous whoopie pies, baked pies, jams, fudge and much more that are loved by everyone. We can also customize any gift basket to any occasion. Click into any gift below to view customization and personalization options.  
                         </p>
                     </div>
                 </div>
@@ -93,7 +92,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">16 Reviews</a>
+                                <a class="mt-2 ps-2">19 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$74.50</span>
@@ -135,7 +134,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">14 Reviews</a>
+                                <a class="mt-2 ps-2">19 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$79.50</span>
@@ -219,28 +218,13 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">15 Reviews</a>
+                                <a class="mt-2 ps-2">19 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View Details</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1016"
-                                data-product-name="Food Gift Baskets - Traditions"
-                                data-product-price-regular="79.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="15"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="food-basket.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
+                            <a href="food-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                           
                         </div>
                     </div>
                 </div>
@@ -248,7 +232,7 @@
                     <div class="card bg-card">
                         <img src="<?=$app_path;?>assets/images/products/basket-of-treats/unique-food-gifts.jpg" class="card-img-top" alt="When looking for gift baskets near me, our gift baskets from Lancaster, PA can be delivered anywhere in the country" loading="lazy" />
                         <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">"Traditions" Gift Baskets Near Me</h5>
+                            <h5 class="favs-cat mt-0 mb-0">Gift Baskets Near Me - Lancaster Treats</h5>
                             <div class="d-flex align-items-center">
                                 <div class="mt-1">
                                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -280,7 +264,7 @@
                                 <a class="mt-2 ps-2"> 14 Reviews</a>
 
                             </div>
-                            <span class="product-price mt-1">$79.50</span>
+                            <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
                             <a href="<?=$app_path;?>gift-baskets-near-me.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
@@ -319,12 +303,12 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">17 Reviews</a>
+                                <a class="mt-2 ps-2">26 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>custom-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>/custom-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View More</a>
                         </div>
                     </div>
                 </div>
@@ -361,12 +345,12 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">26 Reviews</a>
+                                <a class="mt-2 ps-2">19 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$54.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>gift-basket-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>/gift-basket-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -403,18 +387,18 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">23 Reviews</a>
+                                <a class="mt-2 ps-2">17 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>food-basket.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>/food-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
                     <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/deluxe-gift-baskets.jpg" class="card-img-top" alt="The Bakers Choice gift basket ideas has a great variety of gourmet foods thare are loved and appreciated by those receiving them" loading="lazy" />
+                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/deluxe-gift-basket.jpg" class="card-img-top" alt="The Bakers Choice gift basket ideas has a great variety of gourmet foods thare are loved and appreciated by those receiving them" loading="lazy" />
                         <div class="card-body">
                             <h5 class="favs-cat mt-0 mb-0">"Bakers Choice" Gift Basket Ideas</h5>
                             <div class="d-flex align-items-center">
@@ -445,12 +429,12 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2"> 11 Reviews</a>
+                                <a class="mt-2 ps-2"> 19 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>gift-basket-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>/gift-basket-ideas.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -487,7 +471,7 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">9 Reviews</a>
+                                <a class="mt-2 ps-2">37 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$119.50</span>
@@ -534,7 +518,7 @@
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>gift-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>/gift-delivery.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -571,12 +555,12 @@
                                         </path>
                                     </svg>
                                 </div>
-                                <a class="mt-2 ps-2">23 Reviews</a>
+                                <a class="mt-2 ps-2">19 Reviews</a>
 
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>gourmet-snack-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>/gourmet-snack-basket.php" class="btn btn-primary favs-btn mt-0">View Details</a>
                         </div>
                     </div>
                 </div>

@@ -1,491 +1,348 @@
-<?php include("includes/header.php"); ?>
+<?php include("includes/variables.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<?php include($root_path . "includes/prod-cats.php"); ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include($root_path . "includes/header-links.php"); ?>
 
-<section id="birthday-gift" class="pt-5 pb-5">
+    <meta property="og:type" content="product" />
+
+    <meta property="og:title" content="Sympathy Gifts" />
+
+    <meta property="og:description" content="Our Sympathy gifts are filled with comfort foods from the PA Dutch including whoopie pies, baked goods, cheeses and many other gourmet foods with customization"
+    <meta property="og:url" content="https://padutchbaskets.com/sympathy-gift.php"/>
+
+    <meta property="og:site_name" content="PA Dutch Baskets" />
+
+        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/bakers-special/sympathy-gift-baskets-free.jpg" />
+
+    <meta property="product:price:amount" content="72.50" />
+
+    <meta property="product:price:currency" content="USD" />
+
+    <meta property="og:availability" content="instock" />
+
+    <title>Sympathy Gifts | Lancaster PA</title>
+
+    <meta name="description" content="Our Sympathy gifts are filled with comfort foods from the PA Dutch including whoopie pies, baked goods, cheeses and many other gourmet foods with customization" />
+
+    <meta name="keywords" content="sympathy gifts, deepest sympathy, sympathy gift baskets, condolence gift baskets, sympathy gifts, sympathy gift baskets, condolences, lancaster pa"/>
+
+    <link rel="canonical" href="https://padutchbaskets.com/sympathy-gifts.php">
+</head>
+
+
+<body>
+    <div id="content" class="site-content">
+
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>   
+    </header>
+
+
+
+
+<section id="" class="mt-5 mb-5">
     <div class="container-fluid">
         <div class="container">
-            <div class="row text-center">
-                <div class="col">
-                    <h2>Unique Sympathy Gift Baskets From Lancaster, PA</h2>
-                    <div class="w-100 m-widthauto mt-3">
-                        <p>Our Unique Sympathy Gift Baskets from Lancaster, PA are one of our most popular because it just makes a comforting gift to those who are grieving. First off your unique gift basket is customized, as well you can select certain products for your basket. We are thankful to say that our most dedicated customers are those who received our gift baskets.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
             <div class="row">
-                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/dutch-traditions/sympathy-gifts-delivered.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Sympathy Gifts Delivered</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">16 Reviews</a>
-
+                <div class="col-md-6">
+                    <div class="row">
+                        <div class="col-sm-2 small-images-outer">
+                            <div class="small-images">
+                            <!--4 side images -->
+                                <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-special/sympathy-gift-baskets-free.jpg"
+                                alt="When offering sympathy gifts it can be difficult to choose the right gift. We offer the perfect gift for a difficult time with our PA Dutch baked goods "
+                                onmouseover="myFunction(this)"
+                                />
+                                            
+                                <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-special/pic2.jpg"
+                                alt="Our Deepest sympathy gift can be difficult to choose but our PA Dutch gourmet foods and baked goods are the perfect comfort food they can enjoy for days "
+                                onmouseover="myFunction(this)"
+                                />
+                            
+                              
+                                
                             </div>
-                            <span class="product-price mt-1">$89.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1017"
-                                data-product-name="Sympathy Gifts Delivered"
-                                data-product-price-regular="89.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="16"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="sympathy-gifts-delivered.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
+                        </div>
+                        <div class="col-sm-10">
+                            <div class="main-images">
+                            <!--Main images -->
+                                
+                                    <img  src="assets/images/products/bakers-special/sympathy-gift-baskets-free.jpg"   alt="Our sympathy gifts come with the well known PA Dutch gourmet foods and baked goods loved by all and completely customized"      id="image_box" class="img-responsive"  />
+                                
+                            <!--Main images -->
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/basket-of-treats/personalized-sympathy-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Personalized Sympathy Gifts</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">14 Reviews</a>
+                <div class="col-md-6">
+                    <p class="prod-id">Product ID: 035</p>
+                    <h3 class="prod-title">"Bakers Special" Sympathy Gifts</h3>
+                      <span class="price">
+                        <span class="prod-price" id='price_per_item' >$72.50</span>
+                            <span class="prod-stars">
+                                <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
+                            </span>
+                            <span class="prod-seperator"> | </span>
+                            <span class="prod-rev-nos">21 Reviews</span>
+                    </span>
+                    
+                    <p class="prod-copy">Make Your Selections</p>
+                    <form class="prod-form" target="paypal" action="" method="post">
+                        <table id="main_tbl">
 
+                        <tr>
+                            
+							<td>
+                                
+                                    <input type="hidden" name="on0" value="Choose Your Pie">
+                                    <div class="form-label">Choose Your Pie</div>
+                                    <select name="os0" id="choosePie">
+                                        <option value="Apple">Apple Pie </option>
+                                        <option value="Shoo Fly">Shoo Fly Pie </option>
+                                      
+                              </select>
+                                
+                            </td>
+							
+						
+                        </tr>
+
+                        <tr>
+                            <td>
+                                <input type="hidden" name="on2" value="Card Message">
+                                <div class="form-label form-label-margin">Card Message</div>
+                                <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span> 
+                            </td>
+                           
+                        </tr>
+
+                        </table>
+
+                        <div>
+                                    <h5 class="customization-head">Choose Your Customization Below </h5>
+                                    <div class="services">
+                                                                        
+                                        <div class="custom-options-services">
+    
+                                        <div class="row justify-content-center">
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="birthday">
+    
+                                                        <input type="checkbox" class="" id="tag" value="sympathy3">
+    
+                                                        <img src="assets/images/tags/sympathy3.png" alt="Sympathy gifts filled with apple or shoo fly pies, blueberry breads, fudge, brittle and so much more loved by all and a good comfort food"  class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag3">
+    
+                                                        <input type="checkbox" id="tag" class="" value="Sympathy4">
+    
+                                                        
+                                                        
+                                                        <img src="assets/images/tags/sympathy4.png" alt="When looking for a sympathy gift, consider our PA Dutch baked goods loved by everyone and offers the perfect comfort food" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="custom-front">
+    
+                                                        <input type="checkbox" id="custom-front" class="" value="Sympathy6">
+    
+                                                        <img src="assets/images/tags/sympathy6.png" alt="Sympathy gift baskets offered from Lancaster, PA with comfort foods including gourmet cheeses, apple or shoo fly pie, chocoaltes and more that are loved" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+    
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="Tag">
+    
+                                                        <input type="checkbox" id="Tag" class="" value="sympathy9">
+    
+                                                        <img src="assets/images/tags/sympathy9.png" alt="When trying to find the right sympathy gifts consider the perfect comfort foods from Lancaster PA with baked goods and other gourmet foods" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+                                                
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag">
+    
+                                                        <input type="checkbox" id="tag" class="" value="Sympathy8">
+    
+                                                        <img src="assets/images/tags/sympathy8.png" alt="Our sympathy gifts are called the perfect gift during a difficult time offering comfort foods loved by all that can be shared and will last for days " class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+											
+											  <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag">
+    
+                                                        <input type="checkbox" id="tag" class="" value="sympathy10">
+    
+                                                        <img src="assets/images/tags/sympathy10.png" alt="Comfort foods are considered the right gift during a difficult time with our PA Dutch baked goods and gourmet foods" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+											
+											
+                                     <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag">
+    
+                                                        <input type="checkbox" id="tag" class="" value="Thinking of You">
+    
+                                                        <img src="assets/images/tags/thinking-of-you.png" alt="We try to offer our deepsest sympathy gifts with customization and foods that are loved by all" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+    
+                                               
+    
+    
+                                                <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag">
+    
+                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+    
+                                                        <img src="assets/images/tags/no-custom.png" alt="Sympathy gifts that are delivered anywhere in the country" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
+    
+    
+                                                <div class="col-sm-4 col-sm-new-4 text-center">
+                                                    
+                                                        <b>
+                                                            Can't find what you want? <br>
+                                                            Give us a call! 717-368-3973
+    
+                                                        </b>
+                                                        
+                                                </div>
+                                        </div>
+                                        </div>       
+                            <!--NEW::Code End Here-->
                             </div>
-                            <span class="product-price mt-1">$59.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-"
-                                data-product-name="Personalized Sympathy Gifts"
-                                data-product-price-regular="1018"
-                                data-product-price-sale=""
-                                data-product-shipping-price="59.50"
-                                data-product-stars="5"
-                                data-product-reviews="14"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="personalized-sympathy-gifts.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
                         </div>
-                    </div>
+
+                        <div class="form-qty-btn">
+                            <div class="form-qty-left">
+                                <span class="prod-form-qty">QTY </span> <input id="productQty" class="form-qty-input" type="number" step="1" min="1" max="1000" value="1" name="qty" >
+                            </div>
+                            <div class="form-qty-right">
+                                <button type="submit" id="addToCartBtn">Add to Cart</button>
+                            </div>
+                        </div>
+
+                    </form>
                 </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/good-ole-treats/sympathy-gift-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Sympathy Gift Basket</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">22 Reviews</a>
-
-                            </div>
-                            <span class="product-price mt-1">$79.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1019"
-                                data-product-name="Sympathy Gift Basket"
-                                data-product-price-regular="79.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="22"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="sympathy-gift-basket.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
+                <div class="col-sm-12 mt-5">
+                    <h2 class="cgb-head">Content for your Gift Basket</h2>
+                    <div class="cgb-copy">
+                        <div class="cgb-copy-left">
+							
+							<p>* Apple or Shoo Fly Pie (Your Choice)</p>
+                            <p>* Chocolate w/Vanilla Whoopie Pie</p>
+							<p>* Chocolate Chip Whoopie Pie</p>
+							<p>* Peanut Butter Brittle</p>
+						
+							
+							
+						
+                        </div>
+                        <div class="cgb-copy-right">
+							<p>* Blueberry Donut Holes</p>
+                            <p>* Strawberry Danish</p>
+                            <p>* Cinnamon Stick (Filled w/Cream Cheese)</p>
+							<p>* Customizaton</p>
+						
+							
+						
+							
+							
+                    
+                            
                         </div>
                     </div>
-                </div>
-                <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-choice/best-sympathy-gift-baskets.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Bakers Best Sympathy Gifts</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">15 Reviews</a>
 
-                            </div>
-                            <span class="product-price mt-1">$87.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1020"
-                                data-product-name="Bakers Best Sympathy Gifts"
-                                data-product-price-regular="87.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="15"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="best-sympathy-gift-baskets.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/bakers-special/sympathy-gift-baskets-free.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Sympathy Bakers Special</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2"> 11 Reviews</a>
+                    <h2 class="cgb-subhead">Sympathy Gifts</h2>
+                    <p class="cgb-subcopy">We know how difficult choosing the right sympathy gifts can be. We are thankful to our customers who are the first to let us know that our delicious comfort foods were the perfect gift during a very difficult time.</p><p class="cgb-subcopy"> Sympathy Baskets and boxes offer PA Dutch baked pies, whoopie pies, fudge, homemade jams, delicious blueberry breads and much more that are loved by all. 
 
-                            </div>
-                            <span class="product-price mt-1">$69.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1021"
-                                data-product-name="Sympathy Bakers Special"
-                                data-product-price-regular="69.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="11"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="sympathy-gift-baskets-free.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Deluxe Sympathy Gifts</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">17 Reviews</a>
+Our sympathy gifts arew customized and delivered anywhere in the country.</p>
 
-                            </div>
-                            <span class="product-price mt-1">$87.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1022"
-                                data-product-name="Deluxe Sympathy Gifts"
-                                data-product-price-regular="87.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="17"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="sympathy-gifts-ideas.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/traditions/unique-sympathy-gifts.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Unique Sympathy Gifts</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">26 Reviews</a>
 
-                            </div>
-                            <span class="product-price mt-1">$79.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1023"
-                                data-product-name="Unique Sympathy Gifts"
-                                data-product-price-regular="79.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="26"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="unique-sympathy-gifts.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col col-sm-6 col-md-4 col-lg-3 mt-3">
-                    <div class="card bg-card">
-                        <img src="<?=$app_path;?>assets/images/products/savory-flavors/sympathy-food-basket.jpg" class="card-img-top" alt="..." loading="lazy" />
-                        <div class="card-body">
-                            <h5 class="favs-cat mt-0 mb-0">Sympathy Gift Basket</h5>
-                            <div class="d-flex align-items-center">
-                                <div class="mt-1">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
-                                        <path
-                                            d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z">
-                                        </path>
-                                    </svg>
-                                </div>
-                                <a class="mt-2 ps-2">23 Reviews</a>
-
-                            </div>
-                            <span class="product-price mt-1">$119.50</span>
-                            <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="#" class="btn btn-primary favs-btn mt-0">View More</a>
-                            <!-- images must be on root path in the folder "images" -->
-                            <div class="product-metadata" 
-                                data-product-id="product-1019"
-                                data-product-name="Sympathy Gift Basket"
-                                data-product-price-regular="119.50"
-                                data-product-price-sale=""
-                                data-product-shipping-price="0"
-                                data-product-stars="5"
-                                data-product-reviews="23"
-                                data-product-flavor-pie="yes"
-                                data-product-flavor-bread="yes"
-                                data-product-image-1="sympathy-food-basket.jpg"
-                                data-product-image-2=""
-                                data-product-image-3=""
-                                data-product-image-4=""
-                                ></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+ <!-- do not remove this div, it will be using to pass data -->
+ <div class="product-metadata" 
+    data-product-id="product-035"
+    data-product-name="Sympath Gifts"
+    data-product-price-regular="72.50"
+    data-product-shipping-price="0"
+    data-product-flavor-pie="yes"
+    data-product-flavor-bread="yes"
+    data-product-promo=""
+    data-product-card-msg=""
+    data-product-customization=""
+    data-product-qty=""
+    data-product-cart_img="sympathy-gift-baskets.jpg" >
+</div>
+<!-- image to be display on cart page must be in root images folder   -->
 
-<!-- SECTION TESTIMONIALS END -->
+
 <?php
 include("includes/footer.php");
 ?>
+<script>
+    function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
+</script>
+<script> var product_details ="Deepest Sympathy - Bakers Choice<br/>"; </script>
+<script src="assets/js/paypal.js"></script>
+ 
+<script type="text/javascript">
+    function toggleMenu() {
+    var x = document.getElementById("menu");
+    if (x.className === "topnav") {
+    x.className += " visible";
+    console.log("open");
+    }
+    else {
+    x.className ="topnav";
+    console.log("closed");
+    }
+    }
+</script>
