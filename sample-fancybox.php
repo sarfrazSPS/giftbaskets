@@ -34,7 +34,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy1.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 1</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -68,8 +68,17 @@
                                 </div>
                                 <span class="product-price mt-1">$59.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1100"
+                                    data-product-name="Product name as an example 1"
+                                    data-product-price-regular="59.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy1.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->
                             </div>
                         </div>
                     </div>
@@ -80,7 +89,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy2.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 2</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -111,10 +120,19 @@
                                     </div>
                                     <a class="mt-2 ps-2">19 Reviews</a>
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$49.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                           
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1101"
+                                    data-product-name="Product name as an example 2"
+                                    data-product-price-regular="49.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy2.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->
                             </div> 
                         </div>
                     </div>
@@ -125,7 +143,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy3.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 3</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -157,10 +175,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$39.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1102"
+                                    data-product-name="Product name as an example 3"
+                                    data-product-price-regular="39.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy3.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -171,7 +198,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy4.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 4</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -203,10 +230,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$29.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1103"
+                                    data-product-name="Product name as an example 4"
+                                    data-product-price-regular="29.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy4.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -219,7 +255,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy4.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 5</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -251,10 +287,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$19.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1104"
+                                    data-product-name="Product name as an example 5"
+                                    data-product-price-regular="19.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy4.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -265,7 +310,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy3.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 6</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -297,10 +342,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$29.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1105"
+                                    data-product-name="Product name as an example 6"
+                                    data-product-price-regular="29.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy3.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -311,7 +365,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy2.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 7</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -343,10 +397,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$39.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1106"
+                                    data-product-name="Product name as an example 7"
+                                    data-product-price-regular="39.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy2.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -357,7 +420,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy1.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 8</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -389,24 +452,33 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$49.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1107"
+                                    data-product-name="Product name as an example 8"
+                                    data-product-price-regular="49.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy1.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
 
                 </div>
 
-                 <div class="row">
+                <div class="row">
                     <div class="col-sm-6 col-md-4 col-lg-3 mt-3">
                         <div class="card bg-card">
                             <a href="<?=$app_path;?>assets/images/products/fancy1.jpeg" data-fancybox="gallery">
                                 <img src="<?=$app_path;?>assets/images/products/fancy1.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 9</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -438,11 +510,20 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$89.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
-                            </div>                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1108"
+                                    data-product-name="Product name as an example 9"
+                                    data-product-price-regular="89.50"
+                                    data-product-shipping-price="0"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy1.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->
+                            </div>
                         </div>
                     </div>
                 
@@ -450,9 +531,9 @@
                         <div class="card bg-card">
                             <a href="<?=$app_path;?>assets/images/products/fancy2.jpeg" data-fancybox="gallery">
                                 <img src="<?=$app_path;?>assets/images/products/fancy2.jpeg" class="card-img-top" />
-                            </a> 
+                            </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 10</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -482,13 +563,21 @@
                                         </svg>
                                     </div>
                                     <a class="mt-2 ps-2">19 Reviews</a>
-
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$39.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
-                            </div>                               
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1109"
+                                    data-product-name="Product name as an example 10"
+                                    data-product-price-regular="39.50"
+                                    data-product-shipping-price="10"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy2.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->
+                            </div> 
                         </div>
                     </div>
 
@@ -498,7 +587,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy3.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 11</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -530,10 +619,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$33.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1110"
+                                    data-product-name="Product name as an example 11"
+                                    data-product-price-regular="33.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy3.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -544,7 +642,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy4.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 12</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -576,10 +674,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$55.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1111"
+                                    data-product-name="Product name as an example 12"
+                                    data-product-price-regular="55.50"
+                                    data-product-shipping-price="0"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy4.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -592,7 +699,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy4.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 13</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -624,10 +731,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$19.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1112"
+                                    data-product-name="Product name as an example 13"
+                                    data-product-price-regular="19.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy4.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -638,7 +754,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy3.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 14</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -670,10 +786,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$27.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1114"
+                                    data-product-name="Product name as an example 14"
+                                    data-product-price-regular="27.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy3.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -684,7 +809,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy2.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 15</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -716,10 +841,19 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$39.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1115"
+                                    data-product-name="Product name as an example 15"
+                                    data-product-price-regular="39.50"
+                                    data-product-shipping-price="0"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy2.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
@@ -730,7 +864,7 @@
                                 <img src="<?=$app_path;?>assets/images/products/fancy1.jpeg" class="card-img-top" />
                             </a>
                             <div class="card-body">
-                                <h5 class="favs-cat mt-0 mb-0">"Basket of Treats" Anniversary Gift Baskets</h5>
+                                <h5 class="favs-cat mt-0 mb-0">Product name as an example 16</h5>
                                 <div class="d-flex align-items-center">
                                     <div class="mt-1">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512">
@@ -762,15 +896,24 @@
                                     <a class="mt-2 ps-2">19 Reviews</a>
 
                                 </div>
-                                <span class="product-price mt-1">$59.50</span>
+                                <span class="product-price mt-1">$11.50</span>
                                 <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                                <a href="anniversary-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>                            
-                            
+                                <a href="javascript:void(0)" class="btn btn-primary datc-btn mt-0">Add to Cart</a>                            
+                                <!-- do not remove this div, it will be using to pass data -->
+                                <div class="product-metadata" 
+                                    data-product-id="product-1116"
+                                    data-product-name="Product name as an example 16"
+                                    data-product-price-regular="11.50"
+                                    data-product-shipping-price="18.75"
+                                    data-product-qty="1"
+                                    data-product-cart_img="fancy1.jpeg" >
+                                </div>
+                                <!-- image to be display on cart page must be in root images folder   -->                            
                             </div>                            
                         </div>
                     </div>
 
-                </div>
+                </div>                
 
             </div>
         </div>

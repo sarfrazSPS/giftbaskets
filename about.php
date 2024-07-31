@@ -1,4 +1,22 @@
-<?php include("includes/header.php"); ?>
+<?php include("includes/variables.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>About us | PA Dutch Baskets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include($root_path . "includes/header-links.php"); ?>
+</head>
+
+<body>
+    <div id="content" class="site-content">
+
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>        
+    </header>
 
 <section id="aboutus" class="aboutus-page">
     <div class="container-fluid">
@@ -6,17 +24,16 @@
             <div class="row aboutus-row">
                 <div class="col-lg-5 col-md-6 col-sm-12 about-left">
                     <div class="about-img-holder">
-                        <img src="https://padutchbaskets.com/images/michelle.jpg" class="img-fluid">
-                        <div class="aimgh-top"></div>
-                        <div class="aimgh-bottom"></div>
+                        <img src="images/michellenew.jpg" class="img-fluid">
+                       
+                        
                     </div>
                 </div>
                 <div class="col-lg-5 col-md-6 col-sm-12 about-right">
                     <h1>About us</h1>
-                    <p>Hi my name is Michelle and I am the owner of Pennsylvania Dutch Baskets. I love our gift basket company because in these difficult times, it offers a bit of happiness to both those who are giving and receiving them.</p>
-                    <p>More than that, we wanted to offer a way to personalize that special message right onto the gift basket. We finally added a graphics person and personalization of our gift baskets became a reality.</p>
-                    <p>I sincerely hope that you enjoy the many amazing foods, and baked goods, offered by Lancaster county businesses, and our Amish friends.</p>
-                    <p>We are always looking to improve or answer any questions you may have. Feel free to contact us at the number below.</p>
+                    <p>Hi my name is Michelle and I am the owner of PA Dutch Baskets. I love our gift basket company because in these difficult times, it offers a bit of happiness to both those who are giving and receiving them.</p>
+                    <p>We are very thankful for all the positive reviews from our customers. Most importantly is the impact they have on so many lives. This of course is why we started our business</p>
+                    <p>We have spent a lot of time with business owners that were looking to add a branded gift for their business. These branded gift boxes offer the business design, logo, and a personalization we offer for any occasion for employees and clients.</p>
                 </div>
             </div>
         </div>

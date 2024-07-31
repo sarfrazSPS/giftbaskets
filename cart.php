@@ -1,4 +1,23 @@
-<?php include("includes/header.php"); ?>
+<?php include("includes/variables.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Cart | PA Dutch Baskets</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include($root_path . "includes/header-links.php"); ?>
+</head>
+
+<body>
+    <div id="content" class="site-content">
+
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>        
+    </header>
+
 
 <?php
 $status = "";
@@ -46,7 +65,7 @@ if($response_type=="success"){
                 </div>
                 <div class="col-lg-3 col-md-3 col-sm-12">
                     <div class="d-flex justify-content-end">
-                        <div class="shopgo">
+                        <div id="goback" class="shopgo">
                             <span class="btn-shopping text-uppercase">Continue Shopping</span>
                             <span class="margin-negative">
                                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="btn-svg">
@@ -54,13 +73,13 @@ if($response_type=="success"){
                                         d="M201.4 342.6c12.5 12.5 32.8 12.5 45.3 0l160-160c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L224 274.7 86.6 137.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l160 160z" />
                                 </svg>
                             </span>
-                            <div class="shopgo-nav">
+                            <!-- <div class="shopgo-nav">
                                 <ul>
                                     <li><a href="<?=$app_path;?>">Home Page</a></li>
                                     <li><a href="#">Most Recent Categories</a></li>
                                     <li><a href="#">Most Recent Items</a></li=>
                                 </ul>
-                            </div>
+                            </div> -->
                         </div>
                     </div>
                 </div>

@@ -3,6 +3,7 @@
 <html lang="en">
 
 <head>
+	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e503589d66cfd1981e6b44c42/9140921a789e35578f96d5929.js");</script>
     <title>Lancaster Gift Baskets | PA Dutch Baskets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +19,7 @@
     <meta property="og:title" content="Gift Baskets | Food Gift Baskets" />
 
     <meta property="og:description" content="Our unique gift baskets and gift boxes are filled with Lancaster PA Dutch
-											 gourmet foods and baked goods loved by everyone that can be delivered">
+											 gourmet foods and baked goods loved by everyone that can be delivered"
     <meta property="og:url" content="https://padutchbaskets.com"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
@@ -45,6 +46,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 })(window,document,'script','dataLayer','GTM-P6C8664J');</script>
 <!-- End Google Tag Manager -->
+	
+	
+
 </head>
 
 <body>
@@ -55,6 +59,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div id="content" class="site-content">
 
     <header>
+		<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/ddea4dcc46022e6d91a9c8134/603c3612442f526432167957d.js");</script>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
         <?php include($root_path . "includes/navbar.php"); ?>        
@@ -590,43 +595,9 @@ $(document).ready(function() {
         showbpkSlider();
     }
 
-    moveElements();
-
-    // $(".navbar-toggler").click(function(){
-    //     $('body').toggleClass('mobile-menu-visible');
-    //     $('.navbar-toggler').toggleClass('navbar-toggler-icon-close');
-    //     $('#navbarIcon').toggleClass('navbar-toggler-icon');
-    //     $('.navbar-cross').toggleClass('d-none');
-    //     $('.navbar').toggleClass("navbar-content");
-    // });
-
-    $(".navbar-toggler").click(function(){
-        $('body').toggleClass('mobile-menu-visible');
-        //$('.navbar-toggler').toggleClass('navbar-toggler-icon-close');
-        $('#navbarIcon').toggleClass('navbar-toggler-icon');
-        $('.navbar-cross').toggleClass('d-none');
-        $('.navbar').toggleClass("navbar-content");
-        $('#navbarNav').toggleClass("navbarNavCustom");
-    });
-
 
 });
 
-function moveElements() {
-  var screenWidth = $(window).width();
-  var breakpoint = 768;
-
-  if (screenWidth < breakpoint && screenWidth > 500) {
-    var detachedElements = $('.2nd-level-1').detach();
-    var wrappedElements = $('<div class="w-20"></div>').append(detachedElements);
-    $('.footer-outer').append(wrappedElements);
-
-    var detachedElements2 = $('.2nd-level-2').detach();
-    var wrappedElements2 = $('<div class="w-20"></div>').append(detachedElements2);
-    $('.footer-outer').append(wrappedElements2);
-  }
-
-}
 
 function showbpkSlider() {
     

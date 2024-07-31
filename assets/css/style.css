@@ -435,7 +435,8 @@ form .brcf-btn:hover{
     line-height: 1;
     margin: 10px 0;
 }
-.favs-btn{
+.favs-btn,
+.datc-btn{
     text-transform: uppercase;
     font-weight: 700;
     font-size: 13px;
@@ -451,7 +452,8 @@ form .brcf-btn:hover{
     margin-top: 22px !important;
     transition: all 0.3s ease-in-out;
 }
-.favs-btn:hover{
+.favs-btn:hover,
+.datc-btn:hover{
     background-color: var(--mainBlackColor);
 }
 #birthday-gift .bg-card {
@@ -750,6 +752,8 @@ form .brcf-btn:hover{
 /*About us page*/
 .aboutus-page{
     margin: 50px 0;
+    position: relative;
+    z-index: -1;
 }
 .aboutus-row{
     justify-content: center;
@@ -827,7 +831,7 @@ form .brcf-btn:hover{
     line-height: 1;
     font-weight: 700;
     font-style: normal;
-    margin-bottom: 25px;
+    margin-bottom: 15px;
 }
 .contactus ul{
     margin: 0;
@@ -1593,7 +1597,8 @@ form .form-btn:hover {
     .favs-sale,
     .favs-cat, 
     .favs-copy,
-    .favs-btn{
+    .favs-btn,
+    .datc-btn{
         font-size: 100%;
     }
     .gls-col h5{
@@ -1648,6 +1653,12 @@ form .form-btn:hover {
     .proc-left h3{
         font-size: 15px;
         padding: 22px 10px;
+    }
+    .mt-smm-3{
+        margin-top: 1.5rem;
+    }
+    .mt-smm-5{
+        margin-top: 0rem;
     }
 }
 
@@ -1776,7 +1787,7 @@ form .form-btn:hover {
     .occss-content{
         width: 90%;
     }
-    .favs-head, .favs-regular, .favs-sale, .favs-cat, .favs-copy, .favs-btn{
+    .favs-head, .favs-regular, .favs-sale, .favs-cat, .favs-copy, .favs-btn, .datc-btn{
         font-size: 125%;
     }
     .gls-col ul{
@@ -1847,6 +1858,9 @@ form .form-btn:hover {
         float: right;
         right: 50px;
         top: 7px;
+    }
+    .mt-smm-5{
+        margin-top: 5rem;
     }
 }
 
@@ -1922,6 +1936,9 @@ form .form-btn:hover {
     .cart-for-sm {
         right: 0px;
         top: 80px;
+    }
+    .mt-smm-5{
+        margin-top: 4rem;
     }
     
 }
@@ -2003,7 +2020,7 @@ form .form-btn:hover {
         padding: 0 10px;
         margin-bottom: 25px;
     }
-    .favs-head, .favs-regular, .favs-sale, .favs-cat, .favs-copy, .favs-btn {
+    .favs-head, .favs-regular, .favs-sale, .favs-cat, .favs-copy, .favs-btn, .datc-btn {
         font-size: 140%;
     }
     .occs-section h4{
@@ -2058,7 +2075,7 @@ form .form-btn:hover {
         margin-top: 10px !important;
         margin-bottom: 0px !important;
     }
-    .favs-head, .favs-regular, .favs-sale, .favs-cat, .favs-copy, .favs-btn {
+    .favs-head, .favs-regular, .favs-sale, .favs-cat, .favs-copy, .favs-btn, .datc-btn {
         font-size: 125%;
     }
     .cart-for-sm {
