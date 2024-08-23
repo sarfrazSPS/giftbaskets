@@ -31,22 +31,51 @@
     <meta name="keywords" content="deepest sympathy, sympathy gift baskets, condolence gift baskets, sympathy gifts, sympathy gift baskets, condolences, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/deepest-sympathy.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
     </header>
 
-
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Deepest Sympathy", 2, "sympathy-gift-baskets", "Sympathy Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -65,6 +94,13 @@
                                 <img
                                 class="img-responsive"
                                 src="assets/images/products/bakers-choice/pic2.jpg"
+                                alt="Our Deepest sympathy gift can be difficult to choose but our PA Dutch gourmet foods and baked goods are the perfect comfort food they can enjoy for days "
+                                onmouseover="myFunction(this)"
+                                />
+								
+								 <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-choice/bakers-choice-3.jpg"
                                 alt="Our Deepest sympathy gift can be difficult to choose but our PA Dutch gourmet foods and baked goods are the perfect comfort food they can enjoy for days "
                                 onmouseover="myFunction(this)"
                                 />
@@ -257,7 +293,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Deepest Sympathy gifts that are delivered anywhere in the country" class="circle ">
     
@@ -321,12 +357,20 @@
                     
                             
                         </div>
-                    </div>
+                    </div><p></p><p></p>
 
                     <h2 class="cgb-subhead">Deepest Sympathy</h2>
-                    <p class="cgb-subcopy">When trying to offer our Deepest Sympathy with the right gift, it can be difficult. We hear from our customers who tell us that our PA Dutch baked goods and other gourmet foods were the perfect comfort foods that lasted for days as their special friend or loved one went through a very difficult time.</p><p class="cgb-subcopy"> Sympathy Baskets and boxes offer PA Dutch baked pies, whoopie pies, fudge, Emma's famous popcorn and all that are loved by everyone and can be delivered. It can be hard to figure out what the right sympathy gift is when it comes to a friend or loved one who may be going through a difficult time.
+                    <p class="cgb-subcopy">Offering our deepest sympathy with a gift basket from the PA Dutch in Lancaster, PA, is a heartfelt way to provide comfort during a difficult time. These gift baskets, filled with baked goods, gourmet cheeses, chocolates, and more, are the perfect comfort food to show you care.
 
-Our best sympathy gift baskets are unique and customized. If you look through our reviews, what is most important to us is what is said by those receiving them. We hope you and they Enjoy!</p>
+Our deepest sympathy gift baskets are carefully curated to bring a touch of warmth and solace. Lancaster PA Dutch baked goods are renowned for their homemade quality and comforting flavors. These traditional treats, such as shoofly pies, streusels, and pies, are crafted with love and care, providing a nostalgic taste that evokes a sense of home.</p>
+
+<p class="cgb-subcopy">In addition to baked goods, our deepest sympathy gift baskets feature gourmet cheeses. These high-quality cheeses, whether sharp, creamy, or infused with unique flavors, complement the sweet treats perfectly. Pairing these cheeses with pretzels and gourmet mustards enhances the overall experience, making it a well-rounded assortment that anyone can appreciate.
+
+Chocolates are another delightful addition to our deepest sympathy gift baskets. Premium chocolates, with their rich and indulgent flavors, offer a sweet moment of relief during tough times. Including a variety of chocolates ensures there is something for everyone to enjoy.</p>
+
+<p class="cgb-subcopy">One of the standout features of our gift baskets is the ability to customize them to suit the occasion or event. This personalization makes your gift even more meaningful and appropriate.
+
+Our deepest sympathy gift baskets from Lancaster PA Dutch are designed to provide comfort and support when it's needed most. The combination of baked goods, gourmet cheeses, chocolates, and more creates a thoughtful and delicious gift that shows your deepest sympathy. Explore our range of customizable gift baskets to find the perfect way to offer your condolences. Order now to bring a touch of comfort and care to your loved ones during difficult times.</p>
 
 
                 </div>

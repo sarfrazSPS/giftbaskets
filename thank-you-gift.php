@@ -15,9 +15,9 @@
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/basket-of-treats/thank-you-gift-basket.jpg" />
+        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/bask/chocolate-lovers/chocolate-thank-you-gift.jpg" />
 
-    <meta property="product:price:amount" content="59.50" />
+    <meta property="product:price:amount" content="74.50" />
 
     <meta property="product:price:currency" content="USD" />
 
@@ -30,15 +30,46 @@
     <meta name="keywords" content="thank you gift, thank you gifts, thank you gift baskets, thank you gift ideas , unique thank you gift baskets lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/thank-you-gift.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
     </header>
 
 
@@ -55,14 +86,14 @@
                             <!--4 side images -->
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/basket-of-treats/thank-you-gift-basket.jpg"
+                                src="assets/images/products/chocolate-lovers/chocolate-thank-you-gift.jpg"
                                 alt="We are happy to offer our Amish thank you gift with gourmet foods and baked goods that offer baked pies, whoopie pies, fudge and more that we customize"
                                 onmouseover="myFunction(this)"
                                 />
                                             
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/basket-of-treats/pic2.jpg"
+                                src="assets/images/products/chocolate-lovers/pic2.jpg"
                                 alt="Our thank you gift offers customized gift baskets and boxes filled with whoopie pies, apple pies, fudge, jams, chocoaltes and more shipped direct "
                                 onmouseover="myFunction(this)"
                                 />
@@ -75,7 +106,7 @@
                             <div class="main-images">
                             <!--Main images -->
                                 
-                                    <img  src="assets/images/products/basket-of-treats/thank-you-gift-basket.jpg"   alt="Har to find a unique thank you gift loved as much as our PA Dutch gourmet foods and baked goods that we customize"      id="image_box" class="img-responsive"  />
+                                    <img  src="assets/images/products/chocolate-lovers/chocolate-thank-you-gift.jpg"   alt="Har to find a unique thank you gift loved as much as our PA Dutch gourmet foods and baked goods that we customize"      id="image_box" class="img-responsive"  />
                                 
                             <!--Main images -->
                             </div>
@@ -86,7 +117,7 @@
                     <p class="prod-id">Product ID: 052</p>
                     <h3 class="prod-title">"Basket of Treats" Thank You Gift</h3>
                       <span class="price">
-                        <span class="prod-price" id='price_per_item' >$59.50</span>
+                        <span class="prod-price" id='price_per_item' >$74.50</span>
                             <span class="prod-stars">
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
@@ -321,15 +352,15 @@
  <div class="product-metadata" 
     data-product-id="product-052"
     data-product-name="Thank You Gift"
-    data-product-price-regular="59.50"
-    data-product-shipping-price="18.75"
+    data-product-price-regular="74.50"
+    data-product-shipping-price="10.00"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="thank-you-gift-basket.jpg" >
+    data-product-cart_img="chocolate-thank-you-gift.jpg" >
 </div>
 <!-- image to be display on cart page must be in root images folder   -->
 

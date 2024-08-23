@@ -31,20 +31,53 @@
     <meta name="keywords" content="get well soon basket ideas, get well gift baskets, get well gifts, feel better soon, get well gifts for men, get well gifts for women, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/get-well-soon-basket-ideas.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
     </header>
 
 
 
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Get Well Soon Gift Baskets", 2, "get-well-gift-baskets", "Get Well Gift Baskets");?>
+
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -181,7 +214,7 @@
     
                                                     <label for="tag3">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well2">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell2">
     
                                                         
                                                         
@@ -195,7 +228,7 @@
     
                                                     <label for="custom-front">
     
-                                                        <input type="checkbox" id="custom-front" class="" value="Get Well3">
+                                                        <input type="checkbox" id="custom-front" class="" value="Getwell3">
     
                                                         <img src="assets/images/tags/getwell3.png" alt="Finding the right gift for someone feeling ill or down for any reason can be difficult. Our PA Dutch baked goods have proven to be the perfect gift" class="circle ">
     
@@ -221,7 +254,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="getwell5">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell5">
     
                                                         <img src="assets/images/tags/getwell5.png" alt="Get Well soon basket ideas start with comfort foods from the PA Dutch that includes many gourmet foods, baked goods and other delicious treats they will enjoy" class="circle ">
     
@@ -233,7 +266,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="GetWell6">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell6">
     
                                                         <img src="assets/images/tags/getwell6.png" alt="We are happy to offer unique get well gifts that are loved by everyone who receives them" class="circle ">
     
@@ -261,7 +294,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Get Well gifts can be delivered anywhere in the United States" class="circle ">
     

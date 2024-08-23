@@ -22,9 +22,26 @@
                 <li class="nav-item">
                     <a class="nav-link" href="<?=$app_path;?>sympathy-gift-baskets.php">Sympathy</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="<?=$app_path;?>corporate-gifts.php">Corporate Gifts</a>
+				
+				<li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Corporate Gifting
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="<?=$app_path;?>corporate-gifting.php">Corporate Branding</a></li>
+                       
+                        <li><a class="dropdown-item" href="<?=$app_path;?>corporate-gifts.php">Corporate Gift Baskets</a></li>
+                        
+                    </ul>
                 </li>
+				
+				
+				
+				
+				
+				
+				
+				
                 <li class="nav-item">
                     <a class="nav-link" href="<?=$app_path;?>congratulations-gift-baskets.php">Congratulations</a>
                 </li>
@@ -34,25 +51,19 @@
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
                         <li><a class="dropdown-item" href="<?=$app_path;?>gift-baskets.php">All Gift Baskets</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>christmas-gift-baskets.html">Holiday Gift Baskets</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>get-well-basket-ideas.html">Get Well</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>gifts-to-say-thank-you.html">Thank You</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>happy-anniversary-gifts.php">Happy Anniversary</a></li>
+                       
+                        <li><a class="dropdown-item" href="<?=$app_path;?>get-well-gift-baskets.php">Get Well</a></li>
+                        <li><a class="dropdown-item" href="<?=$app_path;?>thank-you-gift-baskets.php">Thank You</a></li>
+                        <li><a class="dropdown-item" href="<?=$app_path;?>anniversary-gift-ideas.php">Happy Anniversary</a></li>
                     </ul>
                 </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        About
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <li><a class="dropdown-item" href="<?=$app_path;?>about.php">About us</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>contact.php">Contact us</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>our-amish-foods.html">Our Amish Foods</a></li>
-                        <li><a class="dropdown-item" href="<?=$app_path;?>Blog">Blog</a></li>
-                    </ul>
-                </li>
+               
 				<li class="nav-item">
                     <a class="nav-link" href="<?=$app_path;?>contact.php">Contact</a>
+                </li>
+				
+				 <li class="nav-item">
+                    <a class="nav-link" href="<?=$app_path;?>about.php">About</a>
                 </li>
             </ul>
             <div class="cart-icon-header">

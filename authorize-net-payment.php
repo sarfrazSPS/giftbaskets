@@ -74,12 +74,14 @@ $arr = json_decode($jsonData);
 // print_r($arr);
 $lineItems = [];
 foreach ($arr as $item) {
+    $productdetail = substr(strstr($item->productDetails, '<br/>'), 5);
+    // echo $productdetail;
 
     $lineItem1 = new AnetAPI\LineItemType();
     $lineItem1->setItemId($item->id);
     $lineItem1->setName($item->name);
-    $lineItem1->setDescription($item->productDetails);
-    $lineItem1->setQuantity("1");
+    $lineItem1->setDescription($productdetail);
+    $lineItem1->setQuantity($item->quantity);
     $lineItem1->setUnitPrice($item->price);
     array_push($lineItems, $lineItem1);
 

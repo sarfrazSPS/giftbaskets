@@ -49,8 +49,8 @@
                         <span>Unlock Exclusive Offers</span>
                     </div>
                     <div class="brc-bottom">
-                        <form class="clearfix">
-                            <input type="email" class="form-control brcf-field" name="exampleInputEmail1" id="exampleInputEmail1" placeholder="Your email address" value="">
+                        <form class="clearfix" method="post" action="sendemail_exclusive_offers.php">
+                            <input type="email" class="form-control brcf-field" name="email" id="exampleInputEmail1" placeholder="Your email address" value="">
                             <button type="submit" class="btn btn-primary brcf-btn">Submit</button>
                         </form>
                     </div>

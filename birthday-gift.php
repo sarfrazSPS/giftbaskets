@@ -31,9 +31,42 @@
     <meta name="keywords" content="birthday gift, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/birthday-gift.php">
+	
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+	
     <div id="content" class="site-content">
 
     <header>
@@ -42,10 +75,8 @@
         <?php include($root_path . "includes/navbar.php"); ?>   
     </header>
 
-    
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Birthday Gift", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -73,7 +104,19 @@
                             </div>
                         </div>
                         <div class="col-sm-10">
-                            <div class="main-images">
+ 
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	                           <div class="main-images">
                             <!--Main images -->
                                 
                                     <img  src="assets/images/products/savory-flavors/best-birthday-gift-baskets.jpg"   alt="When looking for birthday gift baskets consider the most delicious gift loved by everyone with PA Dutch baked goods"      id="image_box" class="img-responsive"  />
@@ -218,7 +261,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="The perfect birthday gift is one that is loved by the recipient, our Lancaster PA Dutch baked goods offer just that and we deliver " class="circle ">
     
@@ -258,7 +301,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Birthday gift delivered anywhere in the country" class="circle ">
     
@@ -331,7 +374,15 @@
                     </div>
 
                     <h2 class="cgb-subhead">Birthday Gift</h2>
-                    <p class="cgb-subcopy">The "Savory Flavors" birthday gift is loved by those receiving them. Our birthday gift is different in a great kind of way. We certainly can't take the credit as our products come from the PA Dutch here in Lancaster County PA. There foods and baked goods though are amazing.</p> <p class="cgb-subcopy">If you have not been in this area you have missed some of the most amazing baked goods found anywhere. Our best birthday gift baskets are filled with whoopie pies, September Farms cheeses, gourmet mustards, Emma's famous popcorn, dumplings, fudge, and so much more.</p>
+                    <p class="cgb-subcopy">A birthday gift is more than just a present; it’s a way to show someone you care, making their special day even more memorable. Whether you’re celebrating with a close friend, a family member, or a colleague, the perfect birthday gift can bring joy and happiness to their day. Our selection of customizable gift baskets ensures that your birthday gift is tailored to the recipient’s tastes and preferences, adding a personal touch that makes the occasion truly special.</p>
+
+ <p class="cgb-subcopy">When you choose a birthday gift from our collection, you’re giving more than just a basket of treats—you’re offering an experience. Each birthday gift basket is thoughtfully curated with a variety of high-quality items, from freshly baked Amish goodies like apple pies and whoopie pies to gourmet chocolates, artisanal cheeses, and specialty snacks. We understand that every birthday is unique, which is why we offer the option to customize your birthday gift basket to suit the specific occasion.
+
+One of the standout features of our birthday gift service is the ability to personalize each basket. Whether you want to include a heartfelt message, select the recipient’s favorite treats, or accommodate dietary preferences, we make it easy to create a birthday gift that is both thoughtful and meaningful. We also include a complimentary card with every birthday gift basket, where you can add your personalized message, making the gift even more special.</P>
+
+ <p class="cgb-subcopy">The versatility of our birthday gift baskets makes them suitable for any age or celebration. Whether you’re marking a milestone birthday, celebrating a sweet sixteen, or simply making someone’s day brighter, our birthday gifts can be customized to fit the occasion perfectly. From festive designs to elegant packaging, every detail is considered to ensure that your birthday gift stands out and leaves a lasting impression.
+
+In a world where many gifts are easily forgotten, a personalized birthday gift from our collection is sure to be remembered. By choosing to customize your birthday gift basket and including a personal message, you’re creating a one-of-a-kind present that reflects your thoughtfulness and care. Make your loved one’s birthday truly special by selecting a birthday gift that’s as unique as they are.</p>
 
 
                 </div>

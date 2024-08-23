@@ -23,28 +23,58 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Birthday Gift Box  | Lancaster PA</title>
+    <title>Birthday Gift Box  | PA Dutch Baskets</title>
 
     <meta name="description" content="Our birthday gift box comes in many varities offering amazing baked goods from Lancaster PA well known for their baked goods, cheeses, chocolates and more" />
 
     <meta name="keywords" content="birthday gift box, unique birthday gifts, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/birthday-gift-box.php">
+	
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+	
     </header>
 
-    
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Birthday Gift Box", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -204,7 +234,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="Our birthday gift box filled with whoopie pies, delicious apple or shoo fly pie, fudge and more " class="circle ">
     
@@ -244,7 +274,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Birthday gift baskets delivered anywhere in the country" class="circle ">
     
@@ -290,6 +320,7 @@
 							<p>* Fudge (Choice of Flavor)</p>
                             <p>* 2 Whoopie Pies</p>
 							<p>* Apple Streusel</p>
+							<p>* Cinnamon Stick (Filled w/Cream Cheese)</p>
 							
                         </div>
                         <div class="cgb-copy-right">
@@ -303,10 +334,22 @@
                        <p>* Customization</p>
                             
                         </div>
-                    </div>
+                    </div><p></p>
 
-                    <h3 class="cgb-subhead">Birthday Gift Box</h3>
-                    <p class="cgb-subcopy">Certainly our Birthday Gift box that we deliver has become more popular and even more important offers you the opportunity to purchase birthday gift baskets for friends and loved ones. Our birthday gift box from Lancaster, PA is one of those gifts. Customized and filled with so many delicious treats that are loved by everyone around the country and in fact around the world.</p> <p class="cgb-subcopy">Our Basket of treats includes whoopie pies, apple or shoo fly pie, and other delcicious PA Dutch treats loved by everyone. Regardless of which birthday gift you choose, we are certain they will enjoy.</p>
+                    <h2 align="center">Birthday Gift Box</h2>
+                    <p>Finding the perfect birthday gift can be a delightful challenge, but our birthday gift box filled with Lancaster PA Dutch treats offers a unique and delicious solution. These thoughtfully curated boxes include a variety of baked goods, chocolates, whoopie pies, blueberry or banana bread, shoo fly or apple pie, and much more. Known for their quality and flavor, these treats make our birthday gifts the perfect choice for celebrating any birthday.</P>
+
+<p>Lancaster PA Dutch baked goods are the highlight of our birthday gift box. Famous for their homemade quality and delightful flavors, these treats include shoofly or apple pies, whoopie pies, blueberry bread and much more. Each item is made with care, delivering a comforting and nostalgic taste that everyone loves. These baked goods are a perfect foundation for an unforgettable birthday gift.
+
+Our gift boxes also feature indulgent chocolates that add a touch of luxury. The rich and decadent flavors of these chocolates are sure to delight any recipient. Whether it’s dark, milk, or white chocolate, these treats provide a sweet moment of joy that complements the other items in the box.</p>
+
+<p>Whoopie pies, a classic PA Dutch treat, add a fun and whimsical element to our gift boxes. These delightful desserts, with their creamy filling sandwiched between two soft cake-like cookies, are a beloved favorite that brings joy to any occasion. Including whoopie pies ensures that our birthday gift stands out as a unique and thoughtful gift.
+
+Blueberry or banana bread is another delicious addition to our birthday gift. These moist and flavorful breads add a special touch, making the boxes even more appealing. Additionally, shoo fly or apple pie brings a traditional taste that is sure to be a hit.</P>
+
+<p>One of the standout features of our birthday gift boxes is the ability to personalize and customize them for any occasion. You can add a special message or select specific items that you know the recipient will love. This attention to detail ensures that your gift is not only delicious but also thoughtful and personal.
+
+Explore our range of Lancaster PA Dutch birthday gift boxes to find the perfect way to show your appreciation and celebrate special moments. Order now to make someone's birthday extra special with a gift that combines tradition, flavor, and heartfelt sentiment.</p>
 
 
                 </div>

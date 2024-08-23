@@ -24,28 +24,59 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Birthday Gift Delivery  | Lancaster PA</title>
+    <title>Birthday Gift Delivery  | PA Dutch Baskets</title>
 
     <meta name="description" content="Our birthday gift delivery filled with amazing PA Dutch foods from Lancaster, PA known to be the best baked goods, gourmet cheeses, chocolates and more" />
 
     <meta name="keywords" content="birthday gift delivery, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/birthday-gift-delivery.php">
+	
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+	
     </header>
 
-    
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Birthday Gift Delivery", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -84,7 +115,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: 017</p>
+                    <p class="prod-id">Product ID: 026</p>
                     <h3 class="prod-title">Birthday Gift Delivery</h3>
                       <span class="price">
                         <span class="prod-price" id='price_per_item' >$72.50</span>
@@ -177,7 +208,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="Our birthday baskets are loved by everyone who receives them and a great variety of PA Dutch baked goods, chocolates and more " class="circle ">
     
@@ -202,7 +233,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday7">
     
                                                         <img src="assets/images/tags/birthday.png" alt="We always want those receiving our birthday gift delivery to love it, our PA Dutch baked goods are loved around the world " class="circle ">
     
@@ -217,7 +248,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="The best Birthday gift delivery anywhere in the country filled with Amish baked goods and gourmet foods from Lancaster, PA" class="circle ">
     
@@ -281,7 +312,15 @@
                     </div>
 
                     <h2 class="cgb-subhead">Birthday Gift Delivery</h2>
-                    <p class="cgb-subcopy">The best birthday gift delivery are the ones that offer something unique that is sure to bring enjoyment to those receiving. The praise we get over and over again is just how much the recipient enjoyed their birthday gift delivery.</p><p class="cgb-subcopy"> Each gift basket is designed with the enjoyment of those receiving them. Our Dutch Baked Goods customized basket is filled with two different pies, whoopie pies, Stoltzfus beef sticks which is known in the area for their excellence, and a cinnamon bun to mention a few. Regardless of the gift you choose, we hope you enjoy.</p>
+                    <p class="cgb-subcopy">Birthday gift delivery is a fantastic way to make someone’s special day even more memorable. Whether you're surprising a friend, family member, or coworker, choosing birthday gift delivery allows you to send a thoughtful and customized gift straight to their door. This convenient option ensures that your loved ones feel celebrated, even if you can't be there in person. With a range of treats and surprises, birthday gift delivery is the perfect solution for bringing joy to any birthday.</P>
+
+<p class="cgb-subcopy">When you opt for birthday gift delivery, you’re not just sending a gift—you’re sending a memorable experience. Imagine the excitement of the recipient as they receive a beautifully packaged delivery filled with an assortment of carefully selected items. Our birthday gift delivery options include a variety of products, such as PA Dutch Amish baked goods like apple pies, whoopie pies, and blueberry breads, as well as gourmet chocolates, cheeses, and artisanal snacks. Each item is chosen to create a delightful blend of flavors and textures, making the delivery an indulgent treat.
+
+One of the biggest advantages of birthday gift delivery is the ability to customize the contents. You can tailor the gift to match the recipient’s tastes and preferences, ensuring that the delivery is not only delicious but also deeply personal. Whether you want to add a personalized note, include their favorite snacks, or accommodate specific dietary needs, our birthday gift delivery service allows you to create a gift that’s as unique as the person receiving it. This personal touch makes birthday gift delivery a standout choice, offering a level of thoughtfulness that’s hard to match.</p>
+
+<p class="cgb-subcopy">Birthday gift delivery is also a versatile option, perfect for recipients of all ages. Whether it’s a milestone birthday, a sweet sixteen, or just a simple celebration, our delivery service can be tailored to fit any occasion. From festive decorations to elegant packaging, every detail is considered to make the birthday gift delivery a truly special experience.
+
+In a world where many gifts are quickly forgotten, birthday gift delivery offers something lasting and meaningful. It combines the convenience of sending a beautifully presented gift with the joy of receiving a variety of delicious treats. By choosing birthday gift delivery, you’re ensuring that your loved one’s special day is filled with happiness and celebration, no matter the distance.</p>
 
 
                 </div>

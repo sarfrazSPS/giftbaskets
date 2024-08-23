@@ -25,28 +25,61 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Custom Gift Baskets | Lancaster PA</title>
+    <title>Custom Gift Baskets | PA Dutch Baskets</title>
 
     <meta name="description" content="Our custom gift baskets from Lancaster, PA are filled with baked goods, gourmet food, chocoaltes and much more and can be delivered" />
 
     <meta name="keywords" content="Custom gift baskets, sympathy custom gift baskets, birthday custom gift baskets, get well food gift baskets,  lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/custom-gift-baskets.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	
 </head>
 
 
 <body>
+        
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
+		
     </header>
 
 
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Custom Gift Baskets", 2, "gift-baskets", "Gift Baskets");?>
+<section id="" class=" mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -254,9 +287,9 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -316,7 +349,17 @@
                     </div>
 
                     <h2 class="cgb-subhead">Custom Gift Baskets</h2>
-                    <p class="cgb-subcopy">Let's face it, we are always looking for custom gift baskets for that special occasion. While our custom gift baskets are certainly designed for men and women, we receive many compliments from women letting us know that they finally found a gift their man loved.</p><p class="cgb-subcopy"> The women of course contact us directly with thanks when they receive one of our gift baskets. Their gratitude shows with the amount of reorders we receive from existing customers. We can't thank you enough for the kind words.</p>
+                    <p class="cgb-subcopy">Custom gift baskets are a wonderful way to celebrate any occasion, from birthdays to anniversaries, or simply to show appreciation. One unique and delightful option is a gift basket filled with Lancaster PA Dutch baked goods, whoopie pies, gourmet cheeses, and more. These baskets offer a taste of tradition and quality that is sure to impress and delight any recipient.
+
+Lancaster PA Dutch baked goods are famous for their homemade quality and delicious flavors. These treats, made from traditional recipes, include shoofly pies, crumb cakes, and soft pretzels. Each item is crafted with care, delivering a comforting and nostalgic taste of home. These baked goods provide the perfect foundation for our custom gift baskets, offering a sweet and satisfying experience.</p>
+
+<p class="cgb-subcopy">Whoopie pies, a classic PA Dutch treat, add a fun and whimsical touch to the basket. These delightful desserts, with their creamy filling sandwiched between two soft cake-like cookies, are a beloved favorite that brings joy to any occasion. Including whoopie pies in your custom gift basket adds a unique element that sets it apart from more conventional options.
+
+Gourmet cheeses elevate our delicious gift baskets and gift boxes to a new level of sophistication and indulgence. These high-quality cheeses, whether sharp, creamy, or infused with unique flavors, complement the sweetness of the baked goods and whoopie pies, creating a well-rounded and satisfying assortment. Pairing these cheeses with our gourmet mustards enhances the overall experience.</p>
+
+<p class="cgb-subcopy">Our custom gift baskets are designed to cater to various occasions. Whether you’re celebrating a birthday, expressing sympathy, offering congratulations, or saying thank you, we can customize each basket to suit the specific event. This flexibility ensures that your gift is not only delicious but also appropriate and meaningful for the occasion.
+
+Incorporating these elements into your custom gift basket guarantees a memorable and enjoyable experience for any recipient. Lancaster PA Dutch baked goods, whoopie pies, and gourmet cheeses come together to create a unique and delightful gift that stands out. Explore our range of custom gift baskets to find the perfect way to show your appreciation and celebrate special moments. Order now to bring joy and satisfaction to your loved ones with a gift that truly reflects your care and thoughtfulness.</p>
                 </div>
             </div>
         </div>

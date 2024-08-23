@@ -24,28 +24,56 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Best Thank You Gifts | Lancaster PA</title>
+    <title>Best Thank You Gifts | PA Dutch Baskets</title>
 
     <meta name="description" content="The best thank you gifts are the ones loved by those receviving them. Our Amish baked goods and gourmet foods are known around the world to be loved and appreciated" />
 
     <meta name="keywords" content="best thank you gifts, thank you gift ideas, thank you gifts, thank you gift ideas , unique thank you gift baskets lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/best-thank-you-gifts.php">
+	
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
     </header>
 
-    
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Best Thank You Gifts", 2, "thank-you-gift-baskets", "Thank You Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -60,7 +88,14 @@
                                 alt="The best thank you gifts offered by PA Dutch Baskets offer Amish gourmet foods, baked goods, chocolates and more that we deliver anywhere in the country"
                                 onmouseover="myFunction(this)"
                                 />
-                                            
+								
+                                   <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-choice/bakers-choice-3.jpg"
+                                alt="PA Dutch Baskets have what our customers call the best thank you gifts with Amish baked goods from Lancaster, PA that we are able to deliver anywhere in the country"
+                                onmouseover="myFunction(this)"
+                                />
+                                      
                                 <img
                                 class="img-responsive"
                                 src="assets/images/products/bakers-choice/pic2.jpg"
@@ -327,8 +362,18 @@
                         </div>
                     </div>
 
-                    <h2 class="cgb-subhead">Best Thank You Gifts</h2>
-                    <p class="cgb-subcopy">Our best Thank You Gifts for Friends or family needs to be special, something they will love and appreciate. Our biggest goal is to hear that those receiving our best thank you gifts loved them. We are so thankful that we hear that everyday.</p><p class="cgb-subcopy"> We are just thankful to have these amazing people and Lancaster baked goods, cheeses, chocolates, and so much more right here in our back yard. We offer a variety of baskets to ensure you can choose your favorites to send to your friend or loved one so they can share, we hope you enjoy!</p>
+                    <h2 align="center">Best Thank You Gifts</h2>
+                    <p>Finding the best thank you gifts can make a world of difference in showing your appreciation. Our gift baskets, featuring Lancaster PA Dutch baked goods, gourmet cheeses, chocolates, and more, are the perfect way to express gratitude. These carefully curated baskets are designed to delight and impress, making them some of the best thank you gifts available.
+
+Lancaster PA Dutch baked goods are a highlight in our thank you gift baskets. Known for their homemade quality and delicious flavors, these baked goods include shoofly pies, delicious blueberry breads, and pies. Each item is made with care, providing a comforting and nostalgic taste that recipients will love. Including these treats in our baskets ensures they stand out as the best thank you gifts.</p>
+
+<p>Gourmet cheeses add a touch of sophistication to our gift baskets. We include a variety of high-quality cheeses, from sharp and tangy cheddars to creamy and flavorful bries. These cheeses pair perfectly with martins prezels and gourmet mustards, creating a well-rounded and indulgent experience. This combination makes our baskets some of the best thank you gifts for any occasion.
+
+Chocolates are another essential component of our gift baskets. We select premium chocolates that offer rich and indulgent flavors. Whether it's dark, milk, or white chocolate, these treats provide a sweet moment of joy for the recipient. The inclusion of chocolates ensures that our baskets are among the best thank you gifts you can give.</p>
+
+<p>One of the standout features of our gift baskets is the ability to customize them for any occasion or event. Whether you want to add a personal note, and customization to the occasion or event we can tailor it to your needs. This level of customization ensures that your gift is not only thoughtful but also perfectly suited to the recipient.
+
+When you need the best thank you gifts, look no further than our customizable gift baskets. Featuring Lancaster PA Dutch baked goods, gourmet cheeses, chocolates, and more, these baskets are designed to show your appreciation in the most delightful way. Order now to send a gift that truly reflects your gratitude and thoughtfulness. Our baskets make the best thank you gifts for any occasion, leaving a lasting impression on those who receive them.</p>
 
                 </div>
             </div>
@@ -340,7 +385,7 @@
     data-product-id="product-053"
     data-product-name="Best Thank You Gifts"
     data-product-price-regular="87.50"
-    data-product-shipping-price="19.75"
+    data-product-shipping-price="19.50"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""

@@ -31,20 +31,52 @@
     <meta name="keywords" content="birthday gift ideas, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/birthday-gift-ideas.php">
+	
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>
+		
     </header>
 
     
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Birthday Gift Ideas", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -165,7 +197,7 @@
     
                                                     <label for="birthday">
     
-                                                        <input type="checkbox" class="" id="tag" value="bithday2">
+                                                        <input type="checkbox" class="" id="tag" value="birthday2">
     
                                                         <img src="assets/images/tags/birthday2.png" alt="Birthday gift ideas with PA Dutch baked goods"  class="circle ">
     
@@ -216,7 +248,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="Our birthday gift ideas offer whoopie pies, fudge, blueberry breads, pies and more" class="circle ">
     
@@ -256,7 +288,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="get well gourmet snack basket delivered anywhere in the country" class="circle ">
     
@@ -319,7 +351,15 @@
                     </div>
 
                     <h2 class="cgb-subhead">Birthday Gift Ideas</h2>
-                    <p class="cgb-subcopy">Our Birthday Gift Ideas are a combination of some of the most popular Lancaster PA Dutch favorites. This of course includes whoopie pies, Lancaster Selections Jam (choice of flavor), Apple or Shoo Fly Pie, Fudge, Stoltzfus beef and much more.</p><p class="cgb-subcopy"> Many of our customers start out as those receiving our gift baskets. You would be hard pressed to find many people that do not love these PA Dutch foods and baked goods. We are happy to introduce many birthday gift ideas with a variety of PA Dutch foods.</p>
+                    <p class="cgb-subcopy">When searching for birthday gift ideas, finding the right inspiration can be challenging. Our collection of birthday gift ideas offers a wide range of thoughtful and delicious options that are sure to make any celebration extra special. Whether you're looking for something sweet, savory, or a mix of both, our birthday gift ideas include unique and customizable options that cater to every taste.</p>
+
+<p class="cgb-subcopy">One of our top birthday gift ideas is a personalized gift basket filled with an assortment of delightful treats. Imagine a basket brimming with freshly baked whoopie pies, blueberry breads, and shoo fly or apple pies, all made using traditional Amish recipes. These classic goodies are complemented by gourmet cheeses that add a savory touch, perfect for balancing the sweetness. To make the basket even more irresistible, you can include Emma's famous popcorn, delicious fudge, and more, creating a gift that offers a variety of flavors and textures.
+
+Our birthday gift ideas stand out not just for their quality but also for the ability to customize each gift to suit the recipient's preferences. Whether you want to add a personal note, select specific treats you know they’ll love, or accommodate any dietary needs, our birthday gift ideas can be tailored to make the gift truly personal and meaningful. This attention to detail ensures that your gift will be both appreciated and remembered long after the birthday celebration.</p>
+
+<p class="cgb-subcopy">Another one of our popular birthday gift ideas is to include a variety of items that offer a little something for everyone. For those who love sweet treats, including whoopie pies and delicious fudge is a must. For the savory snack lover, adding gourmet cheeses and Emma's famous popcorn creates a perfect balance. These versatile birthday gift ideas make it easy to create a basket that is as unique as the person receiving it.
+
+In a world where it can be difficult to find the perfect gift, our birthday gift ideas make the process simple and enjoyable. By choosing from our curated selection of treats like whoopie pies, blueberry breads, shoo fly or apple pies, and more, you’re giving a gift that’s not only delicious but also thoughtful. Let our birthday gift ideas inspire you to create a memorable and personalized gift that will bring joy to any birthday celebration.</p>
 
 
                 </div>

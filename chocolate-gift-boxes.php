@@ -24,29 +24,61 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Chocolate Gift Boxes | Lancaster PA</title>
+    <title>Chocolate Gift Boxes | PA Dutch Baskets</title>
 
     <meta name="description" content="Our chocolate gift boxes are loved and include whoopie pies, chocolate peanut butter balls and so much more PA Dutch treats and chocolates" />
 
     <meta name="keywords" content="chocolate gift boxes, chocolate gift baskets, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/chocolate-gift-boxes.php">
+	
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
+	
 
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
     </header>
 
-
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Chocolate Gift Boxes", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -199,7 +231,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="chocolate gift baskets are the perfect gift for anyone celebrating a birthday " class="circle ">
     
@@ -239,7 +271,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Birthday gift boxes with chocolate and other delicious treats" class="circle ">
     
@@ -306,9 +338,17 @@
                     </div>
 
                     <h2 class="cgb-subhead">Chocoalte Gift Boxes</h2>
-                    <p class="cgb-subcopy">Our Chocoalte Gift Boxes are unique and can be customized as well as the option to choose certain products upon ordering. Filled with chocolates that are hand created in the very popular Pennsylvania Dutch country in Lancaster, PA. We are happy to offer many birthday gift basket ideas to ensure you have a choice of many of these delicious products.</p>
+                    <p class="cgb-subcopy">Our chocolate gift boxes are a gift that is truly memorable and heartfelt. Our chocolate gift boxes, featuring an assortment of Lancaster PA Dutch baked goods, premium chocolates, and more, offer a distinct and thoughtful way to celebrate any birthday. Each box is carefully assembled to deliver joy and indulgence, ensuring your loved ones feel cherished on their special day.
 
-<p class="cgb-subcopy">While many of our products in this basket are chocolate, others offer many baked goods like baked pies, struesels, breads, and cheeses to mention a few. Regardless of the gift basket you choose, one thing stays constant, those receiving our baskets love them and many times want to know where they were purchased. We hope you enjoy!</p>
+The Lancaster PA Dutch baked goods included in our chocolate gift boxes are made using traditional recipes and the finest ingredients. Whether it’s a rich shoofly pie, crumbly crumb cake, or a classic whoopie pie, these treats bring the comforting flavors of home. Paired with a selection of decadent chocolates, each piece provides a luxurious taste experience that will delight anyone.</p>
+
+<p class="cgb-subcopy">A standout feature of our chocolate gift boxes is the ability to customize them for any occasion. Whether you wish to include a personal message, select specific items you know the recipient will enjoy, or adjust the contents to meet dietary preferences, we can craft the perfect box to suit your needs. This level of personalization ensures that your gift is not just delicious but also meaningful and perfectly aligned with the birthday celebration.</p>
+
+<p class="cgb-subcopy">Beyond baked goods and chocolates, our gift boxes can also include gourmet cheeses, artisanal snacks, and festive touches that add extra charm. This diverse selection makes our gifts a versatile choice, appealing to a wide range of tastes and preferences.
+
+What makes our chocolate gift boxes truly special is the care and consideration that goes into each one. From the careful selection of ingredients to the meticulous packaging, every detail is designed to create a delightful and memorable experience. Whether you’re near or far, sending one of our chocolate gift boxes filled with Lancaster PA Dutch treats shows your loved ones that you’re thinking of them and eager to make their day extraordinary.
+
+Choosing our gift boxes, complete with Lancaster PA Dutch baked goods, reflects your thoughtfulness and adds a unique touch to any celebration. It’s a delightful way to make birthdays even more special. Place your order today and bring a smile to your loved one’s face on their big day.</p>
 
 
                 </div>

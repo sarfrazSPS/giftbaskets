@@ -30,20 +30,51 @@
     <meta name="keywords" content="best gift baskets, best sympathy gift baskets, best birthday gift baskets, best get well gift baskets,  lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/gift-delivery.php">
+	
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+        
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
     </header>
 
-
-
-<section id="" class="mt-5 mb-5">
+<?php echo breadCrumb($app_path, "Gift Delivery", 2, "gift-baskets", "Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -55,6 +86,13 @@
                                 <img
                                 class="img-responsive"
                                 src="assets/images/products/dutch-baked-goods/customized-basket.jpg"
+                                alt="the best gift delivery is one that is loved, our PA Dutch gourmet foods and baked goods are known and loved around the world"
+                                onmouseover="myFunction(this)"
+                                />
+								
+								<img
+                                class="img-responsive"
+                                src="assets/images/products/dutch-baked-goods/dutch-3.jpg"
                                 alt="the best gift delivery is one that is loved, our PA Dutch gourmet foods and baked goods are known and loved around the world"
                                 onmouseover="myFunction(this)"
                                 />
@@ -213,13 +251,13 @@
                                                 </div>
     
     
-                                                <div class="col-sm-new-2 mb-new">
+                                               <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well gift delivery anywhere in the country" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -276,7 +314,25 @@
                     </div>
 
                     <h2 class="cgb-subhead">Gift Delivery</h2>
-                    <p class="cgb-subcopy">Our gift delivery ensures that those receiving them will enjoy them. The praise we get over and over again is just how much those receiving our gift delivery enjoyed their gift. Each gift basket and box is designed with the enjoyment of those receiving them in mind.</p><p class="cgb-subcopy"> Our Dutch Baked Goods customized basket is filled with two different pies, whoopie pies, Stoltzfus beef sticks which is known in the area for their excellence, and a cinnamon bun to mention a few. Regardless of the gift you choose, we hope you enjoy.</p>
+                    <p class="cgb-subcopy">Gift delivery is a wonderful way to surprise and delight loved ones on any occasion. Our gift delivery service from Lancaster, PA, offers an assortment of delicious baked goods and gourmet foods that are loved by everyone. With a variety of treats including baked pies, blueberry or banana breads, whoopie pies, Stoltzfus beef sticks, Danishes, and much more, our gift delivery options are perfect for any celebration.
+
+Our selection of baked goods is crafted with care and traditional recipes, ensuring a homemade quality that’s hard to find elsewhere. From the rich flavors of shoofly and apple pies to the moist and tasty blueberry or banana breads, these treats provide a comforting and nostalgic taste that everyone will appreciate. These baked goods are the highlight of our gift delivery service, making any occasion extra special.</p>
+
+ <p class="cgb-subcopy">Whoopie pies, a beloved Lancaster PA Dutch treat, add a fun and whimsical element to our offerings. These delightful desserts, with their creamy filling sandwiched between two soft cake-like cookies, are sure to bring joy to the recipient. Including whoopie pies in our gift that ensures a unique and memorable experience.
+
+Stoltzfus beef sticks add a savory and satisfying component to that special gift options. These high-quality beef sticks are perfect for snacking and add a touch of gourmet delight to our baskets. Paired with our delicious Danishes, they create a well-rounded and indulgent assortment of treats.</P>
+
+ <p class="cgb-subcopy">One of the standout features of our gifts are the ability to customize each order. Whether you’re celebrating a birthday, expressing sympathy, or marking any other event, we can tailor our baskets to suit the occasion. Add a personal message, select specific items, and ensure that your gift is thoughtful and perfectly suited to the recipient’s tastes.
+
+Choose our Lancaster, PA gift delivery for a delightful and personalized way to show your appreciation and celebrate special moments. With our delicious baked goods and gourmet foods, you can be sure your gift will be loved by everyone. Order now to send a heartfelt and delicious surprise to your loved ones.</P>
+
+
+
+
+
+
+
+</p>
 
 
                 </div>

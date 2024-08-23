@@ -63,7 +63,7 @@
         </div>
         <div class="row footer-border-top text-center">
             <div class="col footer-col py-3">
-                <p class="footer-copy mb-0">2024 PA Dutch Baskets. All rights reserved. Click here to view our refund &
+                <p class="footer-copy mb-0">2024 PA Dutch Baskets. All rights reserved. <a href="privacy-policynew.pdf">Volume Click here</a>to view our refund &
                     privacy policies. Click here to view our shipping policies.</p>
             </div>
         </div>

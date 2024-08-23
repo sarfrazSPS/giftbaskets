@@ -4,7 +4,7 @@
 
 <head>
 	<script id="mcjs">!function(c,h,i,m,p){m=c.createElement(h),p=c.getElementsByTagName(h)[0],m.async=1,m.src=i,p.parentNode.insertBefore(m,p)}(document,"script","https://chimpstatic.com/mcjs-connected/js/users/e503589d66cfd1981e6b44c42/9140921a789e35578f96d5929.js");</script>
-    <title>Lancaster Gift Baskets | PA Dutch Baskets</title>
+    <title>Gift Baskets for all Occasions | PA Dutch Baskets</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include($root_path . "includes/header-links.php"); ?>
@@ -16,30 +16,13 @@
   
     <meta property="og:type" content="product" />
 
-    <meta property="og:title" content="Gift Baskets | Food Gift Baskets" />
-
-    <meta property="og:description" content="Our unique gift baskets and gift boxes are filled with Lancaster PA Dutch
-											 gourmet foods and baked goods loved by everyone that can be delivered"
-    <meta property="og:url" content="https://padutchbaskets.com"/>
-
-    <meta property="og:site_name" content="PA Dutch Baskets" />
-
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/background/social.jpg" />
-
-    <meta property="product:price:amount" content="79.50" />
-
-    <meta property="product:price:currency" content="USD" />
-
-    <meta property="og:availability" content="instock" />
-
-    <title>Unique Birthday Gifts | Lancaster PA</title>
-
     <meta name="description" content="Our unique birthday gifts are loved by everyone receiving our PA Dutch baked goods, cheeses, chocolates and more that we deliver" />
 
     <meta name="keywords" content="unique birthday gifts, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
-    <link rel="canonical" href="https://padutchbaskets.com/unique-birthday-gifts.php">
-	<!-- Google Tag Manager -->
+    <link rel="canonical" href="https://padutchbaskets.com/index.php">
+
+    	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
 j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
@@ -47,15 +30,32 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 })(window,document,'script','dataLayer','GTM-P6C8664J');</script>
 <!-- End Google Tag Manager -->
 	
-	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
 </head>
 
 <body>
-	<!-- Google Tag Manager (noscript) -->
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>

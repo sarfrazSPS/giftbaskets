@@ -31,18 +31,55 @@
     <meta name="keywords" content="unique gift baskets, sympathy unique gift baskets, birthday unique gift baskets, get well unique gift baskets,  lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/unique-gift-baskets.php">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ 
 </head>
 
 <body>
+        
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>
+
+        	
+		
     </header>
 
-<section id="" class="mt-5 mb-5">
+<?php echo breadCrumb($app_path, "Unique Gift Baskets", 2, "gift-baskets", "Gift Baskets");?>
+
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -59,8 +96,14 @@
                                 />      
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/good-ole-treats/pic2.jpg"
-                                alt="Unique Gift Baskets that are filled with gourmet foods from Lancaster PA"
+                                src="assets/images/products/good-ole-treats/unique-gift-box.jpg"
+                                alt="Unique Gift Boxes that are filled with gourmet foods from Lancaster PA"
+                                onmouseover="myFunction(this)"
+                                />
+								 <img
+                                class="img-responsive"
+                                src="assets/images/products/good-ole-treats/unique-gift.jpg"
+                                alt="Unique Gift Boxes that are filled with gourmet foods from Lancaster PA"
                                 onmouseover="myFunction(this)"
                                 />
                             </div>
@@ -229,17 +272,17 @@
                                         </div>
 
 
-                                        <div class="col-sm-new-2 mb-new">
-
-                                            <label for="tag">
-
-                                                <input type="checkbox" id="tag" class="" value="Get Well">
-
-                                                <img src="assets/images/tags/no-custom.png" alt="get well unique gift baskets filled with delicious foods and baked goods from Lancaster PA" class="circle ">
-
-                                            </label>
-
-                                        </div>
+                                       <div class="col-sm-new-2 mb-new">
+    
+                                                    <label for="tag">
+    
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
+    
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
+    
+                                                    </label>
+    
+                                                </div>
 
 
                                         <div class="col-sm-4 col-sm-new-4 text-center">
@@ -288,7 +331,20 @@
                     </div>
 
                     <h2 class="cgb-subhead">Unique Gift Baskets</h2>
-                    <p class="cgb-subcopy">There are very few unique gift baskets that the person you're sending to will love as much as the amazing foods and baked goods from Lancaster, PA. Our Unique Gift Baskets such as the basket of treats is an affordable yet delicious gift that includes 2 flavors of the famous whoppie pies, choice of fudge, and the very famous Emma's popcorn just to mention a few.</p> <p class="cgb-subcopy"> We are beyond thankful for the feedback we receive on all of our gift baskets. One thing that stays constant is how happy those receiving are with the variety and taste. We hope you enjoy.</p>
+                    <p class="cgb-subcopy">Our unique gift baskets are an exceptional way to celebrate any occasion, from birthdays to anniversaries, or simply to show appreciation. Imagine a gift basket filled with Lancaster PA Dutch baked goods, whoopie pies, gourmet cheeses, and more. These baskets offer a distinctive taste of tradition and quality that will surely impress any recipient.
+
+Lancaster PA Dutch baked goods are renowned for their homemade quality and delightful flavors. Treats like shoofly pies, blueberry bread, and james and more are crafted from traditional recipes, delivering a nostalgic and comforting taste of home. These baked goods form the perfect foundation for any unique gift basket, providing a sweet and satisfying experience.</p>
+
+<p class="cgb-subcopy">
+					
+					Whoopie pies, a whimsical PA Dutch delicacy, add a fun and charming touch to the basket. These desserts, featuring creamy fillings sandwiched between two soft, cake-like cookies, are a beloved favorite that brings joy to any event. Including whoopie pies in your unique gift basket adds an element that sets it apart from more conventional offerings.
+
+Gourmet cheeses take our unique gift baskets to a new level of sophistication and indulgence. High-quality cheeses, whether sharp, creamy, or infused with unique flavors, perfectly complement the sweetness of the baked goods and whoopie pies. Pairing these cheeses with gourmet mustards gives your friend or loved one a gift they won't soon forget.</p>
+<p class="cgb-subcopy">
+
+					Our unique gift baskets are designed to suit a variety of occasions. Whether you’re marking a birthday, offering sympathy, congratulating someone, or expressing thanks, we can tailor each basket to fit the specific event. This adaptability ensures that your gift is both delicious and meaningful for the occasion.
+
+Incorporating these elements into your your gift basket guarantees a memorable and enjoyable experience for any recipient. Lancaster PA Dutch baked goods, whoopie pies, and gourmet cheeses combine to create a distinct and delightful gift that stands out. Explore our range of unique gift baskets to find the perfect way to show your appreciation and celebrate special moments. Order now to bring joy and satisfaction to your loved ones with a gift that truly reflects your care and thoughtfulness.</p>
                     
                    
                 </div>

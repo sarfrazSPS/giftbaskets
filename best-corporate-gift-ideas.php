@@ -24,28 +24,56 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>"Best Corporate Gift Ideas | Lancaster PA</title>
+    <title>"Best Corporate Gift Ideas | PA Dutch Baskets</title>
 
     <meta name="description" content="The best corporate gift ideas show appreciation to employees and clients with our PA Dutch gourmet foods and baked goods that are loved by all" />
 
     <meta name="keywords" content="best corporate gift ideas, employee gift baskets, gifts for employees, empoloyee gift ideas, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/best-corporate-gift-ideas.php">
+
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+	
     </header>
-
-
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Best Corporate Gift Ideas", 2, "corporate-gifts", "Corporate Gifts");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -58,6 +86,13 @@
                                 class="img-responsive"
                                 src="assets/images/products/bakers-choice/employee-birthday.jpg"
                                 alt="Our Best Corporate gift ideas come from the Amish in Lancaster PA known for the best gourmet foods and baked goods that we can customize to any occasion"
+                                onmouseover="myFunction(this)"
+                                />
+								
+								 <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-choice/bakers-choice-3.jpg"
+                                alt="The best corporate gift ideas will help with loyalty and show you care. Our PA Dutch baked goods show you put a lot of thought into their gift"
                                 onmouseover="myFunction(this)"
                                 />
                                             
@@ -322,10 +357,32 @@
 							<p>* Martins Pretzels</p>
 							
                         </div>
-                    </div>
+                    </div><p><p></p></p>
 
-                    <h2 class="cgb-subhead">Best Corporate Gift Ideas</h2>
-                    <p class="cgb-subcopy">Our best corporate gift ideas for employees are without question different but more importantly is how they are loved by everyone who receives our gift baskets. We can customize to your occasion, promotion, great job, birthday and so many others with your logo should you choose.</p> <p class="cgb-subcopy"> Our best corporate gift ideas are filled with the most delicious Lancaster PA Dutch baked goods, gourmet cheeses, gourmet mustards, delicious breads, brittle, chocolates and so much more. So many of our customers started out receiving one of our gift baskets first, that is the biggest compliment we could receive, thank you</p>
+                    <h2 align="center">Best Corporate Gift Ideas</h2>
+                    <p>Finding the best corporate gift ideas can significantly impact business relationships and show appreciation to clients, employees, and partners. One exceptional option is our gift baskets featuring Lancaster PA Dutch baked goods, gourmet cheeses, chocolates, whoopie pies, blueberry bread, and more. These baskets are thoughtfully curated to provide a memorable and delicious experience, making them some of the best corporate gift ideas available.</p>
+
+<p>Lancaster PA Dutch baked goods are a standout feature in our corporate gift baskets. Known for their homemade quality and delightful flavors, these baked goods include shoofly pies, blueberry breads, and pies. Each item is made with care, providing a comforting and nostalgic taste that is sure to impress. Incorporating these treats ensures our baskets are among the best corporate gift ideas.
+
+Gourmet cheeses add a touch of sophistication to our gift baskets. We offer a variety of high-quality cheeses, from sharp and tangy cheddars to creamy and flavorful bries. Paired with martins pretzels and gourmet mustard, these cheeses create a well-rounded and indulgent experience. This combination makes our baskets some of the best corporate gift ideas for any business occasion.</p>
+
+<p>Chocolates are an essential component of our corporate gift baskets. We select premium chocolates that offer rich and indulgent flavors, providing a sweet moment of joy for the recipient. Whether it’s dark, milk, or white chocolate, these treats enhance the overall appeal, making our baskets some of the best corporate gift ideas you can give.
+
+Whoopie pies, a classic PA Dutch treat, add a fun and whimsical element to our baskets. These delightful desserts, with their creamy filling sandwiched between two soft cake-like cookies, bring joy to any occasion. Including whoopie pies in our gift baskets sets them apart as some of the best corporate gift ideas.</p>
+
+<p>Blueberry or banana bread are other unique and delicious addition to our corporate gift baskets. This flavorful and moist bread adds a special touch, making the baskets even more appealing. It’s a perfect complement to the other items, ensuring our baskets are the best corporate gift ideas for any recipient.
+
+Customization is key when creating the perfect corporate gift. Whether you want to add a personal note, select specific items that the recipient will love, cusotmize to the occasion, we can tailor it to your needs. This level of personalization makes our gift baskets the best corporate gift ideas that leave a lasting impression.</p>
+
+<p>Explore our range of customizable gift baskets featuring Lancaster PA Dutch baked goods, gourmet cheeses, chocolates, whoopie pies, blueberry bread, and more. Order now to send the best corporate gift ideas that truly reflect your appreciation and thoughtfulness.</p>
+
+
+
+
+
+
+
+
 
 
 

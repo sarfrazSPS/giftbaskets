@@ -30,21 +30,52 @@
     <meta name="keywords" content="thank you gifts, thank you gift baskets, thank you gift ideas , unique thank you gift baskets lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/thank-you-gifts.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
     </header>
 
 
 
-
-<section id="" class="mt-5 mb-5">
+<?php echo breadCrumb($app_path, "Thank You Gifts", 2, "thank-you-gift-baskets", "Thank You Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -319,7 +350,15 @@
                     </div>
 
                     <h2 class="cgb-subhead">Thank You Gifts</h2>
-                    <p class="cgb-subcopy">It's not easy finding the right thank you gifts, but our Lancaster Favorites made from Amish baked goods, gourmet foods and more are loved by all. Customized and the best Lancaster PA Dutch foods, baked goods, cheeses, and chocolates you can find.</P><p class="cgb-subcopy"> If you look at our reviews, one thing stays constant, those receiving our thank you gifts love them. Send a unique thank you gift basket that they will love, enjoy!</p>
+                    <p class="cgb-subcopy">Expressing gratitude through a thoughtful gift is one of the most meaningful ways to show appreciation, and when considering thank you gifts, Amish gourmet foods make for a truly special option. These offerings are more than just treats—they represent the warmth and care that go into every handmade product. Choosing the right thank you gifts can say what words sometimes cannot, showing the recipient how much their kindness and effort mean to you.</p>
+
+  <p class="cgb-subcopy">Consider sending a beautifully crafted gift basket or box filled with freshly baked blueberry bread, creamy gourmet cheeses, and those beloved whoopie pies. Each bite delivers comfort and delight, making the recipient feel genuinely valued. The combination of these rich flavors creates a memorable experience that goes beyond the moment. Adding indulgent fudge or a hearty serving of Emma’s popcorn completes the package, offering a perfect mix of sweet and savory that’s sure to please any taste.
+
+When looking at thank you gifts, Amish baked goods stand out as a timeless favorite. With recipes passed down through generations, each loaf of bread, pie, and treat carries with it the essence of tradition and homemade goodness. The Lancaster strawberry jams included in the gift boxes add a delightful touch of sweetness, complementing the richness of the other foods.</p>
+
+  <p class="cgb-subcopy">These thank you gifts are suited for any occasion, whether you're expressing thanks to a colleague, a friend, or someone who has gone the extra mile for you. Choosing such high-quality, delicious foods speaks to the care and thought you put into selecting something meaningful. These gifts are enjoyed long after they are received, leaving a lasting impression that the recipient will remember fondly each time they enjoy these exceptional treats.
+
+For those looking to convey their appreciation in a heartfelt way, Amish gourmet foods, baked goods, and treats like fudge and Emma’s popcorn offer a unique and sincere way to say thank you. These gifts go beyond mere food; they provide a taste of tradition and a reminder of life’s simple pleasures, making them the ideal choice for showing your gratitude. Each bite reflects the thoughtfulness behind the gift, leaving a lasting impact on the recipient.</p>
 
                 </div>
             </div>

@@ -31,20 +31,52 @@
     <meta name="keywords" content="get well gifts for men, get well gifts, feel better soon, get well gifts for women, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/get-well-gifts-for-men.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
     </header>
 
 
+    <?php echo breadCrumb($app_path, "Get Well Gifts for Men", 2, "get-well-gift-baskets", "Get Well Gift Baskets");?>
 
-<section id="" class="mt-5 mb-5">
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -159,7 +191,7 @@
     
                                                     <label for="birthday">
     
-                                                        <input type="checkbox" class="" id="tag" value="getwell1">
+                                                        <input type="checkbox" class="" id="tag" value="Getwell1">
     
                                                         <img src="assets/images/tags/getwell1.png" alt="Get well deliveries are amoung our most popular with our PA Dutch gifts that include whoopie pies, fudge and other baked goods"  class="circle ">
     
@@ -171,7 +203,7 @@
     
                                                     <label for="tag3">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well2">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell2">
     
                                                         
                                                         
@@ -185,7 +217,7 @@
     
                                                     <label for="custom-front">
     
-                                                        <input type="checkbox" id="custom-front" class="" value="Get Well3">
+                                                        <input type="checkbox" id="custom-front" class="" value="Getwell3">
     
                                                         <img src="assets/images/tags/getwell3.png" alt="Men can sometimes be difficult to shop for. Our get well gifts for men are proven to be the perfect gift for men who are feeling down" class="circle ">
     
@@ -211,7 +243,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="getwell5">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell5">
     
                                                         <img src="assets/images/tags/getwell5.png" alt="Our get well gifts for men end up being our favorite customers once they enjoy the many PA Dutch baked goods that were sent to them" class="circle ">
     
@@ -223,7 +255,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="GetWell6">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell6">
     
                                                         <img src="assets/images/tags/getwell6.png" alt="We are happy to offer get well soon gifts that are loved by all that receive them, we are happy to ship anywhere in the country" class="circle ">
     
@@ -251,7 +283,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Get Well gifts can be delivered anywhere in the United States" class="circle ">
     

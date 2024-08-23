@@ -16,7 +16,7 @@
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
-        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/savory-flavors/best-gift-baskets.jpg" />
+        <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/savory-flavors/gift-baskets-online.jpg" />
 
     <meta property="product:price:amount" content="119.50" />
 
@@ -24,27 +24,58 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Best Gift Baskets | Lancaster PA</title>
+    <title>Best Gift Baskets | PA Dutch Baskets</title>
 
     <meta name="description" content="Looking for the best gift baskets, everyone who has tried our gift baskets love them. Lancaster, PA Dutch baked goods, gourmet foods, cheeses, chocolates and more" />
 
     <meta name="keywords" content="best gift baskets, best sympathy gift baskets, best birthday gift baskets, best get well gift baskets,  lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/best-gift-baskets.php">
+
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>
+		
     </header>
 
-    
+<?php echo breadCrumb($app_path, "Best Gift Basket", 2, "gift-baskets", "Gift Baskets");?>
 
-<section id="" class="mt-5 mb-5">
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -55,7 +86,7 @@
                             <!--4 side images -->
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/savory-flavors/best-gift-baskets.jpg"
+                                src="assets/images/products/savory-flavors/gift-basket-online.jpg"
                                 alt="When looking for the best gift baskets, Lancaster PA offers the best baked goods, gourmet cheeses, chocoaltes and so much more that we deliver"
                                 onmouseover="myFunction(this)"
                                 />
@@ -75,7 +106,7 @@
                             <div class="main-images">
                             <!--Main images -->
                                 
-                                    <img  src="assets/images/products/savory-flavors/best-gift-baskets.jpg"   alt="Looking for the best gift baskets, our PA Dutch baked goods, chocolates, and gourmet foods are loved by everyone"      id="image_box" class="img-responsive"  />
+                                    <img  src="assets/images/products/savory-flavors/gift-basket-online.jpg"   alt="Looking for the best gift baskets, our PA Dutch baked goods, chocolates, and gourmet foods are loved by everyone"      id="image_box" class="img-responsive"  />
                                 
                             <!--Main images -->
                             </div>
@@ -254,18 +285,17 @@
                                                 </div>
     
     
-                                                <div class="col-sm-new-2 mb-new">
+                                               <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="best get well gift baskets delivered anywhere in the country" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
                                                 </div>
-    
     
                                                 <div class="col-sm-4 col-sm-new-4 text-center">
                                                     
@@ -323,7 +353,17 @@
                     </div>
 
                     <h2 class="cgb-subhead">Best Gift Baskets</h2>
-                    <p class="cgb-subcopy">The Best Gift Baskets are loved by everyone who receives them. We offer Savory Flavors gift basket that offers baked goods, cheeses, chocolates and more. Filled with the most popular Dutch treats including delicious Blueberry bread (your choice of flavor), whoopie pie, Stoltzfus Peanut Butter Brittle, gourmet mustard, fudge and so much more.</p> <p class="cgb-subcopy">This is one of our most popular and best gift baskets that people are amazed at as you simply can't get enough. We are happy to customize for an occasion or event, simply click in our navigation to find the occasion and if you can't find it, give us a call.</p>
+                    <p class="cgb-subcopy">If you’re searching for the best gift baskets, look no further than our exquisite selections filled with the finest products from Lancaster, PA. Our gift baskets are perfect for any occasion, from birthdays and anniversaries to sympathy, congratulations, and thank you gifts. Each basket features a delightful assortment of gourmet cheeses, baked goods like whoopie pies and blueberry breads, as well as classic apple and shoo fly pies.
+
+Our selections also include a variety of delicious chocolates and jams, beloved by everyone. Each product is chosen for its exceptional quality and rich flavors, ensuring a memorable experience with every bite.</p>
+
+<p class="cgb-subcopy">Designed to cater to a variety of occasions, our gift baskets are a versatile choice. Whether you’re celebrating a milestone, expressing sympathy, offering congratulations, or saying thank you, our baskets provide a thoughtful and personalized way to show your appreciation.
+
+What sets our offerings apart is the attention to detail and the ability to customize each gift basket to suit the occasion. You can select from various themes and combinations to ensure that your gift is both meaningful and unique. This flexibility makes our baskets not just a gift, but a personal expression of your sentiments.</p>
+
+<p class="cgb-subcopy">When it comes to finding the best gift baskets, our selections go beyond just a collection of treats; they are a way to convey your gratitude and thoughtfulness. By choosing the finest products from Lancaster, PA, we ensure that each basket represents quality and care.
+
+Explore our collection today and discover the best gift baskets to make any occasion special. With our carefully curated selections and commitment to excellence, our gift baskets and gift boxes are sure to impress and bring joy to any recipient. Indulge in the rich flavors and high-quality products that make our baskets a standout choice for any celebration.</p>
 
 
                 </div>
@@ -343,7 +383,7 @@
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="best-gift-baskets.jpg" >
+    data-product-cart_img="gift-basket-online.jpg" >
 </div>
 <!-- image to be display on cart page must be in root images folder   -->
 

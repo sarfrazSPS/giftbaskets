@@ -31,20 +31,52 @@
     <meta name="keywords" content="get well soon gift baskets, get well gifts, feel better soon, get well gifts for women, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/get-well-soon-gift-baskets.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
     </header>
 
 
+    <?php echo breadCrumb($app_path, "Get Well Soon Gift Baskets", 2, "get-well-gift-baskets", "Get Well Gift Baskets");?>
 
-<section id="" class="mt-5 mb-5">
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -57,6 +89,13 @@
                                 class="img-responsive"
                                 src="assets/images/products/bakers-choice/get-well-soon-gift-baskets.jpg"
                                 alt="When looking for get well soon gift baskets we offer PA Dutch gourmet foods, baked goods, chocolates and more loved by everyone"
+                                onmouseover="myFunction(this)"
+                                />
+								
+								  <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-choice/bakers-choice-3.jpg"
+                                alt="Get well soon gift baskets can go along way in helping that special someone recover. Our PA Dutch baked goods are loved by everyone and shipped anywhere in the country "
                                 onmouseover="myFunction(this)"
                                 />
                                             
@@ -171,7 +210,7 @@
     
                                                     <label for="birthday">
     
-                                                        <input type="checkbox" class="" id="tag" value="getwell1">
+                                                        <input type="checkbox" class="" id="tag" value="Getwell1">
     
                                                         <img src="assets/images/tags/getwell1.png" alt="Get well gift baskets are a great way to bring a smile to those feeling a bit under the weather"  class="circle ">
     
@@ -183,7 +222,7 @@
     
                                                     <label for="tag3">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well2">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell2">
     
                                                         
                                                         
@@ -197,7 +236,7 @@
     
                                                     <label for="custom-front">
     
-                                                        <input type="checkbox" id="custom-front" class="" value="Get Well3">
+                                                        <input type="checkbox" id="custom-front" class="" value="Getwell3">
     
                                                         <img src="assets/images/tags/getwell3.png" alt="Get Well Soon gift baskets that have the most delicious PA Dutch whoppie pies, blueberry breads, fudge, baked pies and more " class="circle ">
     
@@ -223,7 +262,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="getwell5">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell5">
     
                                                         <img src="assets/images/tags/getwell5.png" alt="Want to say feel better in a special way, our get well gifts can do exactly that with woopie pies, fudge, baked pies, brittle and more" class="circle ">
     
@@ -235,7 +274,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="GetWell6">
+                                                        <input type="checkbox" id="tag" class="" value="Getwell6">
     
                                                         <img src="assets/images/tags/getwell6.png" alt="Our Get Well Soon Gift Baskets are special in helping those feeling under the weather, they love them. PA Dutch baked goods, chocolates and more" class="circle ">
     
@@ -263,7 +302,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Get well soon gift baskets filled with gourmet cheeses, bluberry breads, fudge, chocolates and so much more and loved by eveyone" class="circle ">
     
@@ -330,9 +369,22 @@
                             
                         </div>
                     </div>
+					<p></p>
 
-                    <h2 class="cgb-subhead">Get Well Soon Gift Baskets</h2>
-                    <p class="cgb-subcopy">Our Get Well Soon Gift Baskets are one of our most popular lines. Simply put everyone receiving these delicious PA Dutch treats loves them. We are happy to offer customization on your basket as well as some of the most popular Lancaster PA Dutch treats including Apple or Shoo Fly pie, blueberry bread (your choice of flavor) that is the most delicious bread you will every taste, September Farms gourmet cheeses, gourmet mustard, whoopie pie, fudge and so much more. We are happy to assist in anyway, just give us a call.
+                    <h2 align="center">Get Well Soon Gift Baskets</h2>
+                    <p>When someone you care about is feeling under the weather, sending a thoughtful and delicious get well soon gift basket can make all the difference. Our get well soon gift baskets, featuring Lancaster PA Dutch baked goods, cheeses, pretzels, gourmet mustards, whoopie pies, and more, are the perfect way to show your support and brighten their day. These baskets are carefully curated to provide comfort and joy, making them some of the best get well soon gift ideas available.</p>
+
+<p>Lancaster PA Dutch baked goods are a standout feature in our get well soon gift baskets. Known for their homemade quality and delightful flavors, these baked goods include shoofly pies, whoopie pies, blueberry breads and more. Each item is crafted with care, providing a comforting and nostalgic taste that is sure to lift spirits and bring a smile.
+
+Cheeses add a touch of indulgence to our gift baskets. We offer a variety of high-quality cheeses, from sharp and tangy cheddars to creamy and flavorful bries. These cheeses pair perfectly with the baked goods and pretzels, creating a well-rounded and satisfying assortment that anyone can appreciate.</p>
+
+<p>Pretzels and gourmet mustards are another delightful addition to our get well soon gift baskets. The soft and salty pretzels combined with flavorful mustards create a delicious snack that’s both comforting and enjoyable. This combination adds a unique and savory element to the basket.
+
+Whoopie pies, a classic PA Dutch treat, add a fun and whimsical touch to the basket. These delightful desserts, with their creamy filling sandwiched between two soft cake-like cookies, are a beloved favorite that brings joy to any occasion. Including whoopie pies ensures that our get well soon gift baskets are both unique and heartwarming.</p>
+
+<p>Customization is key when creating the perfect get well soon gift basket. You can tailor each basket to the recipient’s preferences, adding items such as premium chocolates, artisanal snacks, or a personal get well note and customization to the occasion. This attention to detail ensures that your gift is not only delicious but also thoughtful and personal.
+
+Explore our range of customizable get well soon gift baskets featuring Lancaster PA Dutch baked goods, cheeses, pretzels, gourmet mustards, whoopie pies, and more. Order now to send a get well soon gift basket that truly reflects your care and thoughtfulness. Our baskets are designed to bring comfort, support, and a touch of cheer during recovery.</p>
 
                 </div>
             </div>

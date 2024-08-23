@@ -17,7 +17,7 @@
 
         <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/basket-of-treats/personalized-sympathy-gifts.jpg" />
 
-    <meta property="product:price:amount" content="59.50" />
+    <meta property="product:price:amount" content="79.50" />
 
     <meta property="product:price:currency" content="USD" />
 
@@ -30,20 +30,67 @@
     <meta name="keywords" content="personalized sympathy gifts, deepest sympathy, sympathy gift baskets, condolences, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/personalized-sympathy-gifts.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
+		<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '277700192568940');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=277700192568940&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     </header>
 
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Personalized Sympathy Gifts", 2, "sympathy-gift-baskets", "Sympathy Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -85,7 +132,7 @@
                     <p class="prod-id">Product ID: 032</p>
                     <h3 class="prod-title">"Basket of Treats" Personalized Sympathy Gifts</h3>
                       <span class="price">
-                        <span class="prod-price" id='price_per_item' >$59.50</span>
+                        <span class="prod-price" id='price_per_item' >$79.50</span>
                             <span class="prod-stars">
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
@@ -244,7 +291,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="sympathy gift baskets that are delivered anywhere in the country" class="circle ">
     
@@ -312,7 +359,15 @@
                     </div>
 
                     <h2 class="cgb-subhead">Personalized Sympathy Gifts</h2>
-                    <p class="cgb-subcopy">Our Personazlied Sympathy Gifts offer the perfect gift during a difficult time. Our customers are always telling us that the PA Dutch baked goods, gourmet foods, chocolates and so much more could not have been more perfect. Our personalized sympathy gifts are enjoyed by many as they try to handle such a difficult time in their life.</p> <p class="cgb-subcopy"> We have asked many of our customers who were so thankful as their friend or loved one called to express how thoughtful this gift was. Yes the PA Dutch baked goods are the best in the world not to mention the cheeses, chocolates and other foods. And there really is something behind the term comfort food.</p>
+                    <p class="cgb-subcopy">Finding the right way to express condolences can be difficult, but our personalized sympathy gifts offer a heartfelt way to show your support during challenging times. These carefully curated options, featuring comforting items from Lancaster, PA, provide solace and a touch of tradition that will be cherished by any recipient.
+
+Lancaster PA Dutch baked goods are celebrated for their comforting flavors and homemade quality. Including treats like shoofly pies, blueberry breads, and jams, these items evoke a nostalgic and warm taste of home. These baked goods form the core of our personalized sympathy gifts, offering a sweet and comforting experience.</p>
+
+ <p class="cgb-subcopy">Gourmet cheeses add richness to our sympathy gifts, offering a variety of flavors that complement the sweetness of the baked goods and whoopie pies. Whether sharp, creamy, or uniquely flavored, these high-quality cheeses pair wonderfully with these treats. Adding gourmet mustards and martins pretzels rounds out the selection, providing a balanced and enjoyable assortment.
+
+Our personalized sympathy gifts are designed to convey your deepest sympathies with care. We can customize each gift to fit the occasion, ensuring it is both appropriate and heartfelt. This flexibility allows you to provide a gift that offers comfort and expresses your condolences in a thoughtful way.</p>
+
+ <p class="cgb-subcopy">By incorporating these elements into our personalized sympathy gifts, we ensure a meaningful and comforting experience for the recipient. Lancaster PA Dutch baked goods, whoopie pies, and gourmet cheeses come together to create a distinctive and thoughtful gift that can be shared with family and friends during a difficult time. Explore our range of personalized sympathy gifts to find the perfect way to show your support and care during these trying moments. Order now to offer a gesture that truly reflects your sympathy and compassion.</p>
 
 
 
@@ -325,15 +380,15 @@
  <div class="product-metadata" 
     data-product-id="product-032"
     data-product-name="Personalized Sympathy Gifts"
-    data-product-price-regular="59.50"
-    data-product-shipping-price="18.75"
+    data-product-price-regular="79.50"
+    data-product-shipping-price="0"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="sympathy-gifts-delivered.jpg" >
+    data-product-cart_img="personalized-sympathy-gifts.jpg" >
 </div>
 <!-- image to be display on cart page must be in root images folder   -->
 

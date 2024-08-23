@@ -30,21 +30,54 @@
     <meta name="keywords" content="unique thank you gift baskets, thank you gift ideas, thank you gift baskets, thank you gifts lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/unique-thank-you-gift-baskets.php">
+
+    
+        	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+ 
 </head>
 
 <body>
+    <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
+		
     </header>
 
 
 
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Unique Thank You Gift Baskets", 2, "thank-you-gift-baskets", "Thank You Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -321,7 +354,12 @@
                     </div>
 
                     <h2 class="cgb-subhead">Unique Thank You Gift Baskets</h2>
-                    <p class="cgb-subcopy">When looking for a unique thank you gift baskets the most important fact is that the person receiving the basket enjoys it. We offer unique thank you gift baskets that are customized and filled with the most delicious Lancaster PA Dutch baked goods, cheeses, chocolates, fudge and much more.</p> <p class="cgb-subcopy"> We have spent years continuing to search and find these delicious foods and baked goods right here in our own backyard in Lancaster PA. If you don't see what you want, give us a call.</p>
+                    <p class="cgb-subcopy">Unique thank you gift baskets are an exceptional way to express your gratitude in a memorable and thoughtful manner. When you want to go beyond the typical thank you note or generic gift, these baskets provide a personalized touch that truly stands out. Filled with a variety of carefully selected items, unique thank you gift baskets offer something special that reflects your appreciation and thoughtfulness.</p>
+
+<p class="cgb-subcopy">One of the key features of unique thank you gift baskets is the ability to tailor them to the recipient's tastes and preferences. Whether you know someone has a sweet tooth or prefers savory snacks, you can create a basket that perfectly matches their likes. For those who enjoy baked goods, consider including freshly made whoopie pies, blueberry breads, or a shoo fly or apple pie. These traditional Amish treats add a homemade, comforting element to the gift, making it even more meaningful.</p>
+
+<p class="cgb-subcopy">In addition to sweet treats, unique thank you gift baskets can also include gourmet cheeses, artisanal snacks, or even Emma's famous popcorn. These additions offer a delightful contrast to the sweets and create a balanced selection that anyone would love to receive. The variety ensures that your unique thank you gift basket is not just another generic gift, but a carefully considered gesture that will be appreciated and remembered.
+<p class="cgb-subcopy">What makes these unique thank you gift baskets truly special is the personal touch you can add. Including a handwritten note or selecting specific items that you know the recipient will enjoy adds an extra layer of thoughtfulness. This level of customization transforms a simple thank you into a heartfelt expression of gratitude.</p>
 
                 </div>
             </div>

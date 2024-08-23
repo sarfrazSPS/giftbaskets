@@ -31,21 +31,54 @@
     <meta name="keywords" content="birthday gifts for men, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/birthday-gifts-for-men.php">
+	
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>
+		
     </header>
 
     
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Birthday Gifts for Men", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -58,6 +91,14 @@
                                 class="img-responsive"
                                 src="assets/images/products/bakers-special/birthday-food-basket.jpg"
                                 alt="Our birthday gifts for men and women are loved equally with Lancaster PA Duth baked goods that you can't get enough of"
+                                onmouseover="myFunction(this)"
+                                />
+								
+								
+								 <img
+                                class="img-responsive"
+                                src="assets/images/products/bakers-special/bakers-2.jpg"
+                                alt="When offering sympathy gifts it can be difficult to choose the right gift. We offer the perfect gift for a difficult time with our PA Dutch baked goods "
                                 onmouseover="myFunction(this)"
                                 />
                                             
@@ -197,7 +238,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="looking for birthday gifts for men or women, try our our PA Dutch treats with gourmer foods, baked goods and more " class="circle ">
     
@@ -237,7 +278,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Birthday Gifts for Men delivered anywhere in the country" class="circle ">
     

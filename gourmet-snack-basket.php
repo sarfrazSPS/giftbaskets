@@ -30,19 +30,52 @@
     <meta name="keywords" content="gourmet snack baskets, sympathy gourmet snack baskets, birthday gift baskets, best gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/gourmet-snack-basket.php">
+	
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
     </header>
 
-
-<section id="" class="mt-5 mb-5">
+<?php echo breadCrumb($app_path, "Gourmet Snack Basket", 2, "gift-baskets", "Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -55,6 +88,13 @@
                                 class="img-responsive"
                                 src="assets/images/products/dutch-traditions/food-gift-ideas.jpg"
                                 alt="Delicious gourmet snack basket filled with Lancaster, PA Dutch baked goods, chocolates, gourmet cheeses and more with delivery"
+                                onmouseover="myFunction(this)"
+                                />
+								
+								<img
+                                class="img-responsive"
+                                src="assets/images/products/dutch-traditions/dutch-3.jpg"
+                                alt="when looking for a gourmet snack basket, our PA Dutch baskets offer Amish made baked goods and many other delicious foods"
                                 onmouseover="myFunction(this)"
                                 />
                                             
@@ -242,13 +282,13 @@
                                                 </div>
     
     
-                                                <div class="col-sm-new-2 mb-new">
+                                               <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well gourmet snack basket delivered anywhere in the country" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -305,10 +345,19 @@
                             
                         </div>
                     </div>
-
+<p></p>
                     <h2 class="cgb-subhead">Gourmet Snack Basket</h2>
-                    <p class="cgb-subcopy">The happiness brought to so many with our gourmet snack basket and boxes is why I decided to start this business. Next I wanted to be sure that
-our gourmet snack basket and boxes were filled with gift ideas that included many of the most popular PA Dutch foods found right here in Lancaster, PA. If you ever had the pleasure of visiting, you know just how delicious all the PA Dutch foods and baked goods are.
+                    <p class="cgb-subcopy">A gourmet snack basket is the perfect way to delight someone special with a variety of delicious treats. Our gift baskets from Lancaster, PA, feature Dutch baked goods that are loved by everyone who has experienced them. These carefully curated baskets include a selection of delicious baked goods, fudge, your choice of blueberry or banana bread, strawberry fry pies, Stoltzfus beef sticks, and so much more.</p>
+
+<p class="cgb-subcopy">Our gourmet snack baskets are filled with Lancaster PA Dutch baked goods known for their homemade quality and irresistible flavors. From rich and moist blueberry or banana bread to delectable strawberry fry pies, each item is crafted with care and tradition, ensuring a taste of home with every bite. These baked goods are a highlight of our gourmet baskets, providing comfort and satisfaction to anyone who receives them.
+
+In addition to baked goods, our gourmet snack baskets include premium fudge, offering a sweet and indulgent treat that melts in your mouth. The rich flavors of our fudge complement the other items in the basket, making it a well-rounded and delightful assortment.</p>
+
+<p class="cgb-subcopy">Stoltzfus beef sticks add a savory and satisfying element to our gift baskets. These high-quality beef sticks are perfect for snacking and add a touch of gourmet delight to our baskets. Paired with our delicious Danishes, they create a well-rounded and indulgent assortment of treats.
+
+One of the standout features of our gift baskets are the ability to customize them for any occasion. Whether you're celebrating a birthday, expressing sympathy, saying thank you, or marking any other special event, we can tailor our baskets to suit the occasion. Add a personal message, select specific items, and ensure that your gift is thoughtful and perfectly suited to the recipient's tastes.</p>
+
+<p class="cgb-subcopy">Choose our Lancaster PA gourmet snack baskets for a delightful and personalized way to show your appreciation and celebrate special moments. With our delicious baked goods, fudge, and more, you can be sure your gift will be loved by everyone. Order now to send a heartfelt and delicious surprise to your loved ones.</P>
 
 
                 </div>

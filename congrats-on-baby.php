@@ -14,7 +14,7 @@
 
     <meta property="og:description" content="When you want to say congrats on baby, consider our delicious gourmet foods and baked goods from Lancaster PA that we can customized to the occasion">
 		  
-    <meta property="og:url" content="https://padutchbaskets.com/congratulations-baby.php"/>
+    <meta property="og:url" content="https://padutchbaskets.com/congrats-on-baby.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
         <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/lancaster-favorites/baby-gift.jpg" />
@@ -32,20 +32,52 @@
     <meta name="keywords" content="congrats on baby, congratulations gift baskets, congratulations graduate, congratulations on your new job, congratulations gift, congratulations gifts, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/congrats-on-baby.php">
+	
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
     </header>
 
 
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Congrats on Baby", 2, "congratulations-gift-baskets", "Congratulations Gift Baskets");?>
+    <section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -289,22 +321,26 @@
                             <p>* Apple or Shoo Fly Pie (Your Choice)</p>
 							
 							<p>* Fudge (Your Choice of Flavor)</p>
-							<P>* Apple Streusel</P>
-							<p>* Chocolate w/Vanilla Whoopie Pie</p>
-							
+						
+							<p>* Stoltzfus Beef Sticks</p>
+							<p>* Strawberry Jam (Choice of Flavor)</p>
+							<p>* Apple Streusel</p>
+							<p>* Whoopie Pie </p>
 							
                         </div>
                         <div class="cgb-copy-right">
 						
-							<p>* Peanut Butter Balls</p>
-							<p>* Cinnamon Stick (Filled w/Cream Cheese) </p>
 							
-							<p>* Emma's Popcorn</p>
 							
-							<p>* Lancaster Party Mix</p>
+							<p>* Strawberry Danish</p>
+							<p>* Cinnamon Stick w/Cream Cheese</p>
+							<p>* Popcorn</p>
+							<p>* Blueberry Donut Holes</p>			
+
+						
 							<p>* Chocolate Pretzel Rods</p>
 							
-							<p>* Customization</p>w
+							<p>* Customization</p>
 							
                         </div>
                     </div>

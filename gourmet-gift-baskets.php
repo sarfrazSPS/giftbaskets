@@ -31,20 +31,55 @@
     <meta name="keywords" content="gourmet gift baskets, thank you gourmet gift baskets, sympathy gourmet gift baskets, get well gourmet gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/gourmet-gift-baskets.php">
+	
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	
 </head>
 
 <body>
+        
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+	
+
     </header>
 
 
+    <?php echo breadCrumb($app_path, "Gourmet Gift Baskets", 2, "gift-baskets", "Gift Baskets");?>
 
-<section id="" class="mt-5 mb-5">
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -62,7 +97,14 @@
                                             
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/deluxe-traditions/pic2.jpg"
+                                src="assets/images/products/deluxe-traditions/gourmet-gift-basket.jpg"
+                                alt="Gourmet gift box is offered with Lancaster, PA gourmet foods, cheeses, chocolates and more with delivery"
+                                onmouseover="myFunction(this)"
+                                />
+								
+								 <img
+                                class="img-responsive"
+                                src="assets/images/products/deluxe-traditions/gourmet-gift-baskets.jpg"
                                 alt="Gourmet gift box is offered with Lancaster, PA gourmet foods, cheeses, chocolates and more with delivery"
                                 onmouseover="myFunction(this)"
                                 />
@@ -237,13 +279,13 @@
                                                 </div>
     
     
-                                                <div class="col-sm-new-2 mb-new">
+                                               <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well gourmet gift baskets with lancaster pa cheese and baked goods" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -300,8 +342,27 @@
                         </div>
                     </div>
 
-                    <h2 class="cgb-subhead">Gourmet Gift Baskets from Lancaster PA</h2>
-                    <p class="cgb-subcopy">If your looking for gourmet gift baskets that will be loved by that special person receiving it, you have come to the right place.</p> <p class="cgb-subcopy">Those receiving our Gourmet gift baskets love the array of products with flavor that can only be matched right here in Lancaster, PA. The PA Dutch foods here are made with so much care and it shows in every bite. Well known for their whoopie pies, blueberry breads, chocolates, and even cheese, many of these delicious treats are found within this gourmet gift.</p>
+                    <h2 class="cgb-subhead">Gourmet Gift Baskets</h2>
+                    <p class="cgb-subcopy">Discover the perfect way to delight your loved ones with our gourmet gift baskets, filled with the finest products from Lancaster, PA. These baskets are ideal for any occasion, from birthdays and anniversaries to sympathy, congratulations, thank you, and more. Each basket includes a selection of gourmet cheeses, baked goods like whoopie pies and blueberry breads, and classic apple and shoo fly pies.
+
+Our gourmet gift baskets also feature an assortment of delicious chocolates and jams, all loved by everyone. Each product is chosen for its exceptional quality and rich flavors, ensuring a delightful experience with every bite.</p>
+
+<p class="cgb-subcopy">These gourmet gift baskets are designed to cater to a variety of occasions, making them a versatile gift choice. Whether you’re celebrating a birthday, expressing sympathy, offering congratulations, or saying thank you, our baskets provide a thoughtful and personalized way to show you care.
+
+Customization is key to our offerings. We tailor each gourmet gift basket to the specific occasion, ensuring that your gift is not only delicious but also meaningful. You can choose from a variety of themes and combinations to suit the recipient’s preferences and the occasion’s requirements.</p>
+
+<p class="cgb-subcopy">Our gourmet gift baskets are more than just a collection of treats; they are a way to convey your appreciation and thoughtfulness. By selecting the finest products from Lancaster, PA, we ensure that each basket is a true representation of quality and care.
+
+Explore our collection of gourmet gift baskets today and find the perfect gift to make any occasion special. With our carefully curated selections and commitment to quality, our gourmet gift baskets are sure to impress and bring joy to any recipient. Indulge in the rich flavors and high-quality products that make our baskets a standout choice for any celebration.</p>
+
+
+
+
+
+
+
+
+</p>
                 </div>
             </div>
         </div>

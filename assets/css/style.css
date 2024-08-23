@@ -131,6 +131,33 @@ ul.dropdown-menu li a:hover{
     opacity: 1;
 }
 
+/*Bread Crumb*/
+.breadcrumb span,
+.breadcrumb{
+    font-size: 14px;
+    font-weight: 500;
+}
+.breadcrumb{
+    display: flex;
+    align-items: center;
+}
+.breadcrumb span{
+    padding: 0 15px;
+}
+.breadcrumb a:nth-child(1){
+    font-size: 14px;
+    font-weight: 700;
+    color: #5d0400;
+    padding: 0 15px;
+    padding-left: 10px;
+}
+.breadcrumb a:nth-child(2){
+    font-size: 14px;
+    font-weight: 600;
+    color: #5d0400;
+    padding: 0 15px;
+}
+
 /*Branding Section*/
 .branding-section{
     padding: 17px 0;
@@ -1103,7 +1130,7 @@ form .form-btn:hover {
     width: 80%;
 }
 .cgb-subhead {
-    font-weight: bold;
+    font-weight:bold;
     font-size: 30px;
     color: var(--mainBlackColor);
     margin-top: 35px;
@@ -1114,7 +1141,7 @@ form .form-btn:hover {
 }
 .cgb-subcopy {
     margin: 0 auto;
-    font-size: 17px;
+    font-size: 14px;
     padding-top: 8px;
     /* margin-bottom: 100px; */
     text-align: left;

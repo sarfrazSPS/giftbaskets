@@ -13,7 +13,7 @@
     <meta property="og:title" content="Best Birthday Gifts" />
 
     <meta property="og:description" content="Our best birthday gifts consist of PA Dutch baked goods that are loved around the world with our whoopie pies, gourmet cheeses, chocoaltes and more"
-    <meta property="og:url" content="https://padutchbaskets.com/best-birthday-gift.php"/>
+    <meta property="og:url" content="https://padutchbaskets.com/best-birthday-gifts.php"/>
 
     <meta property="og:site_name" content="PA Dutch Baskets" />
 
@@ -25,27 +25,58 @@
 
     <meta property="og:availability" content="instock" />
 
-    <title>Best Birthday Gifts | Lancaster PA</title>
+    <title>Best Birthday Gifts | PA Dutch Baskets</title>
 
     <meta name="description" content="Our best birthday gifts consist of PA Dutch baked goods that are loved around the world with our whoopie pies, gourmet cheeses, chocoaltes and more" />
 
     <meta name="keywords" content="best birthday gifts, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/best-birthday-gifts.php">
+
+    	<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+	
 </head>
 
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+ 
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?> 
+		
     </header>
 
-    
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Best Birthday Gifts", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -60,6 +91,7 @@
                                 alt="Our best birthday gifts include the famous Dutch baked goods from Lancaster PA as well as gourmet cheeses, chocoaltes and more"
                                 onmouseover="myFunction(this)"
                                 />
+								
                                             
                                 <img
                                 class="img-responsive"
@@ -68,7 +100,13 @@
                                 onmouseover="myFunction(this)"
                                 />
                             
-                              
+                                <img
+                                class="img-responsive"
+                                src="assets/images/products/deluxe-traditions/deluxe-traditions-3.jpg"
+									 pic2.jpg"
+                                alt="Our Best Gift Baskets include whoopie pies, blueberry bread, fudge, Emmas popcorn and so much more that we can deliver "
+                                onmouseover="myFunction(this)"
+                                />
                                 
                             </div>
                         </div>
@@ -208,7 +246,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="looking for the best birthday gift, try our our PA Dutch treats, gourmet cheeses, foods, baked goods and more " class="circle ">
     
@@ -248,7 +286,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Best Birthday gifts delivered anywhere in the country" class="circle ">
     
@@ -311,10 +349,22 @@
                     
                             
                         </div>
-                    </div>
+												   </div><p></p>
 
-                    <h2 class="cgb-subhead">Best Birthday Gifts</h2>
-                    <p class="cgb-subcopy">Our Best Birthday Gifts consist of our very popular PA Dutch food baskets. We are thankful to live in a part of the country that offers the most delicious foods, cheeses, and baked goods here in Lancaster, PA with the Pennsylvania Dutch foods.</p><p class="cgb-subcopy">Yes we have the whoopie pies baked apple or shoo fly pie, the most delicious blueberry bread (choice of flavor), fudge and as you can see a lot more than that. We are thankful that you are looking to our company to find your best birthday gifts for that special person.</p>
+                    <h2 align="center">Best Birthday Gifts</h2>
+                    <p>Finding the best birthday gifts can be a delightful challenge, but our Lancaster PA Dutch gift baskets offer a unique and delicious solution. These carefully curated baskets feature baked goods, gourmet cheeses, gourmet mustards, whoopie pies, blueberry breads, and much more. Known around the world for their quality and flavor, these treats make our baskets the best birthday gifts for anyone on your list.
+
+Lancaster PA Dutch baked goods are a highlight in our gift baskets. Famous for their homemade quality and delightful flavors, these treats include shoofly pies, Blueberry or banana breads, whoppie pies and more. Each item is made with care, delivering a comforting and nostalgic taste that everyone loves. These baked goods are a perfect foundation for our gifts.</p>
+
+<p>Gourmet cheeses add a touch of sophistication to our gift baskets. We offer a variety of high-quality cheeses, from sharp and tangy cheddars to creamy and flavorful bries. These cheeses pair perfectly with martins pretzels and gourmet mustards, creating a well-rounded and indulgent experience. This combination makes our baskets the perfect gift.
+
+Gourmet mustards provide a unique and flavorful addition to our gift baskets. These mustards, paired with pretzels or used as a condiment, add a savory touch that enhances the overall experience. Including gourmet mustards ensures our baskets stand out as some of the best birthday gifts.</p>
+
+<p>Whoopie pies, a classic PA Dutch treat, add a fun and whimsical element to our baskets. These delightful desserts, with their creamy filling sandwiched between two soft cake-like cookies, are a beloved favorite that brings joy to any occasion. Including whoopie pies in our gift baskets ensures a gift they will love.
+
+Blueberry bread is another unique and delicious addition to our birthday gift baskets. This flavorful and moist bread adds a special touch, making the baskets even more appealing. It’s a perfect complement to the other baked goods.</p>
+
+<p>Everyone loves these delicious treats known around the world. Our gift baskets can be customized to any occasion ensuring your gift is both thoughtful and personal. Explore our range of Lancaster PA Dutch gift baskets to find the best birthday gifts that truly reflect your appreciation and thoughtfulness. Order now to make someone's birthday extra special with a gift that combines tradition, flavor, and heartfelt sentiment.</P>
 
 
                 </div>

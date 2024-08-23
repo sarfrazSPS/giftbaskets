@@ -32,18 +32,51 @@
     <meta name="keywords" content="gift baskets near me, sympathy gift baskets near me, birthday gift baskets near me, get well gift baskets near me,  lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/gift-baskets-near-me.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>
+		
     </header>
 
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Gift Baskets Near me", 2, "gift-baskets", "Gift Baskets");?>
+
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -238,13 +271,13 @@
                                                 </div>
     
     
-                                                <div class="col-sm-new-2 mb-new">
+                                               <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well gift baskets near me with delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -303,7 +336,25 @@
                     </div>
 
                     <h2 class="cgb-subhead">Gift Baskets Near Me</h2>
-                    <p class="cgb-subcopy">When Looking for Gift Baskets near me, we deliver anywhere in the country. While our gift baskets near me is located in Lancaster, PA, we are happy to offer the most amazing gift baskets with PA Dutch baked goods, gourmet cheeses, chocolates and so much more.</p> <p class="cgb-subcopy">Those receiving our gift baskets are usually the ones giving us the 5 star reviews as they have experienced just how delicious these baked goods are. Regardless of the type gift basket or gift box you choose, we thank you and hope you enjoy!</p>
+                    <p class="cgb-subcopy">Those who are looking for a gift basket near me, look no further. Discover the perfect way to delight your loved ones with our exquisite gift baskets, filled with the finest products from Lancaster, PA. Our gift baskets are ideal for any occasion, from birthdays and anniversaries to sympathy, congratulations, thank you, and more. Our gift baskets includes a wide variety of delicious products including gourmet cheeses, baked goods like whoopie pies, blueberry breads, and classic apple and shoo fly pies.</p>
+
+ <p class="cgb-subcopy">When searching for a gift basket near me, you'll find that our baskets also feature an assortment of delicious chocolates and jams, all loved by everyone. Each product is chosen for its exceptional quality and rich flavors, ensuring a delightful experience with every bite.
+
+Our gift baskets are designed to cater to a variety of occasions, making them a versatile gift choice. Whether you’re celebrating a birthday, expressing sympathy, offering congratulations, or saying thank you, our baskets provide a thoughtful and personalized way to show you care.</p>
+
+ <p class="cgb-subcopy">Customization is key to our offerings. We tailor each gift basket to the specific occasion, ensuring that your gift is not only delicious but also meaningful. You can choose from a variety of themes and combinations to suit the recipient’s preferences and the occasion’s requirements.
+
+If you are in need of a gift basket near me, our selections are more than just a collection of treats; they are a way to convey your appreciation and thoughtfulness. By selecting the finest products from Lancaster, PA, we ensure that each basket is a true representation of quality and care.</p>
+
+ <p class="cgb-subcopy">Explore our collection today and find the perfect gift basket to make any occasion special. With our carefully curated selections and commitment to quality, our gift baskets and gift boxes are sure to impress and bring joy to any recipient. Indulge in the rich flavors and high-quality products that make our baskets a standout choice for any celebration.</p>
+
+
+
+
+
+
+
+</p>
                 </div>
             </div>
         </div>

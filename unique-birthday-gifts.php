@@ -30,21 +30,67 @@
     <meta name="keywords" content="unique birthday gifts, birthday gift baskets, best birthday gift baskets, lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/unique-birthday-gifts.php">
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
         <?php include($root_path . "includes/navbar.php"); ?>   
+		
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '277700192568940');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=277700192568940&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
     </header>
 
 
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Unique Birthday Gifts", 2, "birthday-gift-baskets", "Birthday Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -153,7 +199,7 @@
     
                                                     <label for="birthday">
     
-                                                        <input type="checkbox" class="" id="tag" value="bithday2">
+                                                        <input type="checkbox" class="" id="tag" value="Birthday2">
     
                                                         <img src="assets/images/tags/birthday2.png" alt="Delicious unique birthday gifts with baked goods, cheeses, chocolates and more"  class="circle ">
     
@@ -204,7 +250,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Happy Birthday2">
+                                                        <input type="checkbox" id="tag" class="" value="Birthday6">
     
                                                         <img src="assets/images/tags/birthday6.png" alt="Our unique birthday baskets offers whoopie pies, fudge, blueberry breads, pies and more" class="circle ">
     
@@ -244,7 +290,7 @@
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="No Custom">
     
                                                         <img src="assets/images/tags/no-custom.png" alt="Birthday gourmet snack basket delivered anywhere in the country" class="circle ">
     
@@ -290,6 +336,7 @@
 							<p>* Fudge (Choice of Flavor)</p>
                             <p>* Whoopie Pie</p>
 							<p>* Apple Streusel</p>
+							<p>* Choc Pretzel Rods</p>
 							
                         </div>
                         <div class="cgb-copy-right">
@@ -306,7 +353,15 @@
                     </div>
 
                     <h2 class="cgb-subhead">Unique Birthday Gifts</h2>
-                    <p class="cgb-subcopy">There is something special about our unique birthday gifts that keep our loyal customers coming back. While I would like to take the credit, it's not me. We are just blessed to live in an area like Lancaster, PA where we have built so many relationships with the Amish and Mennonite communities who spend a great deal of time perfecting these delicious baked goods, cheeses, foods, and chocolates.
+                    <p class="cgb-subcopy">Unique birthday gifts are a wonderful way to make someone’s special day even more memorable. Finding a gift that stands out and truly reflects the recipient’s personality can be a challenge, but our selection of unique birthday gifts makes it easy to find something that’s both thoughtful and distinctive. Whether you’re shopping for a family member, friend, or coworker, choosing unique birthday gifts ensures that your present will be cherished and remembered.</p>
+
+<p class="cgb-subcopy">Our collection of unique birthday gifts includes customizable gift baskets that are designed to suit any taste and preference. Each basket is carefully curated with high-quality items such as freshly baked Amish treats, gourmet chocolates, artisanal cheeses, and savory snacks. These baskets are more than just gifts—they’re experiences that offer a delightful surprise and a personal touch, making them the perfect choice for unique birthday gifts.
+
+What sets our offerings apart is the ability to personalize your unique birthday gifts. You can tailor each gift basket to include the recipient’s favorite items, accommodate dietary preferences, and add a personal message to make the gift even more special. We also include a complimentary card with each basket, where you can write a heartfelt note that adds an extra layer of thoughtfulness to your unique birthday gifts.</p>
+
+<p class="cgb-subcopy">Unique birthday gifts are perfect for all kinds of celebrations, whether you’re commemorating a milestone, marking a sweet sixteen, or simply making someone’s day brighter. Our gift baskets are versatile and can be customized to fit any occasion, ensuring that your unique birthday gifts are as special as the person receiving them. With careful attention to detail in both the contents and the presentation, your gift will stand out and be appreciated.
+
+In a world where many gifts are easily forgotten, choosing unique birthday gifts ensures that your present is something truly special. By selecting a personalized gift basket and including a thoughtful message, you’re creating a one-of-a-kind gift that reflects your care and consideration. Make your loved one’s birthday unforgettable with unique birthday gifts that are as exceptional as they are.</p>
 
 
                 </div>

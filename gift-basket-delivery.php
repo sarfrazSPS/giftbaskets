@@ -32,20 +32,52 @@
     <meta name="keywords" content="gift basket delivery, sympathy gift basket delivery, birthday gift basket delivery, get well gift basket delivery,  lancaster pa"/>
 
     <link rel="canonical" href="https://padutchbaskets.com/gift-basket-delivery.php">
+	
+		<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 </head>
 
 <body>
+        
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
     <div id="content" class="site-content">
 
     <header>
         <?php include($root_path . "includes/header-top-bar.php"); ?>
         <?php include($root_path . "includes/header-branding.php"); ?>
-        <?php include($root_path . "includes/navbar.php"); ?>   
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
+		
     </header>
 
-
-
-<section id="" class="mt-5 mb-5">
+    <?php echo breadCrumb($app_path, "Celebrations - Gift Basket Delivery", 2, "gift-baskets", "Gift Baskets");?>
+<section id="" class="mb-5">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -60,6 +92,14 @@
                                 alt="Our gift basket delivery comes from Lancaster, PA well known for their famous baked good, chocolates and cheeses that we offer delivery"
                                 onmouseover="myFunction(this)"
                                 />
+								
+								<img
+                                class="img-responsive"
+                                src="assets/images/products/celebrations/celebrations-3.jpg"
+                                alt="the delicious gift basket delivery is offered with the deliciuos taste from baked goods from Lancaster, PA. We offer foods that are loved with delivery"
+                                onmouseover="myFunction(this)"
+                                />
+                            
                                             
                                 <img
                                 class="img-responsive"
@@ -241,13 +281,13 @@
                                                 </div>
     
     
-                                                <div class="col-sm-new-2 mb-new">
+                                               <div class="col-sm-new-2 mb-new">
     
                                                     <label for="tag">
     
-                                                        <input type="checkbox" id="tag" class="" value="Get Well">
+                                                        <input type="checkbox" id="tag" class="" value="Fathers Day">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="get well gift basket delivery offers delicious foods and baked goods from PA Dutch country" class="circle ">
+                                                        <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
     
                                                     </label>
     
@@ -309,7 +349,17 @@
                     </div>
 
                     <h2 class="cgb-subhead">Gift Basket Delivery</h2>
-                    <p class="cgb-subcopy">Our gift basket delivery from Lancaster, PA are well known as the best baked goods, cheeses, chocolates, and foods in the country. When looking for a gift basket delivery that will be loved by those receiving them, our food gift baskets truly offer that and so much more.</p> <p class="cgb-subcopy"> We are blessed to have the Amish and mennonite community who take so much care in the creating of their delicious foods and baked goods. Thank you for trusting us with your order.</p>
+                    <p class="cgb-subcopy">If you’re in need of gift basket delivery, look no further than our exceptional selections featuring the finest products from Lancaster, PA. Our gift baskets are ideal for any event, offering a delightful mix of gourmet cheeses, baked treats like whoopie pies and blueberry breads, as well as traditional apple and shoo fly pies.
+
+Our baskets also come with a variety of delectable chocolates and jams, cherished by all. Each item is selected for its superior quality and rich taste, ensuring an unforgettable experience with every bite.</p>
+
+<p class="cgb-subcopy">Our gift basket delivery service is tailored to meet a wide range of needs. Whether you’re marking a special milestone, extending sympathy, celebrating an achievement, or expressing gratitude, our baskets provide a thoughtful and personalized way to convey your sentiments.
+
+A standout feature of our service is the meticulous attention to detail and the option to customize each gift basket to match the occasion. Choose from a variety of themes and combinations to create a gift that is both meaningful and unique. This customization ensures that our baskets are not just gifts, but heartfelt expressions of your feelings.</p>
+
+<p class="cgb-subcopy">Our gift basket delivery service guarantees that each basket is beautifully presented and ready to delight. By sourcing the finest products from Lancaster, PA, we ensure that every basket reflects quality and care.
+
+Browse our collection today and experience the convenience of our gift basket delivery service to make any occasion special. With our expertly curated selections and dedication to excellence, our gift baskets and gift boxes are sure to impress and bring joy to any recipient. Enjoy the rich flavors and high-quality products that make our baskets a perfect choice for any celebration.</p>
                 </div>
             </div>
         </div>

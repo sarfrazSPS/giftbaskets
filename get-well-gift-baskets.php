@@ -1,6 +1,69 @@
-<?php include("includes/header.php"); ?>
+<?php include("includes/variables.php"); ?>
+<!DOCTYPE html>
+<html lang="en">
 
-<?php include($root_path . "includes/prod-cats.php"); ?>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include($root_path . "includes/header-links.php"); ?>
+
+
+   
+
+    <title>Get Well Gift Baskets | Lancaster PA</title>
+
+    <meta name="description" content="Our get well gift baskets offer delicious baked goods from Lancaster PA Dutch country well known for there amazing foods and baked goods" />
+
+    <meta name="keywords" content="get-well-gift-baskets, get well gift boxes, get well gifts, lancaster pa"/>
+
+    <link rel="canonical" href="https://padutchbaskets.com/get-well-gift-baskets.php">
+	<!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P6C8664J');</script>
+<!-- End Google Tag Manager -->
+	
+	<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '994885672288673');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+</head>
+
+
+<body>
+    
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P6C8664J" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div id="content" class="site-content">
+
+    <header>
+        <?php include($root_path . "includes/header-top-bar.php"); ?>
+        <?php include($root_path . "includes/header-branding.php"); ?>
+        <?php include($root_path . "includes/navbar.php"); ?>  
+		
+    </header>
+
+    <?php echo breadCrumb($app_path, "Get Well Gift Baskets");?>
+
+<?php include($root_path . "includes/prod-cats-get-well.php"); ?>
+
 
 <section id="birthday-gift" class="pt-5 pb-5">
     <div class="container-fluid">
@@ -54,7 +117,7 @@
                             </div>
                             <span class="product-price mt-1">$89.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>/get-well-soon-basket-ideas.php" class="btn btn-primary favs-btn mt-0">View More</a>
+                            <a href="<?=$app_path;?>get-well-soon-basket-ideas.php" class="btn btn-primary favs-btn mt-0">View Detail</a>
                         </div>
                     </div>
                 </div>
@@ -96,7 +159,7 @@
                             </div>
                             <span class="product-price mt-1">$79.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>/get-well-soon-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>get-well-soon-gifts.php" class="btn btn-primary favs-btn mt-0">View Detail</a>
                         </div>
                     </div>
                 </div>
@@ -138,7 +201,7 @@
                             </div>
                             <span class="product-price mt-1">$59.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>/get-well-gifts-for-men.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>get-well-gifts-for-men.php" class="btn btn-primary favs-btn mt-0">View Detail</a>
                         </div>
                     </div>
                 </div>
@@ -180,7 +243,7 @@
                             </div>
                             <span class="product-price mt-1">$87.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>/get-well-soon-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>get-well-soon-gift-baskets.php" class="btn btn-primary favs-btn mt-0">View Detail</a>
                         </div>
                     </div>
                 </div>
@@ -222,7 +285,7 @@
                             </div>
                             <span class="product-price mt-1">$72.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>/get-well-gifts.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>get-well-gifts.php" class="btn btn-primary favs-btn mt-0">View Detail</a>
                         </div>
                     </div>
                 </div>
@@ -264,7 +327,7 @@
                             </div>
                             <span class="product-price mt-1">$119.50</span>
                             <p class="card-text mb-0 mt-1">AVAILABLE TO SHIP NOW</p>
-                            <a href="<?=$app_path;?>/get-well-baskets.php" class="btn btn-primary favs-btn mt-0">View Details</a>
+                            <a href="<?=$app_path;?>get-well-baskets.php" class="btn btn-primary favs-btn mt-0">View Detail</a>
                         </div>
                     </div>
                 </div>
