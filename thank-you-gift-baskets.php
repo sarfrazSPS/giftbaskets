@@ -343,7 +343,8 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                     </div>
                 </div>
 				<h2 class="cgb-subhead">Thank You Gift Baskets</h2>
-              <p class="cgb-subcopy"> Thank you gift baskets are a thoughtful and heartfelt way to express your gratitude to someone special. Whether you’re thanking a friend, a family member, a coworker, or a client, thank you gift baskets offer a versatile and meaningful gesture that goes beyond words. With a wide array of delicious treats and premium products, these baskets make it easy to show your appreciation in a way that is both memorable and enjoyable.</p>
+
+	              <p class="cgb-subcopy"> Thank you gift baskets are a thoughtful and heartfelt way to express your gratitude to someone special. Whether you’re thanking a friend, a family member, a coworker, or a client, thank you gift baskets offer a versatile and meaningful gesture that goes beyond words. With a wide array of delicious treats and premium products, these baskets make it easy to show your appreciation in a way that is both memorable and enjoyable Not sure if a gift basket is a good thank-you gift, see our <a href="https://padutchbaskets.com/Blog/gifts-to-say-thank-you-a-guide-to-appreciation/" Title="Gifts To Say Thank You Guide To Appreciation">Thank You Gift Guide.</a>.</p>
 
 <p class="cgb-subcopy">One of the most appealing aspects of our gift baskets is the variety they offer. You can choose from an assortment of items that cater to different tastes and preferences, ensuring that your gift will be well-received. For those who appreciate sweet treats, thank you gift baskets can include freshly baked whoopie pies, blueberry breads, or a classic shoo fly or apple pie. These delicious baked goods, made from traditional Amish recipes, add a warm, homemade touch to your gift, making it even more special.
 

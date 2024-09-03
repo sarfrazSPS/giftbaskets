@@ -51,6 +51,7 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '994885672288673');
 fbq('track', 'PageView');
+fbq('track', 'AddToCart');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
@@ -74,7 +75,7 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
     </header>
 
 
-    <?php echo breadCrumb($app_path, "Get Well Soon Gift Baskets", 2, "get-well-gift-baskets", "Get Well Gift Baskets");?>
+    <?php echo breadCrumb($app_path, "Get Well Soon Gift Baskets", 2, "get-well-gift-baskets.php", "Get Well Gift Baskets");?>
 
 <section id="" class="mb-5">
     <div class="container-fluid">
