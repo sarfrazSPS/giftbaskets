@@ -90,30 +90,35 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                             <!--4 side images -->
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg"
+                                src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg" 
                                 alt="Very few sympathy gift ideas offer comfort foods that will last for days and be shared during such a difficult time as our PA Dutch baskets"
-                                onmouseover="myFunction(this)"
+                               "
                                 />
                                             
                                 <img
                                 class="img-responsive"
-                                src="assets/images/products/deluxe-traditions/deluxe-traditions-2.jpg"
+                                src="assets/images/products/deluxe-traditions/deluxe-traditions-2.jpg" 
                                 alt="Finding the right sympathy gift ideas during a difficult time is not easy, our PA Dutch baskets and boxes offer delicious comfort foods that will be appreciated and loved"
-                                onmouseover="myFunction(this)"
+                               "
                                 />
 								
 								 <img
                                 class="img-responsive"
-                                src="assets/images/products/deluxe-traditions/deluxe-traditions-3.jpg"
+                                src="assets/images/products/deluxe-traditions/deluxe-traditions-3.jpg" 
                                 alt="Finding the right sympathy gift ideas during a difficult time is not easy, our PA Dutch baskets and boxes offer delicious comfort foods that will be appreciated and loved"
-                                onmouseover="myFunction(this)"
+                               "
                                 />
 					 <!-- Thumbnail image for video -->
-                <img  id="videoThumbnail" href="https://www.youtube.com/watch?v=bKtf65tpWso"
-                     class="open-lightbox img-responsive small-image" 
-                     src="assets/images/graphics/sympathygiftideasvideothumbnail.jpg" 
-                     alt="Video Thumbnail" 
-                     onmouseover="myFunction(this)" onclick="openLightbox()" />
+                    <div id="videThumbContainer">
+                        <img id="videoThumbnail" data-video="https://www.youtube.com/watch?v=bKtf65tpWso"
+                        class="" 
+                        src="assets/images/graphics/sympathygiftideasvideothumbnail.jpg" 
+                        alt="Video Thumbnail" />
+
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ffffff"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+
+                    </div>
+                     
             
 
                             </div>
@@ -122,7 +127,7 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                             <div class="main-images">
                             <!--Main images -->
                                 
-                                    <img  src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg"   alt="PA Dutch Baskets offers sympathy gifts that offer gourmet cheeses, whoopie pies, fudge and many other comfort foods during a difficult time"      id="image_box" class="img-responsive"  />
+                                <img id="default_image" src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg"   alt="PA Dutch Baskets offers sympathy gifts that offer gourmet cheeses, whoopie pies, fudge and many other comfort foods during a difficult time" id="image_box"  />
                                 
                             <!--Main images -->
                                <div id="videoContainer" style="display: none;">
@@ -430,70 +435,29 @@ include("includes/footer.php");
 </script>
 
 <script>
-    // function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
-    function myFunction(smallImg) {
+$(document).ready(function() {
+    var $largerDiv = $('.main-images');
+    var $defaultImage = $('#default_image');
 
-    var fullImg = document.getElementById("image_box");
-    fullImg.src = smallImg.src;
-    var href1 = smallImg.getAttribute('href');
+    // Handle hover over image thumbnails
+    $(document).on('mouseover', '.img-responsive', function() {
+        var fullImageUrl = $(this).attr('src');
 
-    if (smallImg.classList.contains("open-lightbox")) {
-        fullImg.classList.add("open-lightbox");
-        console.log("href="+href1);
-        if (href1) {
-            fullImg.setAttribute("href", href1);
-            console.log("href=" + href1);
-        }
-    }
-}
-</script>
-
-<script>
-    function openLightbox() {
-        var videoUrl = $(this).attr('href');
-        $.magnificPopup.open({
-            items: {
-                src: videoUrl // The URL of the YouTube video
-            },
-            type: 'iframe',
-            iframe: {
-                patterns: {
-                    youtube: {
-                        index: 'youtube.com/', // String that detects the URL
-                        id: 'v=', // String that splits the URL in a recognizable way
-                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL used as the source for the iframe
-                    }
-                },
-                srcAction: 'iframe_src', // Custom attribute to define the source for the iframe
-            }
-        });
-    }
-
-    $(document).ready(function() {
-        $(document).on('click', '.open-lightbox', function(e) {
-            e.preventDefault(); // Prevent default action if it's a link
-
-            // Open lightbox with href attribute of the clicked element
-            $.magnificPopup.open({
-                items: {
-                    src: $(this).attr('href') 
-                },
-                type: 'iframe',
-                iframe: {
-                    patterns: {
-                        youtube: {
-                            index: 'youtube.com/', // String that detects the URL
-                            id: function(url) {
-                                var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
-                                return match && match[1] ? match[1] : null;
-                            }, // Extracts the video ID from the URL
-                            src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL used as the source for the iframe
-                        }
-                    },
-                    srcAction: 'iframe_src', // Custom attribute to define the source for the iframe
-                }
-            });
-        });
+        // Change the source of the default image in the larger div
+        $defaultImage.attr('src', fullImageUrl);
+        $largerDiv.html($defaultImage); // Ensure only the image is shown
     });
 
+    // Handle hover over video thumbnails
+    $(document).on('mouseover', '#videoThumbnail', function() {
+        var videoUrl = $(this).data('video');
+        var embedUrl = videoUrl.replace('watch?v=', 'embed/');
+
+        // Display and autoplay video in the larger div
+        $largerDiv.html('<iframe width="100%" height="100%" src="' + embedUrl + '?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>');
+    });    
+
+    
+});
 </script>
+

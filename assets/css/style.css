@@ -952,7 +952,23 @@ form .form-btn:hover {
     width: clamp(220px, 100%, 600px);
 }
 .small-images img {
-    margin-bottom: 35px !important;
+    margin-bottom: 15px !important;
+    height: 112px;
+    width: 112px;
+    object-fit: cover;
+}
+#videThumbContainer{
+    position: relative;
+    object-fit: cover;
+}
+#videThumbContainer svg {
+    position: absolute;
+    top: 38%;
+    left: 50%;
+    transform: translate(-50%, -38%);
+    width: 24px;
+    height: 24px;
+    pointer-events: none;
 }
 .prod-id {
     padding: 0;
