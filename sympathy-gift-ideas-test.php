@@ -109,11 +109,11 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                                 onmouseover="myFunction(this)"
                                 />
 					 <!-- Thumbnail image for video -->
-                <img id="videoThumbnail" 
-                     class="img-responsive small-image" 
+                <img  id="videoThumbnail" href="https://www.youtube.com/watch?v=bKtf65tpWso"
+                     class="open-lightbox img-responsive small-image" 
                      src="assets/images/graphics/sympathygiftideasvideothumbnail.jpg" 
                      alt="Video Thumbnail" 
-                     onmouseover="loadVideoPlayer(this)" />
+                     onmouseover="myFunction(this)" onclick="openLightbox()" />
             
 
                             </div>
@@ -408,11 +408,12 @@ By incorporating these elements into our sympathy gift ideas, we ensure a memora
 <?php
 include("includes/footer.php");
 ?>
-<script>
-    function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
-</script>
+
 <script> var product_details ="Deepest Sympathy - Bakers Choice<br/>"; </script>
 <script src="assets/js/paypal.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
  
 <script type="text/javascript">
     function toggleMenu() {
@@ -426,4 +427,73 @@ include("includes/footer.php");
     console.log("closed");
     }
     }
+</script>
+
+<script>
+    // function myFunction(smallImg){var fullImg=document.getElementById("image_box");fullImg.src=smallImg.src}
+    function myFunction(smallImg) {
+
+    var fullImg = document.getElementById("image_box");
+    fullImg.src = smallImg.src;
+    var href1 = smallImg.getAttribute('href');
+
+    if (smallImg.classList.contains("open-lightbox")) {
+        fullImg.classList.add("open-lightbox");
+        console.log("href="+href1);
+        if (href1) {
+            fullImg.setAttribute("href", href1);
+            console.log("href=" + href1);
+        }
+    }
+}
+</script>
+
+<script>
+    function openLightbox() {
+        var videoUrl = $(this).attr('href');
+        $.magnificPopup.open({
+            items: {
+                src: videoUrl // The URL of the YouTube video
+            },
+            type: 'iframe',
+            iframe: {
+                patterns: {
+                    youtube: {
+                        index: 'youtube.com/', // String that detects the URL
+                        id: 'v=', // String that splits the URL in a recognizable way
+                        src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL used as the source for the iframe
+                    }
+                },
+                srcAction: 'iframe_src', // Custom attribute to define the source for the iframe
+            }
+        });
+    }
+
+    $(document).ready(function() {
+        $(document).on('click', '.open-lightbox', function(e) {
+            e.preventDefault(); // Prevent default action if it's a link
+
+            // Open lightbox with href attribute of the clicked element
+            $.magnificPopup.open({
+                items: {
+                    src: $(this).attr('href') 
+                },
+                type: 'iframe',
+                iframe: {
+                    patterns: {
+                        youtube: {
+                            index: 'youtube.com/', // String that detects the URL
+                            id: function(url) {
+                                var match = url.match(/[\\?\\&]v=([^\\?\\&]+)/);
+                                return match && match[1] ? match[1] : null;
+                            }, // Extracts the video ID from the URL
+                            src: 'https://www.youtube.com/embed/%id%?autoplay=1' // URL used as the source for the iframe
+                        }
+                    },
+                    srcAction: 'iframe_src', // Custom attribute to define the source for the iframe
+                }
+            });
+        });
+    });
+
 </script>
