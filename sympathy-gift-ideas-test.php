@@ -419,12 +419,12 @@ include("includes/footer.php");
     function toggleMenu() {
     var x = document.getElementById("menu");
     if (x.className === "topnav") {
-    x.className += " visible";
-    console.log("open");
+        x.className += " visible";
+        console.log("open");
     }
     else {
-    x.className ="topnav";
-    console.log("closed");
+        x.className ="topnav";
+        console.log("closed");
     }
     }
 </script>
