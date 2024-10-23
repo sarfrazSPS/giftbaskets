@@ -8,6 +8,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include($root_path . "includes/header-links.php"); ?>
 
+    <link href="<?= $app_path ?>assets/css/zabuto_calendar.min.css" rel="stylesheet">
+    <style>
+        .modal-close{
+            background: black;
+            border: 0;
+            color: white;
+            padding: 0px 5px;
+        }
+    </style>
     	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -100,6 +109,7 @@ if($response_type=="success"){
                     <h6 class="checkout-head">ORDER SUMMARY</h6>
                     <div class="px-3">
                         <form id="checkoutForm" class="" method="post" action="">
+                        <input type="hidden" name="deliveryDate" id="deliveryDate" value="">    
                         <input type="hidden" name="jsonData" id="jsonData">
                             <div class="cart-border">
                                 <div class="d-flex justify-content-between checkout-summary">
@@ -265,7 +275,9 @@ if($response_type=="success"){
                                 <div class="card-footer p-0 m-3">
                                     <div class="row p-0">
                                         <div class="col-12 p-0">
-                                        <button id="payNowBtn" type='submit' class="cart-btn-payment border-0 other-color" >Pay Now</button>
+                                            <!-- Button to open the modal -->
+                                            <button type="button" id="openCalendarModal" class="cart-btn-checkout border-0 mb-3">Select Delivery Date</button>
+                                            <button id="payNowBtn" type='submit' class="cart-btn-payment border-0 other-color" >Pay Now</button>
                                         </div>
                                     </div>
                                 </div>
@@ -346,15 +358,47 @@ if($response_type=="success"){
         </div>
     </div>
 </div>
+
+<!-- Modal structure -->
+<div id="calendarModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold">DELIVERY CALENDAR</h5>
+        <button type="button" class="close modal-close" aria-label="Close" onclick="customCloseModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Calendar will be here -->
+                <div id="demo-calendar-basic"></div>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="mb-3">SHIPPING SUMMARY</h5>
+                <p class="mt-2 mb-0 p-0">Simply provide your recipient's email and we'll send them an note that a gift for them is on the way!</p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" onclick="customCloseModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <?php
 include("includes/footer.php");
 ?>
+<script src="<?= $app_path ?>assets/js/zabuto_calendar.min.js"></script>
 <?php
 if($clear_cart==1){
     ?>
 <script type="text/javascript">
 $(document).ready(function() {
     localStorage.clear();
+    // window.location.href="thank-you.php";
 });
 </script>
 <?php
@@ -366,7 +410,7 @@ $(document).ready(function() {
         document.getElementById('jsonData').value = JSON.stringify(checkoutProducts);
         console.log(checkoutProducts);
         if (checkoutProducts.length === 0) {
-            window.location.href = $appPathJS+"cart.php?res=thankyou";
+            window.location.href = $appPathJS+"thank-you.php";
             $('#checkoutProducts').html("No product");
         }else{
             $('#checkout-section').removeClass("d-none");
@@ -392,80 +436,80 @@ $(document).ready(function() {
     }); 
 </script>
 <script type="text/javascript">
-function calculate_checkout_items(){
-    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    var totalCheckoutItems = 0;
-    var singleMulti = "ITEM";
-    cartItems.forEach(function(item) {
-        totalCheckoutItems++;
-    });
-    if(totalCheckoutItems>1){
-        var singleMulti = "ITEMS";
+    function calculate_checkout_items(){
+        var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        var totalCheckoutItems = 0;
+        var singleMulti = "ITEM";
+        cartItems.forEach(function(item) {
+            totalCheckoutItems++;
+        });
+        if(totalCheckoutItems>1){
+            var singleMulti = "ITEMS";
+        }
+        $("#totalCheckoutItems").html(totalCheckoutItems+" "+singleMulti);
     }
-    $("#totalCheckoutItems").html(totalCheckoutItems+" "+singleMulti);
-}
 
-function calculate_checkout_sub_total(){
-    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    var subTotal = 0;
-    cartItems.forEach(function(item) {
-        var allQtyPrice = parseFloat(item.price) * parseInt(item.quantity);
-        subTotal += parseFloat(allQtyPrice);       
-    });
-    subTotal = subTotal.toFixed(2);
-        //////////////////////////////////////
-    var discountAmount = parseFloat(localStorage.getItem('discountAmount'));
-    if (discountAmount !== null && discountAmount !== "" && discountAmount!='NaN')
-    {subTotal  = subTotal  - discountAmount;}
-    
-    ///////////////////////////////////////
-    $("#checkoutSubTotal").html("$"+subTotal);
-    $("#hdn_checkoutSubTotal").val(subTotal);
-    $("#checkoutSubTotal").attr("data-checkout-subtotal", subTotal);
-}
+    function calculate_checkout_sub_total(){
+        var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        var subTotal = 0;
+        cartItems.forEach(function(item) {
+            var allQtyPrice = parseFloat(item.price) * parseInt(item.quantity);
+            subTotal += parseFloat(allQtyPrice);       
+        });
+        subTotal = subTotal.toFixed(2);
+            //////////////////////////////////////
+        var discountAmount = parseFloat(localStorage.getItem('discountAmount'));
+        if (discountAmount !== null && discountAmount !== "" && discountAmount!='NaN')
+        {subTotal  = subTotal  - discountAmount;}
+        
+        ///////////////////////////////////////
+        $("#checkoutSubTotal").html("$"+subTotal);
+        $("#hdn_checkoutSubTotal").val(subTotal);
+        $("#checkoutSubTotal").attr("data-checkout-subtotal", subTotal);
+    }
 
-function calculate_shipping_total(){
-    var cartItemsShipping = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    var shippingTotal = 0;
-    cartItemsShipping.forEach(function(item) {
-        shippingTotal += parseFloat(item.shipping);
-    });
-    shippingTotal = shippingTotal.toFixed(2);
-    $("#checkoutShippingTotal").html("$"+shippingTotal);
-    $("#hdn_checkoutShippingTotal").val(shippingTotal);
-    $("#checkoutShippingTotal").attr("data-checkout-shipping-total", shippingTotal);
-}
+    function calculate_shipping_total(){
+        var cartItemsShipping = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        var shippingTotal = 0;
+        cartItemsShipping.forEach(function(item) {
+            shippingTotal += parseFloat(item.shipping);
+        });
+        shippingTotal = shippingTotal.toFixed(2);
+        $("#checkoutShippingTotal").html("$"+shippingTotal);
+        $("#hdn_checkoutShippingTotal").val(shippingTotal);
+        $("#checkoutShippingTotal").attr("data-checkout-shipping-total", shippingTotal);
+    }
 
-function calculate_checkout_grand_total(){
-    var checkoutGrandTotals = 0;
-    var subTotals = $("#checkoutSubTotal").data('checkout-subtotal');
-    var shippingTotals = $("#checkoutShippingTotal").data('checkout-shipping-total');
-    checkoutGrandTotals = parseFloat(subTotals) + parseFloat(shippingTotals);
-    checkoutGrandTotals = parseFloat(checkoutGrandTotals).toFixed(2);
-    $('#checkout_amonut').val(checkoutGrandTotals);
-    modify_checkout_grand_totals(checkoutGrandTotals);
-}
+    function calculate_checkout_grand_total(){
+        var checkoutGrandTotals = 0;
+        var subTotals = $("#checkoutSubTotal").data('checkout-subtotal');
+        var shippingTotals = $("#checkoutShippingTotal").data('checkout-shipping-total');
+        checkoutGrandTotals = parseFloat(subTotals) + parseFloat(shippingTotals);
+        checkoutGrandTotals = parseFloat(checkoutGrandTotals).toFixed(2);
+        $('#checkout_amonut').val(checkoutGrandTotals);
+        modify_checkout_grand_totals(checkoutGrandTotals);
+    }
 
-function modify_checkout_grand_totals(checkoutGrandTotals){
-    $("#checkoutGrandTotal1").html("$"+checkoutGrandTotals);
-    $("#hdn_checkoutGrandTotal1").val("$"+checkoutGrandTotals);
-    $("#checkoutGrandTotal2").html("$"+checkoutGrandTotals);
-    $("#checkoutGrandTotal1").attr("data-checkout-grand-total", checkoutGrandTotals);
-    $("#checkoutGrandTotal2").attr("data-checkout-grand-total", checkoutGrandTotals);
-}
+    function modify_checkout_grand_totals(checkoutGrandTotals){
+        $("#checkoutGrandTotal1").html("$"+checkoutGrandTotals);
+        $("#hdn_checkoutGrandTotal1").val("$"+checkoutGrandTotals);
+        $("#checkoutGrandTotal2").html("$"+checkoutGrandTotals);
+        $("#checkoutGrandTotal1").attr("data-checkout-grand-total", checkoutGrandTotals);
+        $("#checkoutGrandTotal2").attr("data-checkout-grand-total", checkoutGrandTotals);
+    }
 </script>
 <script type="text/javascript">
-$(document).ready(function() {
-    calculate_checkout_items();
-    calculate_checkout_sub_total();
-    calculate_shipping_total();
-    calculate_checkout_grand_total();
+    $(document).ready(function() {
+        calculate_checkout_items();
+        calculate_checkout_sub_total();
+        calculate_shipping_total();
+        calculate_checkout_grand_total();
 
-    $("#payNowBtnTop").click(function(e) {
-        e.preventDefault();
-      $("#payNowBtn").click();
+        $("#payNowBtnTop").click(function(e) {
+            e.preventDefault();
+        $("#payNowBtn").click();
+        });
     });
-});
 </script>
 <script type="text/javascript">
     $("#checkout-coupon-btn").click(function(){
@@ -508,20 +552,20 @@ $(document).ready(function() {
     });
 </script>
 <script type="text/javascript">
-$('#checkoutProducts').on('click', '.item-remove-btn', function() {
-    var specificIdToRemove = $(this).attr('id');
+    $('#checkoutProducts').on('click', '.item-remove-btn', function() {
+        var specificIdToRemove = $(this).attr('id');
 
-    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    // Remove the item with the specific ID from the cartItems array
-    cartItems = cartItems.filter(function(item) {
-        return item.id !== specificIdToRemove;
+        var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        // Remove the item with the specific ID from the cartItems array
+        cartItems = cartItems.filter(function(item) {
+            return item.id !== specificIdToRemove;
+        });
+
+        // Update the localStorage with the modified cartItems array
+        localStorage.setItem('cartstorage', JSON.stringify(cartItems));
+        window.location.href = location.href;
+
     });
-
-    // Update the localStorage with the modified cartItems array
-    localStorage.setItem('cartstorage', JSON.stringify(cartItems));
-    window.location.href = location.href;
-
-});
 </script>
 <script>
   $(document).ready(function() {
@@ -552,47 +596,97 @@ $('#checkoutProducts').on('click', '.item-remove-btn', function() {
     updateLeftElementPosition();
   });
 
-// function fn_promo_code()
-// {
-//     var promocode = $('#checkout-coupon-field').val();
-//     // Replace 'YOUR_API_URL' with the actual URL of your PHP API
-//     const apiURL = '../admin/promo_code_api.php?promocode='+promocode;
-//     // Make a GET request to the API
-//     fetch(apiURL)
-//     .then(response => response.json())
-//     .then(data => {
-//     if (data.valid) {
-        
-//         $("#error_msg").css("display","none");
-//         var per_amount = $('#checkoutSubTotal').html();
-
-//         var shipping_charges = $('#checkoutShippingTotal').html(); 
-
-//         var total_amount =  parseFloat(per_amount);
-
-//         var discountPercent = parseFloat(data.discount);
-//         // alert(discountPercent);
-//         // Check if the discount percentage is valid (greater than or equal to 0 and less than or equal to 100)
-//         if (isNaN(discountPercent) || discountPercent < 0 || discountPercent > 100) {
-//             alert("Invalid discount percentage");
-//         } else {
-//             var discountAmount = (discountPercent / 100) * total_amount;
-//             var totalAmount = total_amount - discountAmount;
+    // function fn_promo_code()
+    // {
+    //     var promocode = $('#checkout-coupon-field').val();
+    //     // Replace 'YOUR_API_URL' with the actual URL of your PHP API
+    //     const apiURL = '../admin/promo_code_api.php?promocode='+promocode;
+    //     // Make a GET request to the API
+    //     fetch(apiURL)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //     if (data.valid) {
             
-//             totalAmount = parseFloat(totalAmount) + parseFloat(shipping_charges)
+    //         $("#error_msg").css("display","none");
+    //         var per_amount = $('#checkoutSubTotal').html();
 
-//             $("#checkoutGrandTotal1").html(totalAmount.toFixed(2));
-//             $("#checkoutGrandTotal2").html(totalAmount.toFixed(2));
-//         }
-//     } else {
-//         console.log('Promo code is not valid or expired.');
-//         $("#error_msg").css("display","block");
-//         // console.log('Message:', data.message);
-//     }
-//     })
-//     .catch(error => {
-//     console.error('Error:', error);
-//     });
+    //         var shipping_charges = $('#checkoutShippingTotal').html(); 
 
-// }
+    //         var total_amount =  parseFloat(per_amount);
+
+    //         var discountPercent = parseFloat(data.discount);
+    //         // alert(discountPercent);
+    //         // Check if the discount percentage is valid (greater than or equal to 0 and less than or equal to 100)
+    //         if (isNaN(discountPercent) || discountPercent < 0 || discountPercent > 100) {
+    //             alert("Invalid discount percentage");
+    //         } else {
+    //             var discountAmount = (discountPercent / 100) * total_amount;
+    //             var totalAmount = total_amount - discountAmount;
+                
+    //             totalAmount = parseFloat(totalAmount) + parseFloat(shipping_charges)
+
+    //             $("#checkoutGrandTotal1").html(totalAmount.toFixed(2));
+    //             $("#checkoutGrandTotal2").html(totalAmount.toFixed(2));
+    //         }
+    //     } else {
+    //         console.log('Promo code is not valid or expired.');
+    //         $("#error_msg").css("display","block");
+    //         // console.log('Message:', data.message);
+    //     }
+    //     })
+    //     .catch(error => {
+    //     console.error('Error:', error);
+    //     });
+
+    // }
+</script>
+
+<!-- Initialize the plugin and handle modal -->
+<script>
+function customCloseModal() {
+    $("#calendarModal").modal('hide');
+}
+
+function myDateFunction(id, date) {
+    console.log("You clicked on date: " + date);
+}
+
+$(document).ready(function () {
+    // Initialize Zabuto Calendar
+    var $el = $('#demo-calendar-basic');
+
+    $el.zabuto_calendar({
+        classname: 'table clickable'
+    });
+
+    $(".zabuto-calendar__day--today").css({
+        'background-color': '#000',
+        'color': '#fff', 
+    });
+
+    $el.on('zabuto:calendar:day', function (e) {
+        var now = new Date();
+
+        $(".zabuto-calendar__day, zabuto-calendar__day--today").removeAttr("style");
+
+        $(".zabuto-calendar__day--today").css({
+            'background-color': '#000',
+            'color': '#fff', 
+        });
+
+        $(e.element).css({
+            'background-color': '#7b5c4a',
+            'color': '#fff', 
+        });
+
+        $("#deliveryDate").val(e.date.toDateString());
+    });
+
+
+          
+  // Open modal when button is clicked
+  $("#openCalendarModal").click(function() {
+    $("#calendarModal").modal("show");
+  });
+});
 </script>

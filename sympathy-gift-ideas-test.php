@@ -86,55 +86,56 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                 <div class="col-md-6">
                     <div class="row">
                         <div class="col-sm-2 small-images-outer">
+
                             <div class="small-images">
-                            <!--4 side images -->
+                                <!--4 side images -->
                                 <img
                                 class="img-responsive"
                                 src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg" 
                                 alt="Very few sympathy gift ideas offer comfort foods that will last for days and be shared during such a difficult time as our PA Dutch baskets"
-                               "
                                 />
                                             
                                 <img
                                 class="img-responsive"
                                 src="assets/images/products/deluxe-traditions/deluxe-traditions-2.jpg" 
                                 alt="Finding the right sympathy gift ideas during a difficult time is not easy, our PA Dutch baskets and boxes offer delicious comfort foods that will be appreciated and loved"
-                               "
                                 />
 								
 								 <img
                                 class="img-responsive"
                                 src="assets/images/products/deluxe-traditions/deluxe-traditions-3.jpg" 
                                 alt="Finding the right sympathy gift ideas during a difficult time is not easy, our PA Dutch baskets and boxes offer delicious comfort foods that will be appreciated and loved"
-                               "
                                 />
-					 <!-- Thumbnail image for video -->
-                    <div id="videThumbContainer">
-                        <img id="videoThumbnail" data-video="https://www.youtube.com/watch?v=bKtf65tpWso"
-                        class="" 
-                        src="assets/images/graphics/sympathygiftideasvideothumbnail.jpg" 
-                        alt="Video Thumbnail" />
 
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ffffff"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+                                <!-- Thumbnail image for video -->
+                                <div id="videThumbContainer">
+                                    
+                                    <img id="videoThumbnail" data-video="https://www.youtube.com/watch?v=50VB_7l7j-A"
+                                    class="" 
+                                    src="assets/images/graphics/sympathygiftideasvideothumbnail.jpg" 
+                                    alt="Video Thumbnail" />
 
-                    </div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" fill="#ffffff"><!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"/></svg>
+
+                                </div>
                      
-            
-
                             </div>
+
                         </div>
+
                         <div class="col-sm-10">
                             <div class="main-images">
-                            <!--Main images -->
-                                
-                                <img id="default_image" src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg"   alt="PA Dutch Baskets offers sympathy gifts that offer gourmet cheeses, whoopie pies, fudge and many other comfort foods during a difficult time" id="image_box"  />
-                                
-                            <!--Main images -->
+                                <!--Main images -->
+                                    
+                                    <img id="default_image" src="assets/images/products/deluxe-traditions/sympathy-gifts-ideas.jpg"   alt="PA Dutch Baskets offers sympathy gifts that offer gourmet cheeses, whoopie pies, fudge and many other comfort foods during a difficult time" id="image_box"  />
+                                    
+                                <!--Main images -->
                                <div id="videoContainer" style="display: none;">
-                  <!-- Video player will be inserted here -->
-                </div>
+                                <!-- Video player will be inserted here -->
+                                </div>
                             </div>
                         </div>
+                        
                     </div>
                 </div>
                 <div class="col-md-6">

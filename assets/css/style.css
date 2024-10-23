@@ -7,6 +7,7 @@
     --mainOtherColor: #302c29;
     --mainFontFamily: "Poppins", sans-serif;
     --subFontFamily: "Playfair Display", serif;
+    --bs-border-radius: 20px;
 }
 *{
     padding: 0px;
@@ -474,7 +475,7 @@ form .brcf-btn:hover{
     text-align: center;
     width: 100%;
     border: 0;
-    border-radius: 0;
+    border-radius: 20px;
     padding: 12px 5px;
     margin-top: 22px !important;
     transition: all 0.3s ease-in-out;
@@ -1108,6 +1109,7 @@ form .form-btn:hover {
     background-color: var(--mainBrownColor) !important;
     color: #fff !important;
     border: 0 !important;
+    border-radius: 20px;
 }
 .cgb-head {
     font-weight: bold;
@@ -1180,6 +1182,7 @@ form .form-btn:hover {
     width: 220px;
     cursor: pointer;
     display: inline-block;
+    border-radius: 20px;
 }
 
 .btn-svg {
@@ -1310,6 +1313,7 @@ form .form-btn:hover {
     padding: 10px 15px;
     text-align: center;
     position: relative;
+    border-radius: 20px;
 }
 .cart-btn-checkout:hover,
 .cart-btn-payment:hover{
@@ -1341,6 +1345,7 @@ form .form-btn:hover {
     fill: #fff !important;
     margin-top: -4px;
     margin-right: 4px;
+    border-radius: 20px;
 }
 .cart-btn-checkout{
     scroll-behavior: smooth;
