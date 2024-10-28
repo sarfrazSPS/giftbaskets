@@ -8,6 +8,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include($root_path . "includes/header-links.php"); ?>
 
+    <link href="<?= $app_path ?>assets/css/zabuto_calendar.min.css" rel="stylesheet">
+    <style>
+        .modal-close{
+            background: black;
+            border: 0;
+            color: white;
+            padding: 0px 5px;
+        }
+    </style>
+
     	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -167,10 +177,13 @@ if($response_type=="success"){
                                 <span id="error_msg" style="display: none; font-size: medium; color:red">Promo code is not valid or expired.</span>
                                 <input type='hidden' name='couponapplied' id="couponapplied" value='0'> 
                                 <input type="hidden" name='product_name' id="product_name" />
+                                <input type="hidden" name="deliveryDate" id="deliveryDate" value=""> 
                             </div>                      
                         </div>
                         <div class="py-3">
                             <div class="shopgo w-100">
+                                <!-- Button to open the modal -->
+                                <button type="button" id="openCalendarModal" class="btn-shopping w-100 border-0 mb-3">Choose Delivery Date</button>
                                 <a href="<?=$app_path;?>checkout.php" class="cart-btn-checkout other-color">
                                     <span class="translatex text-uppercase "><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M144 144v48H304V144c0-44.2-35.8-80-80-80s-80 35.8-80 80zM80 192V144C80 64.5 144.5 0 224 0s144 64.5 144 144v48h16c35.3 0 64 28.7 64 64V448c0 35.3-28.7 64-64 64H64c-35.3 0-64-28.7-64-64V256c0-35.3 28.7-64 64-64H80z"/></svg> Checkout</span>
                                     <span class="btn-arrow">
@@ -215,6 +228,36 @@ if($response_type=="success"){
     </div>
 </div>
 
+<!-- Modal structure -->
+<div id="calendarModal" class="modal fade" tabindex="-1" role="dialog">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header border-0 pb-0">
+        <h5 class="modal-title fw-bold">DELIVERY CALENDAR</h5>
+        <button type="button" class="close modal-close" aria-label="Close" onclick="customCloseModal()">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+            <div class="col-sm-8">
+                <!-- Calendar will be here -->
+                <div id="demo-calendar-basic"></div>
+                <h6 id="display_ddate" class="mt-3 ms-1 fw-normal"></h6>
+            </div>
+            <div class="col-sm-4">
+                <h5 class="mb-3">SHIPPING SUMMARY</h5>
+                <p class="mt-2 mb-0 p-0">Simply provide your recipient's email and we'll send them an note that a gift for them is on the way!</p>
+            </div>
+        </div>
+      </div>
+      <div class="modal-footer border-0">
+        <button type="button" class="btn btn-secondary" onclick="customCloseModal()">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
 <div id="popupContentGift" class="cie-item-popup">
     <div class="cie-item-popup-outer">
@@ -249,6 +292,7 @@ if($response_type=="success"){
 <?php
 include("includes/footer.php");
 ?>
+<script src="<?= $app_path ?>assets/js/zabuto_calendar.min.js"></script>
 <?php
 if($clear_cart==1){
     ?>
@@ -279,12 +323,21 @@ if($clear_cart==1){
             var total_amount =  parseFloat(total_amount.replace(/[^0-9.]/g, ''));
             // alert(totalAmount);
             var discountPercent = parseFloat(data.discount);
+            var discount_type = data.discount_type;
             // alert(discountPercent);
             // Check if the discount percentage is valid (greater than or equal to 0 and less than or equal to 100)
             if (isNaN(discountPercent) || discountPercent < 0 || discountPercent > 100) {
                 alert("Invalid discount percentage");
             } else {
+                if(discount_type=="percent")
+                {
                 var discountAmount = (discountPercent / 100) * total_amount;
+                }
+                else
+                {
+                var discountAmount = parseFloat(data.discount);
+                }
+                
                 localStorage.setItem('discountAmount', discountAmount);
                 var totalAmount = parseFloat(total_amount) - parseFloat(discountAmount);
                 $("#grandSubTotal").html('$'+totalAmount.toFixed(2));
@@ -360,82 +413,82 @@ if($clear_cart==1){
 </script>
 
 <script type="text/javascript">
-function calculat_each_item_total(){
-    $('#dynamicContentContainer tr').each(function(index, row) {
-        var item_price = $(row).find('.cal_item_price').text();
-console.log(index+"="+item_price);
-        var item_qty = $(row).find('.cal_item_qty').val();
-        item_qty = parseInt(item_qty);
-console.log(index+"="+item_qty);
-        var itemTotal = item_qty*item_price;
-        itemTotal = parseFloat(itemTotal);
-        itemTotal = itemTotal.toFixed(2);
-console.log(index+"="+itemTotal);        
-        $(row).find(".cal_item_sub_total").text(itemTotal);
-    });
-}
-
-function calculat_items_sub_total(){
-    var subTotal = 0;
-    $('#dynamicContentContainer tr').each(function(index, row) {
-        var item_sub_price = $(row).find('.cal_item_sub_total').text();
-        item_sub_price = parseFloat(item_sub_price);
-        subTotal += item_sub_price;
-    });
-    subTotal = subTotal.toFixed(2);
-    $("#grandSubTotal").html("<b>$"+subTotal+"</b>");
-    $("#cartSubTotal").val(subTotal);
-}
-
-function updateQuantityInLocalStorage(newQuantity,specificIdToRemove) {
-    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-
-    var specificId = specificIdToRemove;
-    var foundItem = cartItems.find(item => item.id === specificId);
-
-    if (foundItem) {
-    foundItem.quantity = newQuantity;
+    function calculat_each_item_total(){
+        $('#dynamicContentContainer tr').each(function(index, row) {
+            var item_price = $(row).find('.cal_item_price').text();
+    console.log(index+"="+item_price);
+            var item_qty = $(row).find('.cal_item_qty').val();
+            item_qty = parseInt(item_qty);
+    console.log(index+"="+item_qty);
+            var itemTotal = item_qty*item_price;
+            itemTotal = parseFloat(itemTotal);
+            itemTotal = itemTotal.toFixed(2);
+    console.log(index+"="+itemTotal);        
+            $(row).find(".cal_item_sub_total").text(itemTotal);
+        });
     }
 
-    localStorage.setItem('cartstorage', JSON.stringify(cartItems));
-}
+    function calculat_items_sub_total(){
+        var subTotal = 0;
+        $('#dynamicContentContainer tr').each(function(index, row) {
+            var item_sub_price = $(row).find('.cal_item_sub_total').text();
+            item_sub_price = parseFloat(item_sub_price);
+            subTotal += item_sub_price;
+        });
+        subTotal = subTotal.toFixed(2);
+        $("#grandSubTotal").html("<b>$"+subTotal+"</b>");
+        $("#cartSubTotal").val(subTotal);
+    }
 
-$(document).ready(function() {
-    calculat_each_item_total();
-    calculat_items_sub_total();
-});
+    function updateQuantityInLocalStorage(newQuantity,specificIdToRemove) {
+        var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+
+        var specificId = specificIdToRemove;
+        var foundItem = cartItems.find(item => item.id === specificId);
+
+        if (foundItem) {
+        foundItem.quantity = newQuantity;
+        }
+
+        localStorage.setItem('cartstorage', JSON.stringify(cartItems));
+    }
+
+    $(document).ready(function() {
+        calculat_each_item_total();
+        calculat_items_sub_total();
+    });
 </script>
 
 <script type="text/javascript">
-jQuery(function() {
-    var j = jQuery; 
+    jQuery(function() {
+        var j = jQuery; 
 
-    j('.plus, .min').on('click', function() {
-        var addInput = j(this).siblings('.cal_item_qty'); 
+        j('.plus, .min').on('click', function() {
+            var addInput = j(this).siblings('.cal_item_qty'); 
 
-        if (j(this).hasClass('plus')) {
-            addInput.val(function(i, value) {
-                return parseInt(value, 10) + 1;
-            });
+            if (j(this).hasClass('plus')) {
+                addInput.val(function(i, value) {
+                    return parseInt(value, 10) + 1;
+                });
 
-        } else if (j(this).hasClass('min')) {
-            addInput.val(function(i, value) {
-                return parseInt(value, 10) >= 2 ? parseInt(value, 10) - 1 : value;
-            });
-        }
+            } else if (j(this).hasClass('min')) {
+                addInput.val(function(i, value) {
+                    return parseInt(value, 10) >= 2 ? parseInt(value, 10) - 1 : value;
+                });
+            }
 
-        calculat_each_item_total();
-        calculat_items_sub_total();
+            calculat_each_item_total();
+            calculat_items_sub_total();
 
-        var updatedQuantity = parseInt(addInput.val(), 10);
-        var specificIdToRemove = j(this).closest(".cart_tr").attr("id");
+            var updatedQuantity = parseInt(addInput.val(), 10);
+            var specificIdToRemove = j(this).closest(".cart_tr").attr("id");
 
-        updateQuantityInLocalStorage(updatedQuantity,specificIdToRemove);        
-        
-        console.log(updatedQuantity);
+            updateQuantityInLocalStorage(updatedQuantity,specificIdToRemove);        
+            
+            console.log(updatedQuantity);
 
+        });
     });
-});
 
 </script>
 
@@ -457,20 +510,20 @@ jQuery(function() {
 </script>
 
 <script type="text/javascript">
-$('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
-    var specificIdToRemove = $(this).attr('id');
+    $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
+        var specificIdToRemove = $(this).attr('id');
 
-    var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
-    // Remove the item with the specific ID from the cartItems array
-    cartItems = cartItems.filter(function(item) {
-        return item.id !== specificIdToRemove;
+        var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
+        // Remove the item with the specific ID from the cartItems array
+        cartItems = cartItems.filter(function(item) {
+            return item.id !== specificIdToRemove;
+        });
+
+        // Update the localStorage with the modified cartItems array
+        localStorage.setItem('cartstorage', JSON.stringify(cartItems));
+        window.location.href = location.href;
+
     });
-
-    // Update the localStorage with the modified cartItems array
-    localStorage.setItem('cartstorage', JSON.stringify(cartItems));
-    window.location.href = location.href;
-
-});
 </script>
 
 <script type="text/javascript">
@@ -581,4 +634,103 @@ $('#dynamicContentContainer').on('click', '.item-remove-btn', function() {
   });
 
 
+</script>
+
+<!-- Initialize the plugin and handle modal -->
+<script>
+var lastSelectedDate = null;
+
+function customCloseModal() {
+    $("#calendarModal").modal('hide');
+}
+
+function myDateFunction(id, date) {
+    console.log("You clicked on date: " + date);
+}
+
+$(document).ready(function () {
+    // Initialize Zabuto Calendar
+    var $el = $('#demo-calendar-basic');
+
+    $el.zabuto_calendar({
+        classname: 'table clickable'
+    });
+
+    $(".zabuto-calendar__day--today").css({
+        'font-weight': 'bold',
+        'color': '#7b5c4a', 
+    });
+
+    $el.on('zabuto:calendar:day', function (e) {
+        console.log("day");
+        var now = new Date();
+
+        $(".zabuto-calendar__day, .zabuto-calendar__day--today").removeAttr("style");
+
+        // $(".zabuto-calendar__day--today").css({
+        //     'font-weight': 'bold',
+        //     'color': '#7b5c4a', 
+        // });
+
+        $(e.element).css({
+            'background-color': '#7b5c4a',
+            'color': '#ffffff', 
+        });
+
+        // Save the selected date
+        lastSelectedDate = e.date;
+        
+        $("#deliveryDate").val(e.date.toDateString());
+        $("#display_ddate").html("Delivery Date: <b>" + e.date.toDateString() + "</b>");
+        $("#openCalendarModal").text("Delivery Date: " + e.date.toDateString());
+        
+
+    });
+
+
+          
+    // Reapply the last selected date's style when reopening the modal
+    $("#openCalendarModal").click(function() {
+        if (lastSelectedDate) {
+            var formattedDate = lastSelectedDate.toISOString().split('T')[0]; // Format the date for comparison
+
+            // Reapply styles to the previously selected date
+            $el.find('.zabuto-calendar__day[data-date="' + formattedDate + '"]').css({
+                'background-color': '#7b5c4a',
+                'color': '#ffffff',
+            });
+        }
+        $("#calendarModal").modal("show");
+    });
+
+    // Handle month navigation to keep the last selected date
+    // $(document).on('zabuto:calendar:navigate', function () {
+        
+    //     if (lastSelectedDate) {
+    //         var formattedDate = lastSelectedDate.toISOString().split('T')[0];
+    //         console.log("months"+formattedDate);
+    //         // Use setTimeout to wait until the calendar is fully rendered
+    //         setTimeout(function() {
+    //             $el.find('.zabuto-calendar__day[data-date="' + formattedDate + '"]').css({
+    //                 'background-color': '#7b5c4a',
+    //                 'color': '#ffffff',
+    //             });
+    //         }, 100); // Adjust the delay if necessary
+    //     }
+    // });
+
+    // Detect when the calendar is re-rendered (e.g., after month change)
+    // $el.on('DOMSubtreeModified', function () {
+    //     if (lastSelectedDate) {
+    //         var formattedDate = lastSelectedDate.toISOString().split('T')[0];
+
+    //         // Reapply styles to the previously selected date after DOM modification
+    //         $el.find('.zabuto-calendar__day[data-date="' + formattedDate + '"]').css({
+    //             'background-color': '#7b5c4a',
+    //             'color': '#ffffff',
+    //         });
+    //     }
+    // });
+    
+});
 </script>

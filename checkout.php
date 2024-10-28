@@ -8,15 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include($root_path . "includes/header-links.php"); ?>
 
-    <link href="<?= $app_path ?>assets/css/zabuto_calendar.min.css" rel="stylesheet">
-    <style>
-        .modal-close{
-            background: black;
-            border: 0;
-            color: white;
-            padding: 0px 5px;
-        }
-    </style>
+    
     	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -109,7 +101,7 @@ if($response_type=="success"){
                     <h6 class="checkout-head">ORDER SUMMARY</h6>
                     <div class="px-3">
                         <form id="checkoutForm" class="" method="post" action="">
-                        <input type="hidden" name="deliveryDate" id="deliveryDate" value="">    
+                           
                         <input type="hidden" name="jsonData" id="jsonData">
                             <div class="cart-border">
                                 <div class="d-flex justify-content-between checkout-summary">
@@ -275,8 +267,6 @@ if($response_type=="success"){
                                 <div class="card-footer p-0 m-3">
                                     <div class="row p-0">
                                         <div class="col-12 p-0">
-                                            <!-- Button to open the modal -->
-                                            <button type="button" id="openCalendarModal" class="cart-btn-checkout border-0 mb-3">Select Delivery Date</button>
                                             <button id="payNowBtn" type='submit' class="cart-btn-payment border-0 other-color" >Pay Now</button>
                                         </div>
                                     </div>
@@ -359,39 +349,12 @@ if($response_type=="success"){
     </div>
 </div>
 
-<!-- Modal structure -->
-<div id="calendarModal" class="modal fade" tabindex="-1" role="dialog">
-  <div class="modal-dialog modal-lg" role="document">
-    <div class="modal-content">
-      <div class="modal-header border-0 pb-0">
-        <h5 class="modal-title fw-bold">DELIVERY CALENDAR</h5>
-        <button type="button" class="close modal-close" aria-label="Close" onclick="customCloseModal()">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body">
-        <div class="row">
-            <div class="col-sm-8">
-                <!-- Calendar will be here -->
-                <div id="demo-calendar-basic"></div>
-            </div>
-            <div class="col-sm-4">
-                <h5 class="mb-3">SHIPPING SUMMARY</h5>
-                <p class="mt-2 mb-0 p-0">Simply provide your recipient's email and we'll send them an note that a gift for them is on the way!</p>
-            </div>
-        </div>
-      </div>
-      <div class="modal-footer border-0">
-        <button type="button" class="btn btn-secondary" onclick="customCloseModal()">Close</button>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <?php
 include("includes/footer.php");
 ?>
-<script src="<?= $app_path ?>assets/js/zabuto_calendar.min.js"></script>
+
 <?php
 if($clear_cart==1){
     ?>
@@ -641,52 +604,3 @@ $(document).ready(function() {
     // }
 </script>
 
-<!-- Initialize the plugin and handle modal -->
-<script>
-function customCloseModal() {
-    $("#calendarModal").modal('hide');
-}
-
-function myDateFunction(id, date) {
-    console.log("You clicked on date: " + date);
-}
-
-$(document).ready(function () {
-    // Initialize Zabuto Calendar
-    var $el = $('#demo-calendar-basic');
-
-    $el.zabuto_calendar({
-        classname: 'table clickable'
-    });
-
-    $(".zabuto-calendar__day--today").css({
-        'background-color': '#000',
-        'color': '#fff', 
-    });
-
-    $el.on('zabuto:calendar:day', function (e) {
-        var now = new Date();
-
-        $(".zabuto-calendar__day, zabuto-calendar__day--today").removeAttr("style");
-
-        $(".zabuto-calendar__day--today").css({
-            'background-color': '#000',
-            'color': '#fff', 
-        });
-
-        $(e.element).css({
-            'background-color': '#7b5c4a',
-            'color': '#fff', 
-        });
-
-        $("#deliveryDate").val(e.date.toDateString());
-    });
-
-
-          
-  // Open modal when button is clicked
-  $("#openCalendarModal").click(function() {
-    $("#calendarModal").modal("show");
-  });
-});
-</script>
