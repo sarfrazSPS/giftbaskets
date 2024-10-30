@@ -64,14 +64,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$cc_exp_year_month = $cc_exp_year.'-'.$cc_exp_month; 
 	$cvc_code = $_POST['cvc_code']; 
 	$amount = $_POST['amount']; 
+    $padutchddate = $_POST['padutchddate']; 
     extract($_POST);
-    // print_r($jsonData);
-    // exit();
+    //print_r($jsonData);
+    //exit();
 	if(empty($cc_number) || empty($cc_exp_month) || empty($cc_exp_year) || empty($cvc_code) ){
 		$status = "<li>Error: Please enter all required fields!</li>";
 
 	}else{
 		require_once 'authorize-net-payment.php';
+
 	}	
 }
 
@@ -103,6 +105,8 @@ if($response_type=="success"){
                         <form id="checkoutForm" class="" method="post" action="">
                            
                         <input type="hidden" name="jsonData" id="jsonData">
+                        <input type="hidden" name="padutchddate" id="padutchddate">
+                        
                             <div class="cart-border">
                                 <div class="d-flex justify-content-between checkout-summary">
                                     <p class="mb-0">PRODUCT SUB TOTAL:</p>
@@ -371,6 +375,10 @@ $(document).ready(function() {
     $(document).ready(function() {
         var checkoutProducts = JSON.parse(localStorage.getItem('cartstorage')) || [];
         document.getElementById('jsonData').value = JSON.stringify(checkoutProducts);
+
+        var padutchddate = localStorage.getItem('padutchddate');
+        document.getElementById('padutchddate').value = padutchddate;
+
         console.log(checkoutProducts);
         if (checkoutProducts.length === 0) {
             window.location.href = $appPathJS+"thank-you.php";
@@ -603,4 +611,6 @@ $(document).ready(function() {
 
     // }
 </script>
+
+
 

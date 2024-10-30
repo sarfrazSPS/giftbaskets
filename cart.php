@@ -683,7 +683,7 @@ $(document).ready(function () {
         $("#deliveryDate").val(e.date.toDateString());
         $("#display_ddate").html("Delivery Date: <b>" + e.date.toDateString() + "</b>");
         $("#openCalendarModal").text("Delivery Date: " + e.date.toDateString());
-        
+        localStorage.setItem('padutchddate', e.date.toDateString());
 
     });
 
