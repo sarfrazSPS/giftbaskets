@@ -64,6 +64,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	$cc_exp_year_month = $cc_exp_year.'-'.$cc_exp_month; 
 	$cvc_code = $_POST['cvc_code']; 
 	$amount = $_POST['amount']; 
+    $delivery_date = $_POST['padutchddate'];
     extract($_POST);
     //print_r($jsonData);
     //exit();

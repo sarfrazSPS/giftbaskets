@@ -101,6 +101,11 @@ if($response_type=="success"){
 <section id="cart-section" class="py-5">
     <div class="container-fluid">
         <div class="container">
+            <div class="row">
+                <div class="col-12 text-end fw-bold mb-2 text-uppercase h6 text-dark">
+                    Call for bulk orders
+                </div>
+            </div>
             <div class="row mb-3">
                 <div class="col-lg-6 col-md-6 col-sm-12">
                     <h4>SHOPPING CART (<span id="totalCartItems">-</span> ITEM)</h4>
@@ -151,9 +156,10 @@ if($response_type=="success"){
                         <table class="table table-bordered">
                             <thead>
                                 <tr>
-                                    <th scope="col" width="70%">PRODUCT</th>
+                                    <th scope="col" width="60%">PRODUCT</th>
                                     <th scope="col" width="10%">PRICE</th>
                                     <th scope="col" width="10%">QUANTITY</th>
+                                    <th scope="col" width="10%">SHIPPING</th>
                                     <th scope="col" width="10%">TOTAL</th>
                                 </tr>
                             </thead>
@@ -397,15 +403,16 @@ if($clear_cart==1){
                 '<td class="cal_item_price">'+item.price+'</td>'+
                 '<td width="10%">'+
                 '<div class="d-flex">'+
-                '<span class="min buttonplusminus">'+
+                '<span class="min buttonplusminus d-none">'+
                 '-'+
                 '</span>'+
-                '<input class="cal_item_qty" type="number" name="qty" id="qty" min="1" value="'+item.quantity+'" />'+
-                '<span class="plus buttonplusminus">'+
+                '<input class="cal_item_qty" type="number" name="qty" id="qty" min="1" value="'+item.quantity+'" readonly />'+
+                '<span class="plus buttonplusminus d-none">'+
                 '+'+
                 '</span>'+
                 '</div>'+
                 '</td>'+
+                '<td class="">$<span class="cal_item_shipping">'+ item.shipping + '</span></td>'+
                 '<td class="">$<span class="cal_item_sub_total">0</span></td>'+
                 '</tr>'
                 );
@@ -419,14 +426,16 @@ if($clear_cart==1){
     function calculat_each_item_total(){
         $('#dynamicContentContainer tr').each(function(index, row) {
             var item_price = $(row).find('.cal_item_price').text();
-    console.log(index+"="+item_price);
+            console.log(index+"="+item_price);
+            var item_shipping = $(row).find('.cal_item_shipping').text();
+            console.log(index+"="+item_shipping);
             var item_qty = $(row).find('.cal_item_qty').val();
             item_qty = parseInt(item_qty);
-    console.log(index+"="+item_qty);
+            console.log(index+"="+item_qty);
             var itemTotal = item_qty*item_price;
-            itemTotal = parseFloat(itemTotal);
+            itemTotal = parseFloat(itemTotal) + parseFloat(item_shipping);
             itemTotal = itemTotal.toFixed(2);
-    console.log(index+"="+itemTotal);        
+            console.log(index+"="+itemTotal);        
             $(row).find(".cal_item_sub_total").text(itemTotal);
         });
     }
