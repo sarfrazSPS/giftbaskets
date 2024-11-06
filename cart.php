@@ -194,6 +194,9 @@ if($response_type=="success"){
                                 </a>
                             </div>
                         </div>
+                        <div><p style="margin-bottom:10px; padding:0;text-align: center;">All Major Credit Cards Accepted</p>
+                        <span><img style="width: 100%;" src="/assets/images/graphics/creditcards.svg" alt="credit cards accepted"></span>
+                        </div>
                     </div>
                 </div>
             </div>
