@@ -76,6 +76,8 @@ $arr = json_decode($jsonData);
 $lineItems = [];
 foreach ($arr as $item) {
     $productdetail = substr(strstr($item->productDetails, '<br/>'), 5);
+    $productdetail = str_replace(["<br>", "<br/>", "br", "br  ", "br&nbsp;"], "<br>", $productdetail);
+    
     // echo $productdetail;
     if($delivery_date!=""){
         $productdetail .= "<br />Delivery Date: ".$delivery_date;
@@ -175,8 +177,7 @@ if ($response != null) {
                                 $productPrice = $product ->price;
 
                                 $productDetails = substr(strstr($item->productDetails, '<br/>'), 5);
-                                $productDetails = str_replace("br", "", $productDetails);
-                                $productDetails = str_replace("<br>", "", $productDetails);
+                               
                                 if($delivery_date!=""){
                                     $productDetails .= "<br />Delivery Date: ".$delivery_date;
                                 }
@@ -186,7 +187,7 @@ if ($response != null) {
                                 $message = $product->message;
                                 $qty = $product->quantity;
                                 $unit_total = $qty*$productPrice;
-                                $emailTemplate .= "<tr> <td> ".$id ." </td> <td>".$productName."</td> <td>".$product_details."</td> <td>".$qty."</td> <td>".$productPrice."</td> <td> ".$unit_total." </td>  <td>".$options."</td> <td>".$message."</td> </tr> ";
+                                $emailTemplate .= "<tr> <td> ".$id ." </td> <td>".$productName."</td> <td>".$productDetails."</td> <td>".$qty."</td> <td>".$productPrice."</td> <td> ".$unit_total." </td>  <td>".$options."</td> <td>".$message."</td> </tr> ";
                             }
 
                             $emailTemplate .= "

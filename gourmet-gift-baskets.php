@@ -18,7 +18,7 @@
 
         <meta property="og:image" content="https://www.padutchbaskets.com/assets/images/products/deluxe-traditions/gourmet-basket.jpg" />
 
-    <meta property="product:price:amount" content="87.50" />
+    <meta property="product:price:amount" content="89.50" />
 
     <meta property="product:price:currency" content="USD" />
 
@@ -52,7 +52,6 @@ s.parentNode.insertBefore(t,s)}(window, document,'script',
 'https://connect.facebook.net/en_US/fbevents.js');
 fbq('init', '994885672288673');
 fbq('track', 'PageView');
-fbq('track', 'AddToCart');
 </script>
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
@@ -129,12 +128,15 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                     <p class="prod-id">Product ID: 013</p>
                     <h3 class="prod-title">"Deluxe Traditions" Gourmet Gift Baskets</h3>
                     <span class="price">
-                        <span class="prod-price" id='price_per_item' >$87.50</span>
+                        <span class="prod-price" id='price_per_item' >$89.50</span>
                             <span class="prod-stars">
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
                             <span class="prod-seperator"> | </span>
                             <span class="prod-rev-nos">22 Reviews</span>
+                             <span class="prod-seperator"> | </span>
+                                    <!-- Add a 'Read more' link pointing to the Elfsight widget -->
+    									    <a href="#elfsight-reviews" class="read-more-link">Read reviews</a>
                     </span>
                     
                     <p class="prod-copy">Make Your Selections</p>
@@ -329,12 +331,12 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
                             <p>* 2 Gourmet Cheeses</p>
                             <p>* Blueberry Bread (Choice of Flavor)</p>
                             <p>* Fudge (Choice of Flavor)</p>
-							<p>* 2 Gourmet Mustards</p>
+							<p>* Gourmet Mustards</p>
 							<p>* Whoopie Pie</p>
                         </div>
 						
                         <div class="cgb-copy-right">
-                            <p>* Peanut Butter Balls</p>
+                            <p>* Peanut Butter Crackers</p>
                             <p>* Emma's Famous Popcorn</p>
                             <p>* Emma's Lancaster Party Mix</p>
                             <p>* Martins Pretzels</p>
@@ -366,14 +368,148 @@ Explore our collection of gourmet gift baskets today and find the perfect gift t
 </p>
                 </div>
             </div>
+<div class="cgb-copy">
+  <span><h3 style="font-weight: bold; margin: 55px 0; text-align: center;">Gift Baskets from Lancaster, PA</h3></span>
+  <div class="swiper-wrapper-container">
+    <div class="swiper-outer-container">
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+
+          <!-- Slide 1 - Chocolate Gift Baskets -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/chocolate-gift-baskets.php">
+              <img src="https://padutchbaskets.com/assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" alt="Our chocolate gift baskets are filled with Lancaster PA Dutch chocolates, fudge and delicious baked goods loved by everyone">
+              <h5>Chocolate Gift Baskets</h5>
+              <span id="swiper-price">$74.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 2 - Bakers Special Food Basket -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/food-basket.php">
+              <img src="https://padutchbaskets.com/assets/images/products/bakers-special/food-basket.jpg" alt="Our Bakers Special food basket offers the most delicious baked goods from the Amish in Lancaster, PA well known for their ability to make the best baked goods">
+              <h5>"Bakers Special" Food Basket</h5>
+              <span id="swiper-price">$76.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 3 - Gourmet Gift Baskets -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/gourmet-gift-baskets.php">
+              <img src="https://padutchbaskets.com/assets/images/products/deluxe-traditions/gourmet-basket.jpg" alt="With our gourmet gift baskets we offer gourmet cheeses, baked goods, chocolates, fudge and more that we deliver anywhere in the country">
+              <h5>Gourmet Gift Baskets</h5>
+              <span id="swiper-price">$87.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 4 - Traditions Food Gift Baskets -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/food-gift-baskets.php">
+              <img src="https://padutchbaskets.com/assets/images/products/traditions/food-basket.jpg" alt="Our Traditions food basket is one of our very popular gift baskets offering whoopie pies, baked goods, brittle and more that everyone loves">
+              <h5>"Traditions" Food Gift Baskets</h5>
+              <span id="swiper-price">$79.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 5 - Gift Baskets Near Me -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/gift-baskets-near-me.php">
+              <img src="https://padutchbaskets.com/assets/images/products/basket-of-treats/basket.jpg" alt="When looking for gift baskets near me, our gift baskets from Lancaster, PA can be delivered anywhere in the country">
+              <h5>Gift Baskets Near Me - Lancaster Treats</h5>
+              <span id="swiper-price">$59.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 6 - Savory Flavors Best Gift Baskets -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/best-gift-baskets.php">
+              <img src="https://padutchbaskets.com/assets/images/products/savory-flavors/gift-basket-online.jpg" alt="Our Savory Flavors best gift baskets is our most popular with baked pies, blueberry bread, brittle, fudge, apple pie and so much more">
+              <h5>"Savory Flavors" Best Gift Baskets</h5>
+              <span id="swiper-price">$119.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 7 - Dutch Baked Goods Gift Delivery -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/gift-delivery.php">
+              <img src="https://padutchbaskets.com/assets/images/products/dutch-baked-goods/customized-basket.jpg" alt="When looking for the perfect gift delivery consider our Dutch Baked Goods from Lancaster PA that we guarantee they will love and appreciate">
+              <h5>"Dutch Baked Goods" Gift Delivery</h5>
+              <span id="swiper-price">$72.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 8 - Lancaster Favorites Custom Gift Baskets -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/custom-gift-baskets.php">
+              <img src="https://padutchbaskets.com/assets/images/products/lancaster-favorites/custom-gift-baskets.jpg" alt="We are happy to offer custom gift baskets with our PA Dutch baked goods. Choose certain products and customize to the occasion">
+              <h5>"Lancaster Favorites" Custom Gift Baskets</h5>
+              <span id="swiper-price">$89.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 9 - Celebrations Gift Basket Delivery -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/gift-basket-delivery.php">
+              <img src="https://padutchbaskets.com/assets/images/products/celebrations/gift-basket-delivery.jpg" alt="We are happy to offer our gift basket delivery with gourmet foods, cheeses, baked goods and chocolates that we can ship to most states in the country">
+              <h5>"Celebrations" Gift Basket Delivery</h5>
+              <span id="swiper-price">$54.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 10 - Bakers Choice Gift Basket Ideas -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/gift-basket-ideas.php">
+              <img src="https://padutchbaskets.com/assets/images/products/bakers-choice/deluxe-gift-basket.jpg" alt="The Bakers Choice gift basket ideas has a great variety of gourmet foods thare are loved and appreciated by those receiving them">
+              <h5>"Bakers Choice" Gift Basket Ideas</h5>
+              <span id="swiper-price">$87.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 11 - Gourmet Snack Basket -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/gourmet-snack-basket.php">
+              <img src="https://padutchbaskets.com/assets/images/products/dutch-traditions/food-gift-ideas.jpg" alt="The gourmet snack basket won't last very long with these baked goods from Lancaster, PA that are loved worldwide">
+              <h5>Gourmet Snack Basket</h5>
+              <span id="swiper-price">$89.50</span>
+            </a>
+          </div>
+
+          <!-- Slide 12 - Unique Gift Baskets -->
+          <div class="swiper-slide">
+            <a href="https://padutchbaskets.com/unique-gift-baskets.php">
+              <img src="https://padutchbaskets.com/assets/images/products/good-ole-treats/unique-gift-baskets.jpg" alt="Our very unique gift baskets have rave reviews from those receiving our PA Dutch baked goods, gourmet foods, chocolates and more that we deliver">
+              <h5>Unique Gift Baskets</h5>
+              <span id="swiper-price">$79.50</span>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- Navigation buttons -->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+    </div>
+  </div>
+</div>
+
+
         </div>
     </div>
 </section>
+<!-- Reviews Widget Elfsight -->
+<div id="elfsight-reviews" class="flex-container">
+    <script src="https://static.elfsight.com/platform/platform.js" async></script>
+	<div class="elfsight-app-8f131827-4530-4c69-aa1f-5e9efdeac4a4" data-elfsight-app-lazy></div>
+</div>
   <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
     data-product-id="product-013"
     data-product-name="Gourmet Gift Baskets"
-    data-product-price-regular="87.50"
+    data-product-price-regular="89.50"
     data-product-shipping-price="19.75"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
@@ -388,6 +524,78 @@ Explore our collection of gourmet gift baskets today and find the perfect gift t
 <?php
 include("includes/footer.php");
 ?>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Product",
+  "name": "\"Deluxe Traditions\" Gourmet Gift Baskets",
+  "image": "https://padutchbaskets.com/assets/images/products/deluxe-traditions/gourmet-basket.jpg",
+  "description": "The \"Deluxe Traditions\" Gourmet Gift Basket is a premium collection featuring Lancaster, PA Dutch specialties including gourmet cheeses, blueberry bread, fudge, gourmet mustards, whoopie pie, peanut butter crackers, Emma's famous popcorn, Lancaster party mix, and Martin's pretzels. Perfect for any occasion, this gourmet basket is sure to delight and impress.",
+  "sku": "013-DTGB",
+  "mpn": "013-DTGB",
+  "brand": {
+    "@type": "Brand",
+    "name": "PA Dutch Baskets"
+  },
+  "offers": {
+    "@type": "Offer",
+    "priceCurrency": "USD",
+    "price": "89.50",
+    "itemCondition": "https://schema.org/NewCondition",
+    "availability": "https://schema.org/InStock",
+    "seller": {
+      "@type": "Organization",
+      "name": "PA Dutch Baskets"
+    }
+  },
+  "aggregateRating": {
+    "@type": "AggregateRating",
+    "ratingValue": "5",
+    "reviewCount": "22"
+  },
+  "review": [
+    {
+      "@type": "Review",
+      "author": "Karen Smith",
+      "datePublished": "2024-09-25",
+      "description": "The Deluxe Traditions Gourmet Gift Basket exceeded our expectations. The cheeses and fudge were absolutely amazing!",
+      "name": "Exceeded Expectations",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    },
+    {
+      "@type": "Review",
+      "author": "Tom Anderson",
+      "datePublished": "2024-10-12",
+      "description": "A perfect gift for any occasion. The blueberry bread and whoopie pie were a hit with everyone!",
+      "name": "Perfect for Any Occasion",
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": "5"
+      }
+    }
+  ],
+  "additionalType": "https://schema.org/GiftBasket",
+  "category": "Gourmet Gift Baskets",
+  "isRelatedTo": [
+    {
+      "@type": "Product",
+      "name": "\"Savory Flavors\" Best Gift Baskets",
+      "url": "https://padutchbaskets.com/best-gift-baskets.php",
+      "image": "https://padutchbaskets.com/assets/images/products/savory-flavors/gift-basket-online.jpg"
+    },
+    {
+      "@type": "Product",
+      "name": "\"Lancaster Favorites\" Custom Gift Baskets",
+      "url": "https://padutchbaskets.com/custom-gift-baskets.php",
+      "image": "https://padutchbaskets.com/assets/images/products/lancaster-favorites/custom-gift-baskets.jpg"
+    }
+  ]
+}
+</script>
+
 <script>
     $(document).ready(function() {
         var per_amount = $('#price_per_item').html();
@@ -400,6 +608,49 @@ include("includes/footer.php");
 <script> var product_details ="Gourmet Gift Baskets - Deluxe Traditions <br/>"; </script>
 <script src="assets/js/paypal.js"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=AQ4eIiXQNa2IzhEjEjLZ-HDbwt1GCalO88GsMnnCgfRnOmpoOD8wyhkGclLrgEriqgzie2zoVHl22ce1"></script> 
+<!-- Swiper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/8.3.2/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script type="text/javascript">
+  function toggleMenu() {
+    var x = document.getElementById("menu");
+    if (x.className === "topnav") {
+      x.className += " visible";
+      console.log("open");
+    } else {
+      x.className = "topnav";
+      console.log("closed");
+    }
+  }
+
+  var swiper = new Swiper('.swiper-container', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    // Add responsive breakpoints here
+    breakpoints: {
+      480: {
+        slidesPerView: 1, // Show 1 slide on screens smaller than 640px
+        spaceBetween: 10
+      },
+      768: {
+        slidesPerView: 2, // Show 2 slides on screens between 640px and 768px
+        spaceBetween: 20
+      },
+      1024: {
+        slidesPerView: 3, // Show 3 slides on screens larger than 1024px
+        spaceBetween: 30
+      }
+    }
+  });
+</script>
 <script type="text/javascript">
     function toggleMenu() {
     var x = document.getElementById("menu");

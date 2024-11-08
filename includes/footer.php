@@ -378,6 +378,67 @@ $(document).ready(function() {
 
 });
 </script>
+<script>
+  $(document).ready(function () {
+    // Tab click event
+    $('#prodTab a').on('click', function () {
+      // Reset all tab icons to the default images
+      $('#tab1-icon').attr('src', '<?=$app_path;?>assets/images/tag.png');
+      $('#tab2-icon').attr('src', '<?=$app_path;?>assets/images/click.png');
+
+      // Change the icon of the active tab
+      if ($(this).attr('id') === 'tab1-tab') {
+        $('#tab1-icon').attr('src', '<?=$app_path;?>assets/images/tag-active.png');
+        $('#tab2-icon').attr('src', '<?=$app_path;?>assets/images/click.png');
+      } else if ($(this).attr('id') === 'tab2-tab') {
+        $('#tab2-icon').attr('src', '<?=$app_path;?>assets/images/click-active.png');
+        $('#tab1-icon').attr('src', '<?=$app_path;?>assets/images/tag.png');
+      }
+    });
+  });
+</script>
+
+<!-- JavaScript for Scroll Buttons -->
+<script>
+  const productSlider = document.querySelector('.product-slider');
+  const prevBtn = document.querySelector('.prev-btn');
+  const nextBtn = document.querySelector('.next-btn');
+
+  // Scroll amount
+  const scrollAmount = 150;
+
+  // Scroll to the left
+  prevBtn.addEventListener('click', () => {
+    productSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+  });
+
+  // Scroll to the right
+  nextBtn.addEventListener('click', () => {
+    productSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+  });
+</script>
+
+<script>
+    $(document).ready(function() {
+      let selectedProducts = [];
+
+      $('.add-btn').on('click', function() {
+        const productCard = $(this).closest('.product-card');
+        const productImageSrc = productCard.find('img').attr('src');
+
+        if (selectedProducts.length < 2) {
+          selectedProducts.push(productImageSrc);
+        } else {
+          selectedProducts[0] = selectedProducts[1];
+          selectedProducts[1] = productImageSrc;
+        }
+
+        $('#selected-product-1').html(selectedProducts[0] ? `<img src="${selectedProducts[0]}" alt="Selected Product 1" style="width:100%">` : '');
+        $('#selected-product-2').html(selectedProducts[1] ? `<img src="${selectedProducts[1]}" alt="Selected Product 2" style="width:100%">` : '');
+      });
+    });
+  </script>
+
 </body>
 
 </html>
