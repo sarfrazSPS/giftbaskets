@@ -301,316 +301,320 @@
               </div>
             </div>
             <div class="col-md-6">
-              <p class="prod-id">Product ID: 013</p>
-              <h3 class="prod-title">"Deluxe Traditions" Gourmet Gift Baskets</h3>
-              <span class="price">
-                <span class="prod-price" id='price_per_item'>$89.50</span>
-                <span class="prod-stars">
-                  <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
-                  </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
-                  </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
-                  </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
-                  </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
-                    <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
-                  </svg>
+              <form method="post">
+
+                <p class="prod-id">Product ID: 013</p>
+                <h3 class="prod-title">"Deluxe Traditions" Gourmet Gift Baskets</h3>
+                <span class="price">
+                  <span class="prod-price" id='price_per_item'>$89.50</span>
+                  <span class="prod-stars">
+                    <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
+                    </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
+                    </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
+                    </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
+                    </svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path>
+                      <path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path>
+                    </svg>
+                  </span>
+                  <span class="prod-seperator"> | </span>
+                  <span class="prod-rev-nos">22 Reviews</span>
+                  <span class="prod-seperator"> | </span>
+                  <!-- Add a 'Read more' link pointing to the Elfsight widget -->
+                  <a href="#elfsight-reviews" class="read-more-link">Read reviews</a>
                 </span>
-                <span class="prod-seperator"> | </span>
-                <span class="prod-rev-nos">22 Reviews</span>
-                <span class="prod-seperator"> | </span>
-                <!-- Add a 'Read more' link pointing to the Elfsight widget -->
-                <a href="#elfsight-reviews" class="read-more-link">Read reviews</a>
-              </span>
- 
-              <p class="prod-copy">Make Your Selections</p>
   
-              <table id="main_tbl">
+                <p class="prod-copy">Make Your Selections</p>
+    
+                <table id="main_tbl">
 
-                <tr>
-                  <td>
+                  <tr>
+                    <td>
 
-                    <input type="hidden" name="on0" value="Choose Your Bread">
-                    <div class="form-label">Choose Your Bread</div>
-                    <select name="os0" id="chooseBread">
-                      <option value="Blueberry">Blueberry </option>
-                      <option value="Banana">Banana </option>
+                      <input type="hidden" name="on0" value="Choose Your Bread">
+                      <div class="form-label">Choose Your Bread</div>
+                      <select name="os0" id="chooseBread">
+                        <option value="Blueberry">Blueberry </option>
+                        <option value="Banana">Banana </option>
 
-                    </select>
+                      </select>
 
-                  </td>
+                    </td>
 
 
 
-                  <td>
+                    <td>
 
-                    <input type="hidden" name="on0" value="Choose Your Fudge">
-                    <div class="form-label">Choose Your Fudge</div>
-                    <select name="os0" id="chooseFudge">
-                      <option value="Chocolate">Chocolate </option>
-                      <option value="Choc/Peanut Butter">Choc/Peanut Butter </option>
+                      <input type="hidden" name="on0" value="Choose Your Fudge">
+                      <div class="form-label">Choose Your Fudge</div>
+                      <select name="os0" id="chooseFudge">
+                        <option value="Chocolate">Chocolate </option>
+                        <option value="Choc/Peanut Butter">Choc/Peanut Butter </option>
 
-                    </select>
+                      </select>
 
-                  </td>
+                    </td>
 
-                </tr>
+                  </tr>
 
-                <tr>
-                  <td>
-                    <input type="hidden" name="on2" value="Card Message">
-                    <div class="form-label form-label-margin">Card Message</div>
-                    <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span>
-                  </td>
+                  <tr>
+                    <td>
+                      <input type="hidden" name="on2" value="Card Message">
+                      <div class="form-label form-label-margin">Card Message</div>
+                      <input type="text" class="form-input-text" id="cardMessage" name="os2" maxlength="200" oninput="checkCharacterCount(this.value)"> <span id="message" style="display: none; font-size: medium; color:red;"></span>
+                    </td>
 
-                </tr>
+                  </tr>
 
-              </table>
+                </table>
 
-              <!--NEW::Code Start Here-->
-              <div>
-                <h5 class="customization-head">Choose Your Customization Below </h5>
+                <!--NEW::Code Start Here-->
+                <div>
+                  <h5 class="customization-head">Choose Your Customization Below </h5>
 
-                <!-- Tabs Navigation -->
-                <ul class="nav nav-tabs pd-tabs border-0" id="prodTab" role="tablist">
-                  <li class="nav-item">
-                    <a class="nav-link active border-0" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab">
-                      <img id="tab1-icon" src="<?=$app_path;?>assets/images/tag-active.png" />
-                    </a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link border-0" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab">
-                      <img id="tab2-icon" src="<?=$app_path;?>assets/images/click.png" />
-                    </a>
-                  </li>
-                </ul>
+                  <!-- Tabs Navigation -->
+                  <ul class="nav nav-tabs pd-tabs border-0" id="prodTab" role="tablist">
+                    <li class="nav-item">
+                      <a class="nav-link active border-0" id="tab1-tab" data-bs-toggle="tab" href="#tab1" role="tab">
+                        <img id="tab1-icon" src="<?=$app_path;?>assets/images/tag-active.png" />
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link border-0" id="tab2-tab" data-bs-toggle="tab" href="#tab2" role="tab">
+                        <img id="tab2-icon" src="<?=$app_path;?>assets/images/click.png" />
+                      </a>
+                    </li>
+                  </ul>
 
-                <!-- Tabs Content -->
-                <div class="tab-content" id="prodTabContent">
+                  <!-- Tabs Content -->
+                  <div class="tab-content" id="prodTabContent">
 
-                  <!-- First Tab -->
-                  <div class="tab-pane fade show active" id="tab1" role="tabpanel">
-                      <div class="services">
+                    <!-- First Tab -->
+                    <div class="tab-pane fade show active" id="tab1" role="tabpanel">
+                        <div class="services">
 
-                        <div class="custom-options-services">
+                          <div class="custom-options-services">
 
-                          <div class="row justify-content-center">
+                            <div class="row justify-content-center">
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="birthday">
+                                <label for="birthday">
 
-                                <input type="checkbox" class="" id="tag" value="bithday">
+                                  <input type="checkbox" class="" id="tag" value="bithday">
 
-                                <img src="assets/images/tags/birthday4.png" alt="gourmet gift baskets filled with cheeses, baked goods, and chocolates" class="circle ">
+                                  <img src="assets/images/tags/birthday4.png" alt="gourmet gift baskets filled with cheeses, baked goods, and chocolates" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="tag">
+                                <label for="tag">
 
-                                <input type="checkbox" id="Sympathy" class="" value="Sympathy">
+                                  <input type="checkbox" id="Sympathy" class="" value="Sympathy">
 
 
 
-                                <img src="assets/images/tags/sympathy3.png" alt="our gourmet gift baskets are loved by everyone and come from Lancaster, PA well known for delicious baked goods" class="circle ">
+                                  <img src="assets/images/tags/sympathy3.png" alt="our gourmet gift baskets are loved by everyone and come from Lancaster, PA well known for delicious baked goods" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="custom-front">
+                                <label for="custom-front">
 
-                                <input type="checkbox" id="custom-front" class="" value="Get Well">
+                                  <input type="checkbox" id="custom-front" class="" value="Get Well">
 
-                                <img src="assets/images/tags/get-well5.png" alt="get well gourmet gift baskets from Lancaster PA" class="circle ">
+                                  <img src="assets/images/tags/get-well5.png" alt="get well gourmet gift baskets from Lancaster PA" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="Tag">
+                                <label for="Tag">
 
-                                <input type="checkbox" id="Tag" class="" value="Thank You">
+                                  <input type="checkbox" id="Tag" class="" value="Thank You">
 
-                                <img src="assets/images/tags/thank-you2.png" alt="thank you gourmet gift baskets filled with chocolates, cheeses and more that we offer delivery on" class="circle ">
+                                  <img src="assets/images/tags/thank-you2.png" alt="thank you gourmet gift baskets filled with chocolates, cheeses and more that we offer delivery on" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="tag">
+                                <label for="tag">
 
-                                <input type="checkbox" id="tag" class="" value="Congratulations">
+                                  <input type="checkbox" id="tag" class="" value="Congratulations">
 
-                                <img src="assets/images/tags/congrats3.png" alt="our congratulations gourmet gift baskets offered from Lancaster PA can be delivered and filled with chocolates, baked goods and so much more" class="circle ">
+                                  <img src="assets/images/tags/congrats3.png" alt="our congratulations gourmet gift baskets offered from Lancaster PA can be delivered and filled with chocolates, baked goods and so much more" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="balloon">
+                                <label for="balloon">
 
-                                <input type="checkbox" id="Tag" class="" value="Anniversary">
+                                  <input type="checkbox" id="Tag" class="" value="Anniversary">
 
 
 
-                                <img src="assets/images/tags/happy-anniversary.png" alt="anniversary gourmet gift baskets with gourmet cheeses, chocolates, blueberry bread and more" class="circle ">
+                                  <img src="assets/images/tags/happy-anniversary.png" alt="anniversary gourmet gift baskets with gourmet cheeses, chocolates, blueberry bread and more" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="tag">
+                                <label for="tag">
 
-                                <input type="checkbox" id="tag" class="" value="thinking of you">
+                                  <input type="checkbox" id="tag" class="" value="thinking of you">
 
-                                <img src="assets/images/tags/thinking-of-you.png" alt="thinking of you gourmet gift baskets from Dutch country in Lancaster PA" class="circle ">
+                                  <img src="assets/images/tags/thinking-of-you.png" alt="thinking of you gourmet gift baskets from Dutch country in Lancaster PA" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
 
-                            <div class="col-sm-new-2 mb-new">
+                              <div class="col-sm-new-2 mb-new">
 
-                              <label for="tag">
+                                <label for="tag">
 
-                                <input type="checkbox" id="tag" class="" value="Fathers Day">
+                                  <input type="checkbox" id="tag" class="" value="Fathers Day">
 
-                                <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
+                                  <img src="tags/fathersday.png" alt="Congratulations graduate custom gift baskets delicious foods and baked goods, cheeses and more from Lancaster PA" class="circle ">
 
-                              </label>
+                                </label>
 
-                            </div>
+                              </div>
 
 
-                            <div class="col-sm-4 col-sm-new-4 text-center">
+                              <div class="col-sm-4 col-sm-new-4 text-center">
 
-                              <b>
-                                Can't find what you want? <br>
-                                Give us a call! 717-368-3973
+                                <b>
+                                  Can't find what you want? <br>
+                                  Give us a call! 717-368-3973
 
-                              </b>
+                                </b>
 
+                              </div>
                             </div>
                           </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Second Tab -->
+                    <div class="tab-pane fade" id="tab2" role="tabpanel">
+
+                      <div class="scroll-container">
+
+                        <button class="scroll-btn prev-btn">
+                          <div class="play-btn"></div>
+                        </button>
+
+                        <div class="product-slider">
+                          
+                          <div class="product-card" data-pc-pid="1">
+                            <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-basket.jpg" alt="Product 1" class="product-image product-select">
+                            <p class="pc-pname">Product 1</p>
+                            <p class="pc-pprice">$10</p>
+                            <button type="button" class="btn btn-dark add-btn">Add + </button>
+                          </div>
+
+                          <div class="product-card" data-pc-pid="2">
+                            <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-gift-basket.jpg" alt="Product 2" class="product-image product-select">
+                            <p class="pc-pname">Product 2</p>
+                            <p class="pc-pprice">$20</p>
+                            <button type="button" class="btn btn-dark add-btn">Add + </button>
+                          </div>
+
+                          <div class="product-card" data-pc-pid="3">
+                            <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-gift-baskets.jpg" alt="Product 3" class="product-image product-select">
+                            <p class="pc-pname">Product 3</p>
+                            <p class="pc-pprice">$30</p>
+                            <button type="button" class="btn btn-dark add-btn">Add + </button>
+                          </div>
+
+                          <div class="product-card" data-pc-pid="4">
+                            <img src="<?=$app_path;?>assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" alt="Product 4" class="product-image product-select">
+                            <p class="pc-pname">Product 4</p>
+                            <p class="pc-pprice">$25</p>
+                            <button type="button" class="btn btn-dark add-btn">Add + </button>
+                          </div>
+
+                          <div class="product-card" data-pc-pid="5">
+                            <img src="<?=$app_path;?>assets/images/products/bakers-special/food-basket.jpg" alt="Product 5" class="product-image product-select">
+                            <p class="pc-pname">Product 5</p>
+                            <p class="pc-pprice">$35</p>
+                            <button type="button" class="btn btn-dark add-btn">Add + </button>
+                          </div>
+
+                          <div class="product-card" data-pc-pid="6">
+                            <img src="<?=$app_path;?>assets/images/products/traditions/food-basket.jpg" alt="Product 6" class="product-image product-select">
+                            <p class="pc-pname">Product 6</p>
+                            <p class="pc-pprice">$22</p>
+                            <button type="button" class="btn btn-dark add-btn">Add + </button>
+                          </div>
+                          
                         </div>
 
+                        <button class="scroll-btn next-btn">
+                          <div class="play-btn"></div>
+                        </button>
+
+                      </div>    
+                      
+                      <!-- Dotted Boxes for Selected Products -->
+                      <div class="container center-container-box">
+                        <div class="plus-box">+</div>
+
+                        <div id="selected-product-1" class="dotted-box"></div>
+                        <input type="text" id="singleitem1" name="singleitem1" class="singleitemfield" />
+
+                        <div class="plus-box">+</div>
+
+                        <div id="selected-product-2" class="dotted-box"></div>
+                        <input type="text" id="singleitem2" name="singleitem2" class="singleitemfield" />
+
+                        <div class="text-box">Your Selection (<span class="selc_qty">0</span>&nbsp;of upto 2 extras)</div>
                       </div>
-                  </div>
 
-                  <!-- Second Tab -->
-                  <div class="tab-pane fade" id="tab2" role="tabpanel">
-
-                    <div class="scroll-container">
-
-                      <button class="scroll-btn prev-btn">
-                        <div class="play-btn"></div>
-                      </button>
-
-                      <div class="product-slider">
-                        
-                        <div class="product-card" data-product-id="1">
-                          <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-basket.jpg" alt="Product 1" class="product-image product-select">
-                          <p>Product 1</p>
-                          <p>$10</p>
-                          <button class="btn btn-dark add-btn">Add + </button>
-                        </div>
-
-                        <div class="product-card" data-product-id="2">
-                          <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-gift-basket.jpg" alt="Product 2" class="product-image product-select">
-                          <p>Product 2</p>
-                          <p>$20</p>
-                          <button class="btn btn-dark add-btn">Add + </button>
-                        </div>
-
-                        <div class="product-card" data-product-id="3">
-                          <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-gift-baskets.jpg" alt="Product 3" class="product-image product-select">
-                          <p>Product 3</p>
-                          <p>$30</p>
-                          <button class="btn btn-dark add-btn">Add + </button>
-                        </div>
-
-                        <div class="product-card" data-product-id="4">
-                          <img src="<?=$app_path;?>assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" alt="Product 4" class="product-image product-select">
-                          <p>Product 4</p>
-                          <p>$25</p>
-                          <button class="btn btn-dark add-btn">Add + </button>
-                        </div>
-
-                        <div class="product-card" data-product-id="5">
-                          <img src="<?=$app_path;?>assets/images/products/bakers-special/food-basket.jpg" alt="Product 5" class="product-image product-select">
-                          <p>Product 5</p>
-                          <p>$35</p>
-                          <button class="btn btn-dark add-btn">Add + </button>
-                        </div>
-
-                        <div class="product-card" data-product-id="6">
-                          <img src="<?=$app_path;?>assets/images/products/traditions/food-basket.jpg" alt="Product 6" class="product-image product-select">
-                          <p>Product 6</p>
-                          <p>$22</p>
-                          <button class="btn btn-dark add-btn">Add + </button>
-                        </div>
-                        
-                      </div>
-
-                      <button class="scroll-btn next-btn">
-                        <div class="play-btn"></div>
-                      </button>
-
-                    </div>    
-                    
-                    <!-- Dotted Boxes for Selected Products -->
-                    <div class="container center-container-box">
-                      <div class="plus-box">+</div>
-
-                      <div id="selected-product-1" class="dotted-box"></div>
-
-                      <div class="plus-box">+</div>
-
-                      <div id="selected-product-2" class="dotted-box"></div>
-
-                      <div class="text-box">Your Selection (<span class="selc_qty">0</span>&nbsp;of upto 2 extras)</div>
                     </div>
 
                   </div>
 
                 </div>
+                <!--NEW::Code End Here-->
 
-              </div>
-              <!--NEW::Code End Here-->
-
-              <div class="form-qty-btn">
-                <div class="form-qty-left">
-                  <span class="prod-form-qty">QTY </span> <input id="productQty" class="form-qty-input" type="number" step="1" min="1" max="1000" value="1" name="qty">
+                <div class="form-qty-btn">
+                  <div class="form-qty-left">
+                    <span class="prod-form-qty">QTY </span> <input id="productQty" class="form-qty-input" type="number" step="1" min="1" max="1000" value="1" name="qty">
+                  </div>
+                  <div class="form-qty-right">
+                    <button type="submit" id="addToCartBtn">Add to Cart</button>
+                  </div>
                 </div>
-                <div class="form-qty-right">
-                  <button type="submit" id="addToCartBtn">Add to Cart</button>
-                </div>
-              </div>
 
               </form>
             </div>

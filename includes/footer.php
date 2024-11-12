@@ -190,36 +190,42 @@ $(document).ready(function() {
         const label = [];
         const values = [];
         
-        hiddenFields.forEach(field => {
-        const value = field.value;
-        label.push(value);
-        });
+        // hiddenFields.forEach(field => {
+        // const value = field.value;
+        // label.push(value);
+        // });
         
-        selectFields.forEach(field => {
-        const value = field.value;
-        values.push(value);
-        });
+        // selectFields.forEach(field => {
+        //     const value = field.value;
+        //     values.push(value);
+        // });
 
-        textFields.forEach(field => {
-        const value = field.value;
-        values.push(value);
-        });         
+        // textFields.forEach(field => {
+        // const value = field.value;
+        // values.push(value);
+        // });         
         
         var description ="";
         var product_details ="";
         
 
-        for (let i = 0; i < label.length; i++) 
-        {
-            if(i == label.length -1)
-            {
-                // description += label[i]+':'+values[i];
-            }
-            else
-            {
-                product_details += label[i]+':'+values[i]+'<br/>';
-            }
-        }
+        // for (let i = 0; i < label.length; i++) 
+        // {
+        //     // if(i == label.length -1)
+        //     // {
+        //     //     // description += label[i]+':'+values[i];
+        //     // }
+        //     // else
+        //     // {
+        //     //     product_details += label[i]+':'+values[i]+'<br/>';
+        //     // }
+        //     product_details += label[i]+':'+values[i]+'<br/>';
+        // }
+
+
+       
+
+
         //set value in data attributes
         var productCardMessage = $('#cardMessage').val();
         $('.product-metadata').attr('data-product-card-msg', productCardMessage);
@@ -241,6 +247,22 @@ $(document).ready(function() {
         });
         $('.product-metadata').attr('data-product-customization', checkedValuesString);
 
+        if ($('#choosePie').val() !== undefined && $('#choosePie').val() !== "") {
+            product_details += " Choose Your Pie: " + $('#choosePie').val() + "<br />";
+        }
+
+        if ($('#chooseFudge').val() !== undefined && $('#chooseFudge').val() !== "") {
+            product_details += " Choose Your Fudge: " + $('#chooseFudge').val() + "<br />";
+        }
+
+        if ($('#chooseBread').val() !== undefined && $('#chooseBread').val() !== "") {
+            product_details += " Choose Your Bread: " + $('#chooseBread').val() + "<br />";
+        }
+
+        if (typeof productCardMessage !== 'undefined' && productCardMessage !== "") {
+            product_details += " Card Message: " + productCardMessage + "<br />";
+        }
+
         // get values from data attributes and save them
         var productId = $('.product-metadata').data('product-id');
         var productName = $('.product-metadata').data('product-name');
@@ -249,8 +271,12 @@ $(document).ready(function() {
         var productCustomization = checkedValuesString;
         var productQty = $('.product-metadata').data('product-qty');
         var productImage = $('.product-metadata').data('product-cart_img');
+
+        //get sinlge selected products details
+        var singleitem1 = $('#singleitem1').val();
+        var singleitem2 = $('#singleitem2').val();
         
-        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage, description+product_details);
+        addToCart(productId, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage, description+product_details, singleitem1, singleitem2);
 
         var urlCart = $appPathJS+"cart.php";
         window.location.href = urlCart;
@@ -258,11 +284,11 @@ $(document).ready(function() {
 
     });
     
-function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage, productFullDetails) {
+function addToCart(productID, productName, productPrice, productShippingPrice, productFlavorPie, productFlavorBread, productPromoCode, productCardMessage, productCustomization, productQty, productImage, productFullDetails, singleitem1, singleitem2) {
     console.log(productID);
     var cart = JSON.parse(localStorage.getItem('cartstorage')) || [];
     var existingProductIndex = -1;
-    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage,productDetails:productFullDetails};
+    var productToAddOrUpdate = { id: productID, name: productName, price: productPrice, shipping: productShippingPrice, pieflavor: productFlavorPie, breadflavor: productFlavorBread, promo: productPromoCode, message: productCardMessage, cutom: productCustomization, quantity: productQty, image: productImage,productDetails:productFullDetails, singleProduct1: singleitem1, singleProduct2: singleitem2};
 
     $.each(cart, function(index, product) {
         if (product.id === productToAddOrUpdate.id) {
@@ -406,38 +432,88 @@ $(document).ready(function() {
 
   // Scroll amount
   const scrollAmount = 150;
+  if (prevBtn && nextBtn) {
 
-  // Scroll to the left
-  prevBtn.addEventListener('click', () => {
-    productSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-  });
+    // Scroll to the left
+    prevBtn.addEventListener('click', () => {
+        productSlider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+    });
 
-  // Scroll to the right
-  nextBtn.addEventListener('click', () => {
-    productSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-  });
+    // Scroll to the right
+    nextBtn.addEventListener('click', () => {
+        productSlider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+    });
+
+  }
 </script>
 
 <script>
-    $(document).ready(function() {
-      let selectedProducts = [];
+$(document).ready(function () {
+  // Initialize selectedProducts from local storage or as an empty array
+  let selectedProducts = [];
 
-      $('.add-btn').on('click', function() {
-        const productCard = $(this).closest('.product-card');
-        const productImageSrc = productCard.find('img').attr('src');
+  // Function to update the selected product images in the UI
+  function updateSelectedProductsUI() {
+    const product1 = selectedProducts[0] || {};
+    const product2 = selectedProducts[1] || {};
 
-        if (selectedProducts.length < 2) {
-          selectedProducts.push(productImageSrc);
-        } else {
-          selectedProducts[0] = selectedProducts[1];
-          selectedProducts[1] = productImageSrc;
-        }
+    // Update the images
+    $('#selected-product-1').html(
+      product1.pc_image ? `<img src="${product1.pc_image}" alt="${product1.pc_name}" style="width:100%">` : ''
+    );
+    $('#selected-product-2').html(
+      product2.pc_image ? `<img src="${product2.pc_image}" alt="${product2.pc_name}" style="width:100%">` : ''
+    );
 
-        $('#selected-product-1').html(selectedProducts[0] ? `<img src="${selectedProducts[0]}" alt="Selected Product 1" style="width:100%">` : '');
-        $('#selected-product-2').html(selectedProducts[1] ? `<img src="${selectedProducts[1]}" alt="Selected Product 2" style="width:100%">` : '');
-      });
-    });
-  </script>
+    // Update hidden fields with product details
+    $('#singleitem1').val(
+      product1.pc_id ? JSON.stringify({
+        id_pc: product1.pc_id,
+        image_pc: product1.pc_image,
+        name_pc: product1.pc_name,
+        price_pc: product1.pc_price
+      }) : ''
+    );
+
+    $('#singleitem2').val(
+      product2.pc_id ? JSON.stringify({
+        id_pc: product2.pc_id,
+        image_pc: product2.pc_image,
+        name_pc: product2.pc_name,
+        price_pc: product2.pc_price
+      }) : ''
+    );
+  }
+
+  // Click event for adding products
+  $('.add-btn').on('click', function () {
+    const productCard = $(this).closest('.product-card');
+    const productId = productCard.data('pc-pid');
+    const productImageSrc = productCard.find('img').attr('src');
+    const productName = productCard.find('.pc-pname').text();
+    const productPrice = productCard.find('.pc-pprice').text();
+
+    const productData = {
+      pc_id: productId,
+      pc_image: productImageSrc,
+      pc_name: productName,
+      pc_price: productPrice,
+    };
+
+    // Add product to the selected products array
+    if (selectedProducts.length < 2) {
+      selectedProducts.push(productData);
+    } else {
+      selectedProducts[0] = selectedProducts[1];
+      selectedProducts[1] = productData;
+    }
+
+    // Update the UI
+    updateSelectedProductsUI();
+  });
+});
+
+</script>
 
 </body>
 

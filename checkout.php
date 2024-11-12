@@ -8,7 +8,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include($root_path . "includes/header-links.php"); ?>
 
-    
     	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -286,6 +285,9 @@ if($response_type=="success"){
                         <div id="checkoutProducts" class="row w-100 m-auto p-2 border border-dark loading-text">
                             loading products
                         </div>
+                        <div id="extraProducts" class="row w-100 m-auto mt-2">
+
+                        </div>
                         <div class="d-flex justify-content-between cart-border py-3">
                             <P class="mb-0"><b>PRODUCT GRAND TOTAL:</b></P>
                             <span id="checkoutGrandTotal2" class="fw-bold" data-checkout-grand-total="0">0</span>
@@ -373,8 +375,26 @@ $(document).ready(function() {
 ?>
 <script type="text/javascript">
     $(document).ready(function() {
+       
+        // Retrieve cart data from localStorage or initialize as an empty array
         var checkoutProducts = JSON.parse(localStorage.getItem('cartstorage')) || [];
+
+        // Convert 'singleProduct1' and 'singleProduct2' from JSON strings to objects
+        checkoutProducts.forEach(product => {
+            if (product.singleProduct1) {
+                product.singleProduct1 = JSON.parse(product.singleProduct1);
+            }
+            if (product.singleProduct2) {
+                product.singleProduct2 = JSON.parse(product.singleProduct2);
+            }
+        });
+
+        // Update the hidden form input with the modified JSON string of the cart
         document.getElementById('jsonData').value = JSON.stringify(checkoutProducts);
+
+        // Optional: Log the updated cart to the console for verification
+        console.log(checkoutProducts);
+
 
         var padutchddate = localStorage.getItem('padutchddate');
         document.getElementById('padutchddate').value = padutchddate;
@@ -391,7 +411,7 @@ $(document).ready(function() {
                 totalCartItems++;
                 $('#product_name').val(item.name);
                 $('#checkoutProducts').append(
-                    '<div id="'+item.id+'" class="col-sm-12 col-md-4">'+
+                    '<div id="'+item.id+'" class="col-sm-12 col-md-4 product-item">'+
                     '<div class="cartitemimage">'+
                     '<img id="" class="img-fluid" src="'+$appPathJS+'images/'+item.image+'" alt="'+item.name+'" style="border-width:0px;">'+
                     '<span class="tbl-span">PRODUCT ID: '+item.id+'</span>'+
@@ -401,10 +421,46 @@ $(document).ready(function() {
                     '</div>'+
                     '</div>'
                 );
+
+                var singleItems = "";
+                if(item.singleProduct1 || item.singleProduct2){
+                    const productData1 = JSON.parse(item.singleProduct1);
+                    const productData2 = JSON.parse(item.singleProduct2);
+                    singleItems += '<div class="additional-data d-none border border-dark pt-2 pb-2" id="extra-'+item.id+'"><div class="d-flex"><h6 class="d-block">Single Items: </h6></div>';
+
+                    singleItems += '<div class="d-flex">';
+                    if(productData1){
+                        console.log("new data" + productData1.image_pc);
+                        singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData1.image_pc+'" alt="'+productData1.name_pc+'" style="border-width:0px;max-width: 100px;" />';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData1.id_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData1.name_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData1.price_pc+'</p></div>';
+                    }
+
+                    if(productData2){
+                        console.log("new data" + productData2.image_pc);
+                        singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData2.image_pc+'" alt="'+productData2.name_pc+'" style="border-width:0px;max-width: 100px;" />';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData2.id_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData2.name_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData2.price_pc+'</p></div>';
+                    }
+                    singleItems += '</div></div>';
+
+                }
+
+                $('#extraProducts').append(singleItems);
+
             });
             $('#checkoutProducts').removeClass("loading-text");
         }
     }); 
+</script>
+<script>
+// Click event to toggle additional data visibility
+$('#checkoutProducts').on('click', '.product-item', function() {
+    const productId = $(this).attr('id').split('-')[1];
+    $("#extra-product-"+productId).toggleClass('d-none'); 
+});
 </script>
 <script type="text/javascript">
     function calculate_checkout_items(){

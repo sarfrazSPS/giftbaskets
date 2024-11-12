@@ -71,18 +71,43 @@ $transaction_request_type->setBillTo($customer_billing);
 $transaction_request_type->setShipTo($customer_shipping);
 
 //////////////////////////////////product-details///////////////////////////////////////
+// Assume $jsonData is a valid JSON string
 $arr = json_decode($jsonData);
-// print_r($arr);
+if ($arr === null) {
+    // Handle the error, e.g. exit or log it
+    echo "Invalid JSON data";
+    exit;
+}
+
 $lineItems = [];
+$delivery_date = ""; // Make sure this is set appropriately
+
 foreach ($arr as $item) {
-    $productdetail = substr(strstr($item->productDetails, '<br/>'), 5);
-    $productdetail = str_replace(["<br>", "<br/>", "br", "br  ", "br&nbsp;"], "<br>", $productdetail);
-    
-    // echo $productdetail;
-    if($delivery_date!=""){
-        $productdetail .= "<br />Delivery Date: ".$delivery_date;
+    // Extract the product details and replace <br/> occurrences
+    // $productdetail = strstr($item->productDetails, '<br/>');
+    // if ($productdetail) {
+    //     $productdetail = substr($productdetail, 5); // Remove the '<br/>'
+    // }
+    $productdetail = str_replace(["<br>", "<br/>", "br", "br  ", "br&nbsp;"], "\n", $item->productDetails);
+
+    // Add delivery date if available
+    if ($delivery_date != "") {
+        $productdetail .= "<br />Delivery Date: " . $delivery_date . "<br />";
     }
 
+    // Handle singleProduct1 and singleProduct2
+    $singleItems = "";
+    if (!empty($item->singleProduct1)) {
+        $singleItems .= 'Single Product 1:<br /> Name: ' . $item->singleProduct1->name_pc . ', Price: ' . $item->singleProduct1->price_pc . ', Product ID: ' . $item->singleProduct1->id_pc . ' <br />';
+    }
+
+    if (!empty($item->singleProduct2)) {
+        $singleItems .= 'Single Product 2:<br /> Name: ' . $item->singleProduct2->name_pc . ', Price: ' . $item->singleProduct2->price_pc . ', Product ID: ' . $item->singleProduct2->id_pc . ' <br />';
+    }
+
+    $productdetail .= $singleItems;
+
+    // Create the LineItem object
     $lineItem1 = new AnetAPI\LineItemType();
     $lineItem1->setItemId($item->id);
     $lineItem1->setName($item->name);
@@ -90,8 +115,6 @@ foreach ($arr as $item) {
     $lineItem1->setQuantity($item->quantity);
     $lineItem1->setUnitPrice($item->price);
     array_push($lineItems, $lineItem1);
-
-    
 }
 $transaction_request_type->setLineItems($lineItems);
 ///////////////////////////////////////////////////////////////////////////////////////
@@ -176,11 +199,24 @@ if ($response != null) {
                                 $productName = $product->name;
                                 $productPrice = $product ->price;
 
-                                $productDetails = substr(strstr($item->productDetails, '<br/>'), 5);
+                                //$productDetails = substr(strstr($product->productDetails, '<br/>'), 5);
+                                $productDetails = $product->productDetails;
                                
                                 if($delivery_date!=""){
-                                    $productDetails .= "<br />Delivery Date: ".$delivery_date;
+                                    $productDetails .= "<br />Delivery Date: ".$delivery_date."<br />";
                                 }
+
+                                 // Handle singleProduct1 and singleProduct2
+                                $singleItems1 = "";
+                                if (!empty($product->singleProduct1)) {
+                                    $singleItems1 .= 'Single Product 1:<br /> Name: ' . $product->singleProduct1->name_pc . ', Price: ' . $product->singleProduct1->price_pc . ', Product ID: ' . $product->singleProduct1->id_pc . ' <br />';
+                                }
+
+                                if (!empty($product->singleProduct2)) {
+                                    $singleItems1 .= 'Single Product 2:<br /> Name: ' . $product->singleProduct2->name_pc . ', Price: ' . $product->singleProduct2->price_pc . ', Product ID: ' . $product->singleProduct2->id_pc . ' <br />';
+                                }
+
+                                $productDetails .= $singleItems1;
 
                                 $product_details = $product->productDetails;
                                 $options = $product->cutom; 

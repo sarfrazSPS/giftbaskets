@@ -1,3 +1,8 @@
+<?php
+// Enable error reporting
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1); 
+?>
 <?php include("includes/variables.php"); ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -367,6 +372,7 @@ if($clear_cart==1){
 <script type="text/javascript">
 
     $(document).ready(function() {
+
         var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
         console.log(localStorage);
         if (cartItems.length === 0) {
@@ -376,29 +382,60 @@ if($clear_cart==1){
             var totalCartItems = 0;
             cartItems.forEach(function(item) {
                 totalCartItems++;
+
+                var singleItems = "";
+                if ((item.singleProduct1 && item.singleProduct1.trim() !== '') || (item.singleProduct2 && item.singleProduct2.trim() !== '')) {
+                    
+                    
+                    singleItems += '<div class="d-flex"><h6 class="d-block">Single Items: </h6></div>';
+
+                    singleItems += '<div class="d-flex">';
+                    if(item.singleProduct1 && item.singleProduct1.trim() !== ''){
+                        const productData1 = JSON.parse(item.singleProduct1);
+                        
+                        singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData1.image_pc+'" alt="'+productData1.name_pc+'" style="border-width:0px;max-width: 100px;" />';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData1.id_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData1.name_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData1.price_pc+'</p></div>';
+                    }
+
+                    if(item.singleProduct2 && item.singleProduct2.trim() !== ''){
+                        const productData2 = JSON.parse(item.singleProduct2);
+                        
+                        singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData2.image_pc+'" alt="'+productData2.name_pc+'" style="border-width:0px;max-width: 100px;" />';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData2.id_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData2.name_pc+'</p>';
+                        singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData2.price_pc+'</p></div>';
+                    }
+                    singleItems += '</div>';
+
+                }
+
                 $('#dynamicContentContainer').append(
                 '<tr id="'+item.id+'" class="cart_tr">' +
                 '<td>' +
-                '<div class="d-flex">' +
-                '<div class="cartitemimage">' +
-                '<a href="#" id="">' +
-                '<img id="" class="img-fluid" src="'+$appPathJS+'images/'+item.image+'" alt="'+item.name+'" style="border-width:0px;">' +
-                '</a>'+
-                '<span class="tbl-span">PRODUCT ID: '+item.id+'</span>'+
-                '</div>'+
-                '<div class="ms-3 w-100 position-relative">'+
-                '<div class="cart-item-name">'+
-                '<p class="mb-1" style="text-transform:uppercase;">'+item.name+'</p>'+
-                '<span class="tbl-span item-remove-btn" style="color:black" id="'+item.id+'">REMOVE ITEM</span>'+
-                '</div>'+
-                '<div class="cart-item-extras">'+
-                '<div class="d-flex">'+
-                '<div id="popupActivateGift'+totalCartItems+'" class="cie-item">'+
-                '<div id="popupActivateEmail'+totalCartItems+'" class="cie-item">'+
-                '</div>'+
-                '</div>'+
-                '</div>'+
-                '</div>'+
+                    '<div class="d-flex">' +
+                        '<div class="cartitemimage">' +
+                            '<a href="#" id="">' +
+                                '<img id="" class="img-fluid" src="'+$appPathJS+'images/'+item.image+'" alt="'+item.name+'" style="border-width:0px;">' +
+                            '</a>' +
+                            '<span class="tbl-span">PRODUCT ID: '+item.id+'</span>' +
+                        '</div>' +
+                        '<div class="ms-3 w-100 position-relative">' +
+                            '<div class="cart-item-name">' +
+                                '<p class="mb-1" style="text-transform:uppercase;">'+item.name+'</p>' +
+                                '<span class="tbl-span item-remove-btn" style="color:black" id="'+item.id+'">REMOVE ITEM</span>' +
+                            '</div>' +
+                            '<div class="cart-item-extras">' +
+                                '<div class="d-flex">' +
+                                    '<div id="popupActivateGift'+totalCartItems+'" class="cie-item">' +
+                                        '<div id="popupActivateEmail'+totalCartItems+'" class="cie-item"></div>' +
+                                    '</div>' +
+                                '</div>' +
+                            '</div>' +
+                        '</div>' +
+                    '</div>' +
+                    '<br />' + singleItems + '<br />' +
                 '</td>'+
                 '<td class="cal_item_price">'+item.price+'</td>'+
                 '<td width="10%">'+
