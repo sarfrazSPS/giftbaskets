@@ -301,7 +301,7 @@
               </div>
             </div>
             <div class="col-md-6">
-              <form method="post">
+              <form method="post" onsubmit="return false;">
 
                 <p class="prod-id">Product ID: 013</p>
                 <h3 class="prod-title">"Deluxe Traditions" Gourmet Gift Baskets</h3>
@@ -677,7 +677,7 @@
                     <!-- Slide 1 - Chocolate Gift Baskets -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/chocolate-gift-baskets.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" alt="Our chocolate gift baskets are filled with Lancaster PA Dutch chocolates, fudge and delicious baked goods loved by everyone">
+                        <img src="https://padutchbaskets.com/assets/images/products/chocolate-lovers/chocolate-lovers-gift-basket.jpg" loading="lazy" alt="Our chocolate gift baskets are filled with Lancaster PA Dutch chocolates, fudge and delicious baked goods loved by everyone">
                         <h5>Chocolate Gift Baskets</h5>
                         <span id="swiper-price">$74.50</span>
                       </a>
@@ -686,7 +686,7 @@
                     <!-- Slide 2 - Bakers Special Food Basket -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/food-basket.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/bakers-special/food-basket.jpg" alt="Our Bakers Special food basket offers the most delicious baked goods from the Amish in Lancaster, PA well known for their ability to make the best baked goods">
+                        <img src="https://padutchbaskets.com/assets/images/products/bakers-special/food-basket.jpg" loading="lazy" alt="Our Bakers Special food basket offers the most delicious baked goods from the Amish in Lancaster, PA well known for their ability to make the best baked goods">
                         <h5>"Bakers Special" Food Basket</h5>
                         <span id="swiper-price">$76.50</span>
                       </a>
@@ -695,7 +695,7 @@
                     <!-- Slide 3 - Gourmet Gift Baskets -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/gourmet-gift-baskets.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/deluxe-traditions/gourmet-basket.jpg" alt="With our gourmet gift baskets we offer gourmet cheeses, baked goods, chocolates, fudge and more that we deliver anywhere in the country">
+                        <img src="https://padutchbaskets.com/assets/images/products/deluxe-traditions/gourmet-basket.jpg" loading="lazy" alt="With our gourmet gift baskets we offer gourmet cheeses, baked goods, chocolates, fudge and more that we deliver anywhere in the country">
                         <h5>Gourmet Gift Baskets</h5>
                         <span id="swiper-price">$87.50</span>
                       </a>
@@ -704,7 +704,7 @@
                     <!-- Slide 4 - Traditions Food Gift Baskets -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/food-gift-baskets.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/traditions/food-basket.jpg" alt="Our Traditions food basket is one of our very popular gift baskets offering whoopie pies, baked goods, brittle and more that everyone loves">
+                        <img src="https://padutchbaskets.com/assets/images/products/traditions/food-basket.jpg" loading="lazy" alt="Our Traditions food basket is one of our very popular gift baskets offering whoopie pies, baked goods, brittle and more that everyone loves">
                         <h5>"Traditions" Food Gift Baskets</h5>
                         <span id="swiper-price">$79.50</span>
                       </a>
@@ -713,7 +713,7 @@
                     <!-- Slide 5 - Gift Baskets Near Me -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/gift-baskets-near-me.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/basket-of-treats/basket.jpg" alt="When looking for gift baskets near me, our gift baskets from Lancaster, PA can be delivered anywhere in the country">
+                        <img src="https://padutchbaskets.com/assets/images/products/basket-of-treats/basket.jpg" loading="lazy" alt="When looking for gift baskets near me, our gift baskets from Lancaster, PA can be delivered anywhere in the country">
                         <h5>Gift Baskets Near Me - Lancaster Treats</h5>
                         <span id="swiper-price">$59.50</span>
                       </a>
@@ -722,7 +722,7 @@
                     <!-- Slide 6 - Savory Flavors Best Gift Baskets -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/best-gift-baskets.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/savory-flavors/gift-basket-online.jpg" alt="Our Savory Flavors best gift baskets is our most popular with baked pies, blueberry bread, brittle, fudge, apple pie and so much more">
+                        <img src="https://padutchbaskets.com/assets/images/products/savory-flavors/gift-basket-online.jpg" loading="lazy" alt="Our Savory Flavors best gift baskets is our most popular with baked pies, blueberry bread, brittle, fudge, apple pie and so much more">
                         <h5>"Savory Flavors" Best Gift Baskets</h5>
                         <span id="swiper-price">$119.50</span>
                       </a>
@@ -731,7 +731,7 @@
                     <!-- Slide 7 - Dutch Baked Goods Gift Delivery -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/gift-delivery.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/dutch-baked-goods/customized-basket.jpg" alt="When looking for the perfect gift delivery consider our Dutch Baked Goods from Lancaster PA that we guarantee they will love and appreciate">
+                        <img src="https://padutchbaskets.com/assets/images/products/dutch-baked-goods/customized-basket.jpg" loading="lazy" alt="When looking for the perfect gift delivery consider our Dutch Baked Goods from Lancaster PA that we guarantee they will love and appreciate">
                         <h5>"Dutch Baked Goods" Gift Delivery</h5>
                         <span id="swiper-price">$72.50</span>
                       </a>
@@ -740,7 +740,7 @@
                     <!-- Slide 8 - Lancaster Favorites Custom Gift Baskets -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/custom-gift-baskets.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/lancaster-favorites/custom-gift-baskets.jpg" alt="We are happy to offer custom gift baskets with our PA Dutch baked goods. Choose certain products and customize to the occasion">
+                        <img src="https://padutchbaskets.com/assets/images/products/lancaster-favorites/custom-gift-baskets.jpg" loading="lazy" alt="We are happy to offer custom gift baskets with our PA Dutch baked goods. Choose certain products and customize to the occasion">
                         <h5>"Lancaster Favorites" Custom Gift Baskets</h5>
                         <span id="swiper-price">$89.50</span>
                       </a>
@@ -749,7 +749,7 @@
                     <!-- Slide 9 - Celebrations Gift Basket Delivery -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/gift-basket-delivery.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/celebrations/gift-basket-delivery.jpg" alt="We are happy to offer our gift basket delivery with gourmet foods, cheeses, baked goods and chocolates that we can ship to most states in the country">
+                        <img src="https://padutchbaskets.com/assets/images/products/celebrations/gift-basket-delivery.jpg" loading="lazy" alt="We are happy to offer our gift basket delivery with gourmet foods, cheeses, baked goods and chocolates that we can ship to most states in the country">
                         <h5>"Celebrations" Gift Basket Delivery</h5>
                         <span id="swiper-price">$54.50</span>
                       </a>
@@ -758,7 +758,7 @@
                     <!-- Slide 10 - Bakers Choice Gift Basket Ideas -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/gift-basket-ideas.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/bakers-choice/deluxe-gift-basket.jpg" alt="The Bakers Choice gift basket ideas has a great variety of gourmet foods thare are loved and appreciated by those receiving them">
+                        <img src="https://padutchbaskets.com/assets/images/products/bakers-choice/deluxe-gift-basket.jpg" loading="lazy" alt="The Bakers Choice gift basket ideas has a great variety of gourmet foods thare are loved and appreciated by those receiving them">
                         <h5>"Bakers Choice" Gift Basket Ideas</h5>
                         <span id="swiper-price">$87.50</span>
                       </a>
@@ -767,7 +767,7 @@
                     <!-- Slide 11 - Gourmet Snack Basket -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/gourmet-snack-basket.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/dutch-traditions/food-gift-ideas.jpg" alt="The gourmet snack basket won't last very long with these baked goods from Lancaster, PA that are loved worldwide">
+                        <img src="https://padutchbaskets.com/assets/images/products/dutch-traditions/food-gift-ideas.jpg" loading="lazy" alt="The gourmet snack basket won't last very long with these baked goods from Lancaster, PA that are loved worldwide">
                         <h5>Gourmet Snack Basket</h5>
                         <span id="swiper-price">$89.50</span>
                       </a>
@@ -776,7 +776,7 @@
                     <!-- Slide 12 - Unique Gift Baskets -->
                     <div class="swiper-slide">
                       <a href="https://padutchbaskets.com/unique-gift-baskets.php">
-                        <img src="https://padutchbaskets.com/assets/images/products/good-ole-treats/unique-gift-baskets.jpg" alt="Our very unique gift baskets have rave reviews from those receiving our PA Dutch baked goods, gourmet foods, chocolates and more that we deliver">
+                        <img src="https://padutchbaskets.com/assets/images/products/good-ole-treats/unique-gift-baskets.jpg" loading="lazy" alt="Our very unique gift baskets have rave reviews from those receiving our PA Dutch baked goods, gourmet foods, chocolates and more that we deliver">
                         <h5>Unique Gift Baskets</h5>
                         <span id="swiper-price">$79.50</span>
                       </a>

@@ -486,7 +486,8 @@ $(document).ready(function () {
   }
 
   // Click event for adding products
-  $('.add-btn').on('click', function () {
+  $('.add-btn').on('click', function (event) {
+    event.preventDefault();
     const productCard = $(this).closest('.product-card');
     const productId = productCard.data('pc-pid');
     const productImageSrc = productCard.find('img').attr('src');
