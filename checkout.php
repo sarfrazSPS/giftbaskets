@@ -54,6 +54,7 @@ src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1"
 $status = "";
 $clear_cart = 0;
 $response_type ='danger';
+$delivery_date = ""; // Make sure this is set appropriately
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
 	// User card information data received via form submit

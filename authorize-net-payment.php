@@ -80,7 +80,6 @@ if ($arr === null) {
 }
 
 $lineItems = [];
-$delivery_date = ""; // Make sure this is set appropriately
 
 foreach ($arr as $item) {
     // Extract the product details and replace <br/> occurrences
@@ -88,24 +87,30 @@ foreach ($arr as $item) {
     // if ($productdetail) {
     //     $productdetail = substr($productdetail, 5); // Remove the '<br/>'
     // }
-    $productdetail = str_replace(["<br>", "<br/>", "br", "br  ", "br&nbsp;"], "\n", $item->productDetails);
+
+    $productdetail = str_replace(["<br>", "<br/>", "br", "br  ", "br&nbsp;", "<br >", "< />"], "\n", $item->productDetails);
+    $productdetail = str_replace(["Choose Your"], "", $item->productDetails);
+
+    
 
     // Add delivery date if available
-    if ($delivery_date != "") {
-        $productdetail .= "<br />Delivery Date: " . $delivery_date . "<br />";
+    if ($delivery_date!= "") {
+        $productdetail .= "<br />Delivery : " . $delivery_date . "<br />";
     }
 
     // Handle singleProduct1 and singleProduct2
     $singleItems = "";
     if (!empty($item->singleProduct1)) {
-        $singleItems .= 'Single Product 1:<br /> Name: ' . $item->singleProduct1->name_pc . ', Price: ' . $item->singleProduct1->price_pc . ', Product ID: ' . $item->singleProduct1->id_pc . ' <br />';
+        $singleItems .= 'Item 1:<br /> Name: ' . $item->singleProduct1->name_pc . ', Price: ' . $item->singleProduct1->price_pc . ', Product ID: ' . $item->singleProduct1->id_pc . ' <br />';
     }
 
     if (!empty($item->singleProduct2)) {
-        $singleItems .= 'Single Product 2:<br /> Name: ' . $item->singleProduct2->name_pc . ', Price: ' . $item->singleProduct2->price_pc . ', Product ID: ' . $item->singleProduct2->id_pc . ' <br />';
+        $singleItems .= 'Item 2:<br /> Name: ' . $item->singleProduct2->name_pc . ', Price: ' . $item->singleProduct2->price_pc . ', Product ID: ' . $item->singleProduct2->id_pc . ' <br />';
     }
 
     $productdetail .= $singleItems;
+
+    $productdetail = str_replace(["<br>", "<br/>", "br", "br  ", "br&nbsp;", "<br >", "< />"], "\n", $productdetail);
 
     // Create the LineItem object
     $lineItem1 = new AnetAPI\LineItemType();
@@ -203,7 +208,7 @@ if ($response != null) {
                                 $productDetails = $product->productDetails;
                                
                                 if($delivery_date!=""){
-                                    $productDetails .= "<br />Delivery Date: ".$delivery_date."<br />";
+                                    $productDetails .= "<br />Delivery : ".$delivery_date."<br />";
                                 }
 
                                  // Handle singleProduct1 and singleProduct2

@@ -1547,6 +1547,161 @@ form .form-btn:hover {
     outline: 0;
 }
 
+.product-slider {
+    display: flex;
+    overflow-x: scroll;
+  }   
+  .pd-tabs .nav-link{
+    padding: 0;
+    border: 0;
+  }
+  .pd-tabs .nav-link img{
+    max-width: 100%;
+  }
+  .add-btn{
+    border-radius: 0;
+  }
+  .dotted-box {
+    width: 100px;
+    height: 100px;
+    border: 2px dotted #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .nav-tabs{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+  }
+
+  .plus-box {
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    width: 30px;
+  }
+
+  .text-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+    padding-left: 15px;
+  }
+
+  .center-container-box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: nowrap;
+  }
+  .tab-pane{
+    background-color: #e6e6e6;
+    position: relative;
+  }
+  .carousel-item {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .product-slider {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  padding: 10px 0;
+  gap: 10px;
+}
+
+.product-card {
+  flex: 0 0 150px;
+  max-width: 150px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 10px;
+  
+}
+/* .product-card:first-of-type,
+.product-card:first-child {
+  margin-left: 50px;
+}
+
+.product-card:last-of-type,
+.product-card:last-child {
+  margin-right: 50px;
+} */
+
+.product-card p{
+  margin-top: 3px;
+  margin-bottom: 5px;
+}
+
+.product-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  /* display: inline-block; */
+}
+
+.scroll-btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  position: absolute;
+  top: 35%;
+  opacity: 0.2;
+}
+
+.scroll-btn.prev-btn{
+  left: 0;
+}
+.scroll-btn.next-btn{
+  right: 0;
+}
+
+.scroll-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.play-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #5a5656;
+  padding: 7px 5px 7px 10px;
+  cursor: pointer;
+  position: relative;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.play-btn::before {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0;
+    border-left: 15px solid #5a5656;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    transition: border-color 0.3s ease;
+}
+.prev-btn .play-btn{
+  transform: rotate(180deg);
+}
+
+.scroll-container:hover .scroll-btn{
+  opacity: 1;
+}
+
 
 /*Responsiveness*/
 

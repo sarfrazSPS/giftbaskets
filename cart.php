@@ -373,6 +373,11 @@ if($clear_cart==1){
 
     $(document).ready(function() {
 
+        var padutchddate = localStorage.getItem('padutchddate');
+        if(padutchddate){
+            $("#openCalendarModal").text("Delivery Date: " + padutchddate);
+        }
+
         var cartItems = JSON.parse(localStorage.getItem('cartstorage')) || [];
         console.log(localStorage);
         if (cartItems.length === 0) {
