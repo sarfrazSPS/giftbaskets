@@ -516,6 +516,207 @@ $(document).ready(function () {
 
 </script>
 
+<script>
+
+$(document).ready(function () {
+  
+    let selectedItems = []; // To keep track of selected items (maximum 2)
+
+    // Open the modal when clicking the product image
+    $(document).on('click', '.product-image, .pc-pname', function (e) {
+
+        var produchtml = $(this).closest(".product-card").prop('outerHTML');
+        $("#prod-mdl-bdy").html(produchtml);
+
+        // const imgSrc = $(this).attr('src');
+        // const productName = $(this).siblings('.pc-pname').text();
+        // const productPrice = $(this).siblings('.pc-pprice').text();
+
+        // if ($(this).siblings('.add-btn').length) {
+        //     btns = $(this).siblings('.add-btn').prop('outerHTML');
+        // } else {
+        //     btns = $(this).siblings('.dynamic-btns').html();
+        // }
+
+        // // Populate modal content
+        // $('#modalImage').attr('src', imgSrc);
+        // $('#modalTitle').text(productName);
+        // $('#modalPrice').text('Price: ' + productPrice);
+        // $('#modalBtn').html(btns);
+
+        // Show the modal using Bootstrap's modal method
+        const modal = new bootstrap.Modal(document.getElementById('productModal'));
+        modal.show();
+
+    });
+
+    // Handle "Add to Selection" button in modal and ".add-btn" click
+    $(document).on('click', '.modal-add-btn, .add-btn', function () {
+
+        const productId = $(this).hasClass('modal-add-btn')
+            ? $(this).data('productId')
+            : $(this).closest('.product-card').data('pc-pid');
+        const imgSrc = $('.product-card[data-pc-pid="' + productId + '"] .product-image').attr('src');
+
+        // Check if we can add this product (max 2 products total)
+        if (selectedItems.length < 2) {
+            addProductToSelection(productId, imgSrc);
+        } else {
+            alert("You can only add up to 2 products in total.");
+        }
+
+        console.log(selectedItems);
+
+    });
+
+    // Function to add product to selection
+    function addProductToSelection(productId, imgSrc) {
+
+        const dottedBox = $('#selected-product-1').is(':empty')
+            ? $('#selected-product-1')
+            : $('#selected-product-2');
+
+        if (!dottedBox.length) return; // No empty boxes available
+
+        // Insert image and update UI
+        dottedBox.html('<img src="' + imgSrc + '" alt="Selected Product" class="selected-image" data-product-id="' + productId + '">');
+
+        // Update the corresponding plus-box to minus
+        if (dottedBox.is('#selected-product-1')) {
+            $('#selected-product-1').closest(".db-parent").find(".pmbox").removeClass("plus-box").addClass("minus-box").text("-");
+            $('#selected-product-1').closest(".db-parent").attr('data-dbp', productId);
+        } else if (dottedBox.is('#selected-product-2')) {
+            $('#selected-product-2').closest(".db-parent").find(".pmbox").removeClass("plus-box").addClass("minus-box").text("-");
+            $('#selected-product-2').closest(".db-parent").attr('data-dbp', productId);
+        }
+
+        // Add the product to the selectedItems array
+        selectedItems.push(productId);
+
+        // Update selection
+        updateSelectionCount();
+        updateButtonText(productId);
+
+        const quantity = selectedItems.filter(item => item === productId).length;
+        console.log("quantity="+quantity);
+    }
+
+    // Function to remove product from selection
+    function removeProductFromSelection(productId, clickedElement) {
+
+        var dottedBox;
+        const quantity = selectedItems.filter(item => item === productId).length;
+
+        const index = selectedItems.indexOf(productId);
+        if (index > -1) {
+            selectedItems.splice(index, 1);
+        }
+
+        
+
+            // Check if clickedElement is provided and is a valid jQuery object
+            if (clickedElement && clickedElement.length) {
+                if (clickedElement.hasClass('frompage')) {
+
+                    if(quantity < 2){
+                        dottedBox = $('.selected-image[data-product-id="' + productId + '"]').parent();
+                    }else{
+                        dottedBox = $('.selected-image[data-product-id="' + productId + '"]').last().parent();
+                    }
+
+                }else{
+
+                    dottedBox = clickedElement.siblings(".dotted-box");
+                }
+            }
+
+        
+
+            // Remove the product from the dotted box
+            dottedBox.empty();
+
+            // Reset the corresponding plus-box
+            //dottedBox.closest(".db-parent").find(".plus-box").text('+');
+
+            if (dottedBox.is('#selected-product-1')) {
+                $('#selected-product-1').closest(".db-parent").find(".pmbox").removeClass("minus-box").addClass("plus-box").text("+");
+                $('#selected-product-1').closest(".db-parent").attr('data-dbp', '');
+            } else if (dottedBox.is('#selected-product-2')) {
+                $('#selected-product-2').closest(".db-parent").find(".pmbox").removeClass("minus-box").addClass("plus-box").text("+");
+                $('#selected-product-1').closest(".db-parent").attr('data-dbp', '');
+            }
+
+        
+
+        
+
+        // Update the selection and button text
+        updateSelectionCount();
+        updateButtonText(productId);
+    }
+
+    // Function to update the selection count
+    function updateSelectionCount() {
+        const selectedCount = selectedItems.length;
+        $('.selc_qty').text(selectedCount);
+    }
+
+    // Handle click on the minus box
+    $(document).on('click', '.minus-box', function () {    
+
+        const productId = $(this).siblings('.dotted-box').find('.selected-image').data('product-id');
+
+        removeProductFromSelection(productId, $(this));
+    });
+
+    // Function to update the button text for the specific product
+    function updateButtonText(productId) {
+
+        const quantity = selectedItems.filter(item => item === productId).length;
+
+        //const addButton = $('.product-card[data-pc-pid="' + productId + '"]').find(".add-btn");
+
+        if (quantity > 0) {
+            $('.product-card[data-pc-pid="' + productId + '"]').find("button").remove();
+            $('.product-card[data-pc-pid="' + productId + '"]').find(".dynamic-btns").html('<div class="add-btn-new"><span class="minus-icon frompage" style="width: 10px;display: block;cursor: pointer;">-</span>' + quantity + '<span class="plus-icon frompage" style="width: 10px;display: block;cursor: pointer;">+</span></div>')
+            //addButton.html('<span class="minus-icon frompage">-</span>' + quantity + '<span class="plus-icon frompage">+</span>');
+        } else {
+            $('.product-card[data-pc-pid="' + productId + '"]').find(".dynamic-btns").html('<button type="button" class="btn btn-dark add-btn">Add + </button>')
+        }
+
+    }
+
+    $(document).on('click', '.plus-icon', function (event) {
+        // event.stopPropagation();
+        if (selectedItems.length < 2) {
+
+            const productId = $(this).hasClass('frompage')
+                ? $(this).closest(".product-card").data('pc-pid')
+                : $(this).closest('.product-card').data('1pc-pid');
+            const imgSrc = $('.product-card[data-pc-pid="' + productId + '"] .product-image').attr('src');
+
+            addProductToSelection(productId, imgSrc);
+
+        } else {
+            alert("1You can only add up to 2 products in total.");
+        }
+    });
+
+    $(document).on('click', '.minus-icon', function (event) {
+        // event.stopPropagation();
+        const productId = $(this).hasClass('frompage')
+            ? $(this).closest(".product-card").data('pc-pid')
+            : $(this).closest('.product-card').data('1pc-pid');
+        
+        removeProductFromSelection(productId, $(this));
+    });
+
+
+});
+
+
+</script>
+
 </body>
 
 </html>

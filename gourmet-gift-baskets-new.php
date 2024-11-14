@@ -1,4 +1,5 @@
 <?php include("includes/variables.php"); ?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -78,6 +79,14 @@
       src="https://www.facebook.com/tr?id=994885672288673&ev=PageView&noscript=1" /></noscript>
   <!-- End Meta Pixel Code -->
 
+  <style>
+    .close-btn {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+    }
+  </style>
 </head>
 
 <body>
@@ -95,7 +104,7 @@
 
 
     </header>
-
+    
 
     <?php echo breadCrumb($app_path, "Gourmet Gift Baskets", 2, "gift-baskets.php", "Gift Baskets"); ?>
 
@@ -377,17 +386,19 @@
                         <div class="product-slider">
                           
                           <div class="product-card" data-pc-pid="1">
-                            <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-basket.jpg" alt="Product 1" class="product-image product-select">
+                            <img src="<?=$app_path;?>products/applecrumbpie.png" alt="Product 1" class="product-image product-select">
                             <p class="pc-pname">Product 1</p>
                             <p class="pc-pprice">$10</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
+                            <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
 
                           <div class="product-card" data-pc-pid="2">
-                            <img src="<?=$app_path;?>assets/images/products/deluxe-traditions/gourmet-gift-basket.jpg" alt="Product 2" class="product-image product-select">
+                            <img src="<?=$app_path;?>products/blueberrybread.png" alt="Product 2" class="product-image product-select">
                             <p class="pc-pname">Product 2</p>
-                            <p class="pc-pprice">$20</p>
+                            <p class="pc-pprice">$6.50</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
+                            <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
 
                           <div class="product-card" data-pc-pid="3">
@@ -395,6 +406,7 @@
                             <p class="pc-pname">Product 3</p>
                             <p class="pc-pprice">$30</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
+                            <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
 
                           <div class="product-card" data-pc-pid="4">
@@ -402,6 +414,7 @@
                             <p class="pc-pname">Product 4</p>
                             <p class="pc-pprice">$25</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
+                            <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
 
                           <div class="product-card" data-pc-pid="5">
@@ -409,6 +422,7 @@
                             <p class="pc-pname">Product 5</p>
                             <p class="pc-pprice">$35</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
+                            <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
 
                           <div class="product-card" data-pc-pid="6">
@@ -416,6 +430,7 @@
                             <p class="pc-pname">Product 6</p>
                             <p class="pc-pprice">$22</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
+                            <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
                           
                         </div>
@@ -428,15 +443,18 @@
                       
                       <!-- Dotted Boxes for Selected Products -->
                       <div class="container center-container-box">
-                        <div class="plus-box">+</div>
 
-                        <div id="selected-product-1" class="dotted-box"></div>
-                        <input type="text" id="singleitem1" name="singleitem1" class="singleitemfield" />
-
-                        <div class="plus-box">+</div>
-
-                        <div id="selected-product-2" class="dotted-box"></div>
-                        <input type="text" id="singleitem2" name="singleitem2" class="singleitemfield" />
+                        <div class="db-parent" data-dbp="0">
+                          <div class="pmbox plus-box">+</div>
+                          <div id="selected-product-1" class="dotted-box overflow-hidden"></div>
+                          <input type="text" id="singleitem1" name="singleitem1" class="singleitemfield" />
+                        </div>
+                        
+                        <div class="db-parent" data-dbp="0">
+                          <div class="pmbox plus-box">+</div>
+                          <div id="selected-product-2" class="dotted-box overflow-hidden"></div>
+                          <input type="text" id="singleitem2" name="singleitem2" class="singleitemfield" />
+                        </div>
 
                         <div class="text-box">Your Selection (<span class="selc_qty">0</span>&nbsp;of upto 2 extras)</div>
                       </div>
@@ -446,6 +464,36 @@
                   </div>
 
                 </div>
+
+<!-- Bootstrap Modal -->
+<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">PRODUCT DETAILS</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div id="prod-mdl-bdy" class="modal-body">
+
+              <div class="row">
+
+                <div class="col-md-6 modal-left">
+                  <img id="modalImage" src="" alt="Product Image" class="img-fluid">
+                </div>
+                <div class="col-md-6 modal-right">
+                  <h4 id="modalTitle"></h4>
+                  <p id="modalPrice" class="mt-3"></p>
+                  <div id="modalBtn" class=""></div>
+                </div>
+
+              </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</div>                
+
                 <!--NEW::Code End Here-->
 
                 <div class="form-qty-btn">
@@ -639,7 +687,7 @@
 
         </div>
       </div>
-    </section>
+    
     <!-- Reviews Widget Elfsight -->
     <div id="elfsight-reviews" class="flex-container">
       <script src="https://static.elfsight.com/platform/platform.js" async></script>
@@ -659,10 +707,10 @@
       data-product-qty=""
       data-product-cart_img="gourmet-basket.jpg"></div>
     <!-- image to be display on cart page must be in root images folder   -->
-
+    
     <?php
     include("includes/footer.php");
-    ?>
+    ?></section>
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -732,7 +780,7 @@
         ]
       }
     </script>
-
+    
     <script>
       $(document).ready(function() {
         var per_amount = $('#price_per_item').html();
@@ -809,3 +857,4 @@
     <script type="text/javascript" charset="utf-8">
       finished();
     </script>
+    
