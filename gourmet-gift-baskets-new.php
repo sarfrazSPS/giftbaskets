@@ -465,34 +465,34 @@
 
                 </div>
 
-<!-- Bootstrap Modal -->
-<div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title">PRODUCT DETAILS</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div id="prod-mdl-bdy" class="modal-body">
+                <!-- Bootstrap Modal -->
+                <div class="modal fade" id="productModal" tabindex="-1" aria-labelledby="modalTitle" aria-hidden="true">
+                    <div class="modal-dialog modal-md">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title">PRODUCT DETAILS</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div id="prod-mdl-bdy" class="modal-body">
 
-              <div class="row">
+                              <div class="row">
 
-                <div class="col-md-6 modal-left">
-                  <img id="modalImage" src="" alt="Product Image" class="img-fluid">
-                </div>
-                <div class="col-md-6 modal-right">
-                  <h4 id="modalTitle"></h4>
-                  <p id="modalPrice" class="mt-3"></p>
-                  <div id="modalBtn" class=""></div>
-                </div>
+                                <div class="col-md-6 modal-left">
+                                  <img id="modalImage" src="" alt="Product Image" class="img-fluid">
+                                </div>
+                                <div class="col-md-6 modal-right">
+                                  <h4 id="modalTitle"></h4>
+                                  <p id="modalPrice" class="mt-3"></p>
+                                  <div id="modalBtn" class=""></div>
+                                </div>
 
-              </div>
-                
-                
-            </div>
-        </div>
-    </div>
-</div>                
+                              </div>
+                                
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>                
 
                 <!--NEW::Code End Here-->
 

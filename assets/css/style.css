@@ -170,12 +170,18 @@ ul.dropdown-menu li a:hover{
 .branding-right-content{
     text-align: right;
 }
+.align-center {
+	display: flex;
+	align-items: center;
+	justify-content: center; 
+	height: 100%;
+}
 .blc-social a{
     height: 25px;
     width: 25px;
     border-radius: 100%;
-    background-color: var(--mainBrownColor);
-    color: #ffffff;
+    background-color: #ffffff;
+    color: var(--mainBrownColor);
     text-align: center;
     padding: 5px 5px 5px 4px;
 }
@@ -185,7 +191,7 @@ ul.dropdown-menu li a:hover{
 .blc-social a svg{
     width: 100%;
     height: 100%;
-    fill: #fff;
+    fill: var(--mainBrownColor);
 }
 .blc-contact{
     margin-top: 20px;
@@ -1547,6 +1553,10 @@ form .form-btn:hover {
     outline: 0;
 }
 
+.db-parent{
+    display: flex;
+}
+
 .product-slider {
     display: flex;
     overflow-x: scroll;
@@ -1560,6 +1570,12 @@ form .form-btn:hover {
   }
   .add-btn{
     border-radius: 0;
+    width: 100%;
+    text-align: center;
+  }
+  .pc-pname,
+  .minus-box{
+    cursor: pointer;
   }
   .dotted-box {
     width: 100px;
@@ -1576,7 +1592,8 @@ form .form-btn:hover {
     justify-content: space-between;
   }
 
-  .plus-box {
+  .plus-box,
+  .minus-box {
     font-size: 22px;
     display: flex;
     align-items: center;
@@ -1584,6 +1601,60 @@ form .form-btn:hover {
     margin: 10px 0;
     width: 30px;
   }
+
+  .add-btn-new{
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid #5d0400;
+    background: #5d0400;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+    height: 38px;
+    align-items: center;
+  }
+
+  .minus-icon,
+  .plus-icon{
+    width: 10px;
+    display: block;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  #productModal .modal-title{
+    font-weight: bold;
+  }
+ 
+    #prod-mdl-bdy .dynamic-btns,
+    #prod-mdl-bdy .add-btn{
+        width: 200px;
+        margin: 0 auto;
+    }
+    #prod-mdl-bdy .pc-pprice{
+        margin-bottom: 30px;
+        font-size: 16px;
+    }
+    #prod-mdl-bdy .pc-pname{
+        margin-top: 20px;
+        font-size: 20px;
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 10px;
+    }
+    #prod-mdl-bdy .product-image{
+        width: auto;
+        border: 1px solid #efefef;
+        padding: 3px;
+        box-shadow: 2px 4px 10px 0px rgba(0, 0, 0, 0.3);
+    }
+    #prod-mdl-bdy .product-card{
+        max-width: 100%;
+        text-align: center;
+        padding: 20px 10px;
+    }
 
   .text-box {
     display: flex;
@@ -1599,6 +1670,7 @@ form .form-btn:hover {
     align-items: center;
     justify-content: flex-start;
     flex-wrap: nowrap;
+    padding: 15px 10px;
   }
   .tab-pane{
     background-color: #e6e6e6;
@@ -1645,6 +1717,7 @@ form .form-btn:hover {
   width: 100%;
   height: 160px;
   object-fit: cover;
+  cursor: pointer;
   /* display: inline-block; */
 }
 
@@ -2395,6 +2468,20 @@ form .form-btn:hover {
         width: 100%; /* Ensure the main image scales properly on mobile */
     }
 }
+
+@media (min-width: 768px) {
+    .row.logo-top {
+        margin-top: -60px;
+    }
+}
+
+@media (min-width: 768px) {
+    .brc-top.top-align {
+        top: 20px; /* Apply top-align styles here */
+    }
+}
+
+
 .swiper-slide img {
    width: 100%; /* Makes the image responsive to the container */
    height: auto; /* Maintain aspect ratio */
@@ -2615,3 +2702,4 @@ body, #bodyTable { background-color: rgb(244, 244, 244); }.mceText, .mcnTextCont
         font-size: 14px; /* Further reduce font size for mobile phones */
     }
 }
+

@@ -448,75 +448,6 @@ $(document).ready(function() {
 </script>
 
 <script>
-$(document).ready(function () {
-  // Initialize selectedProducts from local storage or as an empty array
-  let selectedProducts = [];
-
-  // Function to update the selected product images in the UI
-  function updateSelectedProductsUI() {
-    const product1 = selectedProducts[0] || {};
-    const product2 = selectedProducts[1] || {};
-
-    // Update the images
-    $('#selected-product-1').html(
-      product1.pc_image ? `<img src="${product1.pc_image}" alt="${product1.pc_name}" style="width:100%">` : ''
-    );
-    $('#selected-product-2').html(
-      product2.pc_image ? `<img src="${product2.pc_image}" alt="${product2.pc_name}" style="width:100%">` : ''
-    );
-
-    // Update hidden fields with product details
-    $('#singleitem1').val(
-      product1.pc_id ? JSON.stringify({
-        id_pc: product1.pc_id,
-        image_pc: product1.pc_image,
-        name_pc: product1.pc_name,
-        price_pc: product1.pc_price
-      }) : ''
-    );
-
-    $('#singleitem2').val(
-      product2.pc_id ? JSON.stringify({
-        id_pc: product2.pc_id,
-        image_pc: product2.pc_image,
-        name_pc: product2.pc_name,
-        price_pc: product2.pc_price
-      }) : ''
-    );
-  }
-
-  // Click event for adding products
-  $('.add-btn').on('click', function (event) {
-    event.preventDefault();
-    const productCard = $(this).closest('.product-card');
-    const productId = productCard.data('pc-pid');
-    const productImageSrc = productCard.find('img').attr('src');
-    const productName = productCard.find('.pc-pname').text();
-    const productPrice = productCard.find('.pc-pprice').text();
-
-    const productData = {
-      pc_id: productId,
-      pc_image: productImageSrc,
-      pc_name: productName,
-      pc_price: productPrice,
-    };
-
-    // Add product to the selected products array
-    if (selectedProducts.length < 2) {
-      selectedProducts.push(productData);
-    } else {
-      selectedProducts[0] = selectedProducts[1];
-      selectedProducts[1] = productData;
-    }
-
-    // Update the UI
-    updateSelectedProductsUI();
-  });
-});
-
-</script>
-
-<script>
 
 $(document).ready(function () {
   
@@ -527,22 +458,6 @@ $(document).ready(function () {
 
         var produchtml = $(this).closest(".product-card").prop('outerHTML');
         $("#prod-mdl-bdy").html(produchtml);
-
-        // const imgSrc = $(this).attr('src');
-        // const productName = $(this).siblings('.pc-pname').text();
-        // const productPrice = $(this).siblings('.pc-pprice').text();
-
-        // if ($(this).siblings('.add-btn').length) {
-        //     btns = $(this).siblings('.add-btn').prop('outerHTML');
-        // } else {
-        //     btns = $(this).siblings('.dynamic-btns').html();
-        // }
-
-        // // Populate modal content
-        // $('#modalImage').attr('src', imgSrc);
-        // $('#modalTitle').text(productName);
-        // $('#modalPrice').text('Price: ' + productPrice);
-        // $('#modalBtn').html(btns);
 
         // Show the modal using Bootstrap's modal method
         const modal = new bootstrap.Modal(document.getElementById('productModal'));
@@ -596,6 +511,7 @@ $(document).ready(function () {
         // Update selection
         updateSelectionCount();
         updateButtonText(productId);
+        updateSingleItems();
 
         const quantity = selectedItems.filter(item => item === productId).length;
         console.log("quantity="+quantity);
@@ -612,47 +528,41 @@ $(document).ready(function () {
             selectedItems.splice(index, 1);
         }
 
-        
+        // Check if clickedElement is provided and is a valid jQuery object
+        if (clickedElement && clickedElement.length) {
+            if (clickedElement.hasClass('frompage')) {
 
-            // Check if clickedElement is provided and is a valid jQuery object
-            if (clickedElement && clickedElement.length) {
-                if (clickedElement.hasClass('frompage')) {
-
-                    if(quantity < 2){
-                        dottedBox = $('.selected-image[data-product-id="' + productId + '"]').parent();
-                    }else{
-                        dottedBox = $('.selected-image[data-product-id="' + productId + '"]').last().parent();
-                    }
-
+                if(quantity < 2){
+                    dottedBox = $('.selected-image[data-product-id="' + productId + '"]').parent();
                 }else{
-
-                    dottedBox = clickedElement.siblings(".dotted-box");
+                    dottedBox = $('.selected-image[data-product-id="' + productId + '"]').last().parent();
                 }
+
+            }else{
+
+                dottedBox = clickedElement.siblings(".dotted-box");
             }
+        }
 
-        
+        // Remove the product from the dotted box
+        dottedBox.empty();
 
-            // Remove the product from the dotted box
-            dottedBox.empty();
+        // Reset the corresponding plus-box
+        //dottedBox.closest(".db-parent").find(".plus-box").text('+');
 
-            // Reset the corresponding plus-box
-            //dottedBox.closest(".db-parent").find(".plus-box").text('+');
-
-            if (dottedBox.is('#selected-product-1')) {
-                $('#selected-product-1').closest(".db-parent").find(".pmbox").removeClass("minus-box").addClass("plus-box").text("+");
-                $('#selected-product-1').closest(".db-parent").attr('data-dbp', '');
-            } else if (dottedBox.is('#selected-product-2')) {
-                $('#selected-product-2').closest(".db-parent").find(".pmbox").removeClass("minus-box").addClass("plus-box").text("+");
-                $('#selected-product-1').closest(".db-parent").attr('data-dbp', '');
-            }
-
-        
-
-        
+        if (dottedBox.is('#selected-product-1')) {
+            $('#selected-product-1').closest(".db-parent").find(".pmbox").removeClass("minus-box").addClass("plus-box").text("+");
+            $('#selected-product-1').closest(".db-parent").attr('data-dbp', '');
+        } else if (dottedBox.is('#selected-product-2')) {
+            $('#selected-product-2').closest(".db-parent").find(".pmbox").removeClass("minus-box").addClass("plus-box").text("+");
+            $('#selected-product-1').closest(".db-parent").attr('data-dbp', '');
+        }
 
         // Update the selection and button text
         updateSelectionCount();
         updateButtonText(productId);
+        updateSingleItems();
+
     }
 
     // Function to update the selection count
@@ -665,20 +575,19 @@ $(document).ready(function () {
     $(document).on('click', '.minus-box', function () {    
 
         const productId = $(this).siblings('.dotted-box').find('.selected-image').data('product-id');
-
         removeProductFromSelection(productId, $(this));
+
     });
 
     // Function to update the button text for the specific product
     function updateButtonText(productId) {
 
         const quantity = selectedItems.filter(item => item === productId).length;
-
         //const addButton = $('.product-card[data-pc-pid="' + productId + '"]').find(".add-btn");
 
         if (quantity > 0) {
             $('.product-card[data-pc-pid="' + productId + '"]').find("button").remove();
-            $('.product-card[data-pc-pid="' + productId + '"]').find(".dynamic-btns").html('<div class="add-btn-new"><span class="minus-icon frompage" style="width: 10px;display: block;cursor: pointer;">-</span>' + quantity + '<span class="plus-icon frompage" style="width: 10px;display: block;cursor: pointer;">+</span></div>')
+            $('.product-card[data-pc-pid="' + productId + '"]').find(".dynamic-btns").html('<div class="add-btn-new"><span class="minus-icon frompage">-</span>' + quantity + '<span class="plus-icon frompage" >+</span></div>')
             //addButton.html('<span class="minus-icon frompage">-</span>' + quantity + '<span class="plus-icon frompage">+</span>');
         } else {
             $('.product-card[data-pc-pid="' + productId + '"]').find(".dynamic-btns").html('<button type="button" class="btn btn-dark add-btn">Add + </button>')
@@ -700,6 +609,7 @@ $(document).ready(function () {
         } else {
             alert("1You can only add up to 2 products in total.");
         }
+
     });
 
     $(document).on('click', '.minus-icon', function (event) {
@@ -710,6 +620,40 @@ $(document).ready(function () {
         
         removeProductFromSelection(productId, $(this));
     });
+
+    function updateSingleItems() {
+        // Check if #selected-product-1 has a selected image
+        if ($('#selected-product-1').find('.selected-image').length) {
+            const imgElement = $('#selected-product-1').find('.selected-image');
+            const productID = imgElement.data('product-id');
+            const productCard = $('.product-card[data-pc-pid="' + productID + '"]').first();
+            const productData = {
+                id_pc: productID,
+                image_pc: imgElement.attr('src'),
+                name_pc: productCard.find(".pc-pname").text(),
+                price_pc: productCard.find(".pc-pprice").text()
+            };
+            $('#singleitem1').val(JSON.stringify(productData));
+        } else {
+            $('#singleitem1').val('');
+        }   
+
+        // Check if #selected-product-2 has a selected image
+        if ($('#selected-product-2').find('.selected-image').length) {
+            const imgElement = $('#selected-product-2').find('.selected-image');
+            const productID = imgElement.data('product-id');
+            const productCard = $('.product-card[data-pc-pid="' + productID + '"]').first();
+            const productData = {
+                id_pc: productID,
+                image_pc: imgElement.attr('src'),
+                name_pc: productCard.find(".pc-pname").text(),
+                price_pc: productCard.find(".pc-pprice").text()
+            };
+            $('#singleitem2').val(JSON.stringify(productData));
+        } else {
+            $('#singleitem2').val('');
+        }
+    }
 
 
 });
