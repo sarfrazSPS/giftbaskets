@@ -386,9 +386,9 @@
                         <div class="product-slider">
                           
                           <div class="product-card" data-pc-pid="1">
-                            <img src="<?=$app_path;?>products/applecrumbpie.png" alt="Product 1" class="product-image product-select">
+                            <img src="<?=$app_path;?>products/pie-product.png" alt="Product 1" class="product-image product-select">
                             <p class="pc-pname">Product 1</p>
-                            <p class="pc-pprice">$10</p>
+                            <p class="pc-pprice">$1.5</p>
                             <button type="button" class="btn btn-dark add-btn">Add + </button>
                             <div class="dynamic-btns"><!--do not remove this--></div>
                           </div>
@@ -698,7 +698,7 @@
       data-product-id="product-013"
       data-product-name="Gourmet Gift Baskets"
       data-product-price-regular="89.50"
-      data-product-shipping-price="19.75"
+      data-product-shipping-price="19.25"
       data-product-flavor-pie="yes"
       data-product-flavor-bread="yes"
       data-product-promo=""

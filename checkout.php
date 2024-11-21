@@ -367,8 +367,8 @@ if($clear_cart==1){
     ?>
 <script type="text/javascript">
 $(document).ready(function() {
-    localStorage.clear();
-    // window.location.href="thank-you.php";
+    //localStorage.clear();
+    window.location.href="thank-you.php";
 });
 </script>
 <?php
@@ -485,12 +485,29 @@ $('#checkoutProducts').on('click', '.product-item', function() {
             subTotal += parseFloat(allQtyPrice);       
         });
         subTotal = subTotal.toFixed(2);
+
             //////////////////////////////////////
         var discountAmount = parseFloat(localStorage.getItem('discountAmount'));
         if (discountAmount !== null && discountAmount !== "" && discountAmount!='NaN')
         {subTotal  = subTotal  - discountAmount;}
         
         ///////////////////////////////////////
+        var singleTotal = 0;
+        cartItems.forEach(function(item) {
+            if(item.singleProduct1){
+                var SingleItem1 = JSON.parse(item.singleProduct1);
+                singleTotal +=SingleItem1.price_pc.replace('$', '');
+            }
+            if(item.singleProduct2){
+                var SingleItem2 = JSON.parse(item.singleProduct2);
+                singleTotal +=SingleItem2.price_pc.replace('$', '');
+            }
+        });
+        if(singleTotal>0){
+            singleTotal = singleTotal;
+        }
+            //////////////////////////////////////
+        subTotal = subTotal + parseFloat(singleTotal);
         $("#checkoutSubTotal").html("$"+subTotal);
         $("#hdn_checkoutSubTotal").val(subTotal);
         $("#checkoutSubTotal").attr("data-checkout-subtotal", subTotal);
@@ -668,6 +685,15 @@ $('#checkoutProducts').on('click', '.product-item', function() {
 
     // }
 </script>
+<script>
+// Save transaction data to localStorage
+const padtransactionData = {
+    padtransaction_id: "<?php echo htmlspecialchars($padtransaction_id); ?>",
+    padtotal_amount: <?php echo htmlspecialchars($padtotal_amount); ?>,
+    padproducts: <?php echo json_encode($paddataLayerProducts); ?>
+};
+
+localStorage.setItem('padtransactionData', JSON.stringify(padtransactionData));
 
 
-
+</script>

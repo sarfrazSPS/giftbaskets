@@ -334,3 +334,29 @@ include("includes/footer.php");
         populateThankYouPage(transactionData);
     });
 </script>
+<!-- Google Data Layer Script -->
+<script>
+    // Retrieve transaction data from localStorage
+    const padtransactionData = JSON.parse(localStorage.getItem('padtransactionData'));
+
+    if (padtransactionData) {
+        
+        // Push data to Google Data Layer
+        window.dataLayer = window.dataLayer || [];
+        dataLayer.push({
+            'event': 'purchase',
+            'transaction_id': padtransactionData.padtransaction_id,
+            'value': padtransactionData.padtotal_amount,
+            'currency': 'USD',
+            'items': padtransactionData.padproducts
+        });
+    } else {
+        // Handle missing transaction data (e.g., redirect back to cart or show an error)
+        console.log('Data Layer Transaction data is missing. Please try again.');
+    }
+</script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        localStorage.clear();
+    });
+</script>

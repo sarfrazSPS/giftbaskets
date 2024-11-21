@@ -1,4 +1,5 @@
 <?php
+
 require_once 'vendor-authorize-net-payment/autoload.php';
 require_once "config.php";
 //include('phpmailer-fn-api.php');
@@ -8,6 +9,10 @@ use net\authorize\api\controller as AnetController;
 
 // Create a unique reference ID of transaction
 $ref_id = 'ref_id_' . time();
+
+$padtransaction_id = $ref_id; 
+$padtotal_amount = 0;
+$paddataLayerProducts = []; 
 
 
 // Create a MerchantAuthenticationType object with the authentication details
@@ -150,6 +155,7 @@ if ($response != null) {
             $cc_brand = $tresponse->getaccountType();
             $cc_number = $tresponse->getaccountNumber();
             $transaction_id = $tresponse->getTransId(); 
+            $padtransaction_id  =   $transaction_id;
             $auth_code = $tresponse->getAuthCode();
             $response_code = $tresponse->getResponseCode();
             $response_desc = $responseDesc[$response_code];
@@ -215,10 +221,24 @@ if ($response != null) {
                                 $singleItems1 = "";
                                 if (!empty($product->singleProduct1)) {
                                     $singleItems1 .= 'Single Product 1:<br /> Name: ' . $product->singleProduct1->name_pc . ', Price: ' . $product->singleProduct1->price_pc . ', Product ID: ' . $product->singleProduct1->id_pc . ' <br />';
+                                    
+                                    $paddataLayerProducts[] = [
+                                        'id' => $product->singleProduct1->id_pc,
+                                        'name' => $product->singleProduct1->name_pc,
+                                        'quantity' => 1,
+                                        'price' => str_replace("$","", $product->singleProduct1->price_pc),
+                                    ];
                                 }
 
                                 if (!empty($product->singleProduct2)) {
                                     $singleItems1 .= 'Single Product 2:<br /> Name: ' . $product->singleProduct2->name_pc . ', Price: ' . $product->singleProduct2->price_pc . ', Product ID: ' . $product->singleProduct2->id_pc . ' <br />';
+                                    
+                                    $paddataLayerProducts[] = [
+                                        'id' => $product->singleProduct2->id_pc,
+                                        'name' => $product->singleProduct2->name_pc,
+                                        'quantity' => 1,
+                                        'price' => str_replace("$","", $product->singleProduct2->price_pc),
+                                    ];
                                 }
 
                                 $productDetails .= $singleItems1;
@@ -229,6 +249,17 @@ if ($response != null) {
                                 $qty = $product->quantity;
                                 $unit_total = $qty*$productPrice;
                                 $emailTemplate .= "<tr> <td> ".$id ." </td> <td>".$productName."</td> <td>".$productDetails."</td> <td>".$qty."</td> <td>".$productPrice."</td> <td> ".$unit_total." </td>  <td>".$options."</td> <td>".$message."</td> </tr> ";
+
+                                $padtotal_amount += $unit_total;
+                                $padtotal_amount = $padtotal_amount + $singleItemsPriceTotals;
+                                // Add product to the Data Layer array
+                                $paddataLayerProducts[] = [
+                                    'id' => $id,
+                                    'name' => $productName,
+                                    'quantity' => $qty,
+                                    'price' => $productPrice,
+                                ];
+                                
                             }
 
                             $emailTemplate .= "
@@ -264,8 +295,6 @@ if ($response != null) {
                 // $headers .= "Content-Type: text/html; charset=UTF-8\r\n";
 
                 // mail($to, $subject, $emailTemplate, $headers);
-
-
                 
                 $nameField='Order Email';
                 
@@ -281,6 +310,7 @@ if ($response != null) {
         
                $name=$firstNameField."< ".$emailField." >";
                $to="info@padutchbaskets.com";// Your email address will goes here  
+               
                
                 if (mail($to,$sub,$emailTemplate,$headers))
                 {
