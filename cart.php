@@ -402,7 +402,7 @@ if($clear_cart==1){
                         singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData1.image_pc+'" alt="'+productData1.name_pc+'" style="border-width:0px;max-width: 100px;" />';
                         singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData1.id_pc+'</p>';
                         singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData1.name_pc+'</p>';
-                        singleItems += '<p class="mb-1 cal_singel_item_price" style="text-transform:uppercase;" >'+productData1.price_pc+'</p></div>';
+                        singleItems += '<p class="mb-1 cal_singel_item_price csip1" style="text-transform:uppercase;" >'+productData1.price_pc+'</p></div>';
                     }
 
                     if(item.singleProduct2 && item.singleProduct2.trim() !== ''){
@@ -411,7 +411,7 @@ if($clear_cart==1){
                         singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData2.image_pc+'" alt="'+productData2.name_pc+'" style="border-width:0px;max-width: 100px;" />';
                         singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData2.id_pc+'</p>';
                         singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData2.name_pc+'</p>';
-                        singleItems += '<p class="mb-1 cal_singel_item_price" style="text-transform:uppercase;"  >'+productData2.price_pc+'</p></div>';
+                        singleItems += '<p class="mb-1 cal_singel_item_price csip2" style="text-transform:uppercase;"  >'+productData2.price_pc+'</p></div>';
                     }
                     singleItems += '</div>';
 
@@ -470,14 +470,19 @@ if($clear_cart==1){
         $('#dynamicContentContainer tr').each(function(index, row) {
             var item_price = $(row).find('.cal_item_price').text();
             console.log(index+"="+item_price);
-            var cal_singel_item_price = $(row).find('.cal_singel_item_price').text().replace('$', '').trim();
+            var csip1 = $(row).find('.csip1').text().replace('$', '').trim();
+            var csip2 = $(row).find('.csip2').text().replace('$', '').trim();
 
-		// Check if the value is empty and replace with '0' if true
-		if (cal_singel_item_price === '') {
-		    cal_singel_item_price = '0';
-		}
+            // Check if the value is empty and replace with '0' if true
+            if (csip1 === '') {
+                csip1 = '0';
+            }
+            if (csip2 === '') {
+                csip2 = '0';
+            }
 
-            console.log("cal_singel_item_price  =================================="+cal_singel_item_price);
+            console.log("csip1  =================================="+csip1+"csip2  =================================="+csip2);
+            var cal_singel_item_price = parseFloat(csip1) + parseFloat(csip2);
             var item_shipping = $(row).find('.cal_item_shipping').text();
             console.log(index+"="+item_shipping);
             var item_qty = $(row).find('.cal_item_qty').val();

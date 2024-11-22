@@ -77,15 +77,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 	}	
 }
 
+
 if($response_type=="success"){
     $clear_cart=1;
 }
+
 ?>
 <script>
     //Coupn as an example
     var padcoupons = [
-    { name: 'PADCOUPON1', type: 'percentage', value: 10 },
-    { name: 'PADCOUPON2', type: 'value', value: 5 },
+        { name: 'PADCOUPON1', type: 'percentage', discountValue: 10 },
+        { name: 'PADCOUPON2', type: 'value', discountValue: 5 },
     ];
 </script>
 <?php echo breadCrumb($app_path, "Checkout");?>
@@ -363,6 +365,7 @@ include("includes/footer.php");
 ?>
 
 <?php
+
 if($clear_cart==1){
     ?>
 <script type="text/javascript">
@@ -425,12 +428,12 @@ $(document).ready(function() {
 
                 var singleItems = "";
                 if(item.singleProduct1 || item.singleProduct2){
-                    const productData1 = JSON.parse(item.singleProduct1);
-                    const productData2 = JSON.parse(item.singleProduct2);
+                    
                     singleItems += '<div class="additional-data d-none border border-dark pt-2 pb-2" id="extra-'+item.id+'"><div class="d-flex"><h6 class="d-block">Single Items: </h6></div>';
 
                     singleItems += '<div class="d-flex">';
-                    if(productData1){
+                    if(item.singleProduct1){
+                        const productData1 = item.singleProduct1;
                         console.log("new data" + productData1.image_pc);
                         singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData1.image_pc+'" alt="'+productData1.name_pc+'" style="border-width:0px;max-width: 100px;" />';
                         singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData1.id_pc+'</p>';
@@ -438,7 +441,8 @@ $(document).ready(function() {
                         singleItems += '<p class="mb-1" style="text-transform:uppercase;">'+productData1.price_pc+'</p></div>';
                     }
 
-                    if(productData2){
+                    if(item.singleProduct2){
+                        const productData2 = item.singleProduct2;
                         console.log("new data" + productData2.image_pc);
                         singleItems += '<div class="single_item"><img id="" class="img-fluid" src="'+productData2.image_pc+'" alt="'+productData2.name_pc+'" style="border-width:0px;max-width: 100px;" />';
                         singleItems += '<p class="mb-1" style="text-transform:uppercase; font-size: 70%;">Product ID: '+productData2.id_pc+'</p>';
@@ -448,6 +452,7 @@ $(document).ready(function() {
                     singleItems += '</div></div>';
 
                 }
+                //console.log("ddddd="+singleItems);
 
                 $('#extraProducts').append(singleItems);
 
@@ -494,18 +499,18 @@ $('#checkoutProducts').on('click', '.product-item', function() {
         ///////////////////////////////////////
         var singleTotal = 0;
         cartItems.forEach(function(item) {
-            if(item.singleProduct1){
-                var SingleItem1 = JSON.parse(item.singleProduct1);
-                singleTotal +=SingleItem1.price_pc.replace('$', '');
-            }
-            if(item.singleProduct2){
-                var SingleItem2 = JSON.parse(item.singleProduct2);
-                singleTotal +=SingleItem2.price_pc.replace('$', '');
-            }
+            ['singleProduct1', 'singleProduct2'].forEach(function(key) {
+                if (item[key]) {
+                    const singleItem = JSON.parse(item[key]);
+                    const price = parseFloat(singleItem.price_pc.replace('$', ''));
+                    singleTotal += price;
+                }
+            });
         });
-        if(singleTotal>0){
-            singleTotal = singleTotal;
-        }
+
+        // Ensure `singleTotal` remains unmodified if it's greater than 0.
+        singleTotal = singleTotal > 0 ? singleTotal : 0;
+
             //////////////////////////////////////
         subTotal = subTotal + parseFloat(singleTotal);
         $("#checkoutSubTotal").html("$"+subTotal);
@@ -573,10 +578,10 @@ $('#checkoutProducts').on('click', '.product-item', function() {
 
         if (matchedCoupon) {
             if (matchedCoupon.type === 'percentage') {
-                var discountAmount = (matchedCoupon.value / 100) * checkoutTotal;
+                var discountAmount = (matchedCoupon.discountValue / 100) * checkoutTotal;
                 checkoutTotal -= discountAmount;
             } else if (matchedCoupon.type === 'value') {
-                checkoutTotal -= matchedCoupon.value;
+                checkoutTotal -= matchedCoupon.discountValue;
             }
 
             modify_checkout_grand_totals(checkoutTotal);
@@ -608,7 +613,7 @@ $('#checkoutProducts').on('click', '.product-item', function() {
 
         // Update the localStorage with the modified cartItems array
         localStorage.setItem('cartstorage', JSON.stringify(cartItems));
-        window.location.href = location.href;
+        window.location.href = $appPathJS;
 
     });
 </script>
