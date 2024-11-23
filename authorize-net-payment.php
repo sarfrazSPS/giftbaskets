@@ -309,8 +309,7 @@ if ($response != null) {
 
         
                $name=$firstNameField."< ".$emailField." >";
-               $to="info@padutchbaskets.com";// Your email address will goes here  
-               
+               $to="info@padutchbaskets.com";// Your email address will goes here                
                
                 if (mail($to,$sub,$emailTemplate,$headers))
                 {
