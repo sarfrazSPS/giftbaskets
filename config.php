@@ -1,5 +1,6 @@
 <?php 
 //Authorize.Net Credentials Configuration
+ 
 // define("AUTHORIZE_API_LOGIN_ID", "5Rf77vEDq2CJ");
 // define("AUTHORIZE_TRANSACTION_KEY", "6Pr9tqgJq6y8Y78Q");
 // define("AUTHORIZE_ENV", "SANDBOX");
