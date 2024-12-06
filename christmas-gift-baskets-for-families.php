@@ -6,31 +6,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include($root_path . "includes/header-links.php"); ?>
-      <meta property="og:type" content="product" />
+     <meta property="og:type" content="product" />
 
-        <meta property="og:title" content="Christmas Gift Basket Ideas" />
+        <meta property="og:title" content="Christmas Gift Baskets for Families" />
 
-        <meta property="og:description" content="Our Christmas Gift Basket ideas are one of the most popular because of the variety which includes homemade jam, beef, whoopie pies, and streusel. We also deliver" />
+        <meta property="og:description" content="Our Christmas Gift Baskets for Families has so many treats from Lancaster, PA including cheeses, gourmet mustard, pie, Emma's popcorn and more with delivery" />
 
         <meta property="og:url" content="https://padutchbaskets.com"/>
 
         <meta property="og:site_name" content="PA Dutch Baskets" />
 
-         <meta property="og:image" content="https://padutchbaskets.com/images/lancaster-favorites/christmas-gift-basket-ideas.jpg"/>
+         <meta property="og:image" content="https://padutchbaskets.com/images/savory-flavors/christmas-gift-baskets-for-families.jpg"/>
 
-        <meta property="product:price:amount" content="86.50" />
+        <meta property="product:price:amount" content="109.50" />
 
         <meta property="product:price:currency" content="USD" />
 
         <meta property="og:availability" content="instock" />
 
-    <title> Christmas Gift Basket Ideas | PA Dutch Baskets</title>
+    <title>Christmas Gift Basket for Families | PA Dutch Baskets</title>
 
-  <meta name="description" content="Our Christmas Gift Basket ideas are one of the most popular because of the variety which includes homemade jam, beef, whoopie pies, and streusel. We also deliver" />
+  <meta name="description" content="Our Christmas Gift Baskets for Families has so many treats from Lancaster, PA including cheeses, gourmet mustard, pie, Emma's popcorn and more with delivery" />
 
-        <meta name="keywords" content="christmas gift basket ideas, christmas gift baskets, christmas gift box, christmas gift basket ideas, christmas baskets for friends"/>
+        <meta name="keywords" content="christmas gift baskets for families, christmas gift box, best christmas gift baskets, gifts delivered by Christmas"/>
 
-        <link rel="canonical" href="https://padutchbaskets.com/christmas-gift-basket-ideas.php">
+        <link rel="canonical" href="https://padutchbaskets.com/christmas-gift-baskets-for-families.php">
 	<!-- Google Tag Manager -->
 <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
 new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
@@ -85,37 +85,35 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                             <!--4 side images -->
                                 <img
                                 class="img-responsive"
-                                src="images/lancaster-favorites/christmas-gift-basket-ideas.jpg" alt="Surprise loved ones with a Christmas gift box packed with delicious goodies like savory cheeses, sweet fudge, and homemade Amish treats. A joyful holiday treat for all"
+                                src="assets/images/products/savory-flavors/christmas-gift-box.jpg" alt="Our Christmas gift baskets for families offers delicious gourmet foods and baked goods that can be shared and enjoyed"
                                 onmouseover="myFunction(this)"
                                 />
                                             
                                 <img
                                 class="img-responsive"
-                                src="images/lancaster-favorites/pic2.jpg" alt="We are happy to offer Christmas Gifts that are filled with everyones favorites including pies, whoopie pies, cinnamon bun and we offer delivery"
+                                src="images/savory-flavors/pic2.jpg" alt="Offering our Christmas gift box for offers Amish baked goods from Lancaster PA"
                                 onmouseover="myFunction(this)"
                                 />
 								
-								  <img
+									<img
                                 class="img-responsive"
-                                src="products/whoopieplate.jpg" alt="Need thoughtful Christmas gift ideas? PA Dutch Baskets offer gourmet treats that make perfect gifts for clients, employees, or family this holiday season"
+                                src="products/blueberrybread3.png" alt="Need thoughtful Christmas gift ideas? PA Dutch Baskets offer gourmet treats that make perfect gifts for clients, employees, or family this holiday season"
                                 onmouseover="myFunction(this)"
                                 />
-                            
+                                            
                                 <img
                                 class="img-responsive"
-                                src="images/bear.jpg" alt="Need thoughtful Christmas gift ideas? PA Dutch Baskets offer gourmet treats that make perfect gifts for clients, employees, or family this holiday season"
+                                src="products/applecrumbpie.png" alt="Need thoughtful Christmas gift ideas? PA Dutch Baskets offer gourmet treats that make perfect gifts for clients, employees, or family this holiday season"
                                 onmouseover="myFunction(this)"
                                 />
-                            
-                              
-                                
+								
                             </div>
                         </div>
                         <div class="col-sm-10">
                             <div class="main-images">
                             <!--Main images -->
                                 
-                                    <img  src="images/lancaster-favorites/christmas-gift-basket-ideas.jpg" alt="We are happy to offer our Christmas gift basket ideas filled with Amish baked pies, whoopie pies, cinnamon sticks and more with delivery"      id="image_box" class="img-responsive"  />
+                                    <img  src="assets/images/products/savory-flavors/christmas-gift-box.jpg" alt="We are happy to offer Christmas gift baskets that are filled with everyones favorites including pies, whoopie pies, cinnamon bun and we offer delivery"      id="image_box" class="img-responsive"  />
                                 
                             <!--Main images -->
                             </div>
@@ -123,15 +121,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="prod-id">Product ID: 074</p>
-                    <h3 class="prod-title">Christmas Gift Basket Ideas</h3>
+                    <p class="prod-id">Product ID: 072</p>
+                    <h3 class="prod-title">Christmas Gift Baskets</h3>
                       <span class="price">
-                        <span class="prod-price" id='price_per_item' >$86.50</span>
+                        <span class="prod-price" id='price_per_item' >$109.50</span>
                             <span class="prod-stars">
                                 <svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg><svg class="es-star" width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M9.88552 5.85364H0L4.94427 9.72919L8 12.1244L12.9443 16L11.0557 9.72919L16 5.85364H9.88552Z" fill="#7a6e58"></path><path fill-rule="evenodd" clip-rule="evenodd" d="M6.53216 5.2863L8.13765 0L9.74314 5.2863H6.53216ZM4.92025 10.5937L7.5658 12.6674L3.27832 16L4.92025 10.5937Z" fill="#7a6e58"></path></svg>
                             </span>
                             <span class="prod-seperator"> | </span>
-                            <span class="prod-rev-nos">28 Reviews</span>
+                            <span class="prod-rev-nos">17 Reviews</span>
                              <span class="prod-seperator"> | </span>
                                     <!-- Add a 'Read more' link pointing to the Elfsight widget -->
     									    <a href="#elfsight-reviews" class="read-more-link">Read reviews</a>
@@ -143,7 +141,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                         <tr>
                             
-							
 							<td>
                                 
                                     <input type="hidden" name="on0" value="Choose Your Pie">
@@ -159,11 +156,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							
 							<td>
                                 
-                                    <input type="hidden" name="on0" value="Choose Your Fudge">
-                                    <div class="form-label">Choose Your Fudge</div>
-                                    <select name="os0" id="chooseFudge">
-                                        <option value="Chocoalte">Chocolate </option>
-                                        <option value="Chocoalate Peanut Butter">Chocolate Peanute Butter </option>
+                                    <input type="hidden" name="on0" value="Choose Your Bread">
+                                    <div class="form-label">Choose Your Bread</div>
+                                    <select name="os0" id="chooseBread">
+                                        <option value="Blueberry">Blueberry </option>
+                                        <option value="Banana">Banana </option>
                                       
                               </select>
                                 
@@ -174,11 +171,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							
 							<td>
                                 
-                                    <input type="hidden" name="on0" value="Choose Your Jam">
-                                    <div class="form-label">Choose Your Jam</div>
-                                    <select name="os0" id="chooseJam">
-                                        <option value="Strawberry">Strawberry </option>
-                                        <option value="Dutch Apple">Dutch Apple </option>
+                                    <input type="hidden" name="on0" value="Choose Your Fudge">
+                                    <div class="form-label">Choose Your Fudge</div>
+                                    <select name="os0" id="chooseFudge">
+                                        <option value="Chocolate">Chocolate </option>
+                                        <option value="Choc/Peanut Butter">Choc/Peanut Butter </option>
                                       
                               </select>
                                 
@@ -213,7 +210,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                         <input type="checkbox" class="" id="tag" value="holidays">
     
-                                                        <img src="assets/images/tags/holidays.png" alt="Our christmas gift basket ideas are loved and filled with Amish gourmet foods and baked goods from Lancaster, PA"  class="circle ">
+                                                        <img src="assets/images/tags/holidays.png" alt="Our christmas gift baskets for families are filled with Amish baked goods and gourmet foods loved by all"  class="circle ">
     
                                                     </label>
     
@@ -227,7 +224,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                         
                                                         
-                                                        <img src="assets/images/tags/merry-christmas.png" alt="Our Christmas gift baskets are the perfect gift for friends, loved ones, and family" class="circle ">
+                                                        <img src="assets/images/tags/merry-christmas.png" alt="Our Christmas gift box is the perfect gift for friends, loved ones, and family during the holidays" class="circle ">
     
                                                     </label>
     
@@ -239,7 +236,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                         <input type="checkbox" id="custom-front" class="" value="Merry Christmas3">
     
-                                                        <img src="assets/images/tags/merry-christmas3.png" alt="Our Christmas gift box offers homemade jam, fudge, baked pie and so much more from the Amish in Lancaster PA" class="circle ">
+                                                        <img src="assets/images/tags/merry-christmas3.png" alt="Our Christmas gift ideas are filled with Lancaster, PA whoopie pies and other baked goods" class="circle ">
     
                                                     </label>
     
@@ -265,7 +262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                         <input type="checkbox" id="tag" class="" value="thinking-of-you">
     
-                                                        <img src="assets/images/tags/thinking-of-you.png" alt="Our Christmas gift basket ideas offer delicious strawberry or dutch jam, fudge, and many other baked goods from the Amish loved by all" class="circle ">
+                                                        <img src="assets/images/tags/thinking-of-you.png" alt="Our Christmas gift basket ideas are loved by everyone and filled with Amish treats and baked goods" class="circle ">
     
                                                     </label>
     
@@ -304,7 +301,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     
                                                         <input type="checkbox" id="tag" class="" value="No Custom">
     
-                                                        <img src="assets/images/tags/no-custom.png" alt="christmas git baskets" class="circle ">
+                                                        <img src="assets/images/tags/no-custom.png" alt="sympathy gift ideas delivered anywhere in the country" class="circle ">
     
                                                     </label>
     
@@ -341,59 +338,43 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                     <h2 class="cgb-head">Content for your Gift Basket</h2>
                     <div class="cgb-copy">
                         <div class="cgb-copy-left">
-							<p>* Apple of Shoo Fly Pie</p>
-							<p>* Delicious Fudge (Choice of Flavors)</p>
-							<p>* Strawberry or Dutch Apple Jam</p>
-                            <p>* Apple Streusel</p>
-							<p>* Emma's Famouns Popcorn</p>
+							
+						        <p>* Gourmet Cheese</p>
+							<p>* Gourmet Mustard</p>
+                            <p>* Apple or Shoo Fly Pie (Choice of Flavor)</p>
+							<p>* Delicious Blueberry Bread (Choice of Flavor)</p>
+                          
+                            <p>* Fudge (Choice of Flavor)</p>
+							 <p>* Peanut Butter Crackers</p>
 							
 						
-					
 							
-							
-							
-						
                         </div>
                         <div class="cgb-copy-right">
-							<p>* Teddy Bear</p>
-							<p>* Stoltzfus Beef Sticks</p>
-							
-							
-							<p>* Whoopie Pie </p>
-							
-							 <p>* Chocolate Pretzel Rods   </p>
-							<p>* Blueberry Donut Holes</p>
-							
-						<p>* Customization</p>
-                            
-							
-						
-							
-							
-                    
+							 <p>* Peanut Butter Brittle</p>
+							  <p>* 2 Whoopie Pies</p>
+                            <p>* Emma's Famous Popcorn</p>
+                            <p>* Martins Pretzels</p>
+                           
+								<p>* Chocolate Pretzel Rods</p>
+							 <p>* Cinnamon Stick (Filled with Cream Cheese)</p>
+							<p>* Customization</p>
                             
                         </div>
                     </div>
 
-                    <h2 class="cgb-subhead">Christmas Gift Basket Ideas</h2>
-                    <p class="cgb-subcopy">Finding the perfect Christmas gift basket ideas can make holiday gifting truly special. A well-chosen basket filled with delicious treats and festive goodies is a wonderful way to show appreciation and spread cheer to friends, family, and colleagues. With so many options available, Christmas gifts that offer something for everyone, making them a versatile and thoughtful choice for the holiday season.
+                    <h2 class="cgb-subhead">Christmas Gift Baskets for Families and Friends</h2>
+                    <p class="cgb-subcopy">Christmas gift baskets for families are a delightful way to celebrate the holiday season together. These thoughtfully curated collections offer something for everyone, making them a perfect gift choice for any family on your list. Packed with an array of delicious treats, Christmas gift baskets for families provide a memorable experience that can be enjoyed by all, creating moments of joy and togetherness during the most wonderful time of the year.</p>
 
-One of the most popular Christmas gift basket ideas is to include a variety of gourmet snacks and sweets. Imagine a beautifully arranged basket or gift box featuring a selection of delicious jams, pies, and beef, fudge and more. These delicious items are complemented by sweet treats like whoopie pies, all beautifully packaged to create a memorable and enjoyable experience. This combination of flavors ensures that every recipient will find something they love, making these gift baskets a favorite among holiday shoppers.</p>
+ <p class="cgb-subcopy">One of the best things about Christmas gift baskets for families is their versatility. They are filled with a variety of gourmet goodies that appeal to both kids and adults alike. Imagine the excitement when a family receives a basket overflowing with festive treats like soft, chewy whoopie pies, buttery cookies, and sweet, moist blueberry bread. These traditional Amish baked goods are sure to be a hit with every member of the family. For a savory touch, the baskets include gourmet cheeses and mustard, perfect for creating a delicious holiday snack platter that everyone can enjoy.
 
-<p class="cgb-subcopy">For families, Christmas gift basket ideas can be tailored to include something for everyone. A family-friendly basket might feature a mix of treats, such as chocolate-covered pretzels, popcorn in a variety of flavors, and a selection of holiday-themed customizations.
+Our Christmas gifts can also feature a range of indulgent sweets, such as rich, creamy fudge in various flavors and Emma’s popcorn, which comes in delightful options that are perfect for sharing during a family movie night. These treats not only taste amazing but also add a fun and festive element to the holiday celebration, making them a cherished part of the family's Christmas traditions.</p>
 
-When considering Christmas gift basket ideas for coworkers, friends, or loved ones, our customized Christmas gift baskets and christmas gift boxes are a gift they will love and appreciate.</p>
+ <p class="cgb-subcopy">Giving Christmas gift baskets for families is a heartfelt way to show your appreciation and love during the holidays. They make an ideal gift for friends, neighbors, or even your own family members, as they bring people together through the joy of sharing delicious food. Whether you’re looking to surprise a family who lives far away or express gratitude to those close to you, these gift baskets are a thoughtful and meaningful choice.
 
-<p class="cgb-subcopy">No matter who you’re shopping for, creative Christmas gift basket ideas can help you find the perfect gift that suits their tastes and preferences. Whether filled with festive snacks, sweet treats, or a mix of both, these baskets are a thoughtful way to share the joy of the season. With endless possibilities to explore, our Christmas gift ideas make holiday gifting easy, personal, and memorable.</p>
+Celebrate the spirit of the season by sending the perfect Christmas gift box, and give the gift of joy, togetherness, and deliciousness. With a variety of delectable treats and festive goodies, these baskets are sure to create lasting memories and make the holiday season even more special for every family who receives them.
 
-
-
-
-
-
-
-
-
+</p>
 
 
 
@@ -474,17 +455,17 @@ When considering Christmas gift basket ideas for coworkers, friends, or loved on
 </div>
 <!-- do not remove this div, it will be using to pass data -->
  <div class="product-metadata" 
-    data-product-id="product-074"
-    data-product-name="LF Christmas GB Ideas"
-    data-product-price-regular="86.50"
-    data-product-shipping-price="19.25"
+    data-product-id="product-072"
+    data-product-name="Savory-Xmas GB"
+    data-product-price-regular="109.50"
+    data-product-shipping-price="22.25"
     data-product-flavor-pie="yes"
     data-product-flavor-bread="yes"
     data-product-promo=""
     data-product-card-msg=""
     data-product-customization=""
     data-product-qty=""
-    data-product-cart_img="christmas-gift-basket-ideas.jpg" >
+    data-product-cart_img="christmas-gift-box.jpg" >
 </div>
 <!-- image to be display on cart page must be in root images folder   -->
 
@@ -496,20 +477,20 @@ include("includes/footer.php");
 {
   "@context": "https://schema.org",
   "@type": "Product",
-  "name": "Christmas Gift Basket Ideas",
-  "image": "https://padutchbaskets.com/images/lancaster-favorites/christmas-gift-basket-ideas.jpg",
-  "description": "Discover our Christmas Gift Basket Ideas filled with Amish baked pies, whoopie pies, cinnamon sticks, savory cheeses, sweet fudge, and homemade treats. A joyful holiday treat for friends, family, and loved ones.",
-  "sku": "074",
-  "mpn": "074",
+  "name": "Christmas Gift Baskets for Families and Friends",
+  "image": "https://padutchbaskets.com/images/savory-flavors/christmas-gift-baskets-for-families.jpg",
+  "description": "Celebrate the holidays with our Christmas Gift Baskets for Families and Friends, featuring Amish baked pies, whoopie pies, cinnamon sticks, savory cheeses, sweet fudge, and more. A perfect treat for sharing with loved ones.",
+  "sku": "072",
+  "mpn": "072",
   "brand": {
     "@type": "Brand",
     "name": "PA Dutch Baskets"
   },
   "offers": {
     "@type": "Offer",
-    "url": "https://padutchbaskets.com/christmas-gift-basket-ideas.php",
+    "url": "https://padutchbaskets.com/christmas-gift-baskets-for-families.php",
     "priceCurrency": "USD",
-    "price": "86.50",
+    "price": "109.50",
     "itemCondition": "https://schema.org/NewCondition",
     "availability": "https://schema.org/InStock",
     "seller": {
@@ -520,7 +501,7 @@ include("includes/footer.php");
       "@type": "OfferShippingDetails",
       "shippingRate": {
         "@type": "MonetaryAmount",
-        "value": "19.75",
+        "value": "22.25",
         "currency": "USD"
       },
       "deliveryTime": {
@@ -537,7 +518,7 @@ include("includes/footer.php");
   "aggregateRating": {
     "@type": "AggregateRating",
     "ratingValue": "5",
-    "reviewCount": "28"
+    "reviewCount": "17"
   },
   "review": {
     "@type": "Review",
@@ -549,13 +530,13 @@ include("includes/footer.php");
       "@type": "Person",
       "name": "Michelle Musumeci"
     },
-    "reviewBody": "The Christmas Gift Basket was perfect! The selection of Amish treats, including pies, whoopie pies, and savory cheeses, made it a delightful gift for our holiday gathering."
+    "reviewBody": "The Christmas Gift Basket for Families and Friends was amazing! The variety of Amish treats, including pies, cheeses, and whoopie pies, made it a fantastic gift for our family holiday gathering."
   },
   "additionalProperty": [
     {
       "@type": "PropertyValue",
       "name": "Customization",
-      "value": "Choose your pie, fudge, and jam flavors. Includes a custom card message."
+      "value": "Choose your pie, bread, and fudge flavors. Includes a custom card message."
     }
   ]
 }
@@ -607,7 +588,7 @@ include("includes/footer.php");
     }
   });
 </script>
-<script> var product_details ="Sorry for your Loss - Dutch Traditions<br/>"; </script>
+<script> var product_details ="Christmas Gift Baskets<br/>"; </script>
 <script src="assets/js/paypal.js"></script>
 <script src="https://www.paypal.com/sdk/js?client-id=AQ4eIiXQNa2IzhEjEjLZ-HDbwt1GCalO88GsMnnCgfRnOmpoOD8wyhkGclLrgEriqgzie2zoVHl22ce1"></script> 
 <script type="text/javascript">

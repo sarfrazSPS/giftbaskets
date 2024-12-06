@@ -300,7 +300,7 @@ function addToCart(productID, productName, productPrice, productShippingPrice, p
     // Update quantity or add a new product to the cart
     if (existingProductIndex !== -1) {
         // Product already exists in the cart, update quantity
-        cart[existingProductIndex].quantity += productToAddOrUpdate.quantity;
+        //cart[existingProductIndex].quantity += productToAddOrUpdate.quantity;//disalbed as per client requirement
     } else {
         // Product not found, add it to the cart
         cart.push(productToAddOrUpdate);
@@ -350,7 +350,7 @@ function addToCartDirect(productID, productName, productPrice, productShippingPr
     // Update quantity or add a new product to the cart
     if (existingProductIndex !== -1) {
         // Product already exists in the cart, update quantity
-        cart[existingProductIndex].quantity += productToAddOrUpdate.quantity;
+        //cart[existingProductIndex].quantity += productToAddOrUpdate.quantity;
     } else {
         // Product not found, add it to the cart
         cart.push(productToAddOrUpdate);
